@@ -22,9 +22,7 @@ namespace BTL
             MessageBox.Show("alo123");
             MessageBox.Show("alo123");
             MessageBox.Show("alo123");
-            MessageBox.Show("alo123");
-            MessageBox.Show("alo123");
-            MessageBox.Show("alo123");
+            
 
         }
     }
