@@ -26,6 +26,8 @@ namespace BTL
 
             MessageBox.Show("alo123");
             MessageBox.Show("phu oc");
+            
+            MessageBox.Show("phu oc");
 
             MessageBox.Show(".....");
         }
