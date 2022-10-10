@@ -24,7 +24,7 @@ namespace BTL
             MessageBox.Show("dz");
             MessageBox.Show("vodich");
             MessageBox.Show("vutru");
-            
+            MessageBox.Show("tru tru tru");
         }
     }
 }
