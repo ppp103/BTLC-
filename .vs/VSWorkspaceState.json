@@ -1,6 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\BTL",
+    "\\BTL\\BTL"
   ],
+  "SelectedNode": "\\BTL\\BTL\\Class1.cs",
   "PreviewInSolutionExplorer": false
 }
