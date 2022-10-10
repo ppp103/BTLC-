@@ -20,13 +20,6 @@ namespace BTL
         private void button1_Click(object sender, EventArgs e)
         {
             MessageBox.Show("alo123");
-            MessageBox.Show("Phu pull di");
-            MessageBox.Show("Hiuhiu");
-            MessageBox.Show("alo123");
-            MessageBox.Show("alo123");
-            
-            MessageBox.Show("Phu pull di");
-            MessageBox.Show("Phu pull di");
         }
     }
 }
