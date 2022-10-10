@@ -25,6 +25,8 @@ namespace BTL
             MessageBox.Show("alo123");
             MessageBox.Show("alo123");
             
+            MessageBox.Show("Phu pull di");
+            MessageBox.Show("Phu pull di");
         }
     }
 }
