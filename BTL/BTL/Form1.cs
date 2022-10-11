@@ -25,6 +25,11 @@ namespace BTL
             MessageBox.Show("vodich");
             MessageBox.Show("test git");
             MessageBox.Show("vutru");
+
+            MessageBox.Show("test git");
+            MessageBox.Show("test git");
+            MessageBox.Show("test git");
+            MessageBox.Show("test git");
         }
     }
 }
