@@ -25,6 +25,8 @@ namespace BTL
             MessageBox.Show("vodich");
             MessageBox.Show("vutru");
             MessageBox.Show("tru tru tru");
+            MessageBox.Show("tru tru tru");
+            MessageBox.Show("tru tru tru");
         }
     }
 }
