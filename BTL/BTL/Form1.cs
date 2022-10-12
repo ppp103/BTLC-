@@ -34,11 +34,5 @@ namespace BTL
 =======
             MessageBox.Show("nam beo vl");
         }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
->>>>>>> e87ffa7defdd3a9adb8580327f67f6e725ccc977
-        }
     }
 }
