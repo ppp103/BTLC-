@@ -21,12 +21,7 @@ namespace BTL
         {
             MessageBox.Show("alo123");
             MessageBox.Show("alo123");
-            MessageBox.Show("alo123");
-
-            MessageBox.Show("test git");
-            MessageBox.Show("test git");
-            MessageBox.Show("test git");
-            MessageBox.Show("den vl");
+            MessageBox.Show("Nam beo");
         }
     }
 }
