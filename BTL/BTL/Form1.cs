@@ -16,7 +16,7 @@ namespace BTL
         {
             InitializeComponent();
         }
-
+        
         private void button1_Click(object sender, EventArgs e)
         {
             MessageBox.Show("alo123");
@@ -29,6 +29,11 @@ namespace BTL
             MessageBox.Show("test git");
             MessageBox.Show("den vl");
             MessageBox.Show("nam beo vl");
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
