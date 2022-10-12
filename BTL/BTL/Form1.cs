@@ -32,5 +32,10 @@ namespace BTL
             MessageBox.Show("den vl");
             MessageBox.Show("nam beo vl");
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
