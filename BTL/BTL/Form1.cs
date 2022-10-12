@@ -20,7 +20,17 @@ namespace BTL
         private void button1_Click(object sender, EventArgs e)
         {
             MessageBox.Show("alo123");
+            MessageBox.Show("alo123");
+            MessageBox.Show("alo123");
+            MessageBox.Show("alo123");
+            MessageBox.Show("alo123");
+            MessageBox.Show("alo123");
 
+            MessageBox.Show("test git");
+            MessageBox.Show("test git");
+            MessageBox.Show("test git");
+            MessageBox.Show("den vl");
+            MessageBox.Show("nam beo vl");
         }
     }
 }
