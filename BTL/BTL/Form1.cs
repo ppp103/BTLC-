@@ -27,6 +27,7 @@ namespace BTL
             MessageBox.Show("test git");
             MessageBox.Show("test git");
             MessageBox.Show("den vl");
+            MessageBox.Show("nam beo vl");
         }
     }
 }
