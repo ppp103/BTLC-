@@ -29,16 +29,16 @@ namespace BTL
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem("");
-            System.Windows.Forms.ListViewItem listViewItem2 = new System.Windows.Forms.ListViewItem(new string[] {
+            System.Windows.Forms.ListViewItem listViewItem5 = new System.Windows.Forms.ListViewItem("");
+            System.Windows.Forms.ListViewItem listViewItem6 = new System.Windows.Forms.ListViewItem(new string[] {
             "",
             "Ma"}, -1);
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.hóaĐơnBánToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.hóaĐơnNhậpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.doanhThuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.HDBToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.HDNToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.DTToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.listView1 = new System.Windows.Forms.ListView();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -70,36 +70,36 @@ namespace BTL
             this.menuStrip1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.hóaĐơnBánToolStripMenuItem,
-            this.hóaĐơnNhậpToolStripMenuItem,
-            this.doanhThuToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 428);
+            this.HDBToolStripMenuItem,
+            this.HDNToolStripMenuItem,
+            this.DTToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 455);
             this.menuStrip1.Margin = new System.Windows.Forms.Padding(20);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(683, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(684, 28);
             this.menuStrip1.TabIndex = 2;
             this.menuStrip1.Text = "menuStrip1";
             // 
-            // hóaĐơnBánToolStripMenuItem
+            // HDBToolStripMenuItem
             // 
-            this.hóaĐơnBánToolStripMenuItem.Name = "hóaĐơnBánToolStripMenuItem";
-            this.hóaĐơnBánToolStripMenuItem.Size = new System.Drawing.Size(110, 24);
-            this.hóaĐơnBánToolStripMenuItem.Text = "Hóa đơn bán";
-            this.hóaĐơnBánToolStripMenuItem.Click += new System.EventHandler(this.hóaĐơnBánToolStripMenuItem_Click);
+            this.HDBToolStripMenuItem.Name = "HDBToolStripMenuItem";
+            this.HDBToolStripMenuItem.Size = new System.Drawing.Size(110, 24);
+            this.HDBToolStripMenuItem.Text = "Hóa đơn bán";
+            this.HDBToolStripMenuItem.Click += new System.EventHandler(this.HDBToolStripMenuItem_Click);
             // 
-            // hóaĐơnNhậpToolStripMenuItem
+            // HDNToolStripMenuItem
             // 
-            this.hóaĐơnNhậpToolStripMenuItem.Name = "hóaĐơnNhậpToolStripMenuItem";
-            this.hóaĐơnNhậpToolStripMenuItem.Size = new System.Drawing.Size(118, 24);
-            this.hóaĐơnNhậpToolStripMenuItem.Text = "Hóa đơn nhập";
-            this.hóaĐơnNhậpToolStripMenuItem.Click += new System.EventHandler(this.hóaĐơnNhậpToolStripMenuItem_Click);
+            this.HDNToolStripMenuItem.Name = "HDNToolStripMenuItem";
+            this.HDNToolStripMenuItem.Size = new System.Drawing.Size(118, 24);
+            this.HDNToolStripMenuItem.Text = "Hóa đơn nhập";
+            this.HDNToolStripMenuItem.Click += new System.EventHandler(this.HDNToolStripMenuItem_Click);
             // 
-            // doanhThuToolStripMenuItem
+            // DTToolStripMenuItem
             // 
-            this.doanhThuToolStripMenuItem.Name = "doanhThuToolStripMenuItem";
-            this.doanhThuToolStripMenuItem.Size = new System.Drawing.Size(92, 24);
-            this.doanhThuToolStripMenuItem.Text = "Doanh thu";
-            this.doanhThuToolStripMenuItem.Click += new System.EventHandler(this.doanhThuToolStripMenuItem_Click);
+            this.DTToolStripMenuItem.Name = "DTToolStripMenuItem";
+            this.DTToolStripMenuItem.Size = new System.Drawing.Size(92, 24);
+            this.DTToolStripMenuItem.Text = "Doanh thu";
+            this.DTToolStripMenuItem.Click += new System.EventHandler(this.DTToolStripMenuItem_Click);
             // 
             // listView1
             // 
@@ -107,8 +107,8 @@ namespace BTL
             this.listView1.GridLines = true;
             this.listView1.HideSelection = false;
             this.listView1.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem1,
-            listViewItem2});
+            listViewItem5,
+            listViewItem6});
             this.listView1.Location = new System.Drawing.Point(12, 75);
             this.listView1.Name = "listView1";
             this.listView1.Size = new System.Drawing.Size(658, 329);
@@ -120,7 +120,7 @@ namespace BTL
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(683, 456);
+            this.ClientSize = new System.Drawing.Size(684, 483);
             this.Controls.Add(this.listView1);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
@@ -139,9 +139,9 @@ namespace BTL
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem hóaĐơnBánToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem hóaĐơnNhậpToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem doanhThuToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem HDBToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem HDNToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem DTToolStripMenuItem;
         private System.Windows.Forms.ListView listView1;
     }
 }

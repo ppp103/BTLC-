@@ -16,7 +16,7 @@ namespace BTL
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormNhapHang());
+            Application.Run(new Form1());
         }
     }
 }

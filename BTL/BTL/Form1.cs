@@ -19,24 +19,20 @@ namespace BTL
         
         private void button1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("alo123");
-            MessageBox.Show("alo123");
-            MessageBox.Show("alo123");
-            MessageBox.Show("alo123");
-            MessageBox.Show("alo123");
-            MessageBox.Show("alo123");
-
-            MessageBox.Show("test git");
-            MessageBox.Show("test git");
-            MessageBox.Show("test git");
-            MessageBox.Show("den vl");
-
-            MessageBox.Show("nam beo vl");
+            FormThongKeHoaDon thongKe = new FormThongKeHoaDon();
+            thongKe.ShowDialog();
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            FormHDB hdb = new FormHDB();
+            hdb.ShowDialog();
+        }
 
+        private void btnThanhToanLuong_Click(object sender, EventArgs e)
+        {
+            FormThanhToanLuong ttl = new FormThanhToanLuong();
+            ttl.ShowDialog();
         }
     }
 }

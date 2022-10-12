@@ -17,17 +17,17 @@ namespace BTL
             InitializeComponent();
         }
 
-        private void hóaĐơnBánToolStripMenuItem_Click(object sender, EventArgs e)
+        private void HDBToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void hóaĐơnNhậpToolStripMenuItem_Click(object sender, EventArgs e)
+        private void HDNToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void doanhThuToolStripMenuItem_Click(object sender, EventArgs e)
+        private void DTToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
         }
