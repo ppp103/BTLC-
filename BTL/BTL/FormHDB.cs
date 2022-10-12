@@ -12,9 +12,35 @@ namespace BTL
 {
     public partial class FormHDB : Form
     {
+        
         public FormHDB()
         {
             InitializeComponent();
+        }
+
+        private void label17_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox9_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void FormHDB_Load(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
