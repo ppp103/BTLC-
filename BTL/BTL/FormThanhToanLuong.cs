@@ -10,24 +10,24 @@ using System.Windows.Forms;
 
 namespace BTL
 {
-    public partial class FormThongKeHoaDon : Form
+    public partial class FormThanhToanLuong : Form
     {
-        public FormThongKeHoaDon()
+        public FormThanhToanLuong()
         {
             InitializeComponent();
         }
 
-        private void hóaĐơnBánToolStripMenuItem_Click(object sender, EventArgs e)
+        private void textBox2_TextChanged(object sender, EventArgs e)
         {
 
         }
 
-        private void hóaĐơnNhậpToolStripMenuItem_Click(object sender, EventArgs e)
+        private void textBox5_TextChanged(object sender, EventArgs e)
         {
 
         }
 
-        private void doanhThuToolStripMenuItem_Click(object sender, EventArgs e)
+        private void ThuongThem_Click(object sender, EventArgs e)
         {
 
         }
