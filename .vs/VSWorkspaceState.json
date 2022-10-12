@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\BTL",
+    "\\BTL\\BTL",
+    "\\BTL\\BTL\\bin"
   ],
-  "SelectedNode": "\\BTL.sln",
+  "SelectedNode": "\\BTL\\BTL.sln",
   "PreviewInSolutionExplorer": false
 }
