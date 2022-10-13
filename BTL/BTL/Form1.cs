@@ -35,5 +35,11 @@ namespace BTL
             hdb.ShowDialog();
 
         }
+
+        private void btnThongKeHangHoa_Click(object sender, EventArgs e)
+        {
+            FormThongKeHangHoa tkhh = new FormThongKeHangHoa();
+            tkhh.ShowDialog();
+        }
     }
 }

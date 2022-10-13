@@ -10,11 +10,22 @@ using System.Windows.Forms;
 
 namespace BTL
 {
-    public partial class FormThongKeHangHoa : Form
+    public partial class FormThongKeHangHoa: Form
     {
         public FormThongKeHangHoa()
         {
             InitializeComponent();
+        }
+
+        private void FormThongKeHangHoa_Load(object sender, EventArgs e)
+        {
+
+
+        }
+
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
