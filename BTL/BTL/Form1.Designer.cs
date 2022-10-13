@@ -36,10 +36,10 @@ namespace BTL
             // 
             // btnThongKeHoaDon
             // 
-            this.btnThongKeHoaDon.Location = new System.Drawing.Point(12, 257);
-            this.btnThongKeHoaDon.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnThongKeHoaDon.Location = new System.Drawing.Point(9, 209);
+            this.btnThongKeHoaDon.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnThongKeHoaDon.Name = "btnThongKeHoaDon";
-            this.btnThongKeHoaDon.Size = new System.Drawing.Size(159, 76);
+            this.btnThongKeHoaDon.Size = new System.Drawing.Size(119, 62);
             this.btnThongKeHoaDon.TabIndex = 0;
             this.btnThongKeHoaDon.Text = "Thống Kê Hóa Đơn";
             this.btnThongKeHoaDon.UseVisualStyleBackColor = true;
@@ -47,21 +47,21 @@ namespace BTL
             // 
             // btnHDB
             // 
-            this.btnHDB.Location = new System.Drawing.Point(12, 390);
-            this.btnHDB.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnHDB.Location = new System.Drawing.Point(9, 317);
+            this.btnHDB.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnHDB.Name = "btnHDB";
-            this.btnHDB.Size = new System.Drawing.Size(159, 76);
+            this.btnHDB.Size = new System.Drawing.Size(119, 62);
             this.btnHDB.TabIndex = 0;
             this.btnHDB.Text = "Hóa Đơn Bán";
             this.btnHDB.UseVisualStyleBackColor = true;
-            this.btnHDB.Click += new System.EventHandler(this.button1_Click);
+            this.btnHDB.Click += new System.EventHandler(this.btnHDB_Click);
             // 
             // btnThanhToanLuong
             // 
-            this.btnThanhToanLuong.Location = new System.Drawing.Point(12, 538);
-            this.btnThanhToanLuong.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnThanhToanLuong.Location = new System.Drawing.Point(9, 437);
+            this.btnThanhToanLuong.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnThanhToanLuong.Name = "btnThanhToanLuong";
-            this.btnThanhToanLuong.Size = new System.Drawing.Size(159, 76);
+            this.btnThanhToanLuong.Size = new System.Drawing.Size(119, 62);
             this.btnThanhToanLuong.TabIndex = 0;
             this.btnThanhToanLuong.Text = "Thanh Toán Lương";
             this.btnThanhToanLuong.UseVisualStyleBackColor = true;
@@ -69,16 +69,15 @@ namespace BTL
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1309, 804);
+            this.ClientSize = new System.Drawing.Size(982, 653);
             this.Controls.Add(this.btnThanhToanLuong);
             this.Controls.Add(this.btnHDB);
             this.Controls.Add(this.btnThongKeHoaDon);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Form1";
             this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
 
         }

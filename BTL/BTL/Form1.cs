@@ -23,16 +23,17 @@ namespace BTL
             thongKe.ShowDialog();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            FormHDB hdb = new FormHDB();
-            hdb.ShowDialog();
-        }
-
         private void btnThanhToanLuong_Click(object sender, EventArgs e)
         {
             FormThanhToanLuong ttl = new FormThanhToanLuong();
             ttl.ShowDialog();
+        }
+
+        private void btnHDB_Click(object sender, EventArgs e)
+        {
+            FormHDB hdb = new FormHDB();
+            hdb.ShowDialog();
+
         }
     }
 }
