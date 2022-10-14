@@ -58,7 +58,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.grbDSSP = new System.Windows.Forms.GroupBox();
-            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.livDSSP = new System.Windows.Forms.ListView();
             this.grbNhapTT.SuspendLayout();
             this.grbDSSP.SuspendLayout();
             this.SuspendLayout();
@@ -110,6 +110,7 @@
             this.grbNhapTT.TabIndex = 1;
             this.grbNhapTT.TabStop = false;
             this.grbNhapTT.Text = "Nhập Thông Tin";
+            this.grbNhapTT.Enter += new System.EventHandler(this.grbNhapTT_Enter);
             // 
             // checkBox2
             // 
@@ -145,7 +146,25 @@
             // 
             // cmbTH
             // 
+            this.cmbTH.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbTH.FormattingEnabled = true;
+            this.cmbTH.Items.AddRange(new object[] {
+            "VERSEARCE",
+            "DIOR",
+            "ULTRAMAEL",
+            "CHANNEL",
+            "VERSEARCE",
+            "SCANDAL",
+            "CK",
+            "GUCCI",
+            "LOLI&THEWOLF",
+            "LANCOME",
+            "CHLOE",
+            "D&G",
+            "YSL",
+            "HERMES",
+            "GUERLAIN",
+            "BURBERRY "});
             this.cmbTH.Location = new System.Drawing.Point(804, 83);
             this.cmbTH.Name = "cmbTH";
             this.cmbTH.Size = new System.Drawing.Size(281, 28);
@@ -153,7 +172,19 @@
             // 
             // cmbMau
             // 
+            this.cmbMau.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbMau.FormattingEnabled = true;
+            this.cmbMau.Items.AddRange(new object[] {
+            "Xanh",
+            "Do",
+            "Tim",
+            "Vang",
+            "Hong",
+            "Den",
+            "Trang",
+            "Cam",
+            "Nau",
+            "Xanh Duong"});
             this.cmbMau.Location = new System.Drawing.Point(226, 347);
             this.cmbMau.Name = "cmbMau";
             this.cmbMau.Size = new System.Drawing.Size(281, 28);
@@ -161,7 +192,19 @@
             // 
             // cmbLoai
             // 
+            this.cmbLoai.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbLoai.FormattingEnabled = true;
+            this.cmbLoai.Items.AddRange(new object[] {
+            "2ml",
+            "5ml",
+            "10ml",
+            "30ml",
+            "40ml",
+            "50ml",
+            "100ml",
+            "120ml",
+            "150ml",
+            "200ml"});
             this.cmbLoai.Location = new System.Drawing.Point(226, 253);
             this.cmbLoai.Name = "cmbLoai";
             this.cmbLoai.Size = new System.Drawing.Size(281, 28);
@@ -376,7 +419,7 @@
             // grbDSSP
             // 
             this.grbDSSP.BackColor = System.Drawing.Color.Goldenrod;
-            this.grbDSSP.Controls.Add(this.listBox1);
+            this.grbDSSP.Controls.Add(this.livDSSP);
             this.grbDSSP.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grbDSSP.Location = new System.Drawing.Point(0, 561);
             this.grbDSSP.Name = "grbDSSP";
@@ -385,15 +428,18 @@
             this.grbDSSP.TabStop = false;
             this.grbDSSP.Text = "Danh sách sản phẩm";
             // 
-            // listBox1
+            // livDSSP
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 20;
-            this.listBox1.Location = new System.Drawing.Point(0, 29);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(1181, 224);
-            this.listBox1.TabIndex = 0;
-            this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
+            this.livDSSP.FullRowSelect = true;
+            this.livDSSP.GridLines = true;
+            this.livDSSP.HideSelection = false;
+            this.livDSSP.Location = new System.Drawing.Point(0, 27);
+            this.livDSSP.Name = "livDSSP";
+            this.livDSSP.Size = new System.Drawing.Size(1181, 239);
+            this.livDSSP.TabIndex = 0;
+            this.livDSSP.UseCompatibleStateImageBehavior = false;
+            this.livDSSP.View = System.Windows.Forms.View.Details;
+            this.livDSSP.SelectedIndexChanged += new System.EventHandler(this.livDSSP_SelectedIndexChanged);
             // 
             // FormThongKeHangHoa
             // 
@@ -422,14 +468,11 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox grbNhapTT;
-        private System.Windows.Forms.GroupBox grbDSSP;
-        private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.CheckBox checkBox2;
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.ComboBox cmbTim1;
         private System.Windows.Forms.ComboBox cmbTH;
         private System.Windows.Forms.ComboBox cmbMau;
-        private System.Windows.Forms.ComboBox cmbLoai;
         private System.Windows.Forms.TextBox txtTK;
         private System.Windows.Forms.TextBox txtGia;
         private System.Windows.Forms.TextBox txtSL;
@@ -450,5 +493,8 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.GroupBox grbDSSP;
+        private System.Windows.Forms.ListView livDSSP;
+        private System.Windows.Forms.ComboBox cmbLoai;
     }
 }

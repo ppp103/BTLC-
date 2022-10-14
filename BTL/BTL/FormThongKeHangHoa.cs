@@ -19,11 +19,20 @@ namespace BTL
 
         private void FormThongKeHangHoa_Load(object sender, EventArgs e)
         {
-
-
+            
         }
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void livDSSP_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void grbNhapTT_Enter(object sender, EventArgs e)
         {
 
         }
