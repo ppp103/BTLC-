@@ -119,10 +119,11 @@ namespace BTL
             // LuongThuViec
             // 
             this.LuongThuViec.AutoSize = true;
+            this.LuongThuViec.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LuongThuViec.ForeColor = System.Drawing.Color.Red;
-            this.LuongThuViec.Location = new System.Drawing.Point(78, 156);
+            this.LuongThuViec.Location = new System.Drawing.Point(59, 154);
             this.LuongThuViec.Name = "LuongThuViec";
-            this.LuongThuViec.Size = new System.Drawing.Size(102, 17);
+            this.LuongThuViec.Size = new System.Drawing.Size(116, 17);
             this.LuongThuViec.TabIndex = 3;
             this.LuongThuViec.Text = "Lương Thử Việc";
             this.LuongThuViec.UseVisualStyleBackColor = true;
@@ -165,10 +166,11 @@ namespace BTL
             // TongLuongPhaiThanhToanTrongThang
             // 
             this.TongLuongPhaiThanhToanTrongThang.AutoSize = true;
+            this.TongLuongPhaiThanhToanTrongThang.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TongLuongPhaiThanhToanTrongThang.ForeColor = System.Drawing.Color.Red;
-            this.TongLuongPhaiThanhToanTrongThang.Location = new System.Drawing.Point(371, 240);
+            this.TongLuongPhaiThanhToanTrongThang.Location = new System.Drawing.Point(331, 244);
             this.TongLuongPhaiThanhToanTrongThang.Name = "TongLuongPhaiThanhToanTrongThang";
-            this.TongLuongPhaiThanhToanTrongThang.Size = new System.Drawing.Size(222, 13);
+            this.TongLuongPhaiThanhToanTrongThang.Size = new System.Drawing.Size(262, 13);
             this.TongLuongPhaiThanhToanTrongThang.TabIndex = 0;
             this.TongLuongPhaiThanhToanTrongThang.Text = "Tổng Lương Phải Thanh Toán Trong Tháng :";
             // 
@@ -230,6 +232,7 @@ namespace BTL
             this.DanhSachLuong.Size = new System.Drawing.Size(775, 124);
             this.DanhSachLuong.TabIndex = 5;
             this.DanhSachLuong.UseCompatibleStateImageBehavior = false;
+            this.DanhSachLuong.View = System.Windows.Forms.View.Details;
             // 
             // columnHeader1
             // 
@@ -238,7 +241,7 @@ namespace BTL
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(99, 3);
+            this.label3.Location = new System.Drawing.Point(101, 9);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(691, 13);
             this.label3.TabIndex = 0;
@@ -248,7 +251,7 @@ namespace BTL
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(740, 16);
+            this.label2.Location = new System.Drawing.Point(735, 22);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(23, 17);
             this.label2.TabIndex = 0;
