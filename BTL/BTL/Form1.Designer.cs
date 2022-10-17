@@ -32,6 +32,7 @@ namespace BTL
             this.btnThongKeHoaDon = new System.Windows.Forms.Button();
             this.btnHDB = new System.Windows.Forms.Button();
             this.btnThanhToanLuong = new System.Windows.Forms.Button();
+            this.btnThongKeHangHoa = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnThongKeHoaDon
@@ -54,7 +55,7 @@ namespace BTL
             this.btnHDB.TabIndex = 0;
             this.btnHDB.Text = "Hóa Đơn Bán";
             this.btnHDB.UseVisualStyleBackColor = true;
-            this.btnHDB.Click += new System.EventHandler(this.button1_Click);
+            this.btnHDB.Click += new System.EventHandler(this.btnHDB_Click);
             // 
             // btnThanhToanLuong
             // 
@@ -67,18 +68,29 @@ namespace BTL
             this.btnThanhToanLuong.UseVisualStyleBackColor = true;
             this.btnThanhToanLuong.Click += new System.EventHandler(this.btnThanhToanLuong_Click);
             // 
+            // btnThongKeHangHoa
+            // 
+            this.btnThongKeHangHoa.Location = new System.Drawing.Point(12, 142);
+            this.btnThongKeHangHoa.Name = "btnThongKeHangHoa";
+            this.btnThongKeHangHoa.Size = new System.Drawing.Size(159, 70);
+            this.btnThongKeHangHoa.TabIndex = 1;
+            this.btnThongKeHangHoa.Text = "Thống Kê Hàng Hóa";
+            this.btnThongKeHangHoa.UseVisualStyleBackColor = true;
+            this.btnThongKeHangHoa.Click += new System.EventHandler(this.btnThongKeHangHoa_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1309, 804);
+            this.Controls.Add(this.btnThongKeHangHoa);
             this.Controls.Add(this.btnThanhToanLuong);
             this.Controls.Add(this.btnHDB);
             this.Controls.Add(this.btnThongKeHoaDon);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
 
         }
@@ -88,6 +100,7 @@ namespace BTL
         private System.Windows.Forms.Button btnThongKeHoaDon;
         private System.Windows.Forms.Button btnHDB;
         private System.Windows.Forms.Button btnThanhToanLuong;
+        private System.Windows.Forms.Button btnThongKeHangHoa;
     }
 }
 
