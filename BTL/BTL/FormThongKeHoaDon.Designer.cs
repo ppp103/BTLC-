@@ -30,19 +30,20 @@ namespace BTL
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.HDBToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.HDNToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.DTToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.listView1 = new System.Windows.Forms.ListView();
-            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.label2 = new System.Windows.Forms.Label();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -54,18 +55,6 @@ namespace BTL
             this.label1.Size = new System.Drawing.Size(0, 29);
             this.label1.TabIndex = 0;
             // 
-            // textBox1
-            // 
-            this.textBox1.BackColor = System.Drawing.Color.MistyRose;
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.textBox1.Location = new System.Drawing.Point(12, 12);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(958, 42);
-            this.textBox1.TabIndex = 1;
-            this.textBox1.Text = "Thống kê hóa đơn";
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
             // menuStrip1
             // 
             this.menuStrip1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
@@ -75,7 +64,7 @@ namespace BTL
             this.HDBToolStripMenuItem,
             this.HDNToolStripMenuItem,
             this.DTToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 625);
+            this.menuStrip1.Location = new System.Drawing.Point(0, 393);
             this.menuStrip1.Margin = new System.Windows.Forms.Padding(20);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(982, 28);
@@ -103,68 +92,89 @@ namespace BTL
             this.DTToolStripMenuItem.Text = "Doanh thu";
             this.DTToolStripMenuItem.Click += new System.EventHandler(this.DTToolStripMenuItem_Click);
             // 
-            // listView1
+            // dataGridView1
             // 
-            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader1,
-            this.columnHeader2,
-            this.columnHeader3,
-            this.columnHeader4,
-            this.columnHeader5,
-            this.columnHeader6});
-            this.listView1.FullRowSelect = true;
-            this.listView1.GridLines = true;
-            this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(12, 85);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(958, 329);
-            this.listView1.TabIndex = 3;
-            this.listView1.UseCompatibleStateImageBehavior = false;
-            this.listView1.View = System.Windows.Forms.View.Details;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column1,
+            this.Column2,
+            this.Column3,
+            this.Column4,
+            this.Column5,
+            this.Column6});
+            this.dataGridView1.Location = new System.Drawing.Point(12, 60);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.dataGridView1.Size = new System.Drawing.Size(958, 272);
+            this.dataGridView1.TabIndex = 3;
             // 
-            // columnHeader1
+            // label2
             // 
-            this.columnHeader1.Text = "Số thứ tự";
-            this.columnHeader1.Width = 150;
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.MistyRose;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 19F);
+            this.label2.Location = new System.Drawing.Point(12, 9);
+            this.label2.MaximumSize = new System.Drawing.Size(1000, 1000);
+            this.label2.MinimumSize = new System.Drawing.Size(958, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(958, 37);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "THỐNG KÊ HÓA ĐƠN";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // columnHeader2
+            // Column1
             // 
-            this.columnHeader2.Text = "Mã sản phẩm";
-            this.columnHeader2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.columnHeader2.Width = 150;
+            this.Column1.HeaderText = "Mã sản phẩm";
+            this.Column1.MinimumWidth = 6;
+            this.Column1.Name = "Column1";
+            this.Column1.Width = 75;
             // 
-            // columnHeader3
+            // Column2
             // 
-            this.columnHeader3.Text = "Tên sản phẩm";
-            this.columnHeader3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.columnHeader3.Width = 150;
+            this.Column2.HeaderText = "Tên sản phẩm";
+            this.Column2.MinimumWidth = 6;
+            this.Column2.Name = "Column2";
+            this.Column2.Width = 150;
             // 
-            // columnHeader4
+            // Column3
             // 
-            this.columnHeader4.Text = "Số lượng";
-            this.columnHeader4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.columnHeader4.Width = 150;
+            this.Column3.HeaderText = "Số lượng";
+            this.Column3.MinimumWidth = 6;
+            this.Column3.Name = "Column3";
+            this.Column3.Width = 75;
             // 
-            // columnHeader5
+            // Column4
             // 
-            this.columnHeader5.Text = "Giảm giá";
-            this.columnHeader5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.columnHeader5.Width = 179;
+            this.Column4.HeaderText = "Giá bán";
+            this.Column4.MinimumWidth = 6;
+            this.Column4.Name = "Column4";
+            this.Column4.Width = 125;
             // 
-            // columnHeader6
+            // Column5
             // 
-            this.columnHeader6.Text = "Thành tiền";
-            this.columnHeader6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.columnHeader6.Width = 175;
+            this.Column5.HeaderText = "Giảm giá";
+            this.Column5.MinimumWidth = 6;
+            this.Column5.Name = "Column5";
+            this.Column5.Width = 125;
+            // 
+            // Column6
+            // 
+            this.Column6.HeaderText = "Thành tiền";
+            this.Column6.MinimumWidth = 6;
+            this.Column6.Name = "Column6";
+            this.Column6.Width = 125;
             // 
             // FormThongKeHoaDon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(982, 653);
-            this.Controls.Add(this.listView1);
-            this.Controls.Add(this.textBox1);
+            this.ClientSize = new System.Drawing.Size(982, 421);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.menuStrip1);
             this.Name = "FormThongKeHoaDon";
@@ -172,6 +182,7 @@ namespace BTL
             this.Text = "FormThongKeHoaDon";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -180,17 +191,17 @@ namespace BTL
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem HDBToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem HDNToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem DTToolStripMenuItem;
-        private System.Windows.Forms.ListView listView1;
-        private System.Windows.Forms.ColumnHeader columnHeader1;
-        private System.Windows.Forms.ColumnHeader columnHeader2;
-        private System.Windows.Forms.ColumnHeader columnHeader3;
-        private System.Windows.Forms.ColumnHeader columnHeader4;
-        private System.Windows.Forms.ColumnHeader columnHeader5;
-        private System.Windows.Forms.ColumnHeader columnHeader6;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
     }
 }
