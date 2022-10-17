@@ -46,12 +46,12 @@ namespace BTL
             dataGridView1.Columns[3].HeaderText = "Đơn Giá Bán";
             dataGridView1.Columns[4].HeaderText = "Giảm Giá";
             dataGridView1.Columns[5].HeaderText = "Tổng Tiền";
-            dataGridView1.Columns[0].Width = 163;
-            dataGridView1.Columns[1].Width = 163;
-            dataGridView1.Columns[2].Width = 163;
-            dataGridView1.Columns[3].Width = 163;
-            dataGridView1.Columns[4].Width = 163;
-            dataGridView1.Columns[5].Width = 163;
+            dataGridView1.Columns[0].Width = 160;
+            dataGridView1.Columns[1].Width = 160;
+            dataGridView1.Columns[2].Width = 160;
+            dataGridView1.Columns[3].Width = 160;
+            dataGridView1.Columns[4].Width = 160;
+            dataGridView1.Columns[5].Width = 160;
             dataGridView1.BackgroundColor = Color.Gray;
             dtHdb.Dispose();
         }
