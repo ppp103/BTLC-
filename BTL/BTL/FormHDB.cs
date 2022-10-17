@@ -17,7 +17,8 @@ namespace BTL
         public FormHDB()
         {
             InitializeComponent();
-            connection = new SqlConnection(@"Data Source=LAPTOP-AUDFFK8M;Initial Catalog=QLBanNuocHoa;Integrated Security=True");
+            connection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename= Data Source=.\\SQLEXPRESS;AttachDbFilename=" + System.IO.Directory.GetCurrentDirectory().ToString() + "\\DataBase\\" +
+                "DuLieu.mdf;Integrated Security=True");
         }
 
         private void label17_Click(object sender, EventArgs e)
