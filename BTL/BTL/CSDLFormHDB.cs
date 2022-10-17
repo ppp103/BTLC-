@@ -10,7 +10,7 @@ namespace BTL
 {
     internal class CSDLFormHDB
     {
-        static string strConnect = "Data Source=LAPTOP-AUDFFK8M;Initial Catalog=QLBanNuocHoa;Integrated Security=True";
+        static string strConnect = "\"Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename= Data Source=.\\\\SQLEXPRESS;AttachDbFilename=\" + System.IO.Directory.GetCurrentDirectory().ToString() + \"\\\\DataBase\\\\\" +\r\n\"DuLieu.mdf;Integrated Security=True\");";
         static SqlConnection sqlConnect = null;
 
         //Hàm mở kết nối CSDL
