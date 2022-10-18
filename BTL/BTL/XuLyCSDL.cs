@@ -10,11 +10,11 @@ namespace BTL
 {
     internal class XuLyCSDL
     {
-        static string strConnect = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename= Data Source=.\\SQLEXPRESS;AttachDbFilename=" + System.IO.Directory.GetCurrentDirectory().ToString() + "\\DataBase\\" + "DuLieu.mdf;Integrated Security=True";
-        static SqlConnection sqlConnect = null;
+        string strConnect = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename= Data Source=.\\SQLEXPRESS;AttachDbFilename=" + System.IO.Directory.GetCurrentDirectory().ToString() + "\\DataBase\\" + "DuLieu.mdf;Integrated Security=True";
+        SqlConnection sqlConnect = null;
 
         //Hàm mở kết nối CSDL
-        static private void KetNoiCSDL()
+        private void KetNoiCSDL()
         {
             sqlConnect = new SqlConnection(strConnect);
             if (sqlConnect.State != ConnectionState.Open)
@@ -22,7 +22,7 @@ namespace BTL
         }
 
         //Hàm đóng kết nối CSDL
-        static private void DongKetNoiCSDL()
+        private void DongKetNoiCSDL()
         {
             if (sqlConnect.State != ConnectionState.Closed)
                 sqlConnect.Close();
@@ -30,7 +30,7 @@ namespace BTL
         }
 
         //Hàm thực thi câu lệnh dạng Select trả về một DataTable
-        static public DataTable DocBang(string sql)
+        public DataTable DocBang(string sql)
         {
             DataTable dtBang = new DataTable();
             KetNoiCSDL();
@@ -41,7 +41,7 @@ namespace BTL
         }
 
         //Hàm thực lệnh insert hoặc update hoặc delete
-        static public void CapNhatDuLieu(string sql)
+        public void CapNhatDuLieu(string sql)
         {
             KetNoiCSDL();
             SqlCommand sqlcommand = new SqlCommand();
