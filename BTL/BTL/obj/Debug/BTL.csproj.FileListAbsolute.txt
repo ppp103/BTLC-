@@ -17,3 +17,23 @@ D:\HocHanh(ki5)\C#\Projects\BaiTap\BtlGithub\BTL\BTL\obj\Debug\BTL.csproj.CoreCo
 D:\HocHanh(ki5)\C#\Projects\BaiTap\BtlGithub\BTL\BTL\obj\Debug\BTL.exe
 D:\HocHanh(ki5)\C#\Projects\BaiTap\BtlGithub\BTL\BTL\obj\Debug\BTL.pdb
 D:\HocHanh(ki5)\C#\Projects\BaiTap\BtlGithub\BTL\BTL\obj\Debug\BTL.csproj.AssemblyReference.cache
+E:\tuyet beo\ABTL\BTL\BTL\bin\Debug\DataBase\DuLieu.mdf
+E:\tuyet beo\ABTL\BTL\BTL\bin\Debug\DataBase\DuLieu_log.ldf
+E:\tuyet beo\ABTL\BTL\BTL\bin\Debug\BTL.exe.config
+E:\tuyet beo\ABTL\BTL\BTL\bin\Debug\BTL.exe
+E:\tuyet beo\ABTL\BTL\BTL\bin\Debug\BTL.pdb
+E:\tuyet beo\ABTL\BTL\BTL\obj\Debug\BTL.csproj.AssemblyReference.cache
+E:\tuyet beo\ABTL\BTL\BTL\obj\Debug\BTL.csproj.SuggestedBindingRedirects.cache
+E:\tuyet beo\ABTL\BTL\BTL\obj\Debug\BTL.Form1.resources
+E:\tuyet beo\ABTL\BTL\BTL\obj\Debug\BTL.Form2.resources
+E:\tuyet beo\ABTL\BTL\BTL\obj\Debug\BTL.FormHDB.resources
+E:\tuyet beo\ABTL\BTL\BTL\obj\Debug\BTL.FormLapHoaDon.resources
+E:\tuyet beo\ABTL\BTL\BTL\obj\Debug\BTL.FormNhapHang.resources
+E:\tuyet beo\ABTL\BTL\BTL\obj\Debug\BTL.FormThanhToanLuong.resources
+E:\tuyet beo\ABTL\BTL\BTL\obj\Debug\BTL.FormThongKeHangHoa.resources
+E:\tuyet beo\ABTL\BTL\BTL\obj\Debug\BTL.FormThongKeHoaDon.resources
+E:\tuyet beo\ABTL\BTL\BTL\obj\Debug\BTL.Properties.Resources.resources
+E:\tuyet beo\ABTL\BTL\BTL\obj\Debug\BTL.csproj.GenerateResource.cache
+E:\tuyet beo\ABTL\BTL\BTL\obj\Debug\BTL.csproj.CoreCompileInputs.cache
+E:\tuyet beo\ABTL\BTL\BTL\obj\Debug\BTL.exe
+E:\tuyet beo\ABTL\BTL\BTL\obj\Debug\BTL.pdb
