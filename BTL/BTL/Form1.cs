@@ -36,10 +36,10 @@ namespace BTL
 
         }
 
-        private void btnThongKeHangHoa_Click(object sender, EventArgs e)
+        private void btnNhapHangHoa_Click(object sender, EventArgs e)
         {
-            FormThongKeHangHoa tkhh = new FormThongKeHangHoa();
-            tkhh.ShowDialog();
+            FormNhapHangHoa nhh = new FormNhapHangHoa();
+            nhh.ShowDialog();
         }
     }
 }

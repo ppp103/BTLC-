@@ -1,23 +1,3 @@
-D:\HocHanh(ki5)\C#\Projects\BaiTap\BtlGithub\BTL\BTL\bin\Debug\DataBase\DuLieu.mdf
-D:\HocHanh(ki5)\C#\Projects\BaiTap\BtlGithub\BTL\BTL\bin\Debug\DataBase\DuLieu_log.ldf
-D:\HocHanh(ki5)\C#\Projects\BaiTap\BtlGithub\BTL\BTL\bin\Debug\BTL.exe.config
-D:\HocHanh(ki5)\C#\Projects\BaiTap\BtlGithub\BTL\BTL\bin\Debug\BTL.exe
-D:\HocHanh(ki5)\C#\Projects\BaiTap\BtlGithub\BTL\BTL\bin\Debug\BTL.pdb
-D:\HocHanh(ki5)\C#\Projects\BaiTap\BtlGithub\BTL\BTL\obj\Debug\BTL.Form1.resources
-D:\HocHanh(ki5)\C#\Projects\BaiTap\BtlGithub\BTL\BTL\obj\Debug\BTL.Form2.resources
-D:\HocHanh(ki5)\C#\Projects\BaiTap\BtlGithub\BTL\BTL\obj\Debug\BTL.FormHDB.resources
-D:\HocHanh(ki5)\C#\Projects\BaiTap\BtlGithub\BTL\BTL\obj\Debug\BTL.FormLapHoaDon.resources
-D:\HocHanh(ki5)\C#\Projects\BaiTap\BtlGithub\BTL\BTL\obj\Debug\BTL.FormNhapHang.resources
-D:\HocHanh(ki5)\C#\Projects\BaiTap\BtlGithub\BTL\BTL\obj\Debug\BTL.FormThanhToanLuong.resources
-D:\HocHanh(ki5)\C#\Projects\BaiTap\BtlGithub\BTL\BTL\obj\Debug\BTL.FormThongKeHangHoa.resources
-D:\HocHanh(ki5)\C#\Projects\BaiTap\BtlGithub\BTL\BTL\obj\Debug\BTL.FormThongKeHoaDon.resources
-D:\HocHanh(ki5)\C#\Projects\BaiTap\BtlGithub\BTL\BTL\obj\Debug\BTL.Properties.Resources.resources
-D:\HocHanh(ki5)\C#\Projects\BaiTap\BtlGithub\BTL\BTL\obj\Debug\BTL.csproj.GenerateResource.cache
-D:\HocHanh(ki5)\C#\Projects\BaiTap\BtlGithub\BTL\BTL\obj\Debug\BTL.csproj.CoreCompileInputs.cache
-D:\HocHanh(ki5)\C#\Projects\BaiTap\BtlGithub\BTL\BTL\obj\Debug\BTL.exe
-D:\HocHanh(ki5)\C#\Projects\BaiTap\BtlGithub\BTL\BTL\obj\Debug\BTL.pdb
-D:\HocHanh(ki5)\C#\Projects\BaiTap\BtlGithub\BTL\BTL\obj\Debug\BTL.csproj.AssemblyReference.cache
-<<<<<<< HEAD
 E:\tuyet beo\ABTL\BTL\BTL\bin\Debug\DataBase\DuLieu.mdf
 E:\tuyet beo\ABTL\BTL\BTL\bin\Debug\DataBase\DuLieu_log.ldf
 E:\tuyet beo\ABTL\BTL\BTL\bin\Debug\BTL.exe.config
@@ -31,32 +11,10 @@ E:\tuyet beo\ABTL\BTL\BTL\obj\Debug\BTL.FormHDB.resources
 E:\tuyet beo\ABTL\BTL\BTL\obj\Debug\BTL.FormLapHoaDon.resources
 E:\tuyet beo\ABTL\BTL\BTL\obj\Debug\BTL.FormNhapHang.resources
 E:\tuyet beo\ABTL\BTL\BTL\obj\Debug\BTL.FormThanhToanLuong.resources
-E:\tuyet beo\ABTL\BTL\BTL\obj\Debug\BTL.FormThongKeHangHoa.resources
 E:\tuyet beo\ABTL\BTL\BTL\obj\Debug\BTL.FormThongKeHoaDon.resources
 E:\tuyet beo\ABTL\BTL\BTL\obj\Debug\BTL.Properties.Resources.resources
 E:\tuyet beo\ABTL\BTL\BTL\obj\Debug\BTL.csproj.GenerateResource.cache
 E:\tuyet beo\ABTL\BTL\BTL\obj\Debug\BTL.csproj.CoreCompileInputs.cache
 E:\tuyet beo\ABTL\BTL\BTL\obj\Debug\BTL.exe
 E:\tuyet beo\ABTL\BTL\BTL\obj\Debug\BTL.pdb
-=======
-D:\BTL-CSharp\New folder\BTL\BTL\bin\Debug\DataBase\DuLieu.mdf
-D:\BTL-CSharp\New folder\BTL\BTL\bin\Debug\DataBase\DuLieu_log.ldf
-D:\BTL-CSharp\New folder\BTL\BTL\bin\Debug\BTL.exe.config
-D:\BTL-CSharp\New folder\BTL\BTL\bin\Debug\BTL.exe
-D:\BTL-CSharp\New folder\BTL\BTL\bin\Debug\BTL.pdb
-D:\BTL-CSharp\New folder\BTL\BTL\obj\Debug\BTL.csproj.AssemblyReference.cache
-D:\BTL-CSharp\New folder\BTL\BTL\obj\Debug\BTL.csproj.SuggestedBindingRedirects.cache
-D:\BTL-CSharp\New folder\BTL\BTL\obj\Debug\BTL.Form1.resources
-D:\BTL-CSharp\New folder\BTL\BTL\obj\Debug\BTL.Form2.resources
-D:\BTL-CSharp\New folder\BTL\BTL\obj\Debug\BTL.FormHDB.resources
-D:\BTL-CSharp\New folder\BTL\BTL\obj\Debug\BTL.FormLapHoaDon.resources
-D:\BTL-CSharp\New folder\BTL\BTL\obj\Debug\BTL.FormNhapHang.resources
-D:\BTL-CSharp\New folder\BTL\BTL\obj\Debug\BTL.FormThanhToanLuong.resources
-D:\BTL-CSharp\New folder\BTL\BTL\obj\Debug\BTL.FormThongKeHangHoa.resources
-D:\BTL-CSharp\New folder\BTL\BTL\obj\Debug\BTL.FormThongKeHoaDon.resources
-D:\BTL-CSharp\New folder\BTL\BTL\obj\Debug\BTL.Properties.Resources.resources
-D:\BTL-CSharp\New folder\BTL\BTL\obj\Debug\BTL.csproj.GenerateResource.cache
-D:\BTL-CSharp\New folder\BTL\BTL\obj\Debug\BTL.csproj.CoreCompileInputs.cache
-D:\BTL-CSharp\New folder\BTL\BTL\obj\Debug\BTL.exe
-D:\BTL-CSharp\New folder\BTL\BTL\obj\Debug\BTL.pdb
->>>>>>> b8b82a137a7b6ecd41a70831103ee2d69b21f3cf
+E:\tuyet beo\ABTL\BTL\BTL\obj\Debug\BTL.FormNhapHangHoa.resources
