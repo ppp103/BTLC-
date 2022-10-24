@@ -126,11 +126,10 @@ namespace BTL
             // 
             // panel1
             // 
-            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.Controls.Add(this.panel9);
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.panel2);
-            this.panel1.Location = new System.Drawing.Point(218, 93);
+            this.panel1.Location = new System.Drawing.Point(219, 93);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1004, 615);
             this.panel1.TabIndex = 5;
@@ -311,8 +310,9 @@ namespace BTL
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(1214, 708);
+            this.ClientSize = new System.Drawing.Size(1215, 708);
             this.Controls.Add(this.panel10);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.button1);
@@ -322,6 +322,8 @@ namespace BTL
             this.Controls.Add(this.btnThongKeHangHoa);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2);
+            this.MaximumSize = new System.Drawing.Size(1231, 747);
+            this.MinimumSize = new System.Drawing.Size(1231, 747);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Quản Lí Bán Nước Hoa";
