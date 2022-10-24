@@ -65,7 +65,7 @@ namespace HomePage
             this.panelSideMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelSideMenu.Location = new System.Drawing.Point(0, 0);
             this.panelSideMenu.Name = "panelSideMenu";
-            this.panelSideMenu.Size = new System.Drawing.Size(289, 620);
+            this.panelSideMenu.Size = new System.Drawing.Size(289, 727);
             this.panelSideMenu.TabIndex = 0;
             // 
             // panelTkeHoaDon
@@ -248,7 +248,7 @@ namespace HomePage
             this.label1.Font = new System.Drawing.Font("Times New Roman", 25.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(95, 39);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(174, 49);
+            this.label1.Size = new System.Drawing.Size(138, 39);
             this.label1.TabIndex = 1;
             this.label1.Text = "Perfume";
             // 
@@ -285,7 +285,7 @@ namespace HomePage
             this.labelTieuDe.AutoSize = true;
             this.labelTieuDe.Location = new System.Drawing.Point(70, 30);
             this.labelTieuDe.Name = "labelTieuDe";
-            this.labelTieuDe.Size = new System.Drawing.Size(67, 17);
+            this.labelTieuDe.Size = new System.Drawing.Size(55, 15);
             this.labelTieuDe.TabIndex = 1;
             this.labelTieuDe.Text = "Trang chủ";
             // 
@@ -305,9 +305,9 @@ namespace HomePage
             // 
             // TrangChinh
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1143, 620);
+            this.ClientSize = new System.Drawing.Size(1143, 727);
             this.Controls.Add(this.panelTieuDe);
             this.Controls.Add(this.panelSideMenu);
             this.Font = new System.Drawing.Font("Times New Roman", 8.5F);

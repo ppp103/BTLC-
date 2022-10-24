@@ -86,11 +86,11 @@ namespace BTL
             this.label1.Location = new System.Drawing.Point(407, 0);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-<<<<<<< HEAD:BTL/BTL/FormHDB.Designer.cs
+
             this.label1.Size = new System.Drawing.Size(317, 37);
-=======
+
             this.label1.Size = new System.Drawing.Size(380, 39);
->>>>>>> 1480dd7185e153a6a40a66f609443312a3858e0b:BTL/BTL/Forms/FormHDB.Designer.cs
+
             this.label1.TabIndex = 0;
             this.label1.Text = "HÓA ĐƠN BÁN HÀNG";
             // 
@@ -137,14 +137,13 @@ namespace BTL
             this.groupBox1.Controls.Add(this.textBox10);
             this.groupBox1.Controls.Add(this.textBox9);
             this.groupBox1.Controls.Add(this.textBox1);
-<<<<<<< HEAD:BTL/BTL/FormHDB.Designer.cs
+
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(-1, 38);
-=======
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(-1, 47);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
->>>>>>> 1480dd7185e153a6a40a66f609443312a3858e0b:BTL/BTL/Forms/FormHDB.Designer.cs
+
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox1.Size = new System.Drawing.Size(1315, 769);
@@ -174,11 +173,11 @@ namespace BTL
             // 
             // button5
             // 
-<<<<<<< HEAD:BTL/BTL/FormHDB.Designer.cs
+
             this.button5.BackColor = System.Drawing.Color.DarkSeaGreen;
-=======
+
             this.button5.BackColor = System.Drawing.Color.GreenYellow;
->>>>>>> 1480dd7185e153a6a40a66f609443312a3858e0b:BTL/BTL/Forms/FormHDB.Designer.cs
+
             this.button5.FlatAppearance.BorderSize = 0;
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
@@ -495,11 +494,11 @@ namespace BTL
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(71, 43);
             this.label2.Name = "label2";
-<<<<<<< HEAD:BTL/BTL/FormHDB.Designer.cs
+
             this.label2.Size = new System.Drawing.Size(77, 16);
-=======
+
             this.label2.Size = new System.Drawing.Size(133, 20);
->>>>>>> 1480dd7185e153a6a40a66f609443312a3858e0b:BTL/BTL/Forms/FormHDB.Designer.cs
+
             this.label2.TabIndex = 2;
             this.label2.Text = "Mã Code :";
             // 
