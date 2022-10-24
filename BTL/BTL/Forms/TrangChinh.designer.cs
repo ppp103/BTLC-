@@ -246,7 +246,7 @@ namespace HomePage
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 25.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(95, 39);
+            this.label1.Location = new System.Drawing.Point(105, 36);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(138, 39);
             this.label1.TabIndex = 1;
@@ -256,9 +256,9 @@ namespace HomePage
             // 
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox1.Location = new System.Drawing.Point(11, 21);
+            this.pictureBox1.Location = new System.Drawing.Point(12, 21);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(77, 91);
+            this.pictureBox1.Size = new System.Drawing.Size(87, 91);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -311,6 +311,7 @@ namespace HomePage
             this.Controls.Add(this.panelTieuDe);
             this.Controls.Add(this.panelSideMenu);
             this.Font = new System.Drawing.Font("Times New Roman", 8.5F);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "TrangChinh";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Quản lý nước hoa";
