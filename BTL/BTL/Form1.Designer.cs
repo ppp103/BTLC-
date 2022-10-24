@@ -32,10 +32,6 @@ namespace BTL
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.button1 = new System.Windows.Forms.Button();
             this.btnHDB = new System.Windows.Forms.Button();
-<<<<<<< HEAD
-            this.btnThanhToanLuong = new System.Windows.Forms.Button();
-            this.btnNhapHangHoa = new System.Windows.Forms.Button();
-=======
             this.btnThongKeHoaDon = new System.Windows.Forms.Button();
             this.btnThongKeHangHoa = new System.Windows.Forms.Button();
             this.btnThanhToanLuong = new System.Windows.Forms.Button();
@@ -60,21 +56,10 @@ namespace BTL
             this.panel1.SuspendLayout();
             this.panel9.SuspendLayout();
             this.panel2.SuspendLayout();
->>>>>>> e88054e48ddfc45ce306d9f02982a773a41eb6f2
             this.SuspendLayout();
             // 
             // button1
             // 
-<<<<<<< HEAD
-            this.btnThongKeHoaDon.Location = new System.Drawing.Point(12, 297);
-            this.btnThongKeHoaDon.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnThongKeHoaDon.Name = "btnThongKeHoaDon";
-            this.btnThongKeHoaDon.Size = new System.Drawing.Size(159, 46);
-            this.btnThongKeHoaDon.TabIndex = 0;
-            this.btnThongKeHoaDon.Text = "Thống Kê Hóa Đơn";
-            this.btnThongKeHoaDon.UseVisualStyleBackColor = true;
-            this.btnThongKeHoaDon.Click += new System.EventHandler(this.button1_Click);
-=======
             this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -86,7 +71,6 @@ namespace BTL
             this.button1.TabIndex = 4;
             this.button1.Text = "CHỨC NĂNG";
             this.button1.UseVisualStyleBackColor = true;
->>>>>>> e88054e48ddfc45ce306d9f02982a773a41eb6f2
             // 
             // btnHDB
             // 
@@ -95,11 +79,7 @@ namespace BTL
             this.btnHDB.Location = new System.Drawing.Point(-1, 411);
             this.btnHDB.Margin = new System.Windows.Forms.Padding(2);
             this.btnHDB.Name = "btnHDB";
-<<<<<<< HEAD
-            this.btnHDB.Size = new System.Drawing.Size(159, 46);
-=======
-            this.btnHDB.Size = new System.Drawing.Size(221, 40);
->>>>>>> e88054e48ddfc45ce306d9f02982a773a41eb6f2
+
             this.btnHDB.TabIndex = 0;
             this.btnHDB.Text = "HÓA ĐƠN BÁN";
             this.btnHDB.UseVisualStyleBackColor = false;
@@ -107,16 +87,6 @@ namespace BTL
             // 
             // btnThongKeHoaDon
             // 
-<<<<<<< HEAD
-            this.btnThanhToanLuong.Location = new System.Drawing.Point(12, 538);
-            this.btnThanhToanLuong.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnThanhToanLuong.Name = "btnThanhToanLuong";
-            this.btnThanhToanLuong.Size = new System.Drawing.Size(159, 46);
-            this.btnThanhToanLuong.TabIndex = 0;
-            this.btnThanhToanLuong.Text = "Thanh Toán Lương";
-            this.btnThanhToanLuong.UseVisualStyleBackColor = true;
-            this.btnThanhToanLuong.Click += new System.EventHandler(this.btnThanhToanLuong_Click);
-=======
             this.btnThongKeHoaDon.BackColor = System.Drawing.Color.IndianRed;
             this.btnThongKeHoaDon.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThongKeHoaDon.Location = new System.Drawing.Point(-1, 282);
@@ -127,19 +97,10 @@ namespace BTL
             this.btnThongKeHoaDon.Text = "THỐNG KÊ HÓA ĐƠN";
             this.btnThongKeHoaDon.UseVisualStyleBackColor = false;
             this.btnThongKeHoaDon.Click += new System.EventHandler(this.button1_Click);
->>>>>>> e88054e48ddfc45ce306d9f02982a773a41eb6f2
             // 
             // btnNhapHangHoa
             // 
-<<<<<<< HEAD
-            this.btnNhapHangHoa.Location = new System.Drawing.Point(12, 206);
-            this.btnNhapHangHoa.Name = "btnNhapHangHoa";
-            this.btnNhapHangHoa.Size = new System.Drawing.Size(159, 46);
-            this.btnNhapHangHoa.TabIndex = 1;
-            this.btnNhapHangHoa.Text = " Nhập Hàng Hóa";
-            this.btnNhapHangHoa.UseVisualStyleBackColor = true;
-            this.btnNhapHangHoa.Click += new System.EventHandler(this.btnNhapHangHoa_Click);
-=======
+
             this.btnThongKeHangHoa.BackColor = System.Drawing.Color.IndianRed;
             this.btnThongKeHangHoa.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThongKeHangHoa.Location = new System.Drawing.Point(-2, 343);
@@ -149,8 +110,7 @@ namespace BTL
             this.btnThongKeHangHoa.TabIndex = 1;
             this.btnThongKeHangHoa.Text = "THỐNG KÊ HÀNG HÓA";
             this.btnThongKeHangHoa.UseVisualStyleBackColor = false;
-            this.btnThongKeHangHoa.Click += new System.EventHandler(this.btnThongKeHangHoa_Click);
->>>>>>> e88054e48ddfc45ce306d9f02982a773a41eb6f2
+            //this.btnThongKeHangHoa.Click += new System.EventHandler(this.btnThongKeHangHoa_Click);
             // 
             // btnThanhToanLuong
             // 
@@ -352,16 +312,12 @@ namespace BTL
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-<<<<<<< HEAD
-            this.ClientSize = new System.Drawing.Size(1309, 804);
-            this.Controls.Add(this.btnNhapHangHoa);
-=======
+
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1214, 708);
             this.Controls.Add(this.panel10);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.button1);
->>>>>>> e88054e48ddfc45ce306d9f02982a773a41eb6f2
             this.Controls.Add(this.btnThanhToanLuong);
             this.Controls.Add(this.btnThongKeHoaDon);
             this.Controls.Add(this.btnHDB);
@@ -383,10 +339,6 @@ namespace BTL
         #endregion
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btnHDB;
-<<<<<<< HEAD
-        private System.Windows.Forms.Button btnThanhToanLuong;
-        private System.Windows.Forms.Button btnNhapHangHoa;
-=======
         private System.Windows.Forms.Button btnThongKeHoaDon;
         private System.Windows.Forms.Button btnThongKeHangHoa;
         private System.Windows.Forms.Button btnThanhToanLuong;
@@ -408,7 +360,6 @@ namespace BTL
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Panel panel10;
->>>>>>> e88054e48ddfc45ce306d9f02982a773a41eb6f2
     }
 }
 
