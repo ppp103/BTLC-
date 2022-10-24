@@ -150,17 +150,9 @@ namespace BTL
             // 
             this.groupBox2.BackColor = System.Drawing.Color.Tomato;
             this.groupBox2.Controls.Add(this.dataGridView1);
-<<<<<<< HEAD
-            this.groupBox2.Location = new System.Drawing.Point(0, 495);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.groupBox2.Size = new System.Drawing.Size(1315, 274);
-=======
             this.groupBox2.Location = new System.Drawing.Point(0, 402);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(986, 223);
->>>>>>> e88054e48ddfc45ce306d9f02982a773a41eb6f2
             this.groupBox2.TabIndex = 16;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Thông Tin Sản Phẩm";
@@ -168,14 +160,6 @@ namespace BTL
             // dataGridView1
             // 
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ControlLight;
-<<<<<<< HEAD
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(8, 25);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.Size = new System.Drawing.Size(1299, 242);
-=======
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -204,7 +188,6 @@ namespace BTL
             dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
             this.dataGridView1.Size = new System.Drawing.Size(974, 197);
->>>>>>> e88054e48ddfc45ce306d9f02982a773a41eb6f2
             this.dataGridView1.TabIndex = 0;
             // 
             // button5
