@@ -16,11 +16,9 @@ namespace BTL
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-<<<<<<< HEAD
-            Application.Run(new FormHDB());
-=======
+
             Application.Run(new HomePage.TrangChinh());
->>>>>>> 1480dd7185e153a6a40a66f609443312a3858e0b
+
         }
     }
 }
