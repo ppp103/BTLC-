@@ -18,3 +18,23 @@ E:\tuyet beo\ABTL\BTL\BTL\obj\Debug\BTL.csproj.CoreCompileInputs.cache
 E:\tuyet beo\ABTL\BTL\BTL\obj\Debug\BTL.exe
 E:\tuyet beo\ABTL\BTL\BTL\obj\Debug\BTL.pdb
 E:\tuyet beo\ABTL\BTL\BTL\obj\Debug\BTL.FormNhapHangHoa.resources
+C:\Users\anhtu\BTL\BTLC-\BTL\BTL\bin\Debug\DataBase\DuLieu.mdf
+C:\Users\anhtu\BTL\BTLC-\BTL\BTL\bin\Debug\DataBase\DuLieu_log.ldf
+C:\Users\anhtu\BTL\BTLC-\BTL\BTL\bin\Debug\BTL.exe.config
+C:\Users\anhtu\BTL\BTLC-\BTL\BTL\bin\Debug\BTL.exe
+C:\Users\anhtu\BTL\BTLC-\BTL\BTL\bin\Debug\BTL.pdb
+C:\Users\anhtu\BTL\BTLC-\BTL\BTL\obj\Debug\BTL.csproj.AssemblyReference.cache
+C:\Users\anhtu\BTL\BTLC-\BTL\BTL\obj\Debug\BTL.csproj.SuggestedBindingRedirects.cache
+C:\Users\anhtu\BTL\BTLC-\BTL\BTL\obj\Debug\BTL.Form1.resources
+C:\Users\anhtu\BTL\BTLC-\BTL\BTL\obj\Debug\BTL.Form2.resources
+C:\Users\anhtu\BTL\BTLC-\BTL\BTL\obj\Debug\BTL.FormHDB.resources
+C:\Users\anhtu\BTL\BTLC-\BTL\BTL\obj\Debug\BTL.FormLapHoaDon.resources
+C:\Users\anhtu\BTL\BTLC-\BTL\BTL\obj\Debug\BTL.FormNhapHang.resources
+C:\Users\anhtu\BTL\BTLC-\BTL\BTL\obj\Debug\BTL.FormThanhToanLuong.resources
+C:\Users\anhtu\BTL\BTLC-\BTL\BTL\obj\Debug\BTL.FormNhapHangHoa.resources
+C:\Users\anhtu\BTL\BTLC-\BTL\BTL\obj\Debug\BTL.FormThongKeHoaDon.resources
+C:\Users\anhtu\BTL\BTLC-\BTL\BTL\obj\Debug\BTL.Properties.Resources.resources
+C:\Users\anhtu\BTL\BTLC-\BTL\BTL\obj\Debug\BTL.csproj.GenerateResource.cache
+C:\Users\anhtu\BTL\BTLC-\BTL\BTL\obj\Debug\BTL.csproj.CoreCompileInputs.cache
+C:\Users\anhtu\BTL\BTLC-\BTL\BTL\obj\Debug\BTL.exe
+C:\Users\anhtu\BTL\BTLC-\BTL\BTL\obj\Debug\BTL.pdb
