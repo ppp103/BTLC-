@@ -50,5 +50,7 @@ namespace BTL
             sqlcommand.ExecuteNonQuery();
             DongKetNoiCSDL();
         }
+
+        
     }
 }

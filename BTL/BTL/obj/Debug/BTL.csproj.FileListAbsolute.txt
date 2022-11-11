@@ -17,3 +17,7 @@ D:\HocHanh(ki5)\C#\Projects\BTLv4\BTL\BTL\bin\Debug\FontAwesome.Sharp.dll
 D:\HocHanh(ki5)\C#\Projects\BTLv4\BTL\BTL\obj\Debug\BTL.csproj.CopyComplete
 D:\HocHanh(ki5)\C#\Projects\BTLv4\BTL\BTL\obj\Debug\BTL.exe
 D:\HocHanh(ki5)\C#\Projects\BTLv4\BTL\BTL\obj\Debug\BTL.pdb
+D:\HocHanh(ki5)\C#\Projects\BTLv4\BTL\BTL\obj\Debug\BTL.csproj.AssemblyReference.cache
+D:\HocHanh(ki5)\C#\Projects\BTLv4\BTL\BTL\bin\Debug\Images\DbTest.mdf
+D:\HocHanh(ki5)\C#\Projects\BTLv4\BTL\BTL\bin\Debug\Images\DbTest_log.ldf
+D:\HocHanh(ki5)\C#\Projects\BTLv4\BTL\BTL\obj\Debug\BTL.csproj.SuggestedBindingRedirects.cache
