@@ -74,7 +74,11 @@ namespace HomePage
             this.panelSideMenu.Font = new System.Drawing.Font("Century Gothic", 10F);
             this.panelSideMenu.Location = new System.Drawing.Point(0, 0);
             this.panelSideMenu.Name = "panelSideMenu";
+<<<<<<< HEAD
             this.panelSideMenu.Size = new System.Drawing.Size(289, 806);
+=======
+            this.panelSideMenu.Size = new System.Drawing.Size(289, 727);
+>>>>>>> ba853bb7be5bc82171cf6c60cc4b940fa48500d0
             this.panelSideMenu.TabIndex = 0;
             // 
             // btnNhapHoaDonBan
@@ -277,20 +281,37 @@ namespace HomePage
             // 
             // panelBlank
             // 
+<<<<<<< HEAD
             this.panelBlank.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelBlank.Location = new System.Drawing.Point(0, 0);
             this.panelBlank.Name = "panelBlank";
             this.panelBlank.Size = new System.Drawing.Size(289, 100);
             this.panelBlank.TabIndex = 8;
+=======
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 25.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(105, 36);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(138, 39);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Perfume";
+>>>>>>> ba853bb7be5bc82171cf6c60cc4b940fa48500d0
             // 
             // pictureBox1
             // 
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
+<<<<<<< HEAD
             this.pictureBox1.Location = new System.Drawing.Point(37, -18);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(165, 230);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+=======
+            this.pictureBox1.Location = new System.Drawing.Point(12, 21);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(87, 91);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+>>>>>>> ba853bb7be5bc82171cf6c60cc4b940fa48500d0
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.logo_Click);
@@ -316,7 +337,11 @@ namespace HomePage
             this.labelTieuDe.ForeColor = System.Drawing.SystemColors.ControlText;
             this.labelTieuDe.Location = new System.Drawing.Point(299, 6);
             this.labelTieuDe.Name = "labelTieuDe";
+<<<<<<< HEAD
             this.labelTieuDe.Size = new System.Drawing.Size(134, 31);
+=======
+            this.labelTieuDe.Size = new System.Drawing.Size(55, 15);
+>>>>>>> ba853bb7be5bc82171cf6c60cc4b940fa48500d0
             this.labelTieuDe.TabIndex = 1;
             this.labelTieuDe.Text = "Trang chủ";
             // 
@@ -457,6 +482,7 @@ namespace HomePage
             // 
             // TrangChinh
             // 
+<<<<<<< HEAD
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1801, 806);
@@ -466,6 +492,15 @@ namespace HomePage
             this.Controls.Add(this.panelSideMenu);
             this.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.DimGray;
+=======
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 14F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(1143, 727);
+            this.Controls.Add(this.panelTieuDe);
+            this.Controls.Add(this.panelSideMenu);
+            this.Font = new System.Drawing.Font("Times New Roman", 8.5F);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+>>>>>>> ba853bb7be5bc82171cf6c60cc4b940fa48500d0
             this.Name = "TrangChinh";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Quản lý nước hoa";
