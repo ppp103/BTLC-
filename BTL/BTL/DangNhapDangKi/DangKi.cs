@@ -25,7 +25,7 @@ namespace BTL.DangNhapDangKi
         }
         public bool checkAccount(string ac)
         {
-            return Regex.IsMatch(ac, "^[a-zA-Z0-9{6,24}]$");
+            return Regex.IsMatch(ac, "^[a-zA-Z0-9]{3,20}$");
         }
         public bool checkEmail(string em)
         {
@@ -38,8 +38,8 @@ namespace BTL.DangNhapDangKi
             string mk = txtpass.Texts;
             string xacnhanmk = txtconfirmpass.Texts;
             string email = txtemail.Texts;
-            if (!checkAccount(tentk)) { MessageBox.Show("Tên tài khoản phải chứa từ 6-24 kí tự và các chữ cái (thường hoặc hoa) !", "Cảnh Báo !", MessageBoxButtons.OK, MessageBoxIcon.Information); return; }
-            if (!checkAccount(mk)) { MessageBox.Show("Tên mật khẩu phải chứa từ 6-24 kí tự và các chữ cái (thường hoặc hoa) !", "Cảnh Báo !", MessageBoxButtons.OK, MessageBoxIcon.Information); return; }
+            if (!checkAccount(tentk)) { MessageBox.Show("Tên tài khoản phải chứa từ 3-8 kí tự và các chữ cái thường và chữ hoa !", "Cảnh Báo !", MessageBoxButtons.OK, MessageBoxIcon.Information); return; }
+            if (!checkAccount(mk)) { MessageBox.Show("Tên mật khẩu phải chứa từ 3-8 kí tự và các chữ  thường và chữ  hoa !", "Cảnh Báo !", MessageBoxButtons.OK, MessageBoxIcon.Information); return; }
             if(xacnhanmk!=mk){ MessageBox.Show("Mật khẩu chưa  trùng khớp!", "Cảnh Báo !", MessageBoxButtons.OK, MessageBoxIcon.Information); return; }
             if (tentk == mk) { MessageBox.Show("Tên tài khoản và mật khẩu không được giống kí tự nhau!", "Cảnh Báo !", MessageBoxButtons.OK, MessageBoxIcon.Information); return; }
             if (!checkEmail(email)) { MessageBox.Show("Email chưa đúng định dạng!", "Cảnh Báo !", MessageBoxButtons.OK, MessageBoxIcon.Information); return; }
@@ -48,8 +48,9 @@ namespace BTL.DangNhapDangKi
             { 
                 string query = "INSERT INTO tblLogin VALUES('"+tentk+"','"+mk+"','"+email+"')";
                 mod.Command(query);
-                if(MessageBox.Show("Đăng Ký Tài Khoản Mới Thành Công!,Bạn Có Muốn Đăng Nhập Luôn Không", "SOS !!!", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.OK)
+                if(MessageBox.Show("Đăng Ký Tài Khoản Mới Thành Công!,Bạn Có Muốn Đăng Nhập Luôn Không", "SOS !!!", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
                 {
+                    
                     this.Close();
                 }
             }
