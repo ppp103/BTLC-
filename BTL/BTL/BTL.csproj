@@ -68,6 +68,39 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DangNhapDangKi\Connection.cs" />
+    <Compile Include="DangNhapDangKi\DangKi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DangNhapDangKi\DangKi.Designer.cs">
+      <DependentUpon>DangKi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DangNhapDangKi\DangNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DangNhapDangKi\DangNhap.Designer.cs">
+      <DependentUpon>DangNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DangNhapDangKi\Id.cs" />
+    <Compile Include="DangNhapDangKi\Modify.cs" />
+    <Compile Include="DangNhapDangKi\Quenmatkhau.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DangNhapDangKi\Quenmatkhau.Designer.cs">
+      <DependentUpon>Quenmatkhau.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DangNhapDangKi\textboxhide.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DangNhapDangKi\textboxhide.Designer.cs">
+      <DependentUpon>textboxhide.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DangNhapDangKi\Textboxxx.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DangNhapDangKi\Textboxxx.Designer.cs">
+      <DependentUpon>Textboxxx.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\FormHDB.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -110,9 +143,27 @@
     <Compile Include="Forms\TrangChinh.designer.cs">
       <DependentUpon>TrangChinh.cs</DependentUpon>
     </Compile>
+    <Compile Include="Radio.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="XuLyCSDL.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="DangNhapDangKi\DangKi.resx">
+      <DependentUpon>DangKi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DangNhapDangKi\DangNhap.resx">
+      <DependentUpon>DangNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DangNhapDangKi\Quenmatkhau.resx">
+      <DependentUpon>Quenmatkhau.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DangNhapDangKi\textboxhide.resx">
+      <DependentUpon>textboxhide.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DangNhapDangKi\Textboxxx.resx">
+      <DependentUpon>Textboxxx.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormHDB.resx">
       <DependentUpon>FormHDB.cs</DependentUpon>
     </EmbeddedResource>
@@ -159,6 +210,13 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <Content Include="DangNhapDangKi\DangNhap.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DangNhapDangKi\DangNhap_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>DangNhap.mdf</DependentUpon>
+    </Content>
     <Content Include="DataBase\DuLieu.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
