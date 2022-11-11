@@ -208,9 +208,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Images\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="DangNhapDangKi\DangNhap.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -225,6 +223,13 @@
     <Content Include="DataBase\DuLieu_log.ldf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>DuLieu.mdf</DependentUpon>
+    </Content>
+    <Content Include="Images\DbTest.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\DbTest_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>DbTest.mdf</DependentUpon>
     </Content>
   </ItemGroup>
   <ItemGroup>

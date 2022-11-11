@@ -8,11 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using FontAwesome.Sharp;
+using BTL;
 namespace HomePage
 {
     public partial class TrangChinh : Form
     {
         private IconButton nutHienTai;
+        private Form formHtai;
         bool tkeDangMo = false;
         bool isNotActive = false;
         public TrangChinh()
@@ -39,6 +41,26 @@ namespace HomePage
             }
         }
 
+        private void MoForm(Form form)
+        {
+            if(formHtai != null)
+            {
+                formHtai.Close(); //đóng form hiện tại -> Để hiện 1 form tại 1 thời điểm
+            }
+
+            formHtai = form;
+            form.TopLevel = false;
+            form.FormBorderStyle = FormBorderStyle.None;
+            form.Size = panelForm.Size;
+            form.Anchor = AnchorStyles.Top;
+            form.Anchor = AnchorStyles.Left;
+            form.Dock = DockStyle.Fill;
+            panelForm.Controls.Add(form);
+            panelForm.Tag = form;
+            form.BringToFront();
+            form.Show();
+            labelTieuDe.Text = form.Text;
+        }
         private void btnTkeHoaDon_Click(object sender, EventArgs e)
         {
             timerTkeHoaDon.Start();
@@ -80,6 +102,7 @@ namespace HomePage
         private void btnNhapHang_Click(object sender, EventArgs e)
         {
             KichHoatNut(sender);
+            MoForm(new FormNhapHangHoa());
         }
 
         private void btnNhapHoaDonBan_Click(object sender, EventArgs e)
@@ -91,6 +114,7 @@ namespace HomePage
         private void btnHoaDonBan_Click(object sender, EventArgs e)
         {
             KichHoatNut(sender);
+            MoForm(new FormThongKeHoaDon());
         }                                                                                      
 
         private void btnHoaDonNhap_Click(object sender, EventArgs e)
@@ -110,6 +134,22 @@ namespace HomePage
             iconTieuDe.IconChar = IconChar.Home;
             labelTieuDe.Text = "Trang chủ";
             if (tkeDangMo) timerTkeHoaDon.Start();
+        }
+
+        private void iconLogOut_Click_1(object sender, EventArgs e)
+        {
+            DialogResult chon = MessageBox.Show("Bạn chắc chắn muốn thoát chứ ?", "Thoát", MessageBoxButtons.YesNo);
+            if (chon == DialogResult.Yes)
+            {
+                this.Close();
+            }
+        }
+
+        private void btnHome_Click(object sender, EventArgs e)
+        {
+            KichHoatNut(sender);
+            iconTieuDe.IconChar = IconChar.Home;
+            labelTieuDe.Text = "Trang chủ";
         }
     }
 }

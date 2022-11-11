@@ -1,10 +1,13 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\BTL",
+    "\\BTL\\BTL",
+    "\\BTL\\BTL\\DataBase"
   ],
 <<<<<<< HEAD
+  "SelectedNode": "\\BTL\\BTL.sln",
 =======
-  "SelectedNode": "\\BTL.sln",
->>>>>>> 8e3d7540f4e98d46a17d8422aed23797d71dd22e
+>>>>>>> ba853bb7be5bc82171cf6c60cc4b940fa48500d0
   "PreviewInSolutionExplorer": false
 }
