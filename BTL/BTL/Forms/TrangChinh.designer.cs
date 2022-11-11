@@ -287,12 +287,10 @@ namespace HomePage
             // 
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-
             this.pictureBox1.Location = new System.Drawing.Point(37, -18);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(165, 230);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.logo_Click);
@@ -318,7 +316,6 @@ namespace HomePage
             this.labelTieuDe.ForeColor = System.Drawing.SystemColors.ControlText;
             this.labelTieuDe.Location = new System.Drawing.Point(299, 6);
             this.labelTieuDe.Name = "labelTieuDe";
-            
             this.labelTieuDe.Size = new System.Drawing.Size(134, 31);
             this.labelTieuDe.TabIndex = 1;
             this.labelTieuDe.Text = "Trang chủ";
@@ -469,7 +466,6 @@ namespace HomePage
             this.Controls.Add(this.panelSideMenu);
             this.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.DimGray;
-
             this.Name = "TrangChinh";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Quản lý nước hoa";

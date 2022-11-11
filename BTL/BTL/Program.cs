@@ -16,7 +16,8 @@ namespace BTL
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new DangNhapDangKi.DangNhap());
+            //Application.Run(new DangNhapDangKi.DangNhap());
+            Application.Run(new HomePage.TrangChinh());
 
         }
     }
