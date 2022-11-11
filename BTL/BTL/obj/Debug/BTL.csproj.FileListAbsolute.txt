@@ -53,3 +53,5 @@ D:\BTL-CSharp\New folder\BTL\BTL\obj\Debug\BTL.DangNhapDangKi.Quenmatkhau.resour
 D:\BTL-CSharp\New folder\BTL\BTL\obj\Debug\BTL.DangNhapDangKi.textboxhide.resources
 =======
 >>>>>>> de8760d13de3863e47fe4ce418a9993fa6a06dc8
+D:\BTL-CSharp\New folder\BTL\BTL\bin\Debug\Images\DbTest.mdf
+D:\BTL-CSharp\New folder\BTL\BTL\bin\Debug\Images\DbTest_log.ldf
