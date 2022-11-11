@@ -130,9 +130,9 @@ namespace BTL
             this.panel1.Controls.Add(this.panel9);
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.panel2);
-            this.panel1.Location = new System.Drawing.Point(218, 93);
+            this.panel1.Location = new System.Drawing.Point(224, -54);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1004, 615);
+            this.panel1.Size = new System.Drawing.Size(834, 615);
             this.panel1.TabIndex = 5;
             // 
             // panel9
@@ -172,9 +172,9 @@ namespace BTL
             // 
             this.panel3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel3.BackgroundImage")));
             this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel3.Location = new System.Drawing.Point(1, 42);
+            this.panel3.Location = new System.Drawing.Point(-9, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(630, 524);
+            this.panel3.Size = new System.Drawing.Size(489, 566);
             this.panel3.TabIndex = 1;
             // 
             // panel2
@@ -192,9 +192,9 @@ namespace BTL
             this.panel2.Controls.Add(this.panel5);
             this.panel2.Controls.Add(this.panel4);
             this.panel2.Cursor = System.Windows.Forms.Cursors.Default;
-            this.panel2.Location = new System.Drawing.Point(631, 0);
+            this.panel2.Location = new System.Drawing.Point(477, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(366, 615);
+            this.panel2.Size = new System.Drawing.Size(520, 615);
             this.panel2.TabIndex = 0;
             // 
             // label6
@@ -304,7 +304,7 @@ namespace BTL
             this.panel10.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel10.BackgroundImage")));
             this.panel10.Location = new System.Drawing.Point(-1, 0);
             this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(219, 93);
+            this.panel10.Size = new System.Drawing.Size(221, 97);
             this.panel10.TabIndex = 6;
             // 
             // Form1
@@ -312,7 +312,7 @@ namespace BTL
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(1214, 708);
+            this.ClientSize = new System.Drawing.Size(1050, 561);
             this.Controls.Add(this.panel10);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.button1);
