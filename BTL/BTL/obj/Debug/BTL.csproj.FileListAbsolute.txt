@@ -81,3 +81,10 @@ D:\BTL-CSharp\New folder\BTL\BTL\bin\Debug\BTL.pdb
 D:\BTL-CSharp\New folder\BTL\BTL\bin\Debug\FontAwesome.Sharp.dll
 D:\BTL-CSharp\New folder\BTL\BTL\obj\Debug\BTL.csproj.CopyComplete
 >>>>>>> 8e3d7540f4e98d46a17d8422aed23797d71dd22e
+D:\BTL-CSharp\New folder\BTL\BTL\bin\Debug\DangNhapDangKi\DangNhap.mdf
+D:\BTL-CSharp\New folder\BTL\BTL\bin\Debug\DangNhapDangKi\DangNhap_log.ldf
+D:\BTL-CSharp\New folder\BTL\BTL\obj\Debug\BTL.DangNhapDangKi.DangNhap.resources
+D:\BTL-CSharp\New folder\BTL\BTL\obj\Debug\BTL.DangNhapDangKi.Textboxxx.resources
+D:\BTL-CSharp\New folder\BTL\BTL\obj\Debug\BTL.DangNhapDangKi.DangKi.resources
+D:\BTL-CSharp\New folder\BTL\BTL\obj\Debug\BTL.DangNhapDangKi.Quenmatkhau.resources
+D:\BTL-CSharp\New folder\BTL\BTL\obj\Debug\BTL.DangNhapDangKi.textboxhide.resources
