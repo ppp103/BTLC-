@@ -12,6 +12,7 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -24,7 +25,6 @@
     <MapFileExtensions>true</MapFileExtensions>
     <ApplicationRevision>0</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
@@ -48,8 +48,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="FontAwesome.Sharp, Version=6.1.1.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f, processorArchitecture=MSIL">
+      <HintPath>..\packages\FontAwesome.Sharp.6.1.1\lib\net472\FontAwesome.Sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Xaml" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -59,81 +65,121 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="DangNhapDangKi\Connection.cs" />
+    <Compile Include="DangNhapDangKi\DangKi.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="DangNhapDangKi\DangKi.Designer.cs">
+      <DependentUpon>DangKi.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form2.cs">
+    <Compile Include="DangNhapDangKi\DangNhap.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form2.Designer.cs">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <Compile Include="DangNhapDangKi\DangNhap.Designer.cs">
+      <DependentUpon>DangNhap.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormHDB.cs">
+    <Compile Include="DangNhapDangKi\Id.cs" />
+    <Compile Include="DangNhapDangKi\Modify.cs" />
+    <Compile Include="DangNhapDangKi\Quenmatkhau.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormHDB.Designer.cs">
+    <Compile Include="DangNhapDangKi\Quenmatkhau.Designer.cs">
+      <DependentUpon>Quenmatkhau.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DangNhapDangKi\textboxhide.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DangNhapDangKi\textboxhide.Designer.cs">
+      <DependentUpon>textboxhide.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DangNhapDangKi\Textboxxx.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DangNhapDangKi\Textboxxx.Designer.cs">
+      <DependentUpon>Textboxxx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormHDB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormHDB.Designer.cs">
       <DependentUpon>FormHDB.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormLapHoaDon.cs">
+    <Compile Include="Forms\FormLapHoaDon.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormLapHoaDon.Designer.cs">
+    <Compile Include="Forms\FormLapHoaDon.Designer.cs">
       <DependentUpon>FormLapHoaDon.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormNhapHang.cs">
+    <Compile Include="Forms\FormNhapHang.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormNhapHang.Designer.cs">
+    <Compile Include="Forms\FormNhapHang.Designer.cs">
       <DependentUpon>FormNhapHang.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormThanhToanLuong.cs">
+    <Compile Include="Forms\FormThanhToanLuong.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormThanhToanLuong.Designer.cs">
+    <Compile Include="Forms\FormThanhToanLuong.Designer.cs">
       <DependentUpon>FormThanhToanLuong.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormThongKeHangHoa.cs">
+    <Compile Include="Forms\FormNhapHangHoa.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormThongKeHangHoa.Designer.cs">
-      <DependentUpon>FormThongKeHangHoa.cs</DependentUpon>
+    <Compile Include="Forms\FormNhapHangHoa.Designer.cs">
+      <DependentUpon>FormNhapHangHoa.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormThongKeHoaDon.cs">
+    <Compile Include="Forms\FormThongKeHoaDon.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormThongKeHoaDon.Designer.cs">
+    <Compile Include="Forms\FormThongKeHoaDon.Designer.cs">
       <DependentUpon>FormThongKeHoaDon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\TrangChinh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\TrangChinh.designer.cs">
+      <DependentUpon>TrangChinh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Radio.cs">
+      <SubType>Component</SubType>
     </Compile>
     <Compile Include="XuLyCSDL.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="DangNhapDangKi\DangKi.resx">
+      <DependentUpon>DangKi.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form2.resx">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <EmbeddedResource Include="DangNhapDangKi\DangNhap.resx">
+      <DependentUpon>DangNhap.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormHDB.resx">
+    <EmbeddedResource Include="DangNhapDangKi\Quenmatkhau.resx">
+      <DependentUpon>Quenmatkhau.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DangNhapDangKi\textboxhide.resx">
+      <DependentUpon>textboxhide.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DangNhapDangKi\Textboxxx.resx">
+      <DependentUpon>Textboxxx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormHDB.resx">
       <DependentUpon>FormHDB.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormLapHoaDon.resx">
+    <EmbeddedResource Include="Forms\FormLapHoaDon.resx">
       <DependentUpon>FormLapHoaDon.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormNhapHang.resx">
+    <EmbeddedResource Include="Forms\FormNhapHang.resx">
       <DependentUpon>FormNhapHang.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormThanhToanLuong.resx">
+    <EmbeddedResource Include="Forms\FormThanhToanLuong.resx">
       <DependentUpon>FormThanhToanLuong.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormThongKeHangHoa.resx">
-      <DependentUpon>FormThongKeHangHoa.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\FormNhapHangHoa.resx">
+      <DependentUpon>FormNhapHangHoa.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormThongKeHoaDon.resx">
+    <EmbeddedResource Include="Forms\FormThongKeHoaDon.resx">
       <DependentUpon>FormThongKeHoaDon.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -145,6 +191,10 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Forms\TrangChinh.resx">
+      <DependentUpon>TrangChinh.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -158,16 +208,28 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="Image\" />
-  </ItemGroup>
-  <ItemGroup>
+    <Content Include="DangNhapDangKi\DangNhap.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DangNhapDangKi\DangNhap_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>DangNhap.mdf</DependentUpon>
+    </Content>
     <Content Include="DataBase\DuLieu.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="DataBase\DuLieu_log.ldf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>DuLieu.mdf</DependentUpon>
+    </Content>
+    <Content Include="Images\DbTest.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\DbTest_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>DbTest.mdf</DependentUpon>
     </Content>
   </ItemGroup>
   <ItemGroup>

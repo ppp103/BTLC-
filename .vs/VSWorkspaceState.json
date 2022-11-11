@@ -2,8 +2,18 @@
   "ExpandedNodes": [
     "",
     "\\BTL",
+<<<<<<< HEAD
     "\\BTL\\BTL"
   ],
   "SelectedNode": "\\BTL\\BTL\\FormHDB.cs",
+=======
+    "\\BTL\\BTL",
+    "\\BTL\\BTL\\DataBase"
+  ],
+<<<<<<< HEAD
+  "SelectedNode": "\\BTL\\BTL.sln",
+=======
+>>>>>>> ba853bb7be5bc82171cf6c60cc4b940fa48500d0
+>>>>>>> 0d88806057d62044a7914e198120b35a7e35a656
   "PreviewInSolutionExplorer": false
 }
