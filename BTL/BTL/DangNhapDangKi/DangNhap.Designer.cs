@@ -130,6 +130,7 @@
             this.textBox1.BorderSize = 2;
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.ForeColor = System.Drawing.Color.DimGray;
+<<<<<<< HEAD
             this.textBox1.Location = new System.Drawing.Point(144, 295);
             this.textBox1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.textBox1.Multiline = false;
@@ -137,6 +138,15 @@
             this.textBox1.Padding = new System.Windows.Forms.Padding(9, 9, 9, 9);
             this.textBox1.PasswordChar = false;
             this.textBox1.Size = new System.Drawing.Size(340, 39);
+=======
+            this.textBox1.Location = new System.Drawing.Point(108, 240);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.textBox1.Multiline = false;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Padding = new System.Windows.Forms.Padding(7);
+            this.textBox1.PasswordChar = false;
+            this.textBox1.Size = new System.Drawing.Size(255, 31);
+>>>>>>> b9be738cef50246e762b2c9e7ef9fba8ab73357d
             this.textBox1.TabIndex = 13;
             this.textBox1.Texts = "";
             this.textBox1.UnderlinedStyle = true;
@@ -148,6 +158,7 @@
             this.txtmk.BorderSize = 2;
             this.txtmk.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtmk.ForeColor = System.Drawing.Color.DimGray;
+<<<<<<< HEAD
             this.txtmk.Location = new System.Drawing.Point(144, 400);
             this.txtmk.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.txtmk.Multiline = false;
@@ -155,6 +166,15 @@
             this.txtmk.Padding = new System.Windows.Forms.Padding(9, 9, 9, 9);
             this.txtmk.PasswordChar = false;
             this.txtmk.Size = new System.Drawing.Size(340, 39);
+=======
+            this.txtmk.Location = new System.Drawing.Point(108, 325);
+            this.txtmk.Margin = new System.Windows.Forms.Padding(4);
+            this.txtmk.Multiline = false;
+            this.txtmk.Name = "txtmk";
+            this.txtmk.Padding = new System.Windows.Forms.Padding(7);
+            this.txtmk.PasswordChar = false;
+            this.txtmk.Size = new System.Drawing.Size(255, 31);
+>>>>>>> b9be738cef50246e762b2c9e7ef9fba8ab73357d
             this.txtmk.TabIndex = 11;
             this.txtmk.Texts = "";
             this.txtmk.UnderlinedStyle = true;
@@ -223,6 +243,7 @@
             this.Name = "DangNhap";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DangNhap";
+            this.Load += new System.EventHandler(this.DangNhap_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
