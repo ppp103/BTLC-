@@ -31,12 +31,14 @@ namespace BTL.DangNhapDangKi
         {
             DangKi dk = new DangKi();
             dk.ShowDialog();
+            
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             Quenmatkhau fg = new Quenmatkhau();
             fg.ShowDialog();
+            
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -82,6 +84,11 @@ namespace BTL.DangNhapDangKi
                     MessageBox.Show("Tên Tài Khoản Hoặc Mật Khẩu Chưa Chính Xác !", "Cảnh Báo !", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
             }
+
+        }
+
+        private void DangNhap_Load(object sender, EventArgs e)
+        {
 
         }
     }
