@@ -443,6 +443,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.BackColor = System.Drawing.Color.DarkGreen;
             this.ClientSize = new System.Drawing.Size(1181, 701);
             this.Controls.Add(this.grbDSSP);
@@ -452,7 +453,7 @@
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "FormNhapHangHoa";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FormNhapHangHoa";
+            this.Text = "Nhập hàng";
             this.Load += new System.EventHandler(this.FormThongKeHangHoa_Load);
             this.grbNhapTT.ResumeLayout(false);
             this.grbNhapTT.PerformLayout();

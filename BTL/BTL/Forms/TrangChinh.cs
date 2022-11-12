@@ -16,7 +16,6 @@ namespace HomePage
         private IconButton nutHienTai;
         private Form formHtai;
         bool tkeDangMo = false;
-        bool isNotActive = false;
         public TrangChinh()
         {
             InitializeComponent();
@@ -114,12 +113,13 @@ namespace HomePage
         private void btnHoaDonBan_Click(object sender, EventArgs e)
         {
             KichHoatNut(sender);
-            MoForm(new FormThongKeHoaDon());
         }                                                                                      
 
         private void btnHoaDonNhap_Click(object sender, EventArgs e)
         {
             KichHoatNut(sender);
+            MoForm(new FormThongKeHoaDon());
+
         }
 
         private void panelLogo_Click(object sender, EventArgs e)
