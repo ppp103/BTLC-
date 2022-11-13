@@ -500,10 +500,14 @@ namespace BTL
             this.MaximumSize = new System.Drawing.Size(957, 680);
             this.MinimumSize = new System.Drawing.Size(957, 680);
             this.Name = "FormNhapHang";
+<<<<<<< HEAD
             this.Text = "FormNhapHang";
        //     this.Load += new System.EventHandler(this.FormNhapHang_Load);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+=======
+            this.Text = "FormThongKeHangHoa";
+>>>>>>> 9b69922dee4f505cc79ca078d7814c7358bdf616
             this.ResumeLayout(false);
             this.PerformLayout();
 
