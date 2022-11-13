@@ -243,7 +243,7 @@ namespace BTL
             this.btnClean.Text = "Làm mới";
             this.btnClean.TextColor = System.Drawing.Color.White;
             this.btnClean.UseVisualStyleBackColor = false;
-            this.btnClean.Click += new System.EventHandler(this.btnClean_Click);
+            //this.btnClean.Click += new System.EventHandler(this.btnClean_Click);
             // 
             // btnEdit
             // 
@@ -262,7 +262,7 @@ namespace BTL
             this.btnEdit.Text = "Sửa";
             this.btnEdit.TextColor = System.Drawing.Color.White;
             this.btnEdit.UseVisualStyleBackColor = false;
-            this.btnEdit.Click += new System.EventHandler(this.btnClean_Click);
+            //this.btnEdit.Click += new System.EventHandler(this.btnClean_Click);
             // 
             // btnAdd
             // 
@@ -281,7 +281,7 @@ namespace BTL
             this.btnAdd.Text = "Nhập";
             this.btnAdd.TextColor = System.Drawing.Color.White;
             this.btnAdd.UseVisualStyleBackColor = false;
-            this.btnAdd.Click += new System.EventHandler(this.btnClean_Click);
+            //this.btnAdd.Click += new System.EventHandler(this.btnClean_Click);
             // 
             // btnDetele
             // 
@@ -300,7 +300,7 @@ namespace BTL
             this.btnDetele.Text = "Xóa";
             this.btnDetele.TextColor = System.Drawing.Color.White;
             this.btnDetele.UseVisualStyleBackColor = false;
-            this.btnDetele.Click += new System.EventHandler(this.btnClean_Click);
+            //this.btnDetele.Click += new System.EventHandler(this.btnClean_Click);
             // 
             // label5
             // 
@@ -500,14 +500,11 @@ namespace BTL
             this.MaximumSize = new System.Drawing.Size(957, 680);
             this.MinimumSize = new System.Drawing.Size(957, 680);
             this.Name = "FormNhapHang";
-<<<<<<< HEAD
             this.Text = "FormNhapHang";
        //     this.Load += new System.EventHandler(this.FormNhapHang_Load);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-=======
             this.Text = "FormThongKeHangHoa";
->>>>>>> 9b69922dee4f505cc79ca078d7814c7358bdf616
             this.ResumeLayout(false);
             this.PerformLayout();
 

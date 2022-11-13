@@ -324,11 +324,7 @@ namespace HomePage
             this.labelTieuDe.ForeColor = System.Drawing.SystemColors.ControlText;
             this.labelTieuDe.Location = new System.Drawing.Point(63, 9);
             this.labelTieuDe.Name = "labelTieuDe";
-<<<<<<< HEAD
             this.labelTieuDe.Size = new System.Drawing.Size(79, 20);
-=======
-            this.labelTieuDe.Size = new System.Drawing.Size(109, 24);
->>>>>>> 9b69922dee4f505cc79ca078d7814c7358bdf616
             this.labelTieuDe.TabIndex = 1;
             this.labelTieuDe.Text = "Trang Chủ";
             // 
