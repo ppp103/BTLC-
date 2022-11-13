@@ -18,7 +18,6 @@ namespace BTL
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new DangNhapDangKi.DangNhap());
             Application.Run(new HomePage.TrangChinh());
-
         }
     }
 }

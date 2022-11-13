@@ -53,7 +53,9 @@
     </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
-    <Reference Include="System" />
+    <Reference Include="System">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
+    </Reference>
     <Reference Include="System.Core" />
     <Reference Include="System.Xaml" />
     <Reference Include="System.Xml.Linq" />
@@ -143,6 +145,7 @@
     <Compile Include="Forms\TrangChinh.designer.cs">
       <DependentUpon>TrangChinh.cs</DependentUpon>
     </Compile>
+    <Compile Include="ProcessDataBase.cs" />
     <Compile Include="Radio.cs">
       <SubType>Component</SubType>
     </Compile>
