@@ -37,7 +37,7 @@ namespace BTL
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(982, 653);
             this.Name = "FormNhapHang";
-            this.Text = "FormNhapHang";
+            this.Text = "FormThongKeHangHoa";
             this.ResumeLayout(false);
 
         }
