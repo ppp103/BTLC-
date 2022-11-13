@@ -319,7 +319,7 @@ namespace HomePage
             this.labelTieuDe.ForeColor = System.Drawing.SystemColors.ControlText;
             this.labelTieuDe.Location = new System.Drawing.Point(63, 9);
             this.labelTieuDe.Name = "labelTieuDe";
-            this.labelTieuDe.Size = new System.Drawing.Size(100, 22);
+            this.labelTieuDe.Size = new System.Drawing.Size(79, 20);
             this.labelTieuDe.TabIndex = 1;
             this.labelTieuDe.Text = "Trang chủ";
             // 
@@ -458,7 +458,7 @@ namespace HomePage
             // 
             // TrangChinh
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1485, 740);
             this.Controls.Add(this.panelForm);

@@ -101,7 +101,7 @@ namespace HomePage
         private void btnNhapHang_Click(object sender, EventArgs e)
         {
             KichHoatNut(sender);
-            MoForm(new FormNhapHangHoa());
+            MoForm(new FormNhapHang());
         }
 
         private void btnNhapHoaDonBan_Click(object sender, EventArgs e)
