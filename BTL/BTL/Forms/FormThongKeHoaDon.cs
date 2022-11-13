@@ -24,7 +24,5 @@ namespace BTL
             DataTable dtHoaDon = XuLy.DocBang("Select * From tblHoaDonBan");
             dataGridView1.DataSource = dtHoaDon;
         }
-
-
     }
 }
