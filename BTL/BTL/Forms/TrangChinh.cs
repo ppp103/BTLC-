@@ -151,5 +151,7 @@ namespace HomePage
             iconTieuDe.IconChar = IconChar.Home;
             labelTieuDe.Text = "Trang chủ";
         }
+
+      
     }
 }
