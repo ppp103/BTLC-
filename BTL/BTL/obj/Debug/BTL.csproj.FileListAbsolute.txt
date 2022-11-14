@@ -29,7 +29,6 @@ D:\HocHanh(ki5)\C#\Projects\BTLv4\BTL\BTL\obj\Debug\BTL.csproj.CopyComplete
 D:\HocHanh(ki5)\C#\Projects\BTLv4\BTL\BTL\obj\Debug\BTL.exe
 D:\HocHanh(ki5)\C#\Projects\BTLv4\BTL\BTL\obj\Debug\BTL.pdb
 <<<<<<< HEAD
-<<<<<<< HEAD
 D:\BTL-CSharp\New folder\BTL\BTL\obj\Debug\BTL.csproj.AssemblyReference.cache
 D:\BTL-CSharp\New folder\BTL\BTL\obj\Debug\BTL.csproj.SuggestedBindingRedirects.cache
 D:\BTL-CSharp\New folder\BTL\BTL\obj\Debug\BTL.FormHDB.resources
@@ -101,5 +100,4 @@ C:\Users\Dell Mediamart\Source\Repos\ppp103\BTLC-\BTL\BTL\obj\Debug\BTL.DangNhap
 C:\Users\Dell Mediamart\Source\Repos\ppp103\BTLC-\BTL\BTL\obj\Debug\BTL.FormNhapHangHoa.resources
 C:\Users\Dell Mediamart\Source\Repos\ppp103\BTLC-\BTL\BTL\obj\Debug\HomePage.TrangChinh.resources
 C:\Users\Dell Mediamart\Source\Repos\ppp103\BTLC-\BTL\BTL\obj\Debug\BTL.csproj.CopyComplete
-=======
 >>>>>>> 91a0ed3c29ef9bdd50021ea137b8de6f85dc5ccf
