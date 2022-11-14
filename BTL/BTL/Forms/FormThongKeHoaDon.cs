@@ -19,21 +19,6 @@ namespace BTL
             InitializeComponent();
         }
 
-        private void HDBToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void HDNToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void DTToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void FormThongKeHoaDon_Load(object sender, EventArgs e)
         {
             DataTable dtHoaDon = XuLy.DocBang("Select * From tblHoaDonBan");
