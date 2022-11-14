@@ -55,3 +55,6 @@ D:\BTL-CSharp\New folder\BTL\BTL\obj\Debug\BTL.DangNhapDangKi.textboxhide.resour
 >>>>>>> de8760d13de3863e47fe4ce418a9993fa6a06dc8
 D:\BTL-CSharp\New folder\BTL\BTL\bin\Debug\Images\DbTest.mdf
 D:\BTL-CSharp\New folder\BTL\BTL\bin\Debug\Images\DbTest_log.ldf
+D:\BTL-CSharp\New folder\BTL\BTL\bin\Debug\Forms\NhanVien.mdf
+D:\BTL-CSharp\New folder\BTL\BTL\bin\Debug\Forms\NhanVien_log.ldf
+D:\BTL-CSharp\New folder\BTL\BTL\obj\Debug\BTL.Forms.ChiTietHDB.resources

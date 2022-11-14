@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BTL.Forms;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -16,7 +17,7 @@ namespace BTL
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new DangNhapDangKi.DangNhap());
+            Application.Run(new ChiTietHDB());
 
         }
     }

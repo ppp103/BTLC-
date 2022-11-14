@@ -101,6 +101,12 @@
     <Compile Include="DangNhapDangKi\Textboxxx.Designer.cs">
       <DependentUpon>Textboxxx.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\ChiTietHDB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ChiTietHDB.Designer.cs">
+      <DependentUpon>ChiTietHDB.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\FormHDB.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -164,6 +170,9 @@
     <EmbeddedResource Include="DangNhapDangKi\Textboxxx.resx">
       <DependentUpon>Textboxxx.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ChiTietHDB.resx">
+      <DependentUpon>ChiTietHDB.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormHDB.resx">
       <DependentUpon>FormHDB.cs</DependentUpon>
     </EmbeddedResource>
@@ -223,6 +232,13 @@
     <Content Include="DataBase\DuLieu_log.ldf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>DuLieu.mdf</DependentUpon>
+    </Content>
+    <Content Include="Forms\NhanVien.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Forms\NhanVien_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>NhanVien.mdf</DependentUpon>
     </Content>
     <Content Include="Images\DbTest.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
