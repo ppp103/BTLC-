@@ -174,7 +174,7 @@ namespace BTL.Forms
                 if (txtsohdb.Text.Trim() != "")
                 {
                     errorProvider1.Clear();
-                    string sql = "";
+                   
 
                     //Kiếm tra nếu kết nối chưa mở thì thực hiện mở kết nối
                     sql = "Delete From tblChiTietHoaDonBan Where SoHDB =N'" + txtsohdb.Text + "'";

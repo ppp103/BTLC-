@@ -34,7 +34,6 @@ namespace BTL
             this.txttennhanvien = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -42,7 +41,6 @@ namespace BTL
             this.label5 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.cbmanhanvien = new System.Windows.Forms.ComboBox();
-            this.label11 = new System.Windows.Forms.Label();
             this.radio1 = new BTL.Radio();
             this.radio2 = new BTL.Radio();
             this.radio3 = new BTL.Radio();
@@ -50,8 +48,8 @@ namespace BTL
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.radio5 = new BTL.Radio();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.textBox7 = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
+            this.textBox7 = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -64,7 +62,7 @@ namespace BTL
             this.label1.ForeColor = System.Drawing.Color.Crimson;
             this.label1.Location = new System.Drawing.Point(44, 3);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(290, 32);
+            this.label1.Size = new System.Drawing.Size(299, 32);
             this.label1.TabIndex = 1;
             this.label1.Text = "HÓA ĐƠN BÁN HÀNG";
             // 
@@ -96,15 +94,6 @@ namespace BTL
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(174, 20);
             this.textBox2.TabIndex = 38;
-            // 
-            // textBox8
-            // 
-            this.textBox8.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
-            this.textBox8.Location = new System.Drawing.Point(169, 342);
-            this.textBox8.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(174, 20);
-            this.textBox8.TabIndex = 38;
             // 
             // label6
             // 
@@ -187,18 +176,6 @@ namespace BTL
             this.cbmanhanvien.SelectedValueChanged += new System.EventHandler(this.comboBox2_SelectedValueChanged);
             this.cbmanhanvien.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.comboBox2_KeyPress);
             this.cbmanhanvien.MouseClick += new System.Windows.Forms.MouseEventHandler(this.comboBox2_MouseClick);
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Bahnschrift SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.Color.Black;
-            this.label11.Location = new System.Drawing.Point(22, 342);
-            this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(82, 19);
-            this.label11.TabIndex = 53;
-            this.label11.Text = "Tổng tiền :";
             // 
             // radio1
             // 
@@ -315,7 +292,6 @@ namespace BTL
             this.panel2.Controls.Add(this.radio2);
             this.panel2.Controls.Add(this.radio1);
             this.panel2.Controls.Add(this.label15);
-            this.panel2.Controls.Add(this.label11);
             this.panel2.Controls.Add(this.cbmanhanvien);
             this.panel2.Controls.Add(this.dateTimePicker1);
             this.panel2.Controls.Add(this.label5);
@@ -323,7 +299,6 @@ namespace BTL
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.label6);
-            this.panel2.Controls.Add(this.textBox8);
             this.panel2.Controls.Add(this.textBox7);
             this.panel2.Controls.Add(this.textBox2);
             this.panel2.Controls.Add(this.textBox1);
@@ -334,15 +309,6 @@ namespace BTL
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(941, 641);
             this.panel2.TabIndex = 2;
-            // 
-            // textBox7
-            // 
-            this.textBox7.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
-            this.textBox7.Location = new System.Drawing.Point(169, 60);
-            this.textBox7.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(174, 20);
-            this.textBox7.TabIndex = 38;
             // 
             // label15
             // 
@@ -355,6 +321,15 @@ namespace BTL
             this.label15.Size = new System.Drawing.Size(72, 19);
             this.label15.TabIndex = 57;
             this.label15.Text = "Số HDB :";
+            // 
+            // textBox7
+            // 
+            this.textBox7.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F);
+            this.textBox7.Location = new System.Drawing.Point(169, 60);
+            this.textBox7.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(174, 20);
+            this.textBox7.TabIndex = 38;
             // 
             // FormHDB
             // 
@@ -384,7 +359,6 @@ namespace BTL
         private System.Windows.Forms.TextBox txttennhanvien;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox8;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
@@ -392,7 +366,6 @@ namespace BTL
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.ComboBox cbmanhanvien;
-        private System.Windows.Forms.Label label11;
         private Radio radio1;
         private Radio radio2;
         private Radio radio3;
