@@ -50,7 +50,19 @@ namespace BTL
             sqlcommand.ExecuteNonQuery();
             DongKetNoiCSDL();
         }
-
         
+
+        public object DocGiaTri(string sql)
+        {
+            KetNoiCSDL();
+            SqlCommand sqlcommand = new SqlCommand();
+            sqlcommand.Connection = sqlConnect;
+            sqlcommand.CommandText = sql;
+            object val = sqlcommand.ExecuteScalar();
+            DongKetNoiCSDL();
+            return val;
+        }
+
+
     }
 }

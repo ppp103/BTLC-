@@ -9,6 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using FontAwesome.Sharp;
 using BTL;
+using BTL.Forms;
+
 namespace HomePage
 {
     public partial class TrangChinh : Form
@@ -101,7 +103,7 @@ namespace HomePage
         private void btnNhapHang_Click(object sender, EventArgs e)
         {
             KichHoatNut(sender);
-            MoForm(new FormNhapHangHoa());
+            MoForm(new FormNhapHang());
         }
 
         private void btnNhapHoaDonBan_Click(object sender, EventArgs e)
@@ -150,6 +152,12 @@ namespace HomePage
             KichHoatNut(sender);
             iconTieuDe.IconChar = IconChar.Home;
             labelTieuDe.Text = "Trang chủ";
+        }
+
+        private void btnBaoCao_Click(object sender, EventArgs e)
+        {
+            KichHoatNut(sender);
+            //MoForm(new BaoCao());
         }
     }
 }

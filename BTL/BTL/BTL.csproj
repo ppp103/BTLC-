@@ -51,6 +51,9 @@
     <Reference Include="FontAwesome.Sharp, Version=6.1.1.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f, processorArchitecture=MSIL">
       <HintPath>..\packages\FontAwesome.Sharp.6.1.1\lib\net472\FontAwesome.Sharp.dll</HintPath>
     </Reference>
+    <Reference Include="Guna.UI2, Version=2.0.3.5, Culture=neutral, PublicKeyToken=4015e4865bda28a4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Guna.UI2.WinForms.2.0.3.5\lib\net40\Guna.UI2.dll</HintPath>
+    </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
     <Reference Include="System" />
@@ -100,6 +103,12 @@
     </Compile>
     <Compile Include="DangNhapDangKi\Textboxxx.Designer.cs">
       <DependentUpon>Textboxxx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ChiTietHDB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ChiTietHDB.Designer.cs">
+      <DependentUpon>ChiTietHDB.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\FormHDB.cs">
       <SubType>Form</SubType>
@@ -164,6 +173,9 @@
     <EmbeddedResource Include="DangNhapDangKi\Textboxxx.resx">
       <DependentUpon>Textboxxx.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ChiTietHDB.resx">
+      <DependentUpon>ChiTietHDB.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormHDB.resx">
       <DependentUpon>FormHDB.cs</DependentUpon>
     </EmbeddedResource>
@@ -208,7 +220,9 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Images\" />
+  </ItemGroup>
   <ItemGroup>
     <Content Include="DangNhapDangKi\DangNhap.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -224,12 +238,12 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>DuLieu.mdf</DependentUpon>
     </Content>
-    <Content Include="Images\DbTest.mdf">
+    <Content Include="DangNhapDangKi\NhanVien.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Images\DbTest_log.ldf">
+    <Content Include="DangNhapDangKi\NhanVien_log.ldf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <DependentUpon>DbTest.mdf</DependentUpon>
+      <DependentUpon>NhanVien.mdf</DependentUpon>
     </Content>
   </ItemGroup>
   <ItemGroup>
