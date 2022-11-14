@@ -61,3 +61,4 @@ D:\BTL-CSharp\New folder\BTL\BTL\obj\Debug\BTL.csproj.CopyComplete
 D:\BTL-CSharp\New folder\BTL\BTL\obj\Debug\BTL.exe
 D:\BTL-CSharp\New folder\BTL\BTL\obj\Debug\BTL.pdb
 D:\HocHanh(ki5)\C#\Projects\BTLv4\BTL\BTL\bin\Debug\Guna.UI2.dll
+D:\BTL-CSharp\New folder\BTL\BTL\bin\Debug\Guna.UI2.dll
