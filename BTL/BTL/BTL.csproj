@@ -221,10 +221,10 @@
     <Folder Include="Images\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="DataBase\DangNhap.mdf">
+    <Content Include="DangNhapDangKi\DangNhap.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="DataBase\DangNhap_log.ldf">
+    <Content Include="DangNhapDangKi\DangNhap_log.ldf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>DangNhap.mdf</DependentUpon>
     </Content>
@@ -235,10 +235,10 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>DuLieu.mdf</DependentUpon>
     </Content>
-    <Content Include="DataBase\NhanVien.mdf">
+    <Content Include="DangNhapDangKi\NhanVien.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="DataBase\NhanVien_log.ldf">
+    <Content Include="DangNhapDangKi\NhanVien_log.ldf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>NhanVien.mdf</DependentUpon>
     </Content>

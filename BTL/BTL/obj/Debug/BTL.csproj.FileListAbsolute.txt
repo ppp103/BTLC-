@@ -2,8 +2,6 @@ D:\HocHanh(ki5)\C#\Projects\BTLv4\BTL\BTL\bin\Debug\DangNhapDangKi\DangNhap.mdf
 D:\HocHanh(ki5)\C#\Projects\BTLv4\BTL\BTL\bin\Debug\DangNhapDangKi\DangNhap_log.ldf
 D:\HocHanh(ki5)\C#\Projects\BTLv4\BTL\BTL\bin\Debug\DataBase\DuLieu.mdf
 D:\HocHanh(ki5)\C#\Projects\BTLv4\BTL\BTL\bin\Debug\DataBase\DuLieu_log.ldf
-D:\HocHanh(ki5)\C#\Projects\BTLv4\BTL\BTL\bin\Debug\Forms\NhanVien.mdf
-D:\HocHanh(ki5)\C#\Projects\BTLv4\BTL\BTL\bin\Debug\Forms\NhanVien_log.ldf
 D:\HocHanh(ki5)\C#\Projects\BTLv4\BTL\BTL\bin\Debug\BTL.exe.config
 D:\HocHanh(ki5)\C#\Projects\BTLv4\BTL\BTL\bin\Debug\BTL.exe
 D:\HocHanh(ki5)\C#\Projects\BTLv4\BTL\BTL\bin\Debug\BTL.pdb
@@ -29,3 +27,5 @@ D:\HocHanh(ki5)\C#\Projects\BTLv4\BTL\BTL\obj\Debug\BTL.csproj.CoreCompileInputs
 D:\HocHanh(ki5)\C#\Projects\BTLv4\BTL\BTL\obj\Debug\BTL.csproj.CopyComplete
 D:\HocHanh(ki5)\C#\Projects\BTLv4\BTL\BTL\obj\Debug\BTL.exe
 D:\HocHanh(ki5)\C#\Projects\BTLv4\BTL\BTL\obj\Debug\BTL.pdb
+D:\HocHanh(ki5)\C#\Projects\BTLv4\BTL\BTL\bin\Debug\DangNhapDangKi\NhanVien.mdf
+D:\HocHanh(ki5)\C#\Projects\BTLv4\BTL\BTL\bin\Debug\DangNhapDangKi\NhanVien_log.ldf
