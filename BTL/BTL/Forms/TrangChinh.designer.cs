@@ -32,6 +32,7 @@ namespace HomePage
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TrangChinh));
             this.panelSideMenu = new System.Windows.Forms.Panel();
+            this.btnBaoCao = new FontAwesome.Sharp.IconButton();
             this.btnNhapHoaDonBan = new FontAwesome.Sharp.IconButton();
             this.panelTkeHoaDon = new System.Windows.Forms.Panel();
             this.btnHoaDonNhap = new FontAwesome.Sharp.IconButton();
@@ -67,6 +68,7 @@ namespace HomePage
             // 
             this.panelSideMenu.AutoScroll = true;
             this.panelSideMenu.BackColor = System.Drawing.Color.PeachPuff;
+            this.panelSideMenu.Controls.Add(this.btnBaoCao);
             this.panelSideMenu.Controls.Add(this.btnNhapHoaDonBan);
             this.panelSideMenu.Controls.Add(this.panelTkeHoaDon);
             this.panelSideMenu.Controls.Add(this.btnNhapHang);
@@ -79,6 +81,33 @@ namespace HomePage
             this.panelSideMenu.Name = "panelSideMenu";
             this.panelSideMenu.Size = new System.Drawing.Size(264, 828);
             this.panelSideMenu.TabIndex = 0;
+            // 
+            // btnBaoCao
+            // 
+            this.btnBaoCao.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnBaoCao.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnBaoCao.FlatAppearance.BorderColor = System.Drawing.Color.MistyRose;
+            this.btnBaoCao.FlatAppearance.BorderSize = 0;
+            this.btnBaoCao.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightCoral;
+            this.btnBaoCao.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightCoral;
+            this.btnBaoCao.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBaoCao.Font = new System.Drawing.Font("Constantia", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBaoCao.ForeColor = System.Drawing.Color.Black;
+            this.btnBaoCao.IconChar = FontAwesome.Sharp.IconChar.LineChart;
+            this.btnBaoCao.IconColor = System.Drawing.Color.DimGray;
+            this.btnBaoCao.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnBaoCao.IconSize = 35;
+            this.btnBaoCao.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBaoCao.Location = new System.Drawing.Point(0, 626);
+            this.btnBaoCao.Name = "btnBaoCao";
+            this.btnBaoCao.Padding = new System.Windows.Forms.Padding(10, 0, 21, 0);
+            this.btnBaoCao.Size = new System.Drawing.Size(264, 65);
+            this.btnBaoCao.TabIndex = 10;
+            this.btnBaoCao.Text = "Báo Cáo";
+            this.btnBaoCao.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBaoCao.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnBaoCao.UseVisualStyleBackColor = true;
+            this.btnBaoCao.Click += new System.EventHandler(this.btnBaoCao_Click);
             // 
             // btnNhapHoaDonBan
             // 
@@ -346,7 +375,7 @@ namespace HomePage
             this.labelTieuDe.AutoSize = true;
             this.labelTieuDe.Font = new System.Drawing.Font("Constantia", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelTieuDe.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.labelTieuDe.Location = new System.Drawing.Point(63, 9);
+            this.labelTieuDe.Location = new System.Drawing.Point(66, 15);
             this.labelTieuDe.Name = "labelTieuDe";
             this.labelTieuDe.Size = new System.Drawing.Size(109, 24);
             this.labelTieuDe.TabIndex = 1;
@@ -362,7 +391,7 @@ namespace HomePage
             this.iconTieuDe.IconColor = System.Drawing.Color.DimGray;
             this.iconTieuDe.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconTieuDe.IconSize = 40;
-            this.iconTieuDe.Location = new System.Drawing.Point(3, 3);
+            this.iconTieuDe.Location = new System.Drawing.Point(6, 9);
             this.iconTieuDe.Name = "iconTieuDe";
             this.iconTieuDe.Size = new System.Drawing.Size(54, 36);
             this.iconTieuDe.TabIndex = 0;
@@ -379,7 +408,7 @@ namespace HomePage
             this.iconLogOut.IconColor = System.Drawing.Color.DimGray;
             this.iconLogOut.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconLogOut.IconSize = 40;
-            this.iconLogOut.Location = new System.Drawing.Point(876, 0);
+            this.iconLogOut.Location = new System.Drawing.Point(1035, 5);
             this.iconLogOut.Name = "iconLogOut";
             this.iconLogOut.Size = new System.Drawing.Size(40, 41);
             this.iconLogOut.TabIndex = 8;
@@ -396,7 +425,7 @@ namespace HomePage
             this.iconGear.IconColor = System.Drawing.Color.DimGray;
             this.iconGear.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconGear.IconSize = 40;
-            this.iconGear.Location = new System.Drawing.Point(812, 0);
+            this.iconGear.Location = new System.Drawing.Point(971, 5);
             this.iconGear.Name = "iconGear";
             this.iconGear.Size = new System.Drawing.Size(40, 41);
             this.iconGear.TabIndex = 8;
@@ -412,7 +441,7 @@ namespace HomePage
             this.iconBell.IconColor = System.Drawing.Color.DimGray;
             this.iconBell.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconBell.IconSize = 40;
-            this.iconBell.Location = new System.Drawing.Point(746, 1);
+            this.iconBell.Location = new System.Drawing.Point(905, 6);
             this.iconBell.Name = "iconBell";
             this.iconBell.Size = new System.Drawing.Size(40, 41);
             this.iconBell.TabIndex = 8;
@@ -428,7 +457,7 @@ namespace HomePage
             this.iconTwitter.IconColor = System.Drawing.Color.DimGray;
             this.iconTwitter.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconTwitter.IconSize = 35;
-            this.iconTwitter.Location = new System.Drawing.Point(478, 1);
+            this.iconTwitter.Location = new System.Drawing.Point(637, 6);
             this.iconTwitter.Name = "iconTwitter";
             this.iconTwitter.Size = new System.Drawing.Size(40, 41);
             this.iconTwitter.TabIndex = 8;
@@ -444,7 +473,7 @@ namespace HomePage
             this.iconIns.IconColor = System.Drawing.Color.DimGray;
             this.iconIns.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconIns.IconSize = 40;
-            this.iconIns.Location = new System.Drawing.Point(418, 1);
+            this.iconIns.Location = new System.Drawing.Point(577, 6);
             this.iconIns.Name = "iconIns";
             this.iconIns.Size = new System.Drawing.Size(40, 41);
             this.iconIns.TabIndex = 8;
@@ -460,7 +489,7 @@ namespace HomePage
             this.iconFacebook.IconColor = System.Drawing.Color.DimGray;
             this.iconFacebook.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconFacebook.IconSize = 40;
-            this.iconFacebook.Location = new System.Drawing.Point(357, 1);
+            this.iconFacebook.Location = new System.Drawing.Point(516, 6);
             this.iconFacebook.Name = "iconFacebook";
             this.iconFacebook.Size = new System.Drawing.Size(40, 41);
             this.iconFacebook.TabIndex = 8;
@@ -480,16 +509,16 @@ namespace HomePage
             this.panelHeader.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelHeader.Location = new System.Drawing.Point(264, 21);
             this.panelHeader.Name = "panelHeader";
-            this.panelHeader.Size = new System.Drawing.Size(1221, 44);
+            this.panelHeader.Size = new System.Drawing.Size(1221, 51);
             this.panelHeader.TabIndex = 9;
             // 
             // panelForm
             // 
             this.panelForm.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.panelForm.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelForm.Location = new System.Drawing.Point(264, 65);
+            this.panelForm.Location = new System.Drawing.Point(264, 72);
             this.panelForm.Name = "panelForm";
-            this.panelForm.Size = new System.Drawing.Size(1221, 763);
+            this.panelForm.Size = new System.Drawing.Size(1221, 756);
             this.panelForm.TabIndex = 10;
             // 
             // TrangChinh
@@ -545,6 +574,7 @@ namespace HomePage
         private System.Windows.Forms.Panel panelForm;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
+        private FontAwesome.Sharp.IconButton btnBaoCao;
     }
 }
 
