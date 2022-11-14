@@ -157,7 +157,7 @@ namespace HomePage
         private void btnBaoCao_Click(object sender, EventArgs e)
         {
             KichHoatNut(sender);
-            MoForm(new BaoCao());
+            //MoForm(new BaoCao());
         }
     }
 }
