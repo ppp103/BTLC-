@@ -41,6 +41,8 @@ namespace HomePage
             this.btnTkeHangHoa = new FontAwesome.Sharp.IconButton();
             this.iconHome = new FontAwesome.Sharp.IconButton();
             this.panelBlank = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.timerTkeHoaDon = new System.Windows.Forms.Timer(this.components);
             this.panelTieuDe = new System.Windows.Forms.Panel();
@@ -54,8 +56,6 @@ namespace HomePage
             this.iconFacebook = new FontAwesome.Sharp.IconButton();
             this.panelHeader = new System.Windows.Forms.Panel();
             this.panelForm = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.panelSideMenu.SuspendLayout();
             this.panelTkeHoaDon.SuspendLayout();
             this.panelBlank.SuspendLayout();
@@ -77,7 +77,7 @@ namespace HomePage
             this.panelSideMenu.Font = new System.Drawing.Font("Century Gothic", 10F);
             this.panelSideMenu.Location = new System.Drawing.Point(0, 0);
             this.panelSideMenu.Name = "panelSideMenu";
-            this.panelSideMenu.Size = new System.Drawing.Size(264, 740);
+            this.panelSideMenu.Size = new System.Drawing.Size(264, 828);
             this.panelSideMenu.TabIndex = 0;
             // 
             // btnNhapHoaDonBan
@@ -96,7 +96,7 @@ namespace HomePage
             this.btnNhapHoaDonBan.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnNhapHoaDonBan.IconSize = 35;
             this.btnNhapHoaDonBan.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnNhapHoaDonBan.Location = new System.Drawing.Point(0, 550);
+            this.btnNhapHoaDonBan.Location = new System.Drawing.Point(0, 561);
             this.btnNhapHoaDonBan.Name = "btnNhapHoaDonBan";
             this.btnNhapHoaDonBan.Padding = new System.Windows.Forms.Padding(10, 0, 21, 0);
             this.btnNhapHoaDonBan.Size = new System.Drawing.Size(264, 65);
@@ -113,7 +113,7 @@ namespace HomePage
             this.panelTkeHoaDon.Controls.Add(this.btnHoaDonBan);
             this.panelTkeHoaDon.Controls.Add(this.btnTkeHoaDon);
             this.panelTkeHoaDon.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelTkeHoaDon.Location = new System.Drawing.Point(0, 482);
+            this.panelTkeHoaDon.Location = new System.Drawing.Point(0, 493);
             this.panelTkeHoaDon.MaximumSize = new System.Drawing.Size(0, 204);
             this.panelTkeHoaDon.MinimumSize = new System.Drawing.Size(0, 68);
             this.panelTkeHoaDon.Name = "panelTkeHoaDon";
@@ -213,7 +213,7 @@ namespace HomePage
             this.btnNhapHang.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnNhapHang.IconSize = 35;
             this.btnNhapHang.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnNhapHang.Location = new System.Drawing.Point(0, 417);
+            this.btnNhapHang.Location = new System.Drawing.Point(0, 428);
             this.btnNhapHang.Name = "btnNhapHang";
             this.btnNhapHang.Padding = new System.Windows.Forms.Padding(10, 0, 21, 0);
             this.btnNhapHang.Size = new System.Drawing.Size(264, 65);
@@ -240,7 +240,7 @@ namespace HomePage
             this.btnTkeHangHoa.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnTkeHangHoa.IconSize = 35;
             this.btnTkeHangHoa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTkeHangHoa.Location = new System.Drawing.Point(0, 352);
+            this.btnTkeHangHoa.Location = new System.Drawing.Point(0, 363);
             this.btnTkeHangHoa.Name = "btnTkeHangHoa";
             this.btnTkeHangHoa.Padding = new System.Windows.Forms.Padding(10, 0, 21, 0);
             this.btnTkeHangHoa.Size = new System.Drawing.Size(264, 65);
@@ -267,7 +267,7 @@ namespace HomePage
             this.iconHome.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconHome.IconSize = 35;
             this.iconHome.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconHome.Location = new System.Drawing.Point(0, 287);
+            this.iconHome.Location = new System.Drawing.Point(0, 298);
             this.iconHome.Name = "iconHome";
             this.iconHome.Padding = new System.Windows.Forms.Padding(10, 0, 21, 0);
             this.iconHome.Size = new System.Drawing.Size(264, 65);
@@ -286,8 +286,32 @@ namespace HomePage
             this.panelBlank.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelBlank.Location = new System.Drawing.Point(0, 0);
             this.panelBlank.Name = "panelBlank";
-            this.panelBlank.Size = new System.Drawing.Size(264, 287);
+            this.panelBlank.Size = new System.Drawing.Size(264, 298);
             this.panelBlank.TabIndex = 8;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.PeachPuff;
+            this.label1.Font = new System.Drawing.Font("Monotype Corsiva", 28.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(-2, 222);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(266, 56);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Perfume Shop";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.PeachPuff;
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 19.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Black;
+            this.label3.Location = new System.Drawing.Point(36, 183);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(192, 39);
+            this.label3.TabIndex = 1;
+            this.label3.Text = "LINAPPUTY ";
             // 
             // pictureBox1
             // 
@@ -324,7 +348,7 @@ namespace HomePage
             this.labelTieuDe.ForeColor = System.Drawing.SystemColors.ControlText;
             this.labelTieuDe.Location = new System.Drawing.Point(63, 9);
             this.labelTieuDe.Name = "labelTieuDe";
-            this.labelTieuDe.Size = new System.Drawing.Size(79, 20);
+            this.labelTieuDe.Size = new System.Drawing.Size(109, 24);
             this.labelTieuDe.TabIndex = 1;
             this.labelTieuDe.Text = "Trang Chủ";
             // 
@@ -462,41 +486,17 @@ namespace HomePage
             // panelForm
             // 
             this.panelForm.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.panelForm.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelForm.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelForm.Location = new System.Drawing.Point(264, 65);
             this.panelForm.Name = "panelForm";
-            this.panelForm.Size = new System.Drawing.Size(1221, 734);
+            this.panelForm.Size = new System.Drawing.Size(1221, 763);
             this.panelForm.TabIndex = 10;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.PeachPuff;
-            this.label3.Font = new System.Drawing.Font("Century Gothic", 19.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(36, 183);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(195, 40);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "LINAPPUTY ";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.PeachPuff;
-            this.label1.Font = new System.Drawing.Font("Monotype Corsiva", 28.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(-2, 231);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(266, 56);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Perfume Shop";
             // 
             // TrangChinh
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1485, 740);
+            this.ClientSize = new System.Drawing.Size(1485, 828);
             this.Controls.Add(this.panelForm);
             this.Controls.Add(this.panelHeader);
             this.Controls.Add(this.panelTieuDe);
