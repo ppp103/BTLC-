@@ -67,17 +67,12 @@ namespace BTL.Forms
             DataTable hdb = cthdb.DocBang("SELECT * FROM tblChiTietHoaDonBan");
             dataGridView1.DataSource = hdb;
             dataGridView1.ColumnHeadersDefaultCellStyle.Font = new Font("Arial", 9, FontStyle.Bold);
-            dataGridView1.Columns[0].DefaultCellStyle.Font = new Font("Times New Roman", 8, FontStyle.Bold);
-            dataGridView1.Columns[1].DefaultCellStyle.Font = new Font("Times New Roman", 8, FontStyle.Bold);
-            dataGridView1.Columns[2].DefaultCellStyle.Font = new Font("Times New Roman", 8, FontStyle.Bold);
-            dataGridView1.Columns[3].DefaultCellStyle.Font = new Font("Times New Roman", 8, FontStyle.Bold);
-            dataGridView1.Columns[4].DefaultCellStyle.Font = new Font("Times New Roman", 8, FontStyle.Bold);
             dataGridView1.Columns[0].HeaderText = "Số Hóa Đơn Bán";
             dataGridView1.Columns[1].HeaderText = "Mã Hàng";
             dataGridView1.Columns[2].HeaderText = "Số Lượng";
             dataGridView1.Columns[3].HeaderText = "Giảm Giá";
             dataGridView1.Columns[4].HeaderText = "Thành Tiền";
-            dataGridView1.Columns[0].Width = 90;
+            dataGridView1.Columns[0].Width = 110;
             dataGridView1.Columns[1].Width = 85;
             dataGridView1.Columns[2].Width = 100;
             dataGridView1.Columns[3].Width = 90;
@@ -102,21 +97,12 @@ namespace BTL.Forms
             }
         }
 
-        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
-        {
-            cbHdb.Text = dataGridView1[0, e.RowIndex].Value.ToString();
-            txtmahang.Text = dataGridView1[1, e.RowIndex].Value.ToString();
-            txtsoluong.Text = dataGridView1[2, e.RowIndex].Value.ToString();
-            txtgiamgia.Text = dataGridView1[3, e.RowIndex].Value.ToString();
-            txtthanhtien.Text = dataGridView1[4, e.RowIndex].Value.ToString();
-           
-
-
-        }
+        
 
         private void ChiTietHDB_Load(object sender, EventArgs e)
         {
             txtthanhtien.Enabled = false;
+            txttienhang.Enabled = false;
             Showresult();
             loadCMB();
         }
@@ -129,6 +115,7 @@ namespace BTL.Forms
             txtsoluong.Text = " ";
             txtgiamgia.Text = " ";
             txtthanhtien.Text = " ";
+            txttienhang.Text = " ";
             
         }
 
@@ -261,9 +248,16 @@ namespace BTL.Forms
             if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar)) { e.Handled = true; }
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
+  
 
+       
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            cbHdb.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
+            txtmahang.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
+            txtsoluong.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
+            txtgiamgia.Text = dataGridView1.CurrentRow.Cells[3].Value.ToString();
+            txtthanhtien.Text = dataGridView1.CurrentRow.Cells[4].Value.ToString();
         }
     }
 }

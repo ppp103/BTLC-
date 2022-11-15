@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\BTL",
+    "\\BTL\\BTL",
+    "\\BTL\\BTL\\Forms"
   ],
-  "SelectedNode": "\\BTL.sln",
+  "SelectedNode": "\\BTL\\BTL\\Forms\\ChiTietHDB.cs",
   "PreviewInSolutionExplorer": false
 }
