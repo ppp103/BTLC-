@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
+using System.Data.SqlTypes;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -18,7 +19,8 @@ namespace BTL
         SqlConnection con = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=\"D:\\BTL-CSharp\\New folder\\BTL\\BTL\\DataBase\\DuLieu.mdf\";Integrated Security=True");
         SqlCommand cmd;
         SqlDataReader dr;
-        string sql;
+        string sql,sql1;
+
         public FormHDB()
         {
             InitializeComponent();
@@ -31,11 +33,6 @@ namespace BTL
             DataTable dtHdb = DSHDB.DocBang("SELECT * FROM tblHoaDonBan");
             dataGridView1.DataSource = dtHdb;
             dataGridView1.ColumnHeadersDefaultCellStyle.Font = new Font("Arial", 9, FontStyle.Bold);
-            dataGridView1.Columns[0].DefaultCellStyle.Font = new Font("Times New Roman", 8, FontStyle.Bold);
-            dataGridView1.Columns[1].DefaultCellStyle.Font = new Font("Times New Roman", 8, FontStyle.Bold);
-            dataGridView1.Columns[2].DefaultCellStyle.Font = new Font("Times New Roman", 8, FontStyle.Bold);
-            dataGridView1.Columns[3].DefaultCellStyle.Font = new Font("Times New Roman", 8, FontStyle.Bold);
-            dataGridView1.Columns[4].DefaultCellStyle.Font = new Font("Times New Roman", 8, FontStyle.Bold);
             dataGridView1.Columns[0].HeaderText = "Số Hóa Đơn Bán";
             dataGridView1.Columns[1].HeaderText = "Mã Nhân Viên";
             dataGridView1.Columns[2].HeaderText = "Ngày Bán";
@@ -74,18 +71,7 @@ namespace BTL
 
         
 
-        private void dataGridView1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-
        
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
 
         private void cbmanhanvien_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -112,6 +98,7 @@ namespace BTL
             cbmanhanvien.Text = null;
             txttennhanvien.Text = "";
             txtmakhachhang.Text = "";
+            txttongtien.Text = "";
             txthdb.Enabled = true;
 
         }
@@ -172,15 +159,7 @@ namespace BTL
 
         }
 
-        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
-        {
-            txthdb.Text = dataGridView1[0, e.RowIndex].Value.ToString();
-            cbmanhanvien.Text = dataGridView1[1, e.RowIndex].Value.ToString();
-            datetime.Text = dataGridView1[2, e.RowIndex].Value.ToString();
-            txtmakhachhang.Text = dataGridView1[3, e.RowIndex].Value.ToString();
-            txttongtien.Text = dataGridView1[4, e.RowIndex].Value.ToString();
-            txthdb.Enabled = false;
-        }
+    
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
@@ -203,6 +182,7 @@ namespace BTL
                     {
                         sql = $"Insert into tblHoaDonBan Values (N'{txthdb.Text}', N'{cbmanhanvien.Text}', N'{datetime.Value.ToString()}', N'{txtmakhachhang.Text}', N'{txttongtien.Text}')";
                         DSHDB.CapNhatDuLieu(sql);
+                        Showresult();
                         resetvalue();
                         MessageBox.Show("Thêm thành công");
                     }
@@ -240,15 +220,18 @@ namespace BTL
                 if (txthdb.Text.Trim() != "")
                 {
                     errorProvider1.Clear();
-                  
+
 
                     //Kiếm tra nếu kết nối chưa mở thì thực hiện mở kết nối
+                    sql1 = "Delete From tblChiTietHoaDonBan Where SoHDB =N'" + txthdb.Text + "'";
                     sql = "Delete From tblHoaDonBan Where SoHDB =N'" + txthdb.Text + "'";
+                    DSHDB.CapNhatDuLieu(sql1);
                     DSHDB.CapNhatDuLieu(sql);
+                   
 
                     //Cap nhat lai DataGrid
 
-
+                    Showresult();
                     resetvalue();
                     MessageBox.Show("Xóa Thành Công");
 
@@ -259,6 +242,16 @@ namespace BTL
                     return;
                 }
             }
+        }
+
+        private void dataGridView1_Click(object sender, EventArgs e)
+        {
+            txthdb.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
+            cbmanhanvien.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
+            datetime.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
+            txtmakhachhang.Text = dataGridView1.CurrentRow.Cells[3].Value.ToString();
+            txttongtien.Text = dataGridView1.CurrentRow.Cells[4].Value.ToString();
+            txthdb.Enabled = false;
         }
     }
 }
