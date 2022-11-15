@@ -32,14 +32,18 @@ namespace BTL.Forms
         private void BaoCao_Load(object sender, EventArgs e)
         {
             index = 1;
+            btnLamMoi_Click(this, e);
             dateTimePicker.CustomFormat = "MMMM yyyy";
             lbTgian.Visible = false;
+            lbInput2.Visible = false;
+            cboQuy.Visible = false;
             dateTimePicker.Visible = false;
         }
 
         private void sảnPhẩmBánChạyNhấtTừNhânViênToolStripMenuItem_Click(object sender, EventArgs e)
         {
             index = 1;
+            btnLamMoi_Click(this, e);
             dateTimePicker.Visible = false;
             lbTgian.Visible = false;
             lbInput.Text = "Mã NV";
@@ -48,6 +52,7 @@ namespace BTL.Forms
         private void danhSáchHĐToolStripMenuItem_Click(object sender, EventArgs e)
         {
             index = 2;
+            btnLamMoi_Click(this, e);
             lbInput.Text = "Mã NCC";
             lbTgian.Visible = true;
             dateTimePicker.Visible = true;
@@ -67,6 +72,7 @@ namespace BTL.Forms
                 else
                 {
                     MessageBox.Show("Không tìm thấy dữ liệu");
+                    dgvKetQua.DataSource = table;
                 }
             }
 
@@ -84,6 +90,7 @@ namespace BTL.Forms
                 else
                 {
                     MessageBox.Show("Không tìm thấy dữ liệu");
+                    dgvKetQua.DataSource = table;
                 }
             }
         }
@@ -92,6 +99,7 @@ namespace BTL.Forms
         {
             txtInput.Text = "";
             dateTimePicker.Value = DateTime.Today;
+            dgvKetQua.DataSource = null;
         }
     }
 }
