@@ -56,7 +56,9 @@
     </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
-    <Reference Include="System" />
+    <Reference Include="System">
+      <HintPath>C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
+    </Reference>
     <Reference Include="System.Core" />
     <Reference Include="System.Xaml" />
     <Reference Include="System.Xml.Linq" />
@@ -104,6 +106,12 @@
     <Compile Include="DangNhapDangKi\Textboxxx.Designer.cs">
       <DependentUpon>Textboxxx.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\BaoCao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\BaoCao.Designer.cs">
+      <DependentUpon>BaoCao.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\ChiTietHDB.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -146,6 +154,12 @@
     <Compile Include="Forms\FormThongKeHoaDon.Designer.cs">
       <DependentUpon>FormThongKeHoaDon.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\FormTkeHangHoa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormTkeHangHoa.Designer.cs">
+      <DependentUpon>FormTkeHangHoa.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\TrangChinh.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -173,6 +187,9 @@
     <EmbeddedResource Include="DangNhapDangKi\Textboxxx.resx">
       <DependentUpon>Textboxxx.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\BaoCao.resx">
+      <DependentUpon>BaoCao.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\ChiTietHDB.resx">
       <DependentUpon>ChiTietHDB.cs</DependentUpon>
     </EmbeddedResource>
@@ -193,6 +210,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormThongKeHoaDon.resx">
       <DependentUpon>FormThongKeHoaDon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormTkeHangHoa.resx">
+      <DependentUpon>FormTkeHangHoa.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
