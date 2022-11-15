@@ -95,3 +95,5 @@ D:\HocHanh(ki5)\C#\Projects\BTLv7\BTL\BTL\obj\Debug\BTL.csproj.CopyComplete
 D:\HocHanh(ki5)\C#\Projects\BTLv7\BTL\BTL\obj\Debug\BTL.exe
 D:\HocHanh(ki5)\C#\Projects\BTLv7\BTL\BTL\obj\Debug\BTL.pdb
 D:\HocHanh(ki5)\C#\Projects\BTLv7\BTL\BTL\obj\Debug\BTL.Forms.BaoCao.resources
+D:\BTL-CSharp\New folder\BTL\BTL\obj\Debug\BTL.Forms.BaoCao.resources
+D:\BTL-CSharp\New folder\BTL\BTL\obj\Debug\BTL.Forms.FormTkeHangHoa.resources

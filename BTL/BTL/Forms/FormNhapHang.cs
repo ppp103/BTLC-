@@ -8,24 +8,30 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace BTL
 {
     public partial class FormNhapHang : Form
     {
-        SqlConnection con;
+        XuLyCSDL nam = new XuLyCSDL();
+        SqlConnection strConnect = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""D:\BTL-CSharp\New folder\BTL\BTL\DataBase\DuLieu.mdf"";Integrated Security=True");
+        string duongdan = "";
+        SqlCommand cmd;
         public FormNhapHang()
         {
             InitializeComponent();
         }
         public void reset()
         {
-            txtTenHang.Text = " ";
+            txtMaHang.Text = "";
+            txtTenHang.Text = "";
             txtSoLuong.Text = "";
             txtDonGiaNhap.Text = "";
             txtDonGiaBan.Text = "";
             txtTGBH.Text = "";
-            txtAnh.Text = "";
+            picture.Image = null;
             txtGhiChu.Text = "";
             txtMaKL.Text = "";
             txtMaLoai.Text = "";
@@ -37,118 +43,211 @@ namespace BTL
             txtMaMua.Text = "";
 
         }
-        //private void btnClean_Click(object sender, EventArgs e)
-        //{
-        //    if (txtTenHang.Text == "")
-        //    {
-        //        MessageBox.Show("Vui lòng nhập tên hàng !");
+        public void hiengiatri()
+        {
+            DataTable dtHnh = nam.DocBang("SELECT * FROM tblHangHoa");
+            dataGridView1.DataSource = dtHnh;
+            dtHnh.Dispose();
+        }
+        public bool isCheck()
+        {
+            if (txtMaHang.Text.Trim() == "")
+            {
+                errorProvider1.SetError(txtMaHang, "Số Hóa Đơn Bán Đang Trống!");
+                return false;
+            }
+            else
+            {
+                errorProvider1.Clear();
+            }
 
-        //    }
-        //    else
-        //    {
-        //        if (txtSoLuong.Text == "")
-        //        {
-        //            MessageBox.Show("Vui lòng nhập tên sản phẩm !");
+            if (txtTenHang.Text.Trim() == "")
+            {
+                errorProvider1.SetError(txtTenHang, "Chưa Chọn Mã Nhân Viên!");
+                return false;
+            }
+            else
+            {
+                errorProvider1.Clear();
+            }
 
-        //        }
-        //        else
-        //        {
-        //            if (txtDonGiaNhap.Text == "")
-        //            {
-        //                MessageBox.Show("Vui lòng nhập tên sản phẩm !");
+            if (txtSoLuong.Text.Trim() == "")
+            {
+                errorProvider1.SetError(txtSoLuong, "Ngày Bán cần được chọn!");
+                return false;
+            }
+            else
+            {
+                errorProvider1.Clear();
+            }
 
-        //            }
-        //            else
-        //            {
-        //                if (txtDonGiaBan.Text == "")
-        //                {
-        //                    MessageBox.Show("Vui lòng nhập tên sản phẩm !");
+            //if (txtDonGiaNhap.Text.Trim() == "")
+           // {
+            //    errorProvider1.SetError(txtDonGiaNhap, "Mã Khách Hàng Không Được Để Trống!");
+            //    return false;
+           // }
+            //else
+           // {
+            //    errorProvider1.Clear();
+           // }
+            if (txtDonGiaBan.Text.Trim() == "")
+            {
+                errorProvider1.SetError(txtDonGiaBan, "Mã Khách Hàng Không Được Để Trống!");
+                return false;
+            }
+            else
+            {
+                errorProvider1.Clear();
+            }
+            if (txtTGBH.Text.Trim() == "")
+            {
+                errorProvider1.SetError(txtTGBH, "Mã Khách Hàng Không Được Để Trống!");
+                return false;
+            }
+            else
+            {
+                errorProvider1.Clear();
+            }
+            if (picture.Image == null)
+            {
+                errorProvider1.SetError(picture, "Mã Khách Hàng Không Được Để Trống!");
+                return false;
+            }
+            else
+            {
+                errorProvider1.Clear();
+            }
+            if (txtGhiChu.Text.Trim() == "")
+            {
+                errorProvider1.SetError(txtGhiChu, "Mã Khách Hàng Không Được Để Trống!");
+                return false;
+            }
+            else
+            {
+                errorProvider1.Clear();
+            }
+            if (txtMaKL.Text.Trim() == "")
+            {
+                errorProvider1.SetError(txtMaKL, "Mã Khách Hàng Không Được Để Trống!");
+                return false;
+            }
+            else
+            {
+                errorProvider1.Clear();
 
-        //                }
-        //                else
-        //                {
-        //                    if (txtTGBH.Text == "")
-        //                    {
-        //                        MessageBox.Show("Vui lòng nhập tên sản phẩm !");
+            }
+            if (txtMaLoai.Text.Trim() == "")
+            {
+                errorProvider1.SetError(txtMaLoai, "Mã Khách Hàng Không Được Để Trống!");
+                return false;
+            }
+            else
+            {
+                errorProvider1.Clear();
 
-        //                    }
-        //                    else
-        //                    {
-        //                        if (txtMaKL.Text == "")
-        //                        {
-        //                            MessageBox.Show("Vui lòng nhập tên sản phẩm !");
+            }
+            if (txtMaCL.Text.Trim() == "")
+            {
+                errorProvider1.SetError(txtMaCL, "Mã Khách Hàng Không Được Để Trống!");
+                return false;
+            }
+            else
+            {
+                errorProvider1.Clear();
 
-        //                        }
-        //                        else
-        //                        {
-        //                            if (txtMaLoai.Text == "")
-        //                            {
-        //                                MessageBox.Show("Vui lòng nhập tên sản phẩm !");
+            }
+            if (txtMaNSX.Text.Trim() == "")
+            {
+                errorProvider1.SetError(txtMaNSX, "Mã Khách Hàng Không Được Để Trống!");
+                return false;
+            }
+            else
+            {
+                errorProvider1.Clear();
 
-        //                            }
-        //                            else
-        //                            {
-        //                                if (txtMaCL.Text == "")
-        //                                {
-        //                                    MessageBox.Show("Vui lòng nhập tên sản phẩm !");
+            }
+            if (txtMaMau.Text.Trim() == "")
+            {
+                errorProvider1.SetError(txtMaNSX, "Mã Khách Hàng Không Được Để Trống!");
+                return false;
+            }
+            else
+            {
+                errorProvider1.Clear();
 
-        //                                }
-        //                                else
-        //                                {
-        //                                    if (txtMaNSX.Text == "")
-        //                                    {
-        //                                        MessageBox.Show("Vui lòng nhập tên sản phẩm !");
+            }
+            if (txtMaCD.Text.Trim() == "")
+            {
+                errorProvider1.SetError(txtMaCD, "Mã Khách Hàng Không Được Để Trống!");
+                return false;
+            }
+            else
+            {
+                errorProvider1.Clear();
 
-        //                                    }
-        //                                    else
-        //                                    {
-        //                                        if (txtMaMau.Text == "")
-        //                                        {
-        //                                            MessageBox.Show("Vui lòng nhập tên sản phẩm !");
+            }
+            if (txtMaMua.Text.Trim() == "")
+            {
+                errorProvider1.SetError(txtMaMua, "Mã Khách Hàng Không Được Để Trống!");
+                return false;
+            }
+            else
+            {
+                errorProvider1.Clear();
 
-        //                                        }
-        //                                        else
-        //                                        {
-        //                                            if (txtMaCD.Text == "")
-        //                                            {
-        //                                                MessageBox.Show("Vui lòng nhập tên sản phẩm !");
+            }
 
-        //                                            }
-        //                                            else
-        //                                            {
+            return true;
+        }
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
 
-        //                                                if (txtGiaBan.Text == "")
-        //                {
-        //                    {
-        //                        System.Data.DataTable dataTable = ProcessDataBase.ReadTable($"select * from QuanLySanPham where Ten = N'{txtTen.Text.Trim()}'");
-        //                        if (dataTable.Rows.Count > 0)
-        //                        {
-        //                            MessageBox.Show("Tên sản phẩm này đã tồn tại, bạn hãy nhập tên sản phẩm khác!");
-        //                            txtTen.Focus();
-        //                        }
-        //                        else
-        //                        {
-        //                            try
-        //                            {
-        //                                ProcessDataBase.UpdateData($"insert into QuanLySanPham values (N'{txtTen.Text.Trim()}',N'{txtGioiTinh.Text.Trim()}',N'{txtDungTich.Text.Trim()}',N'{txtDoLuuHuong.Text.Trim()}',N'{txtHSD.Text.Trim()}',N'{txtHang.Text.Trim()}',N'{txtGiaNhap.Text.Trim()}',N'{txtGiaBan.Text.Trim()}')");
-        //                                FormNhapHang_Load(sender, e);
-        //                                reset();
-        //                                MessageBox.Show("Bạn đã thêm thành công");
+        }
 
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+           
+            DialogResult chon = MessageBox.Show("Bạn có chắc chắn thêm mới mã hàng " + txtMaHang.Text + "  không?", "Thêm", MessageBoxButtons.YesNo);
+            if (chon == DialogResult.Yes)
+            {
+                if (isCheck())
+                {
+                        byte[] anh = null;
+                        FileStream Streem = new FileStream(duongdan, FileMode.Open, FileAccess.Read);
+                        BinaryReader bs = new BinaryReader(Streem);
+                        anh = bs.ReadBytes((int)Streem.Length);
+                        strConnect.Open();
+                        string sql = $"Insert into tblHangHoa(MaHang,TenHang,SoLuong,DonGiaNhap,DonGiaBan,ThoiGianBaoHanh,Anh,GhiChu,MaKL,MaLoai,MaHangSX,MaCL,MaNuocSX,MaMau,MaCD,MaMua) Values ('"+txtMaHang.Text+"','" +txtTenHang.Text+"','" +txtSoLuong.Text+"','"+ txtDonGiaNhap.Text+"','" +txtDonGiaBan.Text+"','" +txtTGBH.Text+"',@anh, '"+txtGhiChu.Text+"','" +txtMaKL.Text+"','" +txtMaLoai.Text+"', '"+txtMaHangSX.Text+"', '"+txtMaCL.Text+"', '"+txtMaNSX.Text+"', '"+txtMaMau.Text+"', '"+txtMaCD.Text+"', '"+txtMaMua.Text+"')";
+                        cmd = new SqlCommand(sql, strConnect);
+                        cmd.Parameters.Add(new SqlParameter("@anh",anh));
+                        int N = cmd.ExecuteNonQuery();
+                        //nam.CapNhatDuLieu(sql);
+                        hiengiatri();
+                        strConnect.Close();
+                        //reset();
+                        MessageBox.Show("Thêm thành công");
+                    
+                }
+            }
+        }
 
-        //                            }
-        //                            catch (Exception ex)
-        //                            {
-        //                                MessageBox.Show(ex.Message);
-        //                            }
+        private void guna2GradientButton1_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            openFileDialog.Title = "Chọn ảnh";
+            openFileDialog.Filter = "File image (*.png; *.jpg; *.jpeg)|*.png; *.jpg; *.jpeg";
+            openFileDialog.Multiselect = false; // k cho chọn nhiều ảnh
+            if (openFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                duongdan = openFileDialog.FileName.ToString();
+                picture.ImageLocation = duongdan; // set đường dẫn cho ảnh
+            }
+        }
 
-        //                        }
-        //                    }
-        //                }
-        //            }
-        //        }
-        //    }
-        //}
+        private void FormNhapHang_Load(object sender, EventArgs e)
+        {
+            hiengiatri();
+        }
 
         //private void FormNhapHang_Load(object sender, EventArgs e)
         //{

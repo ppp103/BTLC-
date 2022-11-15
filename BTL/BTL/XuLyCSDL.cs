@@ -50,7 +50,7 @@ namespace BTL
             sqlcommand.ExecuteNonQuery();
             DongKetNoiCSDL();
         }
-        
+  
 
         public object DocGiaTri(string sql)
         {
