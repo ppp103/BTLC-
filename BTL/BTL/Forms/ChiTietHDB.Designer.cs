@@ -35,9 +35,11 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.txtgiamgia = new Guna.UI2.WinForms.Guna2NumericUpDown();
+            this.cbmahang = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.txttienhang = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2HtmlLabel8 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.txtthanhtien = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txtmahang = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txtgiamgia = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2HtmlLabel7 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.txtsoluong = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2HtmlLabel6 = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -52,25 +54,24 @@
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
-            this.radio5 = new BTL.Radio();
             this.dataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.txttienhang = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2HtmlLabel8 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.radio5 = new BTL.Radio();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtgiamgia)).BeginInit();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.txtgiamgia);
+            this.panel1.Controls.Add(this.cbmahang);
             this.panel1.Controls.Add(this.txttienhang);
             this.panel1.Controls.Add(this.guna2HtmlLabel8);
             this.panel1.Controls.Add(this.txtthanhtien);
-            this.panel1.Controls.Add(this.txtmahang);
-            this.panel1.Controls.Add(this.txtgiamgia);
             this.panel1.Controls.Add(this.guna2HtmlLabel7);
             this.panel1.Controls.Add(this.txtsoluong);
             this.panel1.Controls.Add(this.guna2HtmlLabel6);
@@ -92,6 +93,67 @@
             this.panel1.Size = new System.Drawing.Size(941, 641);
             this.panel1.TabIndex = 75;
             // 
+            // txtgiamgia
+            // 
+            this.txtgiamgia.BackColor = System.Drawing.Color.Transparent;
+            this.txtgiamgia.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtgiamgia.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtgiamgia.Location = new System.Drawing.Point(123, 185);
+            this.txtgiamgia.Name = "txtgiamgia";
+            this.txtgiamgia.Size = new System.Drawing.Size(100, 36);
+            this.txtgiamgia.TabIndex = 111;
+            this.txtgiamgia.ValueChanged += new System.EventHandler(this.txtgiamgia_ValueChanged);
+            this.txtgiamgia.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtgiamgia_KeyPress);
+            // 
+            // cbmahang
+            // 
+            this.cbmahang.BackColor = System.Drawing.Color.Gainsboro;
+            this.cbmahang.BorderColor = System.Drawing.Color.Gainsboro;
+            this.cbmahang.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cbmahang.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbmahang.FillColor = System.Drawing.Color.Gainsboro;
+            this.cbmahang.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cbmahang.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cbmahang.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbmahang.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cbmahang.ItemHeight = 30;
+            this.cbmahang.Location = new System.Drawing.Point(123, 247);
+            this.cbmahang.Name = "cbmahang";
+            this.cbmahang.Size = new System.Drawing.Size(221, 36);
+            this.cbmahang.TabIndex = 109;
+            this.cbmahang.SelectedIndexChanged += new System.EventHandler(this.cbmahang_SelectedIndexChanged);
+            // 
+            // txttienhang
+            // 
+            this.txttienhang.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txttienhang.DefaultText = "";
+            this.txttienhang.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txttienhang.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txttienhang.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txttienhang.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txttienhang.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txttienhang.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txttienhang.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txttienhang.Location = new System.Drawing.Point(123, 308);
+            this.txttienhang.Name = "txttienhang";
+            this.txttienhang.PasswordChar = '\0';
+            this.txttienhang.PlaceholderText = "";
+            this.txttienhang.SelectedText = "";
+            this.txttienhang.Size = new System.Drawing.Size(221, 36);
+            this.txttienhang.TabIndex = 108;
+            this.txttienhang.TextChanged += new System.EventHandler(this.txttienhang_TextChanged);
+            this.txttienhang.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txttienhang_KeyPress);
+            // 
+            // guna2HtmlLabel8
+            // 
+            this.guna2HtmlLabel8.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel8.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel8.Location = new System.Drawing.Point(5, 308);
+            this.guna2HtmlLabel8.Name = "guna2HtmlLabel8";
+            this.guna2HtmlLabel8.Size = new System.Drawing.Size(78, 27);
+            this.guna2HtmlLabel8.TabIndex = 107;
+            this.guna2HtmlLabel8.Text = "Giá Bán :";
+            // 
             // txtthanhtien
             // 
             this.txtthanhtien.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -111,52 +173,13 @@
             this.txtthanhtien.Size = new System.Drawing.Size(221, 36);
             this.txtthanhtien.TabIndex = 106;
             // 
-            // txtmahang
-            // 
-            this.txtmahang.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtmahang.DefaultText = "";
-            this.txtmahang.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtmahang.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtmahang.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtmahang.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtmahang.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtmahang.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtmahang.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtmahang.Location = new System.Drawing.Point(123, 247);
-            this.txtmahang.Name = "txtmahang";
-            this.txtmahang.PasswordChar = '\0';
-            this.txtmahang.PlaceholderText = "";
-            this.txtmahang.SelectedText = "";
-            this.txtmahang.Size = new System.Drawing.Size(221, 36);
-            this.txtmahang.TabIndex = 105;
-            // 
-            // txtgiamgia
-            // 
-            this.txtgiamgia.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtgiamgia.DefaultText = "";
-            this.txtgiamgia.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtgiamgia.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtgiamgia.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtgiamgia.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtgiamgia.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtgiamgia.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtgiamgia.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtgiamgia.Location = new System.Drawing.Point(123, 185);
-            this.txtgiamgia.Name = "txtgiamgia";
-            this.txtgiamgia.PasswordChar = '\0';
-            this.txtgiamgia.PlaceholderText = "";
-            this.txtgiamgia.SelectedText = "";
-            this.txtgiamgia.Size = new System.Drawing.Size(102, 36);
-            this.txtgiamgia.TabIndex = 104;
-            this.txtgiamgia.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtgiamgia_KeyPress);
-            // 
             // guna2HtmlLabel7
             // 
             this.guna2HtmlLabel7.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel7.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel7.Location = new System.Drawing.Point(234, 194);
+            this.guna2HtmlLabel7.Font = new System.Drawing.Font("Segoe UI Semibold", 19F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel7.Location = new System.Drawing.Point(229, 185);
             this.guna2HtmlLabel7.Name = "guna2HtmlLabel7";
-            this.guna2HtmlLabel7.Size = new System.Drawing.Size(19, 27);
+            this.guna2HtmlLabel7.Size = new System.Drawing.Size(24, 37);
             this.guna2HtmlLabel7.TabIndex = 103;
             this.guna2HtmlLabel7.Text = "%";
             // 
@@ -178,6 +201,7 @@
             this.txtsoluong.SelectedText = "";
             this.txtsoluong.Size = new System.Drawing.Size(102, 36);
             this.txtsoluong.TabIndex = 102;
+            this.txtsoluong.TextChanged += new System.EventHandler(this.txtsoluong_TextChanged);
             this.txtsoluong.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtsoluong_KeyPress);
             // 
             // guna2HtmlLabel6
@@ -357,29 +381,6 @@
             this.panel2.Size = new System.Drawing.Size(510, 641);
             this.panel2.TabIndex = 91;
             // 
-            // errorProvider1
-            // 
-            this.errorProvider1.ContainerControl = this;
-            // 
-            // radio5
-            // 
-            this.radio5.BackColor = System.Drawing.Color.Crimson;
-            this.radio5.BackgroundColor = System.Drawing.Color.Crimson;
-            this.radio5.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.radio5.BorderRadius = 20;
-            this.radio5.BorderSize = 0;
-            this.radio5.FlatAppearance.BorderSize = 0;
-            this.radio5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.radio5.ForeColor = System.Drawing.Color.White;
-            this.radio5.Image = ((System.Drawing.Image)(resources.GetObject("radio5.Image")));
-            this.radio5.Location = new System.Drawing.Point(263, 428);
-            this.radio5.Name = "radio5";
-            this.radio5.Size = new System.Drawing.Size(40, 40);
-            this.radio5.TabIndex = 90;
-            this.radio5.TextColor = System.Drawing.Color.White;
-            this.radio5.UseVisualStyleBackColor = false;
-            this.radio5.Click += new System.EventHandler(this.radio5_Click);
-            // 
             // dataGridView1
             // 
             this.dataGridView1.AllowUserToAddRows = false;
@@ -391,7 +392,6 @@
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.IndianRed;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -450,35 +450,30 @@
             this.dataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
+            this.dataGridView1.Click += new System.EventHandler(this.dataGridView1_Click);
             // 
-            // txttienhang
+            // radio5
             // 
-            this.txttienhang.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txttienhang.DefaultText = "";
-            this.txttienhang.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txttienhang.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txttienhang.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txttienhang.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txttienhang.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txttienhang.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txttienhang.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txttienhang.Location = new System.Drawing.Point(123, 308);
-            this.txttienhang.Name = "txttienhang";
-            this.txttienhang.PasswordChar = '\0';
-            this.txttienhang.PlaceholderText = "";
-            this.txttienhang.SelectedText = "";
-            this.txttienhang.Size = new System.Drawing.Size(221, 36);
-            this.txttienhang.TabIndex = 108;
+            this.radio5.BackColor = System.Drawing.Color.Crimson;
+            this.radio5.BackgroundColor = System.Drawing.Color.Crimson;
+            this.radio5.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.radio5.BorderRadius = 20;
+            this.radio5.BorderSize = 0;
+            this.radio5.FlatAppearance.BorderSize = 0;
+            this.radio5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.radio5.ForeColor = System.Drawing.Color.White;
+            this.radio5.Image = ((System.Drawing.Image)(resources.GetObject("radio5.Image")));
+            this.radio5.Location = new System.Drawing.Point(263, 428);
+            this.radio5.Name = "radio5";
+            this.radio5.Size = new System.Drawing.Size(40, 40);
+            this.radio5.TabIndex = 90;
+            this.radio5.TextColor = System.Drawing.Color.White;
+            this.radio5.UseVisualStyleBackColor = false;
+            this.radio5.Click += new System.EventHandler(this.radio5_Click);
             // 
-            // guna2HtmlLabel8
+            // errorProvider1
             // 
-            this.guna2HtmlLabel8.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel8.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel8.Location = new System.Drawing.Point(5, 308);
-            this.guna2HtmlLabel8.Name = "guna2HtmlLabel8";
-            this.guna2HtmlLabel8.Size = new System.Drawing.Size(78, 27);
-            this.guna2HtmlLabel8.TabIndex = 107;
-            this.guna2HtmlLabel8.Text = "Giá Bán :";
+            this.errorProvider1.ContainerControl = this;
             // 
             // ChiTietHDB
             // 
@@ -494,9 +489,10 @@
             this.Load += new System.EventHandler(this.ChiTietHDB_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtgiamgia)).EndInit();
             this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -519,12 +515,12 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel3;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
         private Guna.UI2.WinForms.Guna2TextBox txtsoluong;
-        private Guna.UI2.WinForms.Guna2TextBox txtgiamgia;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel7;
         private Guna.UI2.WinForms.Guna2TextBox txtthanhtien;
-        private Guna.UI2.WinForms.Guna2TextBox txtmahang;
         private Guna.UI2.WinForms.Guna2DataGridView dataGridView1;
         private Guna.UI2.WinForms.Guna2TextBox txttienhang;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel8;
+        private Guna.UI2.WinForms.Guna2ComboBox cbmahang;
+        private Guna.UI2.WinForms.Guna2NumericUpDown txtgiamgia;
     }
 }
