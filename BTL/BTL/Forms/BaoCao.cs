@@ -158,8 +158,32 @@ namespace BTL.Forms
                 MessageBox.Show("Alo123");
                 if(cboQuy.SelectedIndex == 0)
                 {
-                    //DataTable table = xuLy.DocBang($"Select * From Quy1('{txtInput.Text}', {thang}, {nam})");
+                    int nam = dateTimePicker.Value.Year;
+                    DataTable table = xuLy.DocBang($"Select * From Quy1({nam})");
+                    dgvKetQua.DataSource = table;
                 }
+
+                if (cboQuy.SelectedIndex == 1)
+                {
+                    int nam = dateTimePicker.Value.Year;
+                    DataTable table = xuLy.DocBang($"Select * From Quy2({nam})");
+                    dgvKetQua.DataSource = table;
+                }
+
+                if (cboQuy.SelectedIndex == 2)
+                {
+                    int nam = dateTimePicker.Value.Year;
+                    DataTable table = xuLy.DocBang($"Select * From Quy3({nam})");
+                    dgvKetQua.DataSource = table;
+                }
+
+                if (cboQuy.SelectedIndex == 3)
+                {
+                    int nam = dateTimePicker.Value.Year;
+                    DataTable table = xuLy.DocBang($"Select * From Quy4({nam})");
+                    dgvKetQua.DataSource = table;
+                }
+
             }
         }
 
