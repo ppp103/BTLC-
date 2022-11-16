@@ -18,6 +18,7 @@ namespace BTL.Forms
         SqlCommand cmd;
         SqlDataReader dr;
         string sql;
+        float kq = 0;
         public ChiTietHDB()
         {
             InitializeComponent();
@@ -257,7 +258,7 @@ namespace BTL.Forms
             {
                 if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
                 {
-                    e.Handled = true; float kq = 0;
+                    e.Handled = true; 
                     kq = float.Parse(txtsoluong.Text) * float.Parse(txttienhang.Text);//lỗi
                     kq = kq - kq * (float.Parse(txtgiamgia.Text) / 100);
                     txtthanhtien.Text = kq.ToString();
@@ -272,13 +273,11 @@ namespace BTL.Forms
 
         private void txtgiamgia_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar)) { e.Handled = true; if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
-                {
-                    e.Handled = true; float kq = 0;
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar)) { e.Handled = true; 
                     kq = float.Parse(txtsoluong.Text) * float.Parse(txttienhang.Text);//lỗi
                     kq = kq - kq * (float.Parse(txtgiamgia.Text) / 100);
                     txtthanhtien.Text = kq.ToString();
-                }
+                
             }
         }
 
@@ -330,8 +329,7 @@ namespace BTL.Forms
 
         private void txttienhang_TextChanged(object sender, EventArgs e)
         {
-            float kq = 0;
-            kq = int.Parse(txtsoluong.Text) * float.Parse(txttienhang.Text);//lỗi
+            kq = float.Parse(txtsoluong.Text) * float.Parse(txttienhang.Text);//lỗi
             kq = kq - kq * (float.Parse(txtgiamgia.Text) / 100);
             txtthanhtien.Text = kq.ToString();
 
@@ -340,18 +338,22 @@ namespace BTL.Forms
 
         private void txttienhang_KeyPress(object sender, KeyPressEventArgs e)
         {
+
             if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
             {
-                e.Handled = true; if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
-                {
-                    e.Handled = true; float kq = 0;
-                    kq = float.Parse(txtsoluong.Text) * float.Parse(txttienhang.Text);//lỗi
-                    kq = kq - kq * (float.Parse(txtgiamgia.Text) / 100);
-                    txtthanhtien.Text = kq.ToString();
-                }
+
+                e.Handled = true;
+                kq = float.Parse(txtsoluong.Text) * float.Parse(txttienhang.Text);//lỗi
+                kq = kq - kq * (float.Parse(txtgiamgia.Text) / 100);
+                txtthanhtien.Text = kq.ToString();
             }
+            
         }
 
-       
+        private void dataGridView1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
+
 }
