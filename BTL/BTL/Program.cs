@@ -19,8 +19,8 @@ namespace BTL
             //Application.Run(new DangNhapDangKi.DangNhap());
             //Application.Run(new HomePage.TrangChinh());
             //Application.Run(new Forms.BaoCao());
-            //Application.Run(new FormHDB());
-            Application.Run(new FormNhapHang());
+            Application.Run(new FormHDB());
+           // Application.Run(new FormNhapHang());
         }
     }
 }
