@@ -1,39 +1,3 @@
-D:\HocHanh(ki5)\C#\Projects\BTLv7\BTL\BTL\bin\Debug\DangNhapDangKi\DangNhap.mdf
-D:\HocHanh(ki5)\C#\Projects\BTLv7\BTL\BTL\bin\Debug\DangNhapDangKi\DangNhap_log.ldf
-D:\HocHanh(ki5)\C#\Projects\BTLv7\BTL\BTL\bin\Debug\DataBase\DuLieu.mdf
-D:\HocHanh(ki5)\C#\Projects\BTLv7\BTL\BTL\bin\Debug\DataBase\DuLieu_log.ldf
-D:\HocHanh(ki5)\C#\Projects\BTLv7\BTL\BTL\bin\Debug\DangNhapDangKi\NhanVien.mdf
-D:\HocHanh(ki5)\C#\Projects\BTLv7\BTL\BTL\bin\Debug\DangNhapDangKi\NhanVien_log.ldf
-D:\HocHanh(ki5)\C#\Projects\BTLv7\BTL\BTL\bin\Debug\BTL.exe.config
-D:\HocHanh(ki5)\C#\Projects\BTLv7\BTL\BTL\bin\Debug\BTL.exe
-D:\HocHanh(ki5)\C#\Projects\BTLv7\BTL\BTL\bin\Debug\BTL.pdb
-D:\HocHanh(ki5)\C#\Projects\BTLv7\BTL\BTL\bin\Debug\FontAwesome.Sharp.dll
-D:\HocHanh(ki5)\C#\Projects\BTLv7\BTL\BTL\bin\Debug\Guna.UI2.dll
-D:\HocHanh(ki5)\C#\Projects\BTLv7\BTL\BTL\obj\Debug\BTL.csproj.AssemblyReference.cache
-D:\HocHanh(ki5)\C#\Projects\BTLv7\BTL\BTL\obj\Debug\BTL.csproj.SuggestedBindingRedirects.cache
-D:\HocHanh(ki5)\C#\Projects\BTLv7\BTL\BTL\obj\Debug\BTL.DangNhapDangKi.DangKi.resources
-D:\HocHanh(ki5)\C#\Projects\BTLv7\BTL\BTL\obj\Debug\BTL.DangNhapDangKi.DangNhap.resources
-D:\HocHanh(ki5)\C#\Projects\BTLv7\BTL\BTL\obj\Debug\BTL.DangNhapDangKi.Quenmatkhau.resources
-D:\HocHanh(ki5)\C#\Projects\BTLv7\BTL\BTL\obj\Debug\BTL.DangNhapDangKi.textboxhide.resources
-D:\HocHanh(ki5)\C#\Projects\BTLv7\BTL\BTL\obj\Debug\BTL.DangNhapDangKi.Textboxxx.resources
-D:\HocHanh(ki5)\C#\Projects\BTLv7\BTL\BTL\obj\Debug\BTL.Forms.BaoCao.resources
-D:\HocHanh(ki5)\C#\Projects\BTLv7\BTL\BTL\obj\Debug\BTL.Forms.ChiTietHDB.resources
-D:\HocHanh(ki5)\C#\Projects\BTLv7\BTL\BTL\obj\Debug\BTL.FormHDB.resources
-D:\HocHanh(ki5)\C#\Projects\BTLv7\BTL\BTL\obj\Debug\BTL.FormLapHoaDon.resources
-D:\HocHanh(ki5)\C#\Projects\BTLv7\BTL\BTL\obj\Debug\BTL.FormNhapHang.resources
-D:\HocHanh(ki5)\C#\Projects\BTLv7\BTL\BTL\obj\Debug\BTL.FormThanhToanLuong.resources
-D:\HocHanh(ki5)\C#\Projects\BTLv7\BTL\BTL\obj\Debug\BTL.FormNhapHangHoa.resources
-D:\HocHanh(ki5)\C#\Projects\BTLv7\BTL\BTL\obj\Debug\BTL.FormThongKeHoaDon.resources
-D:\HocHanh(ki5)\C#\Projects\BTLv7\BTL\BTL\obj\Debug\BTL.Forms.FormTkeHangHoa.resources
-D:\HocHanh(ki5)\C#\Projects\BTLv7\BTL\BTL\obj\Debug\BTL.Properties.Resources.resources
-D:\HocHanh(ki5)\C#\Projects\BTLv7\BTL\BTL\obj\Debug\HomePage.TrangChinh.resources
-D:\HocHanh(ki5)\C#\Projects\BTLv7\BTL\BTL\obj\Debug\BTL.csproj.GenerateResource.cache
-D:\HocHanh(ki5)\C#\Projects\BTLv7\BTL\BTL\obj\Debug\BTL.csproj.CoreCompileInputs.cache
-D:\HocHanh(ki5)\C#\Projects\BTLv7\BTL\BTL\obj\Debug\BTL.csproj.CopyComplete
-D:\HocHanh(ki5)\C#\Projects\BTLv7\BTL\BTL\obj\Debug\BTL.exe
-D:\HocHanh(ki5)\C#\Projects\BTLv7\BTL\BTL\obj\Debug\BTL.pdb
-<<<<<<< HEAD
-D:\HocHanh(ki5)\C#\Projects\BTLv7\BTL\BTL\obj\Debug\BTL.Forms.BaoCao.resources
 E:\tuyet beo\Lập trình trực quan\BAI TAP\BTLC-\BTL\BTL\bin\Debug\DangNhapDangKi\DangNhap.mdf
 E:\tuyet beo\Lập trình trực quan\BAI TAP\BTLC-\BTL\BTL\bin\Debug\DangNhapDangKi\DangNhap_log.ldf
 E:\tuyet beo\Lập trình trực quan\BAI TAP\BTLC-\BTL\BTL\bin\Debug\DataBase\DuLieu.mdf
@@ -47,6 +11,7 @@ E:\tuyet beo\Lập trình trực quan\BAI TAP\BTLC-\BTL\BTL\bin\Debug\FontAwesom
 E:\tuyet beo\Lập trình trực quan\BAI TAP\BTLC-\BTL\BTL\bin\Debug\Guna.UI2.dll
 E:\tuyet beo\Lập trình trực quan\BAI TAP\BTLC-\BTL\BTL\obj\Debug\BTL.csproj.AssemblyReference.cache
 E:\tuyet beo\Lập trình trực quan\BAI TAP\BTLC-\BTL\BTL\obj\Debug\BTL.csproj.SuggestedBindingRedirects.cache
+E:\tuyet beo\Lập trình trực quan\BAI TAP\BTLC-\BTL\BTL\obj\Debug\BTL.csproj.ResolveComReference.cache
 E:\tuyet beo\Lập trình trực quan\BAI TAP\BTLC-\BTL\BTL\obj\Debug\BTL.DangNhapDangKi.DangKi.resources
 E:\tuyet beo\Lập trình trực quan\BAI TAP\BTLC-\BTL\BTL\obj\Debug\BTL.DangNhapDangKi.DangNhap.resources
 E:\tuyet beo\Lập trình trực quan\BAI TAP\BTLC-\BTL\BTL\obj\Debug\BTL.DangNhapDangKi.Quenmatkhau.resources
@@ -68,40 +33,3 @@ E:\tuyet beo\Lập trình trực quan\BAI TAP\BTLC-\BTL\BTL\obj\Debug\BTL.csproj
 E:\tuyet beo\Lập trình trực quan\BAI TAP\BTLC-\BTL\BTL\obj\Debug\BTL.csproj.CopyComplete
 E:\tuyet beo\Lập trình trực quan\BAI TAP\BTLC-\BTL\BTL\obj\Debug\BTL.exe
 E:\tuyet beo\Lập trình trực quan\BAI TAP\BTLC-\BTL\BTL\obj\Debug\BTL.pdb
-E:\tuyet beo\Lập trình trực quan\BAI TAP\BTLC-\BTL\BTL\obj\Debug\BTL.csproj.ResolveComReference.cache
-=======
-D:\BTL-CSharp\New folder\BTL\BTL\bin\Debug\DangNhapDangKi\DangNhap.mdf
-D:\BTL-CSharp\New folder\BTL\BTL\bin\Debug\DangNhapDangKi\DangNhap_log.ldf
-D:\BTL-CSharp\New folder\BTL\BTL\bin\Debug\DataBase\DuLieu.mdf
-D:\BTL-CSharp\New folder\BTL\BTL\bin\Debug\DataBase\DuLieu_log.ldf
-D:\BTL-CSharp\New folder\BTL\BTL\bin\Debug\DangNhapDangKi\NhanVien.mdf
-D:\BTL-CSharp\New folder\BTL\BTL\bin\Debug\DangNhapDangKi\NhanVien_log.ldf
-D:\BTL-CSharp\New folder\BTL\BTL\bin\Debug\BTL.exe.config
-D:\BTL-CSharp\New folder\BTL\BTL\bin\Debug\BTL.exe
-D:\BTL-CSharp\New folder\BTL\BTL\bin\Debug\BTL.pdb
-D:\BTL-CSharp\New folder\BTL\BTL\bin\Debug\FontAwesome.Sharp.dll
-D:\BTL-CSharp\New folder\BTL\BTL\bin\Debug\Guna.UI2.dll
-D:\BTL-CSharp\New folder\BTL\BTL\obj\Debug\BTL.csproj.AssemblyReference.cache
-D:\BTL-CSharp\New folder\BTL\BTL\obj\Debug\BTL.csproj.SuggestedBindingRedirects.cache
-D:\BTL-CSharp\New folder\BTL\BTL\obj\Debug\BTL.DangNhapDangKi.DangKi.resources
-D:\BTL-CSharp\New folder\BTL\BTL\obj\Debug\BTL.DangNhapDangKi.DangNhap.resources
-D:\BTL-CSharp\New folder\BTL\BTL\obj\Debug\BTL.DangNhapDangKi.Quenmatkhau.resources
-D:\BTL-CSharp\New folder\BTL\BTL\obj\Debug\BTL.DangNhapDangKi.textboxhide.resources
-D:\BTL-CSharp\New folder\BTL\BTL\obj\Debug\BTL.DangNhapDangKi.Textboxxx.resources
-D:\BTL-CSharp\New folder\BTL\BTL\obj\Debug\BTL.Forms.BaoCao.resources
-D:\BTL-CSharp\New folder\BTL\BTL\obj\Debug\BTL.Forms.ChiTietHDB.resources
-D:\BTL-CSharp\New folder\BTL\BTL\obj\Debug\BTL.FormHDB.resources
-D:\BTL-CSharp\New folder\BTL\BTL\obj\Debug\BTL.FormLapHoaDon.resources
-D:\BTL-CSharp\New folder\BTL\BTL\obj\Debug\BTL.FormNhapHang.resources
-D:\BTL-CSharp\New folder\BTL\BTL\obj\Debug\BTL.FormThanhToanLuong.resources
-D:\BTL-CSharp\New folder\BTL\BTL\obj\Debug\BTL.FormNhapHangHoa.resources
-D:\BTL-CSharp\New folder\BTL\BTL\obj\Debug\BTL.FormThongKeHoaDon.resources
-D:\BTL-CSharp\New folder\BTL\BTL\obj\Debug\BTL.Forms.FormTkeHangHoa.resources
-D:\BTL-CSharp\New folder\BTL\BTL\obj\Debug\BTL.Properties.Resources.resources
-D:\BTL-CSharp\New folder\BTL\BTL\obj\Debug\HomePage.TrangChinh.resources
-D:\BTL-CSharp\New folder\BTL\BTL\obj\Debug\BTL.csproj.GenerateResource.cache
-D:\BTL-CSharp\New folder\BTL\BTL\obj\Debug\BTL.csproj.CoreCompileInputs.cache
-D:\BTL-CSharp\New folder\BTL\BTL\obj\Debug\BTL.csproj.CopyComplete
-D:\BTL-CSharp\New folder\BTL\BTL\obj\Debug\BTL.exe
-D:\BTL-CSharp\New folder\BTL\BTL\obj\Debug\BTL.pdb
->>>>>>> 58a5abead5a5df8c6c07afa70c970b63c7fa41c1
