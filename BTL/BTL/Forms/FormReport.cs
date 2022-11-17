@@ -14,9 +14,11 @@ namespace BTL.Forms
     {
         XuLyCSDL xuLy = new XuLyCSDL();
         DataTable table;
-        public FormReport(DataTable dataTable)
+        int index;
+        public FormReport(int index, DataTable dataTable)
         {
             this.table = dataTable;
+            this.index = index;
             InitializeComponent();
         }
 
@@ -24,11 +26,22 @@ namespace BTL.Forms
         {
             try
             {
-                reportViewer1.LocalReport.ReportEmbeddedResource = "BTL.Reports.Report1.rdlc";
-                ReportDataSource reportDataSource = new ReportDataSource();
-                reportDataSource.Name = "DataSet1";
-                reportDataSource.Value = table;
-                reportViewer1.LocalReport.DataSources.Add(reportDataSource);
+                if (index == 1)
+                {
+                    reportViewer1.LocalReport.ReportEmbeddedResource = "BTL.Reports.Report1.rdlc";
+                    ReportDataSource reportDataSource = new ReportDataSource();
+                    reportDataSource.Name = "DataSet1";
+                    reportDataSource.Value = table;
+                    reportViewer1.LocalReport.DataSources.Add(reportDataSource);
+                }
+                if(index == 2)
+                {
+                    reportViewer1.LocalReport.ReportEmbeddedResource = "BTL.Reports.Report2.rdlc";
+                    ReportDataSource reportDataSource = new ReportDataSource();
+                    reportDataSource.Name = "DataSet1";
+                    reportDataSource.Value = table;
+                    reportViewer1.LocalReport.DataSources.Add(reportDataSource);
+                }
                 this.reportViewer1.RefreshReport();
             }
             catch (Exception ex)

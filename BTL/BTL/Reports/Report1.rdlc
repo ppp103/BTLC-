@@ -39,6 +39,8 @@
                             <TextRun>
                               <Value>STT</Value>
                               <Style>
+                                <FontFamily>TIMes New Roman</FontFamily>
+                                <FontSize>14pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
                             </TextRun>
@@ -73,6 +75,8 @@
                             <TextRun>
                               <Value>Mã NV</Value>
                               <Style>
+                                <FontFamily>TIMes New Roman</FontFamily>
+                                <FontSize>14pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
                             </TextRun>
@@ -107,6 +111,8 @@
                             <TextRun>
                               <Value>Tên NV</Value>
                               <Style>
+                                <FontFamily>TIMes New Roman</FontFamily>
+                                <FontSize>14pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
                             </TextRun>
@@ -141,6 +147,8 @@
                             <TextRun>
                               <Value>Mã Hàng</Value>
                               <Style>
+                                <FontFamily>TIMes New Roman</FontFamily>
+                                <FontSize>14pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
                             </TextRun>
@@ -175,6 +183,8 @@
                             <TextRun>
                               <Value>Tên Hàng</Value>
                               <Style>
+                                <FontFamily>TIMes New Roman</FontFamily>
+                                <FontSize>14pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
                             </TextRun>
@@ -209,6 +219,8 @@
                             <TextRun>
                               <Value>Tổng số lượng bán</Value>
                               <Style>
+                                <FontFamily>TIMes New Roman</FontFamily>
+                                <FontSize>14pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
                             </TextRun>
@@ -247,10 +259,15 @@
                           <TextRuns>
                             <TextRun>
                               <Value>= RowNumber(nothing)</Value>
-                              <Style />
+                              <Style>
+                                <FontFamily>TIMEs New Roman</FontFamily>
+                                <FontSize>14pt</FontSize>
+                              </Style>
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>Textbox2</rd:DefaultName>
@@ -277,10 +294,15 @@
                           <TextRuns>
                             <TextRun>
                               <Value>=Fields!MaNV.Value</Value>
-                              <Style />
+                              <Style>
+                                <FontFamily>TIMEs New Roman</FontFamily>
+                                <FontSize>14pt</FontSize>
+                              </Style>
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>MaNV</rd:DefaultName>
@@ -307,10 +329,15 @@
                           <TextRuns>
                             <TextRun>
                               <Value>=Fields!TenNV.Value</Value>
-                              <Style />
+                              <Style>
+                                <FontFamily>TIMEs New Roman</FontFamily>
+                                <FontSize>14pt</FontSize>
+                              </Style>
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>TenNV</rd:DefaultName>
@@ -337,10 +364,15 @@
                           <TextRuns>
                             <TextRun>
                               <Value>=Fields!MaHang.Value</Value>
-                              <Style />
+                              <Style>
+                                <FontFamily>TIMEs New Roman</FontFamily>
+                                <FontSize>14pt</FontSize>
+                              </Style>
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>MaHang</rd:DefaultName>
@@ -367,10 +399,15 @@
                           <TextRuns>
                             <TextRun>
                               <Value>=Fields!TenHang.Value</Value>
-                              <Style />
+                              <Style>
+                                <FontFamily>TIMEs New Roman</FontFamily>
+                                <FontSize>14pt</FontSize>
+                              </Style>
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>TenHang</rd:DefaultName>
@@ -397,10 +434,15 @@
                           <TextRuns>
                             <TextRun>
                               <Value>=Fields!TongSLBan.Value</Value>
-                              <Style />
+                              <Style>
+                                <FontFamily>TIMEs New Roman</FontFamily>
+                                <FontSize>14pt</FontSize>
+                              </Style>
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>TongSLBan</rd:DefaultName>
@@ -445,7 +487,7 @@
         <Top>0.43833in</Top>
         <Left>0.58in</Left>
         <Height>0.5in</Height>
-        <Width>8.75833in</Width>
+        <Width>8.75834in</Width>
         <Style>
           <Border>
             <Style>None</Style>
@@ -453,13 +495,13 @@
         </Style>
       </Tablix>
     </ReportItems>
-    <Height>2.65833in</Height>
+    <Height>6.75217cm</Height>
     <Style />
   </Body>
-  <Width>9.76667in</Width>
+  <Width>24.80733cm</Width>
   <Page>
     <PageHeader>
-      <Height>1.15833in</Height>
+      <Height>3.15384cm</Height>
       <PrintOnFirstPage>true</PrintOnFirstPage>
       <PrintOnLastPage>true</PrintOnLastPage>
       <ReportItems>
@@ -467,8 +509,8 @@
           <Source>Embedded</Source>
           <Value>logo3</Value>
           <Sizing>FitProportional</Sizing>
-          <Height>1.15278in</Height>
-          <Width>1.15in</Width>
+          <Height>1.21667in</Height>
+          <Width>1.225in</Width>
           <Style>
             <Border>
               <Style>None</Style>
@@ -519,7 +561,7 @@
       </Style>
     </PageHeader>
     <PageFooter>
-      <Height>1.13in</Height>
+      <Height>2.8702cm</Height>
       <PrintOnFirstPage>true</PrintOnFirstPage>
       <PrintOnLastPage>true</PrintOnLastPage>
       <ReportItems>
@@ -578,12 +620,13 @@
         </Border>
       </Style>
     </PageFooter>
-    <PageHeight>11.69in</PageHeight>
-    <PageWidth>6in</PageWidth>
-    <LeftMargin>1.75in</LeftMargin>
-    <RightMargin>1.75in</RightMargin>
-    <TopMargin>1.75in</TopMargin>
-    <BottomMargin>1.75in</BottomMargin>
+    <PageHeight>18cm</PageHeight>
+    <PageWidth>21cm</PageWidth>
+    <LeftMargin>1cm</LeftMargin>
+    <RightMargin>1cm</RightMargin>
+    <TopMargin>1cm</TopMargin>
+    <BottomMargin>1cm</BottomMargin>
+    <ColumnSpacing>1.27cm</ColumnSpacing>
     <Style />
   </Page>
   <AutoRefresh>0</AutoRefresh>
@@ -696,6 +739,6 @@ n4LSz58bZdc8s+ous07xXjz6cLnHS2vqHutPIyvyDjnHpCWdklutNdXlo0e//MniBO+3Xj2B2PI14/V1
 CAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAID/9k=</ImageData>
     </EmbeddedImage>
   </EmbeddedImages>
-  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+  <rd:ReportUnitType>Cm</rd:ReportUnitType>
   <rd:ReportID>db0ad63b-32f5-41ea-94ab-d902960c867f</rd:ReportID>
 </Report>

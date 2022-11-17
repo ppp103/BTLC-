@@ -124,7 +124,12 @@
     <Compile Include="DangNhapDangKi\Textboxxx.Designer.cs">
       <DependentUpon>Textboxxx.cs</DependentUpon>
     </Compile>
-    <Compile Include="DuLieuDataSet.Designer.cs">
+    <Compile Include="Dataset\DuLieuDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DuLieuDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Dataset\DuLieuDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DuLieuDataSet.xsd</DependentUpon>
@@ -133,16 +138,6 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DuLieuDataSet1.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="DuLieuDataSet2.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DuLieuDataSet2.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="DuLieuDataSet3.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DuLieuDataSet3.xsd</DependentUpon>
     </Compile>
     <Compile Include="Forms\BaoCao.cs">
       <SubType>Form</SubType>
@@ -214,11 +209,6 @@
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="SqlServerTypes\Loader.cs" />
-    <Compile Include="ThongKeSanPham.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ThongKeSanPham.xsd</DependentUpon>
-    </Compile>
     <Compile Include="XuLyCSDL.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -280,15 +270,27 @@
       <DependentUpon>TrangChinh.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Reports\Report1.rdlc" />
-    <None Include="DuLieuDataSet.xsc">
+    <EmbeddedResource Include="Reports\Report2.rdlc" />
+    <None Include="Dataset\DuLieuDataSet1.xsc">
+      <DependentUpon>DuLieuDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\DuLieuDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DuLieuDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Dataset\DuLieuDataSet1.xss">
+      <DependentUpon>DuLieuDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\DuLieuDataSet.xsc">
       <DependentUpon>DuLieuDataSet.xsd</DependentUpon>
     </None>
-    <None Include="DuLieuDataSet.xsd">
+    <None Include="Dataset\DuLieuDataSet.xsd">
       <Generator>MSDataSetGenerator</Generator>
       <LastGenOutput>DuLieuDataSet.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="DuLieuDataSet.xss">
+    <None Include="Dataset\DuLieuDataSet.xss">
       <DependentUpon>DuLieuDataSet.xsd</DependentUpon>
     </None>
     <None Include="DuLieuDataSet1.xsc">
@@ -302,28 +304,6 @@
     <None Include="DuLieuDataSet1.xss">
       <DependentUpon>DuLieuDataSet1.xsd</DependentUpon>
     </None>
-    <None Include="DuLieuDataSet2.xsc">
-      <DependentUpon>DuLieuDataSet2.xsd</DependentUpon>
-    </None>
-    <None Include="DuLieuDataSet2.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>DuLieuDataSet2.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="DuLieuDataSet2.xss">
-      <DependentUpon>DuLieuDataSet2.xsd</DependentUpon>
-    </None>
-    <None Include="DuLieuDataSet3.xsc">
-      <DependentUpon>DuLieuDataSet3.xsd</DependentUpon>
-    </None>
-    <None Include="DuLieuDataSet3.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>DuLieuDataSet3.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="DuLieuDataSet3.xss">
-      <DependentUpon>DuLieuDataSet3.xsd</DependentUpon>
-    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -334,17 +314,6 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <None Include="ThongKeSanPham.xsc">
-      <DependentUpon>ThongKeSanPham.xsd</DependentUpon>
-    </None>
-    <None Include="ThongKeSanPham.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>ThongKeSanPham.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="ThongKeSanPham.xss">
-      <DependentUpon>ThongKeSanPham.xsd</DependentUpon>
-    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

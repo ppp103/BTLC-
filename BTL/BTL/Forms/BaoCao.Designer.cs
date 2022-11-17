@@ -40,7 +40,7 @@
             this.dgvKetQua = new Guna.UI2.WinForms.Guna2DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnXuatExcel = new Guna.UI2.WinForms.Guna2Button();
-            this.btnThem = new Guna.UI2.WinForms.Guna2Button();
+            this.btnTke = new Guna.UI2.WinForms.Guna2Button();
             this.btnLamMoi = new Guna.UI2.WinForms.Guna2Button();
             this.txtInput = new Guna.UI2.WinForms.Guna2TextBox();
             this.lbInput = new System.Windows.Forms.Label();
@@ -50,8 +50,8 @@
             this.lbQuy = new System.Windows.Forms.Label();
             this.lbTgian = new System.Windows.Forms.Label();
             this.lbOutPut = new System.Windows.Forms.Label();
-            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.btnBaoCao = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvKetQua)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -104,6 +104,7 @@
             this.dsKHToolStripMenuItem.Name = "dsKHToolStripMenuItem";
             this.dsKHToolStripMenuItem.Size = new System.Drawing.Size(343, 26);
             this.dsKHToolStripMenuItem.Text = "Danh sách khách hàng không mua theo tháng";
+            this.dsKHToolStripMenuItem.Click += new System.EventHandler(this.dsKHToolStripMenuItem_Click);
             // 
             // dgvKetQua
             // 
@@ -210,29 +211,30 @@
             this.btnXuatExcel.Size = new System.Drawing.Size(160, 38);
             this.btnXuatExcel.TabIndex = 2;
             this.btnXuatExcel.Text = "Xuất Excel";
+            this.btnXuatExcel.Click += new System.EventHandler(this.btnXuatExcel_Click);
             // 
-            // btnThem
+            // btnTke
             // 
-            this.btnThem.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnThem.BorderColor = System.Drawing.SystemColors.ControlText;
-            this.btnThem.BorderRadius = 10;
-            this.btnThem.BorderThickness = 2;
-            this.btnThem.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnThem.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnThem.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnThem.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnThem.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnThem.FillColor = System.Drawing.SystemColors.ControlText;
-            this.btnThem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThem.ForeColor = System.Drawing.Color.White;
-            this.btnThem.HoverState.FillColor = System.Drawing.SystemColors.Control;
-            this.btnThem.HoverState.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnThem.Location = new System.Drawing.Point(627, 310);
-            this.btnThem.Name = "btnThem";
-            this.btnThem.Size = new System.Drawing.Size(160, 38);
-            this.btnThem.TabIndex = 2;
-            this.btnThem.Text = "Thống Kê";
-            this.btnThem.Click += new System.EventHandler(this.btnThongKe_Click);
+            this.btnTke.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnTke.BorderColor = System.Drawing.SystemColors.ControlText;
+            this.btnTke.BorderRadius = 10;
+            this.btnTke.BorderThickness = 2;
+            this.btnTke.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnTke.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnTke.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnTke.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnTke.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnTke.FillColor = System.Drawing.SystemColors.ControlText;
+            this.btnTke.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTke.ForeColor = System.Drawing.Color.White;
+            this.btnTke.HoverState.FillColor = System.Drawing.SystemColors.Control;
+            this.btnTke.HoverState.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnTke.Location = new System.Drawing.Point(627, 310);
+            this.btnTke.Name = "btnTke";
+            this.btnTke.Size = new System.Drawing.Size(160, 38);
+            this.btnTke.TabIndex = 2;
+            this.btnTke.Text = "Thống Kê";
+            this.btnTke.Click += new System.EventHandler(this.btnThongKe_Click);
             // 
             // btnLamMoi
             // 
@@ -278,6 +280,7 @@
             this.txtInput.Size = new System.Drawing.Size(275, 54);
             this.txtInput.TabIndex = 4;
             this.txtInput.TextChanged += new System.EventHandler(this.txtInput_TextChanged);
+            this.txtInput.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtInput_KeyPress);
             // 
             // lbInput
             // 
@@ -338,7 +341,7 @@
             this.panel1.Controls.Add(this.txtInput);
             this.panel1.Controls.Add(this.btnLamMoi);
             this.panel1.Controls.Add(this.btnBaoCao);
-            this.panel1.Controls.Add(this.btnThem);
+            this.panel1.Controls.Add(this.btnTke);
             this.panel1.Controls.Add(this.btnXuatExcel);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -378,15 +381,6 @@
             this.lbOutPut.TabIndex = 6;
             this.lbOutPut.Text = "Tổng Tiền Nhập Hàng";
             // 
-            // guna2HtmlLabel1
-            // 
-            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(27, 235);
-            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(27, 18);
-            this.guna2HtmlLabel1.TabIndex = 9;
-            this.guna2HtmlLabel1.Text = "Quý";
-            // 
             // btnBaoCao
             // 
             this.btnBaoCao.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
@@ -409,6 +403,15 @@
             this.btnBaoCao.TabIndex = 2;
             this.btnBaoCao.Text = "Báo Cáo";
             this.btnBaoCao.Click += new System.EventHandler(this.btnBaoCao_Click);
+            // 
+            // guna2HtmlLabel1
+            // 
+            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(27, 235);
+            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(27, 18);
+            this.guna2HtmlLabel1.TabIndex = 9;
+            this.guna2HtmlLabel1.Text = "Quý";
             // 
             // BaoCao
             // 
@@ -442,7 +445,7 @@
         private Guna.UI2.WinForms.Guna2DataGridView dgvKetQua;
         private System.Windows.Forms.GroupBox groupBox1;
         private Guna.UI2.WinForms.Guna2Button btnXuatExcel;
-        private Guna.UI2.WinForms.Guna2Button btnThem;
+        private Guna.UI2.WinForms.Guna2Button btnTke;
         private Guna.UI2.WinForms.Guna2Button btnLamMoi;
         private Guna.UI2.WinForms.Guna2TextBox txtInput;
         private System.Windows.Forms.Label lbInput;

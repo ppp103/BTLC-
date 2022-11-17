@@ -24,7 +24,7 @@ namespace BTL {
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
     public partial class DuLieuDataSet1 : global::System.Data.DataSet {
         
-        private BaoCao1DataTable tableBaoCao1;
+        private BaoCao2DataTable tableBaoCao2;
         
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
@@ -54,8 +54,8 @@ namespace BTL {
             if ((this.DetermineSchemaSerializationMode(info, context) == global::System.Data.SchemaSerializationMode.IncludeSchema)) {
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXmlSchema(new global::System.Xml.XmlTextReader(new global::System.IO.StringReader(strSchema)));
-                if ((ds.Tables["BaoCao1"] != null)) {
-                    base.Tables.Add(new BaoCao1DataTable(ds.Tables["BaoCao1"]));
+                if ((ds.Tables["BaoCao2"] != null)) {
+                    base.Tables.Add(new BaoCao2DataTable(ds.Tables["BaoCao2"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -79,9 +79,9 @@ namespace BTL {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
         [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
-        public BaoCao1DataTable BaoCao1 {
+        public BaoCao2DataTable BaoCao2 {
             get {
-                return this.tableBaoCao1;
+                return this.tableBaoCao2;
             }
         }
         
@@ -152,8 +152,8 @@ namespace BTL {
                 this.Reset();
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXml(reader);
-                if ((ds.Tables["BaoCao1"] != null)) {
-                    base.Tables.Add(new BaoCao1DataTable(ds.Tables["BaoCao1"]));
+                if ((ds.Tables["BaoCao2"] != null)) {
+                    base.Tables.Add(new BaoCao2DataTable(ds.Tables["BaoCao2"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -188,10 +188,10 @@ namespace BTL {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         internal void InitVars(bool initTable) {
-            this.tableBaoCao1 = ((BaoCao1DataTable)(base.Tables["BaoCao1"]));
+            this.tableBaoCao2 = ((BaoCao2DataTable)(base.Tables["BaoCao2"]));
             if ((initTable == true)) {
-                if ((this.tableBaoCao1 != null)) {
-                    this.tableBaoCao1.InitVars();
+                if ((this.tableBaoCao2 != null)) {
+                    this.tableBaoCao2.InitVars();
                 }
             }
         }
@@ -204,13 +204,13 @@ namespace BTL {
             this.Namespace = "http://tempuri.org/DuLieuDataSet1.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
-            this.tableBaoCao1 = new BaoCao1DataTable();
-            base.Tables.Add(this.tableBaoCao1);
+            this.tableBaoCao2 = new BaoCao2DataTable();
+            base.Tables.Add(this.tableBaoCao2);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private bool ShouldSerializeBaoCao1() {
+        private bool ShouldSerializeBaoCao2() {
             return false;
         }
         
@@ -270,29 +270,29 @@ namespace BTL {
         }
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public delegate void BaoCao1RowChangeEventHandler(object sender, BaoCao1RowChangeEvent e);
+        public delegate void BaoCao2RowChangeEventHandler(object sender, BaoCao2RowChangeEvent e);
         
         /// <summary>
         ///Represents the strongly named DataTable class.
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class BaoCao1DataTable : global::System.Data.TypedTableBase<BaoCao1Row> {
+        public partial class BaoCao2DataTable : global::System.Data.TypedTableBase<BaoCao2Row> {
             
-            private global::System.Data.DataColumn columnMã_NV;
+            private global::System.Data.DataColumn columnSoHDN;
             
-            private global::System.Data.DataColumn columnTên_NV;
+            private global::System.Data.DataColumn columnMaNV;
             
-            private global::System.Data.DataColumn columnMã_Hàng;
+            private global::System.Data.DataColumn columnNgayNhap;
             
-            private global::System.Data.DataColumn columnTên_Hàng;
+            private global::System.Data.DataColumn columnMaNCC;
             
-            private global::System.Data.DataColumn columnTổng_số_lượng_bán;
+            private global::System.Data.DataColumn columnTongTien;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public BaoCao1DataTable() {
-                this.TableName = "BaoCao1";
+            public BaoCao2DataTable() {
+                this.TableName = "BaoCao2";
                 this.BeginInit();
                 this.InitClass();
                 this.EndInit();
@@ -300,7 +300,7 @@ namespace BTL {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            internal BaoCao1DataTable(global::System.Data.DataTable table) {
+            internal BaoCao2DataTable(global::System.Data.DataTable table) {
                 this.TableName = table.TableName;
                 if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
                     this.CaseSensitive = table.CaseSensitive;
@@ -317,48 +317,48 @@ namespace BTL {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            protected BaoCao1DataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+            protected BaoCao2DataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                     base(info, context) {
                 this.InitVars();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn Mã_NVColumn {
+            public global::System.Data.DataColumn SoHDNColumn {
                 get {
-                    return this.columnMã_NV;
+                    return this.columnSoHDN;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn Tên_NVColumn {
+            public global::System.Data.DataColumn MaNVColumn {
                 get {
-                    return this.columnTên_NV;
+                    return this.columnMaNV;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn Mã_HàngColumn {
+            public global::System.Data.DataColumn NgayNhapColumn {
                 get {
-                    return this.columnMã_Hàng;
+                    return this.columnNgayNhap;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn Tên_HàngColumn {
+            public global::System.Data.DataColumn MaNCCColumn {
                 get {
-                    return this.columnTên_Hàng;
+                    return this.columnMaNCC;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn Tổng_số_lượng_bánColumn {
+            public global::System.Data.DataColumn TongTienColumn {
                 get {
-                    return this.columnTổng_số_lượng_bán;
+                    return this.columnTongTien;
                 }
             }
             
@@ -373,57 +373,56 @@ namespace BTL {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public BaoCao1Row this[int index] {
+            public BaoCao2Row this[int index] {
                 get {
-                    return ((BaoCao1Row)(this.Rows[index]));
+                    return ((BaoCao2Row)(this.Rows[index]));
                 }
             }
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event BaoCao1RowChangeEventHandler BaoCao1RowChanging;
+            public event BaoCao2RowChangeEventHandler BaoCao2RowChanging;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event BaoCao1RowChangeEventHandler BaoCao1RowChanged;
+            public event BaoCao2RowChangeEventHandler BaoCao2RowChanged;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event BaoCao1RowChangeEventHandler BaoCao1RowDeleting;
+            public event BaoCao2RowChangeEventHandler BaoCao2RowDeleting;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event BaoCao1RowChangeEventHandler BaoCao1RowDeleted;
+            public event BaoCao2RowChangeEventHandler BaoCao2RowDeleted;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void AddBaoCao1Row(BaoCao1Row row) {
+            public void AddBaoCao2Row(BaoCao2Row row) {
                 this.Rows.Add(row);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public BaoCao1Row AddBaoCao1Row(string Mã_NV, string Tên_NV, string Mã_Hàng, string Tên_Hàng, int Tổng_số_lượng_bán) {
-                BaoCao1Row rowBaoCao1Row = ((BaoCao1Row)(this.NewRow()));
+            public BaoCao2Row AddBaoCao2Row(string SoHDN, string MaNV, System.DateTime NgayNhap, string MaNCC, decimal TongTien) {
+                BaoCao2Row rowBaoCao2Row = ((BaoCao2Row)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
-                        Mã_NV,
-                        Tên_NV,
-                        Mã_Hàng,
-                        Tên_Hàng,
-                        Tổng_số_lượng_bán};
-                rowBaoCao1Row.ItemArray = columnValuesArray;
-                this.Rows.Add(rowBaoCao1Row);
-                return rowBaoCao1Row;
+                        SoHDN,
+                        MaNV,
+                        NgayNhap,
+                        MaNCC,
+                        TongTien};
+                rowBaoCao2Row.ItemArray = columnValuesArray;
+                this.Rows.Add(rowBaoCao2Row);
+                return rowBaoCao2Row;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public BaoCao1Row FindByMã_NVMã_Hàng(string Mã_NV, string Mã_Hàng) {
-                return ((BaoCao1Row)(this.Rows.Find(new object[] {
-                            Mã_NV,
-                            Mã_Hàng})));
+            public BaoCao2Row FindBySoHDN(string SoHDN) {
+                return ((BaoCao2Row)(this.Rows.Find(new object[] {
+                            SoHDN})));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public override global::System.Data.DataTable Clone() {
-                BaoCao1DataTable cln = ((BaoCao1DataTable)(base.Clone()));
+                BaoCao2DataTable cln = ((BaoCao2DataTable)(base.Clone()));
                 cln.InitVars();
                 return cln;
             }
@@ -431,69 +430,68 @@ namespace BTL {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override global::System.Data.DataTable CreateInstance() {
-                return new BaoCao1DataTable();
+                return new BaoCao2DataTable();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             internal void InitVars() {
-                this.columnMã_NV = base.Columns["Mã NV"];
-                this.columnTên_NV = base.Columns["Tên NV"];
-                this.columnMã_Hàng = base.Columns["Mã Hàng"];
-                this.columnTên_Hàng = base.Columns["Tên Hàng"];
-                this.columnTổng_số_lượng_bán = base.Columns["Tổng số lượng bán"];
+                this.columnSoHDN = base.Columns["SoHDN"];
+                this.columnMaNV = base.Columns["MaNV"];
+                this.columnNgayNhap = base.Columns["NgayNhap"];
+                this.columnMaNCC = base.Columns["MaNCC"];
+                this.columnTongTien = base.Columns["TongTien"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             private void InitClass() {
-                this.columnMã_NV = new global::System.Data.DataColumn("Mã NV", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnMã_NV);
-                this.columnTên_NV = new global::System.Data.DataColumn("Tên NV", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnTên_NV);
-                this.columnMã_Hàng = new global::System.Data.DataColumn("Mã Hàng", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnMã_Hàng);
-                this.columnTên_Hàng = new global::System.Data.DataColumn("Tên Hàng", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnTên_Hàng);
-                this.columnTổng_số_lượng_bán = new global::System.Data.DataColumn("Tổng số lượng bán", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnTổng_số_lượng_bán);
+                this.columnSoHDN = new global::System.Data.DataColumn("SoHDN", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnSoHDN);
+                this.columnMaNV = new global::System.Data.DataColumn("MaNV", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnMaNV);
+                this.columnNgayNhap = new global::System.Data.DataColumn("NgayNhap", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnNgayNhap);
+                this.columnMaNCC = new global::System.Data.DataColumn("MaNCC", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnMaNCC);
+                this.columnTongTien = new global::System.Data.DataColumn("TongTien", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnTongTien);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
-                                this.columnMã_NV,
-                                this.columnMã_Hàng}, true));
-                this.columnMã_NV.AllowDBNull = false;
-                this.columnMã_NV.MaxLength = 50;
-                this.columnTên_NV.AllowDBNull = false;
-                this.columnTên_NV.MaxLength = 50;
-                this.columnMã_Hàng.AllowDBNull = false;
-                this.columnMã_Hàng.MaxLength = 20;
-                this.columnTên_Hàng.AllowDBNull = false;
-                this.columnTên_Hàng.MaxLength = 20;
+                                this.columnSoHDN}, true));
+                this.columnSoHDN.AllowDBNull = false;
+                this.columnSoHDN.Unique = true;
+                this.columnSoHDN.MaxLength = 225;
+                this.columnMaNV.AllowDBNull = false;
+                this.columnMaNV.MaxLength = 50;
+                this.columnNgayNhap.AllowDBNull = false;
+                this.columnMaNCC.AllowDBNull = false;
+                this.columnMaNCC.MaxLength = 50;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public BaoCao1Row NewBaoCao1Row() {
-                return ((BaoCao1Row)(this.NewRow()));
+            public BaoCao2Row NewBaoCao2Row() {
+                return ((BaoCao2Row)(this.NewRow()));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
-                return new BaoCao1Row(builder);
+                return new BaoCao2Row(builder);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override global::System.Type GetRowType() {
-                return typeof(BaoCao1Row);
+                return typeof(BaoCao2Row);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanged(e);
-                if ((this.BaoCao1RowChanged != null)) {
-                    this.BaoCao1RowChanged(this, new BaoCao1RowChangeEvent(((BaoCao1Row)(e.Row)), e.Action));
+                if ((this.BaoCao2RowChanged != null)) {
+                    this.BaoCao2RowChanged(this, new BaoCao2RowChangeEvent(((BaoCao2Row)(e.Row)), e.Action));
                 }
             }
             
@@ -501,8 +499,8 @@ namespace BTL {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanging(e);
-                if ((this.BaoCao1RowChanging != null)) {
-                    this.BaoCao1RowChanging(this, new BaoCao1RowChangeEvent(((BaoCao1Row)(e.Row)), e.Action));
+                if ((this.BaoCao2RowChanging != null)) {
+                    this.BaoCao2RowChanging(this, new BaoCao2RowChangeEvent(((BaoCao2Row)(e.Row)), e.Action));
                 }
             }
             
@@ -510,8 +508,8 @@ namespace BTL {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleted(e);
-                if ((this.BaoCao1RowDeleted != null)) {
-                    this.BaoCao1RowDeleted(this, new BaoCao1RowChangeEvent(((BaoCao1Row)(e.Row)), e.Action));
+                if ((this.BaoCao2RowDeleted != null)) {
+                    this.BaoCao2RowDeleted(this, new BaoCao2RowChangeEvent(((BaoCao2Row)(e.Row)), e.Action));
                 }
             }
             
@@ -519,14 +517,14 @@ namespace BTL {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleting(e);
-                if ((this.BaoCao1RowDeleting != null)) {
-                    this.BaoCao1RowDeleting(this, new BaoCao1RowChangeEvent(((BaoCao1Row)(e.Row)), e.Action));
+                if ((this.BaoCao2RowDeleting != null)) {
+                    this.BaoCao2RowDeleting(this, new BaoCao2RowChangeEvent(((BaoCao2Row)(e.Row)), e.Action));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void RemoveBaoCao1Row(BaoCao1Row row) {
+            public void RemoveBaoCao2Row(BaoCao2Row row) {
                 this.Rows.Remove(row);
             }
             
@@ -553,7 +551,7 @@ namespace BTL {
                 type.Attributes.Add(attribute1);
                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
                 attribute2.Name = "tableTypeName";
-                attribute2.FixedValue = "BaoCao1DataTable";
+                attribute2.FixedValue = "BaoCao2DataTable";
                 type.Attributes.Add(attribute2);
                 type.Particle = sequence;
                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
@@ -597,87 +595,87 @@ namespace BTL {
         /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
-        public partial class BaoCao1Row : global::System.Data.DataRow {
+        public partial class BaoCao2Row : global::System.Data.DataRow {
             
-            private BaoCao1DataTable tableBaoCao1;
+            private BaoCao2DataTable tableBaoCao2;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            internal BaoCao1Row(global::System.Data.DataRowBuilder rb) : 
+            internal BaoCao2Row(global::System.Data.DataRowBuilder rb) : 
                     base(rb) {
-                this.tableBaoCao1 = ((BaoCao1DataTable)(this.Table));
+                this.tableBaoCao2 = ((BaoCao2DataTable)(this.Table));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string Mã_NV {
+            public string SoHDN {
                 get {
-                    return ((string)(this[this.tableBaoCao1.Mã_NVColumn]));
+                    return ((string)(this[this.tableBaoCao2.SoHDNColumn]));
                 }
                 set {
-                    this[this.tableBaoCao1.Mã_NVColumn] = value;
+                    this[this.tableBaoCao2.SoHDNColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string Tên_NV {
+            public string MaNV {
                 get {
-                    return ((string)(this[this.tableBaoCao1.Tên_NVColumn]));
+                    return ((string)(this[this.tableBaoCao2.MaNVColumn]));
                 }
                 set {
-                    this[this.tableBaoCao1.Tên_NVColumn] = value;
+                    this[this.tableBaoCao2.MaNVColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string Mã_Hàng {
+            public System.DateTime NgayNhap {
                 get {
-                    return ((string)(this[this.tableBaoCao1.Mã_HàngColumn]));
+                    return ((global::System.DateTime)(this[this.tableBaoCao2.NgayNhapColumn]));
                 }
                 set {
-                    this[this.tableBaoCao1.Mã_HàngColumn] = value;
+                    this[this.tableBaoCao2.NgayNhapColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string Tên_Hàng {
+            public string MaNCC {
                 get {
-                    return ((string)(this[this.tableBaoCao1.Tên_HàngColumn]));
+                    return ((string)(this[this.tableBaoCao2.MaNCCColumn]));
                 }
                 set {
-                    this[this.tableBaoCao1.Tên_HàngColumn] = value;
+                    this[this.tableBaoCao2.MaNCCColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public int Tổng_số_lượng_bán {
+            public decimal TongTien {
                 get {
                     try {
-                        return ((int)(this[this.tableBaoCao1.Tổng_số_lượng_bánColumn]));
+                        return ((decimal)(this[this.tableBaoCao2.TongTienColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'Tổng số lượng bán\' in table \'BaoCao1\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'TongTien\' in table \'BaoCao2\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableBaoCao1.Tổng_số_lượng_bánColumn] = value;
+                    this[this.tableBaoCao2.TongTienColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsTổng_số_lượng_bánNull() {
-                return this.IsNull(this.tableBaoCao1.Tổng_số_lượng_bánColumn);
+            public bool IsTongTienNull() {
+                return this.IsNull(this.tableBaoCao2.TongTienColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetTổng_số_lượng_bánNull() {
-                this[this.tableBaoCao1.Tổng_số_lượng_bánColumn] = global::System.Convert.DBNull;
+            public void SetTongTienNull() {
+                this[this.tableBaoCao2.TongTienColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -685,22 +683,22 @@ namespace BTL {
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public class BaoCao1RowChangeEvent : global::System.EventArgs {
+        public class BaoCao2RowChangeEvent : global::System.EventArgs {
             
-            private BaoCao1Row eventRow;
+            private BaoCao2Row eventRow;
             
             private global::System.Data.DataRowAction eventAction;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public BaoCao1RowChangeEvent(BaoCao1Row row, global::System.Data.DataRowAction action) {
+            public BaoCao2RowChangeEvent(BaoCao2Row row, global::System.Data.DataRowAction action) {
                 this.eventRow = row;
                 this.eventAction = action;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public BaoCao1Row Row {
+            public BaoCao2Row Row {
                 get {
                     return this.eventRow;
                 }
@@ -728,7 +726,7 @@ namespace BTL.DuLieuDataSet1TableAdapters {
     [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
         ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-    public partial class BaoCao1TableAdapter : global::System.ComponentModel.Component {
+    public partial class BaoCao2TableAdapter : global::System.ComponentModel.Component {
         
         private global::System.Data.SqlClient.SqlDataAdapter _adapter;
         
@@ -742,7 +740,7 @@ namespace BTL.DuLieuDataSet1TableAdapters {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public BaoCao1TableAdapter() {
+        public BaoCao2TableAdapter() {
             this.ClearBeforeFill = true;
         }
         
@@ -839,12 +837,12 @@ namespace BTL.DuLieuDataSet1TableAdapters {
             this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
             global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
             tableMapping.SourceTable = "Table";
-            tableMapping.DataSetTable = "BaoCao1";
-            tableMapping.ColumnMappings.Add("Mã NV", "Mã NV");
-            tableMapping.ColumnMappings.Add("Tên NV", "Tên NV");
-            tableMapping.ColumnMappings.Add("Mã Hàng", "Mã Hàng");
-            tableMapping.ColumnMappings.Add("Tên Hàng", "Tên Hàng");
-            tableMapping.ColumnMappings.Add("Tổng số lượng bán", "Tổng số lượng bán");
+            tableMapping.DataSetTable = "BaoCao2";
+            tableMapping.ColumnMappings.Add("SoHDN", "SoHDN");
+            tableMapping.ColumnMappings.Add("MaNV", "MaNV");
+            tableMapping.ColumnMappings.Add("NgayNhap", "NgayNhap");
+            tableMapping.ColumnMappings.Add("MaNCC", "MaNCC");
+            tableMapping.ColumnMappings.Add("TongTien", "TongTien");
             this._adapter.TableMappings.Add(tableMapping);
         }
         
@@ -861,24 +859,28 @@ namespace BTL.DuLieuDataSet1TableAdapters {
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT [Mã NV], [Tên NV], [Mã Hàng], [Tên Hàng], [Tổng số lượng bán] FROM dbo.Bao" +
-                "Cao1(@tenNV)";
+            this._commandCollection[0].CommandText = "SELECT SoHDN, MaNV, NgayNhap, MaNCC, TongTien FROM dbo.BaoCao2(@maNCC, @thang, @n" +
+                "am)";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
-            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@tenNV", global::System.Data.SqlDbType.NVarChar, 1024, global::System.Data.ParameterDirection.Input, 0, 0, "", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@maNCC", global::System.Data.SqlDbType.NVarChar, 1024, global::System.Data.ParameterDirection.Input, 0, 0, "", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@thang", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@nam", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(DuLieuDataSet1.BaoCao1DataTable dataTable, string tenNV) {
+        public virtual int Fill(DuLieuDataSet1.BaoCao2DataTable dataTable, string maNCC, int thang, int nam) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            if ((tenNV == null)) {
-                throw new global::System.ArgumentNullException("tenNV");
+            if ((maNCC == null)) {
+                throw new global::System.ArgumentNullException("maNCC");
             }
             else {
-                this.Adapter.SelectCommand.Parameters[0].Value = ((string)(tenNV));
+                this.Adapter.SelectCommand.Parameters[0].Value = ((string)(maNCC));
             }
+            this.Adapter.SelectCommand.Parameters[1].Value = ((int)(thang));
+            this.Adapter.SelectCommand.Parameters[2].Value = ((int)(nam));
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
             }
@@ -890,15 +892,17 @@ namespace BTL.DuLieuDataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual DuLieuDataSet1.BaoCao1DataTable GetData(string tenNV) {
+        public virtual DuLieuDataSet1.BaoCao2DataTable GetData(string maNCC, int thang, int nam) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            if ((tenNV == null)) {
-                throw new global::System.ArgumentNullException("tenNV");
+            if ((maNCC == null)) {
+                throw new global::System.ArgumentNullException("maNCC");
             }
             else {
-                this.Adapter.SelectCommand.Parameters[0].Value = ((string)(tenNV));
+                this.Adapter.SelectCommand.Parameters[0].Value = ((string)(maNCC));
             }
-            DuLieuDataSet1.BaoCao1DataTable dataTable = new DuLieuDataSet1.BaoCao1DataTable();
+            this.Adapter.SelectCommand.Parameters[1].Value = ((int)(thang));
+            this.Adapter.SelectCommand.Parameters[2].Value = ((int)(nam));
+            DuLieuDataSet1.BaoCao2DataTable dataTable = new DuLieuDataSet1.BaoCao2DataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }

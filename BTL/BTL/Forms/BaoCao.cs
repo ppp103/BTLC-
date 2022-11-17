@@ -69,6 +69,7 @@ namespace BTL.Forms
         {
             lbInput.Visible = state;
             txtInput.Visible = state;
+            btnTke.Enabled = !state;
         }
 
         private void ActivateMenu2(bool state)
@@ -81,6 +82,8 @@ namespace BTL.Forms
 
             lbInput.Visible = state;
             txtInput.Visible = state;
+
+            btnTke.Enabled = state;
         }
 
         private void ActivateMenu3(bool state)
@@ -94,6 +97,8 @@ namespace BTL.Forms
             
             lbInput.Visible = !state;
             txtInput.Visible = !state;
+
+            btnTke.Enabled = state;
         }
 
         private void MenuItem1_Click(object sender, EventArgs e)
@@ -109,7 +114,7 @@ namespace BTL.Forms
         private void MenuItem2_Click(object sender, EventArgs e)
         {
             index = 2;
-            lbInput.Text = "Tên NCC";
+            lbInput.Text = "Nhà NCC";
             btnLamMoi_Click(this, e);
             ActivateMenu3(false);
             ActivateMenu1(false);
@@ -184,7 +189,17 @@ namespace BTL.Forms
         {
             if (index == 1)
             {
-                dgvKetQua.DataSource = xuLy.DocBang($"Select * From BaoCao1(N'{txtInput.Text}')");
+                if(txtInput.Text == "")
+                {
+                    dgvKetQua.DataSource = null;
+                    btnBaoCao.Enabled = false;
+                }
+                
+                if(txtInput.Text != "")
+                {
+                    btnBaoCao.Enabled = true;
+                    dgvKetQua.DataSource = xuLy.DocBang($"Select * From BaoCao1(N'{txtInput.Text}')");
+                }
             }
         }
 
@@ -192,8 +207,37 @@ namespace BTL.Forms
         {
             if(index == 1)
             {
-                FormReport formReport = new FormReport(xuLy.DocBang($"Select * From BaoCao1(N'{txtInput.Text}')"));
+                FormReport formReport = new FormReport(index, xuLy.DocBang($"Select * From BaoCao1(N'{txtInput.Text}')"));
                 formReport.ShowDialog();
+            }
+
+            if (index == 2)
+            {
+                int thang = dateTimePicker.Value.Month;
+               
+                int nam = dateTimePicker.Value.Year;
+                FormReport formReport = new FormReport(index, xuLy.DocBang($"Select * From BaoCao2('{txtInput.Text}', {thang}, {nam})"));
+                formReport.ShowDialog();
+            }
+        }
+
+        private void dsKHToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnXuatExcel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtInput_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = true;
+
+            if (!char.IsControl(e.KeyChar) && char.IsDigit(e.KeyChar))
+            {
+                MessageBox.Show("Vui lòng nhập chữ");
             }
         }
     }
