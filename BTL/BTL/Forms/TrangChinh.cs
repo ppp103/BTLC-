@@ -110,7 +110,7 @@ namespace HomePage
         private void btnNhapHoaDonBan_Click(object sender, EventArgs e)
         {
             KichHoatNut(sender);
-
+            MoForm(new FormHDB());
         }
 
         private void btnHoaDonBan_Click(object sender, EventArgs e)
