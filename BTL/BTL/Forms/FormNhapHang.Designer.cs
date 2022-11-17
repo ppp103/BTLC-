@@ -29,6 +29,7 @@ namespace BTL
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.txtGhiChu = new System.Windows.Forms.TextBox();
@@ -36,7 +37,6 @@ namespace BTL
             this.txtDonGiaBan = new System.Windows.Forms.TextBox();
             this.txtDonGiaNhap = new System.Windows.Forms.TextBox();
             this.txtSoLuong = new System.Windows.Forms.TextBox();
-            this.txtAnh = new System.Windows.Forms.TextBox();
             this.txtMaHang = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.áđâ = new System.Windows.Forms.Label();
@@ -46,10 +46,6 @@ namespace BTL
             this.ađa = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnClean = new BTL.Radio();
-            this.btnEdit = new BTL.Radio();
-            this.btnAdd = new BTL.Radio();
-            this.btnDetele = new BTL.Radio();
             this.label5 = new System.Windows.Forms.Label();
             this.txtMaKL = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
@@ -67,18 +63,24 @@ namespace BTL
             this.label13 = new System.Windows.Forms.Label();
             this.txtMaMua = new System.Windows.Forms.TextBox();
             this.txtTenHang = new System.Windows.Forms.TextBox();
+            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.picture = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.guna2GradientButton1 = new Guna.UI2.WinForms.Guna2GradientButton();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picture)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.Controls.Add(this.dataGridView1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel1.Location = new System.Drawing.Point(699, 0);
+            this.panel1.Location = new System.Drawing.Point(656, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(553, 779);
+            this.panel1.Size = new System.Drawing.Size(596, 779);
             this.panel1.TabIndex = 26;
             // 
             // dataGridView1
@@ -89,7 +91,7 @@ namespace BTL
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.Size = new System.Drawing.Size(553, 779);
+            this.dataGridView1.Size = new System.Drawing.Size(596, 779);
             this.dataGridView1.TabIndex = 3;
             // 
             // txtGhiChu
@@ -105,7 +107,7 @@ namespace BTL
             this.txtTGBH.Location = new System.Drawing.Point(243, 235);
             this.txtTGBH.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtTGBH.Name = "txtTGBH";
-            this.txtTGBH.Size = new System.Drawing.Size(388, 22);
+            this.txtTGBH.Size = new System.Drawing.Size(92, 22);
             this.txtTGBH.TabIndex = 19;
             // 
             // txtDonGiaBan
@@ -113,7 +115,7 @@ namespace BTL
             this.txtDonGiaBan.Location = new System.Drawing.Point(243, 192);
             this.txtDonGiaBan.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtDonGiaBan.Name = "txtDonGiaBan";
-            this.txtDonGiaBan.Size = new System.Drawing.Size(388, 22);
+            this.txtDonGiaBan.Size = new System.Drawing.Size(92, 22);
             this.txtDonGiaBan.TabIndex = 18;
             // 
             // txtDonGiaNhap
@@ -122,7 +124,7 @@ namespace BTL
             this.txtDonGiaNhap.Location = new System.Drawing.Point(243, 148);
             this.txtDonGiaNhap.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtDonGiaNhap.Name = "txtDonGiaNhap";
-            this.txtDonGiaNhap.Size = new System.Drawing.Size(388, 22);
+            this.txtDonGiaNhap.Size = new System.Drawing.Size(92, 22);
             this.txtDonGiaNhap.TabIndex = 17;
             // 
             // txtSoLuong
@@ -132,14 +134,6 @@ namespace BTL
             this.txtSoLuong.Name = "txtSoLuong";
             this.txtSoLuong.Size = new System.Drawing.Size(388, 22);
             this.txtSoLuong.TabIndex = 21;
-            // 
-            // txtAnh
-            // 
-            this.txtAnh.Location = new System.Drawing.Point(243, 278);
-            this.txtAnh.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.txtAnh.Name = "txtAnh";
-            this.txtAnh.Size = new System.Drawing.Size(388, 22);
-            this.txtAnh.TabIndex = 16;
             // 
             // txtMaHang
             // 
@@ -236,82 +230,6 @@ namespace BTL
             this.label1.Size = new System.Drawing.Size(92, 25);
             this.label1.TabIndex = 5;
             this.label1.Text = "Mã Hàng";
-            // 
-            // btnClean
-            // 
-            this.btnClean.BackColor = System.Drawing.Color.DeepPink;
-            this.btnClean.BackgroundColor = System.Drawing.Color.DeepPink;
-            this.btnClean.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btnClean.BorderRadius = 20;
-            this.btnClean.BorderSize = 0;
-            this.btnClean.FlatAppearance.BorderSize = 0;
-            this.btnClean.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClean.ForeColor = System.Drawing.Color.White;
-            this.btnClean.Location = new System.Drawing.Point(511, 709);
-            this.btnClean.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.btnClean.Name = "btnClean";
-            this.btnClean.Size = new System.Drawing.Size(121, 64);
-            this.btnClean.TabIndex = 27;
-            this.btnClean.Text = "Làm mới";
-            this.btnClean.TextColor = System.Drawing.Color.White;
-            this.btnClean.UseVisualStyleBackColor = false;
-            // 
-            // btnEdit
-            // 
-            this.btnEdit.BackColor = System.Drawing.Color.DimGray;
-            this.btnEdit.BackgroundColor = System.Drawing.Color.DimGray;
-            this.btnEdit.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btnEdit.BorderRadius = 20;
-            this.btnEdit.BorderSize = 0;
-            this.btnEdit.FlatAppearance.BorderSize = 0;
-            this.btnEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEdit.ForeColor = System.Drawing.Color.White;
-            this.btnEdit.Location = new System.Drawing.Point(28, 709);
-            this.btnEdit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.btnEdit.Name = "btnEdit";
-            this.btnEdit.Size = new System.Drawing.Size(117, 64);
-            this.btnEdit.TabIndex = 27;
-            this.btnEdit.Text = "Sửa";
-            this.btnEdit.TextColor = System.Drawing.Color.White;
-            this.btnEdit.UseVisualStyleBackColor = false;
-            // 
-            // btnAdd
-            // 
-            this.btnAdd.BackColor = System.Drawing.Color.DodgerBlue;
-            this.btnAdd.BackgroundColor = System.Drawing.Color.DodgerBlue;
-            this.btnAdd.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btnAdd.BorderRadius = 20;
-            this.btnAdd.BorderSize = 0;
-            this.btnAdd.FlatAppearance.BorderSize = 0;
-            this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAdd.ForeColor = System.Drawing.Color.White;
-            this.btnAdd.Location = new System.Drawing.Point(184, 709);
-            this.btnAdd.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(121, 64);
-            this.btnAdd.TabIndex = 27;
-            this.btnAdd.Text = "Nhập";
-            this.btnAdd.TextColor = System.Drawing.Color.White;
-            this.btnAdd.UseVisualStyleBackColor = false;
-            // 
-            // btnDetele
-            // 
-            this.btnDetele.BackColor = System.Drawing.Color.Tomato;
-            this.btnDetele.BackgroundColor = System.Drawing.Color.Tomato;
-            this.btnDetele.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btnDetele.BorderRadius = 20;
-            this.btnDetele.BorderSize = 0;
-            this.btnDetele.FlatAppearance.BorderSize = 0;
-            this.btnDetele.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDetele.ForeColor = System.Drawing.Color.White;
-            this.btnDetele.Location = new System.Drawing.Point(340, 709);
-            this.btnDetele.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.btnDetele.Name = "btnDetele";
-            this.btnDetele.Size = new System.Drawing.Size(117, 64);
-            this.btnDetele.TabIndex = 27;
-            this.btnDetele.Text = "Xóa";
-            this.btnDetele.TextColor = System.Drawing.Color.White;
-            this.btnDetele.UseVisualStyleBackColor = false;
             // 
             // label5
             // 
@@ -473,16 +391,67 @@ namespace BTL
             this.txtTenHang.Size = new System.Drawing.Size(388, 22);
             this.txtTenHang.TabIndex = 21;
             // 
+            // guna2Button1
+            // 
+            this.guna2Button1.AutoRoundedCorners = true;
+            this.guna2Button1.BorderRadius = 26;
+            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button1.ForeColor = System.Drawing.Color.White;
+            this.guna2Button1.Location = new System.Drawing.Point(169, 709);
+            this.guna2Button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2Button1.Name = "guna2Button1";
+            this.guna2Button1.Size = new System.Drawing.Size(211, 55);
+            this.guna2Button1.TabIndex = 27;
+            this.guna2Button1.Text = "NHẬP";
+            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
+            // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
+            // picture
+            // 
+            this.picture.ImageRotate = 0F;
+            this.picture.Location = new System.Drawing.Point(387, 148);
+            this.picture.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.picture.Name = "picture";
+            this.picture.Size = new System.Drawing.Size(245, 151);
+            this.picture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picture.TabIndex = 28;
+            this.picture.TabStop = false;
+            // 
+            // guna2GradientButton1
+            // 
+            this.guna2GradientButton1.AutoRoundedCorners = true;
+            this.guna2GradientButton1.BorderRadius = 15;
+            this.guna2GradientButton1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2GradientButton1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2GradientButton1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2GradientButton1.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2GradientButton1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2GradientButton1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2GradientButton1.ForeColor = System.Drawing.Color.White;
+            this.guna2GradientButton1.Location = new System.Drawing.Point(243, 274);
+            this.guna2GradientButton1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2GradientButton1.Name = "guna2GradientButton1";
+            this.guna2GradientButton1.Size = new System.Drawing.Size(93, 32);
+            this.guna2GradientButton1.TabIndex = 29;
+            this.guna2GradientButton1.Text = "chọn";
+            this.guna2GradientButton1.Click += new System.EventHandler(this.guna2GradientButton1_Click);
+            // 
             // FormNhapHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Linen;
             this.ClientSize = new System.Drawing.Size(1252, 779);
-            this.Controls.Add(this.btnDetele);
-            this.Controls.Add(this.btnAdd);
-            this.Controls.Add(this.btnEdit);
-            this.Controls.Add(this.btnClean);
+            this.Controls.Add(this.guna2GradientButton1);
+            this.Controls.Add(this.picture);
+            this.Controls.Add(this.guna2Button1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.txtMaMua);
             this.Controls.Add(this.txtMaCD);
@@ -504,7 +473,6 @@ namespace BTL
             this.Controls.Add(this.txtTenHang);
             this.Controls.Add(this.txtSoLuong);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.txtAnh);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.txtMaHang);
             this.Controls.Add(this.label5);
@@ -519,8 +487,11 @@ namespace BTL
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FormNhapHang";
             this.Text = "Nhập hàng";
+            this.Load += new System.EventHandler(this.FormNhapHang_Load);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picture)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -535,7 +506,6 @@ namespace BTL
         private System.Windows.Forms.TextBox txtDonGiaBan;
         private System.Windows.Forms.TextBox txtDonGiaNhap;
         private System.Windows.Forms.TextBox txtSoLuong;
-        private System.Windows.Forms.TextBox txtAnh;
         private System.Windows.Forms.TextBox txtMaHang;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label áđâ;
@@ -545,10 +515,6 @@ namespace BTL
         private System.Windows.Forms.Label ađa;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private Radio btnClean;
-        private Radio btnEdit;
-        private Radio btnAdd;
-        private Radio btnDetele;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txtMaKL;
         private System.Windows.Forms.Label label7;
@@ -566,5 +532,9 @@ namespace BTL
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.TextBox txtMaMua;
         private System.Windows.Forms.TextBox txtTenHang;
+        private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
+        private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton1;
+        private Guna.UI2.WinForms.Guna2PictureBox picture;
     }
 }
