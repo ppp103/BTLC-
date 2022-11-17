@@ -183,9 +183,7 @@ namespace BTL.Forms
                     DataTable table = xuLy.DocBang($"Select * From Quy4({nam})");
                     dgvKetQua.DataSource = table;
                 }
-
             }
         }
-
     }
 }
