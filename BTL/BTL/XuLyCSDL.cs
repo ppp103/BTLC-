@@ -10,11 +10,7 @@ namespace BTL
 {
     internal class XuLyCSDL
     {
-<<<<<<< HEAD
         string strConnect = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""E:\tuyet beo\Lập trình trực quan\BAI TAP\BTLC-\BTL\BTL\DataBase\DuLieu.mdf"";Integrated Security=True";
-=======
-        string strConnect = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\HocHanh(ki5)\C#\Projects\BTLv7\BTL\BTL\DataBase\DuLieu.mdf;Integrated Security=True";
->>>>>>> aa440d7e0e5a8d0fe2de89d254731aca1806c3b9
         SqlConnection sqlConnect = null;
 
         //Hàm mở kết nối CSDL
