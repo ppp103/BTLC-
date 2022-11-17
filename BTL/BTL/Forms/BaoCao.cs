@@ -15,6 +15,7 @@ namespace BTL.Forms
     {
         XuLyCSDL xuLy = new XuLyCSDL();
         int index;
+        string query;
         public BaoCao()
         {
             InitializeComponent();
@@ -35,6 +36,16 @@ namespace BTL.Forms
             {
                 MessageBox.Show("Vui lòng chọn quý");
                 return false;
+            }
+
+            if(dateTimePicker.Value.Year > DateTime.Today.Year)
+            {
+                MessageBox.Show("Vui lòng chọn đúng năm");
+            }
+
+            if(dateTimePicker.Value.Month > DateTime.Today.Month && dateTimePicker.Value.Year == DateTime.Today.Year)
+            {
+                MessageBox.Show("Vui lòng chọn tháng bé hơn tháng hiện tại");
             }
             return true;
         }
@@ -88,7 +99,7 @@ namespace BTL.Forms
         private void MenuItem1_Click(object sender, EventArgs e)
         {
             index = 1;
-            lbInput.Text = "Mã NV";
+            lbInput.Text = "Tên NV";
             btnLamMoi_Click(this, e);
             ActivateMenu2(false);
             ActivateMenu3(false);
@@ -98,7 +109,7 @@ namespace BTL.Forms
         private void MenuItem2_Click(object sender, EventArgs e)
         {
             index = 2;
-            lbInput.Text = "Mã NCC";
+            lbInput.Text = "Tên NCC";
             btnLamMoi_Click(this, e);
             ActivateMenu3(false);
             ActivateMenu1(false);
@@ -116,22 +127,6 @@ namespace BTL.Forms
 
         private void btnThongKe_Click(object sender, EventArgs e)
         {
-            if (index == 1 && check())
-            {
-                DataTable table = xuLy.DocBang($"Select * From BaoCao1('{txtInput.Text}')");
-
-                if (table.Rows.Count > 0)
-                {
-                    MessageBox.Show("Tìm thấy dữ liệu");
-                    dgvKetQua.DataSource = table;
-                }
-                else
-                {
-                    MessageBox.Show("Không tìm thấy dữ liệu");
-                    dgvKetQua.DataSource = table;
-                }
-            }
-
             if (index == 2 && check())
             {
                 int thang = dateTimePicker.Value.Month;
@@ -155,7 +150,6 @@ namespace BTL.Forms
 
             if (index == 3 && check())
             {
-                MessageBox.Show("Alo123");
                 if(cboQuy.SelectedIndex == 0)
                 {
                     int nam = dateTimePicker.Value.Year;
@@ -183,6 +177,23 @@ namespace BTL.Forms
                     DataTable table = xuLy.DocBang($"Select * From Quy4({nam})");
                     dgvKetQua.DataSource = table;
                 }
+            }
+        }
+
+        private void txtInput_TextChanged(object sender, EventArgs e)
+        {
+            if (index == 1)
+            {
+                dgvKetQua.DataSource = xuLy.DocBang($"Select * From BaoCao1(N'{txtInput.Text}')");
+            }
+        }
+
+        private void btnBaoCao_Click(object sender, EventArgs e)
+        {
+            if(index == 1)
+            {
+                FormReport formReport = new FormReport(xuLy.DocBang($"Select * From BaoCao1(N'{txtInput.Text}')"));
+                formReport.ShowDialog();
             }
         }
     }
