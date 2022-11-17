@@ -10,7 +10,7 @@ namespace BTL
 {
     internal class XuLyCSDL
     {
-        string strConnect = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename= Data Source=.\\SQLEXPRESS;AttachDbFilename=" + System.IO.Directory.GetCurrentDirectory().ToString() + "\\DataBase\\" + "DuLieu.mdf;Integrated Security=True";
+        string strConnect = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\HocHanh(ki5)\C#\Projects\BTLv7\BTL\BTL\DataBase\DuLieu.mdf;Integrated Security=True";
         SqlConnection sqlConnect = null;
 
         //Hàm mở kết nối CSDL
@@ -50,7 +50,7 @@ namespace BTL
             sqlcommand.ExecuteNonQuery();
             DongKetNoiCSDL();
         }
-        
+  
 
         public object DocGiaTri(string sql)
         {

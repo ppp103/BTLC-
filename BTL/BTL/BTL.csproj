@@ -54,9 +54,29 @@
     <Reference Include="Guna.UI2, Version=2.0.3.5, Culture=neutral, PublicKeyToken=4015e4865bda28a4, processorArchitecture=MSIL">
       <HintPath>..\packages\Guna.UI2.WinForms.2.0.3.5\lib\net40\Guna.UI2.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1537.0\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1537.0\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1537.0\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1537.0\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1537.0\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
-    <Reference Include="System" />
+    <Reference Include="System">
+      <HintPath>C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
+    </Reference>
     <Reference Include="System.Core" />
     <Reference Include="System.Xaml" />
     <Reference Include="System.Xml.Linq" />
@@ -104,6 +124,32 @@
     <Compile Include="DangNhapDangKi\Textboxxx.Designer.cs">
       <DependentUpon>Textboxxx.cs</DependentUpon>
     </Compile>
+    <Compile Include="DuLieuDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DuLieuDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DuLieuDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DuLieuDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DuLieuDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DuLieuDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DuLieuDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DuLieuDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\BaoCao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\BaoCao.Designer.cs">
+      <DependentUpon>BaoCao.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\ChiTietHDB.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -128,6 +174,12 @@
     <Compile Include="Forms\FormNhapHang.Designer.cs">
       <DependentUpon>FormNhapHang.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\FormReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormReport.Designer.cs">
+      <DependentUpon>FormReport.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\FormThanhToanLuong.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -146,6 +198,12 @@
     <Compile Include="Forms\FormThongKeHoaDon.Designer.cs">
       <DependentUpon>FormThongKeHoaDon.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\FormTkeHangHoa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormTkeHangHoa.Designer.cs">
+      <DependentUpon>FormTkeHangHoa.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\TrangChinh.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -154,6 +212,12 @@
     </Compile>
     <Compile Include="Radio.cs">
       <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SqlServerTypes\Loader.cs" />
+    <Compile Include="ThongKeSanPham.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ThongKeSanPham.xsd</DependentUpon>
     </Compile>
     <Compile Include="XuLyCSDL.cs" />
     <Compile Include="Program.cs" />
@@ -173,6 +237,9 @@
     <EmbeddedResource Include="DangNhapDangKi\Textboxxx.resx">
       <DependentUpon>Textboxxx.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\BaoCao.resx">
+      <DependentUpon>BaoCao.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\ChiTietHDB.resx">
       <DependentUpon>ChiTietHDB.cs</DependentUpon>
     </EmbeddedResource>
@@ -185,6 +252,9 @@
     <EmbeddedResource Include="Forms\FormNhapHang.resx">
       <DependentUpon>FormNhapHang.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormReport.resx">
+      <DependentUpon>FormReport.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormThanhToanLuong.resx">
       <DependentUpon>FormThanhToanLuong.cs</DependentUpon>
     </EmbeddedResource>
@@ -193,6 +263,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormThongKeHoaDon.resx">
       <DependentUpon>FormThongKeHoaDon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormTkeHangHoa.resx">
+      <DependentUpon>FormTkeHangHoa.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -206,6 +279,51 @@
     <EmbeddedResource Include="Forms\TrangChinh.resx">
       <DependentUpon>TrangChinh.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Report1.rdlc" />
+    <None Include="DuLieuDataSet.xsc">
+      <DependentUpon>DuLieuDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DuLieuDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DuLieuDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DuLieuDataSet.xss">
+      <DependentUpon>DuLieuDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DuLieuDataSet1.xsc">
+      <DependentUpon>DuLieuDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DuLieuDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DuLieuDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DuLieuDataSet1.xss">
+      <DependentUpon>DuLieuDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DuLieuDataSet2.xsc">
+      <DependentUpon>DuLieuDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="DuLieuDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DuLieuDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DuLieuDataSet2.xss">
+      <DependentUpon>DuLieuDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="DuLieuDataSet3.xsc">
+      <DependentUpon>DuLieuDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="DuLieuDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DuLieuDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DuLieuDataSet3.xss">
+      <DependentUpon>DuLieuDataSet3.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -216,6 +334,17 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="ThongKeSanPham.xsc">
+      <DependentUpon>ThongKeSanPham.xsd</DependentUpon>
+    </None>
+    <None Include="ThongKeSanPham.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ThongKeSanPham.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ThongKeSanPham.xss">
+      <DependentUpon>ThongKeSanPham.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -244,6 +373,19 @@
     <Content Include="DangNhapDangKi\NhanVien_log.ldf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>NhanVien.mdf</DependentUpon>
+    </Content>
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
   <ItemGroup>
