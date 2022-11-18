@@ -62,7 +62,5 @@ namespace BTL
             DongKetNoiCSDL();
             return val;
         }
-
-
     }
 }

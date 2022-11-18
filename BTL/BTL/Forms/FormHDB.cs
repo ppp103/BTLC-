@@ -16,7 +16,7 @@ namespace BTL
     public partial class FormHDB : Form
     {
         XuLyCSDL DSHDB = new XuLyCSDL();
-        SqlConnection con = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=D:\\HocHanh(ki5)\\C#\\Projects\\BTLv7\\BTL\\BTL\\DataBase\\DuLieu.mdf;Integrated Security=True");
+        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\HocHanh(ki5)\C#\Projects\BTLv7\BTL\BTL\DataBase\DuLieu.mdf;Integrated Security=True");
         SqlCommand cmd;
         SqlDataReader dr;
         string sql,sql1;
