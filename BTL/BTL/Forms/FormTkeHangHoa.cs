@@ -25,48 +25,35 @@ namespace BTL.Forms
             DataTable dtHH = tkhh.DocBang("Select * From tblHangHoa");
             dgvKq.DataSource = dtHH;
             LoadDgvKq();
+
+
         }
         private void LoadDgvKq()
         {
-            DataTable dtHH = tkhh.DocBang($"SELECT MaHang as N'Mã hàng', TenHang as N'Tên hàng', SoLuong as N'Số lượng', DonGiaNhap as N'Đơn giá nhập', DonGiaBan as N'Đơn giá bán', ThoiGianBaoHanh as N'Thời gian bảo hành', MaKL as N'Khối lượng', MaLoai as N'Loại', MaHangSX as N'Hãng sản xuất', MaNuocSX as N'Nước sản xuất'  FROM tblHangHoa");
+            DataTable dtHH = tkhh.DocBang($"SELECT MaHang as N'Mã hàng', TenHang as N'Tên Hàng', SoLuong as N'Số lượng', DonGiaNhap as N'Đơn giá nhập',  DonGiaBan as N'Đơn giá bán', ThoiGianBaoHanh as N'Thời gian bảo hành', MaKL as N'Khối lượng', MaLoai as N'Loại', MaHangSX as N'Hãng sản xuất', MaNuocSX as N'Nước sản xuất' FROM tblHangHoa");
             dgvKq.DataSource = dtHH;
             dtHH.Dispose();
         }
-        private void txtNhap_TextChanged(object sender, EventArgs e)
-        {
-            if (cmbChon.Text == "Khối lượng")
-            {
-                DataTable dtHH = tkhh.DocBang("select * from tblHangHoa where MaKL like N'%" + txtNhap.Text.Trim() + "%' ");
-                dgvKq.DataSource = dtHH;
-            }
-            if (cmbChon.Text == "Loại")
-            {
-                DataTable dtHH = tkhh.DocBang("select * from tblHangHoa where MaLoai like N'%" + txtNhap.Text.Trim() + "%' ");
-                dgvKq.DataSource = dtHH;
-            }
-            if (cmbChon.Text == "Nước sản xuất")
-            {
-                DataTable dtHH = tkhh.DocBang("select * from tblHangHoa where MaNuocSX like N'%" + txtNhap.Text.Trim() + "%' ");
-                dgvKq.DataSource = dtHH;
-            }
-        }
+
         private void btnTim_Click(object sender, EventArgs e)
         {
+            LoadDgvKq();
             if (cmbChon.Text == "Khối lượng")
             {
-                DataTable dtHH = tkhh.DocBang("select * from tblHangHoa where MaKL like N'%" + txtNhap.Text.Trim() + "%' ");
+                DataTable dtHH = tkhh.DocBang("select * from tblHangHoa where MaKL like N'%" + cmbTT.Text.Trim() + "%' ");
                 dgvKq.DataSource = dtHH;
             }
             if (cmbChon.Text == "Loại")
             {
-                DataTable dtHH = tkhh.DocBang("select * from tblHangHoa where MaLoai like N'%" + txtNhap.Text.Trim() + "%' ");
+                DataTable dtHH = tkhh.DocBang("select * from tblHangHoa where MaLoai like N'%" + cmbTT.Text.Trim() + "%' ");
                 dgvKq.DataSource = dtHH;
             }
             if (cmbChon.Text == "Nước sản xuất")
             {
-                DataTable dtHH = tkhh.DocBang("select * from tblHangHoa where MaNuocSX like N'%" + txtNhap.Text.Trim() + "%' ");
+                DataTable dtHH = tkhh.DocBang("select * from tblHangHoa where MaNuocSX like N'%" + cmbTT.Text.Trim() + "%' ");
                 dgvKq.DataSource = dtHH;
             }
+            
         }
         private void btnXuat_Click(object sender, EventArgs e)
         {
@@ -200,6 +187,54 @@ namespace BTL.Forms
             }
 
         }
+
+        private void cmbChon_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            LoadDgvKq();
+            if (cmbChon.Text == "Khối lượng")
+            {
+                DataTable tenKL = tkhh.DocBang("select * from tblKhoiLuong");
+                dgvKq.DataSource = tenKL;
+
+                cmbTT.Items.Clear();
+                cmbTT.ResetText();
+
+                for (int i = 0; i < tenKL.Rows.Count; i++)
+                {
+                    cmbTT.Items.Add(tenKL.Rows[i][1].ToString());
+                }
+            }
+
+            if (cmbChon.Text == "Loại")
+            {
+                DataTable tenL = tkhh.DocBang("select * from tblLoai");
+                dgvKq.DataSource = tenL;
+
+                cmbTT.Items.Clear();
+                cmbTT.ResetText();
+
+                for (int j = 0; j < tenL.Rows.Count; j++)
+                {
+                    cmbTT.Items.Add(tenL.Rows[j][1].ToString());
+                    
+                }
+            }
+
+            if (cmbChon.Text == "Nước sản xuất")
+            {
+                DataTable tenNSX = tkhh.DocBang("select * from tblNuocSX");
+                dgvKq.DataSource = tenNSX;
+
+                cmbTT.Items.Clear();
+                cmbTT.ResetText();
+
+                for (int k = 0; k < tenNSX.Rows.Count; k++)
+                {
+                    cmbTT.Items.Add(tenNSX.Rows[k][1].ToString());
+                    
+                }
+            }
+        }
     }
-}
+ }
 
