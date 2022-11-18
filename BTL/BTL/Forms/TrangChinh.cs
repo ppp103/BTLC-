@@ -98,6 +98,7 @@ namespace HomePage
         private void btnTkeHangHoa_Click(object sender, EventArgs e)
         {
             KichHoatNut(sender);
+            MoForm(new FormTkeHangHoa());
         }
 
         private void btnNhapHang_Click(object sender, EventArgs e)
@@ -109,7 +110,7 @@ namespace HomePage
         private void btnNhapHoaDonBan_Click(object sender, EventArgs e)
         {
             KichHoatNut(sender);
-
+            MoForm(new FormHDB());
         }
 
         private void btnHoaDonBan_Click(object sender, EventArgs e)
@@ -157,7 +158,7 @@ namespace HomePage
         private void btnBaoCao_Click(object sender, EventArgs e)
         {
             KichHoatNut(sender);
-            //MoForm(new BaoCao());
+            MoForm(new BaoCao());
         }
     }
 }

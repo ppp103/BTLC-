@@ -1,7 +1,20 @@
 {
   "ExpandedNodes": [
+<<<<<<< HEAD
     ""
   ],
   "SelectedNode": "\\BTL.sln",
+=======
+    "",
+<<<<<<< HEAD
+    "\\BTL"
+=======
+    "\\BTL",
+    "\\BTL\\BTL",
+    "\\BTL\\BTL\\Forms"
+>>>>>>> 709bfb5adb96cd7f8c13aff02cad97c33e2ffaf5
+  ],
+  "SelectedNode": "\\BTL\\BTL.sln",
+>>>>>>> ff8660a4f1961a83366022d8e5ca67fcd0f1733f
   "PreviewInSolutionExplorer": false
 }

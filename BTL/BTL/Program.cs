@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using BTL.Forms;
 
 namespace BTL
 {
@@ -17,10 +18,9 @@ namespace BTL
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new DangNhapDangKi.DangNhap());
-            //Application.Run(new HomePage.TrangChinh());
+            Application.Run(new HomePage.TrangChinh());
             //Application.Run(new Forms.BaoCao());
-            //Application.Run(new FormHDB());
-            Application.Run(new FormNhapHang());
+            //Application.Run(new FormTkeHangHoa());
         }
     }
 }
