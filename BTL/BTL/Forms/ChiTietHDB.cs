@@ -259,5 +259,10 @@ namespace BTL.Forms
             txtgiamgia.Text = dataGridView1.CurrentRow.Cells[3].Value.ToString();
             txtthanhtien.Text = dataGridView1.CurrentRow.Cells[4].Value.ToString();
         }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

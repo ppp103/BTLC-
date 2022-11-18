@@ -97,3 +97,36 @@ D:\HocHanh(ki5)\C#\Projects\BTLv7\BTL\BTL\obj\Debug\BTL.pdb
 D:\HocHanh(ki5)\C#\Projects\BTLv7\BTL\BTL\obj\Debug\BTL.Forms.BaoCao.resources
 D:\BTL-CSharp\New folder\BTL\BTL\obj\Debug\BTL.Forms.BaoCao.resources
 D:\BTL-CSharp\New folder\BTL\BTL\obj\Debug\BTL.Forms.FormTkeHangHoa.resources
+C:\Users\STEP\Source\Repos\BTLC-\BTL\BTL\bin\Debug\DangNhapDangKi\DangNhap.mdf
+C:\Users\STEP\Source\Repos\BTLC-\BTL\BTL\bin\Debug\DangNhapDangKi\DangNhap_log.ldf
+C:\Users\STEP\Source\Repos\BTLC-\BTL\BTL\bin\Debug\DataBase\DuLieu.mdf
+C:\Users\STEP\Source\Repos\BTLC-\BTL\BTL\bin\Debug\DataBase\DuLieu_log.ldf
+C:\Users\STEP\Source\Repos\BTLC-\BTL\BTL\bin\Debug\DangNhapDangKi\NhanVien.mdf
+C:\Users\STEP\Source\Repos\BTLC-\BTL\BTL\bin\Debug\DangNhapDangKi\NhanVien_log.ldf
+C:\Users\STEP\Source\Repos\BTLC-\BTL\BTL\bin\Debug\BTL.exe.config
+C:\Users\STEP\Source\Repos\BTLC-\BTL\BTL\bin\Debug\BTL.exe
+C:\Users\STEP\Source\Repos\BTLC-\BTL\BTL\bin\Debug\BTL.pdb
+C:\Users\STEP\Source\Repos\BTLC-\BTL\BTL\bin\Debug\FontAwesome.Sharp.dll
+C:\Users\STEP\Source\Repos\BTLC-\BTL\BTL\bin\Debug\Guna.UI2.dll
+C:\Users\STEP\Source\Repos\BTLC-\BTL\BTL\obj\Debug\BTL.csproj.AssemblyReference.cache
+C:\Users\STEP\Source\Repos\BTLC-\BTL\BTL\obj\Debug\BTL.DangNhapDangKi.DangKi.resources
+C:\Users\STEP\Source\Repos\BTLC-\BTL\BTL\obj\Debug\BTL.DangNhapDangKi.DangNhap.resources
+C:\Users\STEP\Source\Repos\BTLC-\BTL\BTL\obj\Debug\BTL.DangNhapDangKi.Quenmatkhau.resources
+C:\Users\STEP\Source\Repos\BTLC-\BTL\BTL\obj\Debug\BTL.DangNhapDangKi.textboxhide.resources
+C:\Users\STEP\Source\Repos\BTLC-\BTL\BTL\obj\Debug\BTL.DangNhapDangKi.Textboxxx.resources
+C:\Users\STEP\Source\Repos\BTLC-\BTL\BTL\obj\Debug\BTL.Forms.BaoCao.resources
+C:\Users\STEP\Source\Repos\BTLC-\BTL\BTL\obj\Debug\BTL.Forms.ChiTietHDB.resources
+C:\Users\STEP\Source\Repos\BTLC-\BTL\BTL\obj\Debug\BTL.FormHDB.resources
+C:\Users\STEP\Source\Repos\BTLC-\BTL\BTL\obj\Debug\BTL.FormLapHoaDon.resources
+C:\Users\STEP\Source\Repos\BTLC-\BTL\BTL\obj\Debug\BTL.FormNhapHang.resources
+C:\Users\STEP\Source\Repos\BTLC-\BTL\BTL\obj\Debug\BTL.FormThanhToanLuong.resources
+C:\Users\STEP\Source\Repos\BTLC-\BTL\BTL\obj\Debug\BTL.FormNhapHangHoa.resources
+C:\Users\STEP\Source\Repos\BTLC-\BTL\BTL\obj\Debug\BTL.FormThongKeHoaDon.resources
+C:\Users\STEP\Source\Repos\BTLC-\BTL\BTL\obj\Debug\BTL.Forms.FormTkeHangHoa.resources
+C:\Users\STEP\Source\Repos\BTLC-\BTL\BTL\obj\Debug\BTL.Properties.Resources.resources
+C:\Users\STEP\Source\Repos\BTLC-\BTL\BTL\obj\Debug\HomePage.TrangChinh.resources
+C:\Users\STEP\Source\Repos\BTLC-\BTL\BTL\obj\Debug\BTL.csproj.GenerateResource.cache
+C:\Users\STEP\Source\Repos\BTLC-\BTL\BTL\obj\Debug\BTL.csproj.CoreCompileInputs.cache
+C:\Users\STEP\Source\Repos\BTLC-\BTL\BTL\obj\Debug\BTL.csproj.CopyComplete
+C:\Users\STEP\Source\Repos\BTLC-\BTL\BTL\obj\Debug\BTL.exe
+C:\Users\STEP\Source\Repos\BTLC-\BTL\BTL\obj\Debug\BTL.pdb

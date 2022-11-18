@@ -35,6 +35,8 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.txttienhang = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2HtmlLabel8 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.txtthanhtien = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtmahang = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtgiamgia = new Guna.UI2.WinForms.Guna2TextBox();
@@ -52,15 +54,13 @@
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
-            this.radio5 = new BTL.Radio();
             this.dataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.txttienhang = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2HtmlLabel8 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.radio5 = new BTL.Radio();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -91,6 +91,35 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(941, 641);
             this.panel1.TabIndex = 75;
+            // 
+            // txttienhang
+            // 
+            this.txttienhang.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txttienhang.DefaultText = "";
+            this.txttienhang.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txttienhang.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txttienhang.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txttienhang.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txttienhang.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txttienhang.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txttienhang.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txttienhang.Location = new System.Drawing.Point(123, 308);
+            this.txttienhang.Name = "txttienhang";
+            this.txttienhang.PasswordChar = '\0';
+            this.txttienhang.PlaceholderText = "";
+            this.txttienhang.SelectedText = "";
+            this.txttienhang.Size = new System.Drawing.Size(221, 36);
+            this.txttienhang.TabIndex = 108;
+            // 
+            // guna2HtmlLabel8
+            // 
+            this.guna2HtmlLabel8.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel8.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel8.Location = new System.Drawing.Point(5, 308);
+            this.guna2HtmlLabel8.Name = "guna2HtmlLabel8";
+            this.guna2HtmlLabel8.Size = new System.Drawing.Size(78, 27);
+            this.guna2HtmlLabel8.TabIndex = 107;
+            this.guna2HtmlLabel8.Text = "Giá Bán :";
             // 
             // txtthanhtien
             // 
@@ -357,29 +386,6 @@
             this.panel2.Size = new System.Drawing.Size(510, 641);
             this.panel2.TabIndex = 91;
             // 
-            // errorProvider1
-            // 
-            this.errorProvider1.ContainerControl = this;
-            // 
-            // radio5
-            // 
-            this.radio5.BackColor = System.Drawing.Color.Crimson;
-            this.radio5.BackgroundColor = System.Drawing.Color.Crimson;
-            this.radio5.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.radio5.BorderRadius = 20;
-            this.radio5.BorderSize = 0;
-            this.radio5.FlatAppearance.BorderSize = 0;
-            this.radio5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.radio5.ForeColor = System.Drawing.Color.White;
-            this.radio5.Image = ((System.Drawing.Image)(resources.GetObject("radio5.Image")));
-            this.radio5.Location = new System.Drawing.Point(263, 428);
-            this.radio5.Name = "radio5";
-            this.radio5.Size = new System.Drawing.Size(40, 40);
-            this.radio5.TabIndex = 90;
-            this.radio5.TextColor = System.Drawing.Color.White;
-            this.radio5.UseVisualStyleBackColor = false;
-            this.radio5.Click += new System.EventHandler(this.radio5_Click);
-            // 
             // dataGridView1
             // 
             this.dataGridView1.AllowUserToAddRows = false;
@@ -391,7 +397,6 @@
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.IndianRed;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -450,35 +455,30 @@
             this.dataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
-            // txttienhang
+            // radio5
             // 
-            this.txttienhang.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txttienhang.DefaultText = "";
-            this.txttienhang.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txttienhang.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txttienhang.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txttienhang.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txttienhang.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txttienhang.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txttienhang.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txttienhang.Location = new System.Drawing.Point(123, 308);
-            this.txttienhang.Name = "txttienhang";
-            this.txttienhang.PasswordChar = '\0';
-            this.txttienhang.PlaceholderText = "";
-            this.txttienhang.SelectedText = "";
-            this.txttienhang.Size = new System.Drawing.Size(221, 36);
-            this.txttienhang.TabIndex = 108;
+            this.radio5.BackColor = System.Drawing.Color.Crimson;
+            this.radio5.BackgroundColor = System.Drawing.Color.Crimson;
+            this.radio5.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.radio5.BorderRadius = 20;
+            this.radio5.BorderSize = 0;
+            this.radio5.FlatAppearance.BorderSize = 0;
+            this.radio5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.radio5.ForeColor = System.Drawing.Color.White;
+            this.radio5.Image = ((System.Drawing.Image)(resources.GetObject("radio5.Image")));
+            this.radio5.Location = new System.Drawing.Point(263, 428);
+            this.radio5.Name = "radio5";
+            this.radio5.Size = new System.Drawing.Size(40, 40);
+            this.radio5.TabIndex = 90;
+            this.radio5.TextColor = System.Drawing.Color.White;
+            this.radio5.UseVisualStyleBackColor = false;
+            this.radio5.Click += new System.EventHandler(this.radio5_Click);
             // 
-            // guna2HtmlLabel8
+            // errorProvider1
             // 
-            this.guna2HtmlLabel8.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel8.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel8.Location = new System.Drawing.Point(5, 308);
-            this.guna2HtmlLabel8.Name = "guna2HtmlLabel8";
-            this.guna2HtmlLabel8.Size = new System.Drawing.Size(78, 27);
-            this.guna2HtmlLabel8.TabIndex = 107;
-            this.guna2HtmlLabel8.Text = "Giá Bán :";
+            this.errorProvider1.ContainerControl = this;
             // 
             // ChiTietHDB
             // 
@@ -495,8 +495,8 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
 
         }
