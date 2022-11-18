@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Excel = Microsoft.Office.Interop.Excel;
 using static System.Windows.Forms.AxHost;
 
 namespace BTL.Forms
@@ -15,7 +16,6 @@ namespace BTL.Forms
     {
         XuLyCSDL xuLy = new XuLyCSDL();
         int index;
-        string query;
         public BaoCao()
         {
             InitializeComponent();
@@ -61,6 +61,7 @@ namespace BTL.Forms
         {
             txtInput.Text = "";
             dateTimePicker.Value = DateTime.Today;
+            cboQuy.SelectedIndex = -1;
             dgvKetQua.DataSource = null;
             lbOutPut.Text = "Tổng Tiền Nhập Hàng";
         }
@@ -70,6 +71,8 @@ namespace BTL.Forms
             lbInput.Visible = state;
             txtInput.Visible = state;
             btnTke.Enabled = !state;
+            btnBaoCao.Enabled = !state;
+            btnXuatExcel.Enabled = !state;
         }
 
         private void ActivateMenu2(bool state)
@@ -84,6 +87,7 @@ namespace BTL.Forms
             txtInput.Visible = state;
 
             btnTke.Enabled = state;
+            btnXuatExcel.Enabled = !state;
         }
 
         private void ActivateMenu3(bool state)
@@ -98,6 +102,19 @@ namespace BTL.Forms
             lbInput.Visible = !state;
             txtInput.Visible = !state;
 
+            btnTke.Enabled = state;
+            btnBaoCao.Enabled = !state;
+        }
+
+        private void ActivateMenu4(bool state)
+        {
+            dateTimePicker.Visible = state;
+            dateTimePicker.CustomFormat = "MMMM yyyy";
+
+            lbInput.Visible = !state;
+            txtInput.Visible = !state;
+
+            btnBaoCao.Enabled = !state;
             btnTke.Enabled = state;
         }
 
@@ -128,60 +145,70 @@ namespace BTL.Forms
             ActivateMenu1(false);
             ActivateMenu2(false);
             ActivateMenu3(true);
+
         }
+
+        private void dsKHToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            index = 4;
+            btnLamMoi_Click(this, e);
+            ActivateMenu1(false);
+            ActivateMenu2(false);
+            ActivateMenu3(false);
+            ActivateMenu4(true);
+        }
+
 
         private void btnThongKe_Click(object sender, EventArgs e)
         {
+            int thang = dateTimePicker.Value.Month;
+            int nam = dateTimePicker.Value.Year;
+            DataTable table = null;
             if (index == 2 && check())
             {
-                int thang = dateTimePicker.Value.Month;
-                int nam = dateTimePicker.Value.Year;
-                DataTable table = xuLy.DocBang($"Select * From BaoCao2('{txtInput.Text}', {thang}, {nam})");
+                table = xuLy.DocBang($"Select * From BaoCao2('{txtInput.Text}', {thang}, {nam})");
 
                 if (table.Rows.Count > 0)
                 {
                     double tien;
                     MessageBox.Show("Tìm thấy dữ liệu");
-                    dgvKetQua.DataSource = table;
                     tien = Convert.ToDouble(table.Rows[0][4]);
                     lbOutPut.Text = $"Tổng tiền nhập hàng từ {txtInput.Text}: {tien}";
                 }
                 else
                 {
                     MessageBox.Show("Không tìm thấy dữ liệu");
-                    dgvKetQua.DataSource = table;
                 }
+                dgvKetQua.DataSource = table;
             }
 
             if (index == 3 && check())
             {
-                if(cboQuy.SelectedIndex == 0)
+                int selectedIndex = cboQuy.SelectedIndex;
+                table = xuLy.DocBang($"Select * From Quy({selectedIndex})");
+                if(table.Rows.Count > 0)
                 {
-                    int nam = dateTimePicker.Value.Year;
-                    DataTable table = xuLy.DocBang($"Select * From Quy1({nam})");
-                    dgvKetQua.DataSource = table;
+                    MessageBox.Show("Tìm thấy dữ liệu");
                 }
+                else
+                {
+                    MessageBox.Show("Không tìm thấy dữ liệu");
+                }
+                dgvKetQua.DataSource = table;
+            }
 
-                if (cboQuy.SelectedIndex == 1)
+            if(index == 4 && check())
+            {
+                table = xuLy.DocBang($"Select * From KhachHang({thang}, {nam})");
+                if(table.Rows.Count > 0)
                 {
-                    int nam = dateTimePicker.Value.Year;
-                    DataTable table = xuLy.DocBang($"Select * From Quy2({nam})");
-                    dgvKetQua.DataSource = table;
+                    MessageBox.Show("Tìm thấy dữ liệu");
                 }
-
-                if (cboQuy.SelectedIndex == 2)
+                else
                 {
-                    int nam = dateTimePicker.Value.Year;
-                    DataTable table = xuLy.DocBang($"Select * From Quy3({nam})");
-                    dgvKetQua.DataSource = table;
+                    MessageBox.Show("Không tìm thấy dữ liệu");
                 }
-
-                if (cboQuy.SelectedIndex == 3)
-                {
-                    int nam = dateTimePicker.Value.Year;
-                    DataTable table = xuLy.DocBang($"Select * From Quy4({nam})");
-                    dgvKetQua.DataSource = table;
-                }
+                dgvKetQua.DataSource = table;
             }
         }
 
@@ -197,8 +224,13 @@ namespace BTL.Forms
                 
                 if(txtInput.Text != "")
                 {
-                    btnBaoCao.Enabled = true;
-                    dgvKetQua.DataSource = xuLy.DocBang($"Select * From BaoCao1(N'{txtInput.Text}')");
+                    DataTable table = xuLy.DocBang($"Select * From BaoCao1(N'{txtInput.Text}')");
+                    if (table.Rows.Count > 0)
+                    {
+                        btnBaoCao.Enabled = true;
+                    }
+
+                    dgvKetQua.DataSource = table;
                 }
             }
         }
@@ -221,11 +253,6 @@ namespace BTL.Forms
             }
         }
 
-        private void dsKHToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnXuatExcel_Click(object sender, EventArgs e)
         {
 
@@ -233,11 +260,13 @@ namespace BTL.Forms
 
         private void txtInput_KeyPress(object sender, KeyPressEventArgs e)
         {
-            e.Handled = true;
-
-            if (!char.IsControl(e.KeyChar) && char.IsDigit(e.KeyChar))
+            if(index == 1)
             {
-                MessageBox.Show("Vui lòng nhập chữ");
+                if (!char.IsControl(e.KeyChar) && char.IsDigit(e.KeyChar))
+                {
+                    e.Handled = true;
+                    MessageBox.Show("Vui lòng không nhập số");
+                }
             }
         }
     }

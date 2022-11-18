@@ -30,7 +30,14 @@ namespace BTL
         {
             if(txtChon.SelectedIndex==1)
             {
-                dgvKetQua.DataSource = XuLy.DocBang($"Select * from tblHoaDonNhap where Day(NgayNhap) = {dtNgay.Value.Day} and Month(NgayNhap) = {dtNgay.Value.Month} and Year(NgayNhap) = {dtNgay.Value.Year}");
+                DataTable table = XuLy.DocBang($"Select * from tblHoaDonNhap where Day(NgayNhap) = {dtNgay.Value.Day} and Month(NgayNhap) = {dtNgay.Value.Month} and Year(NgayNhap) = {dtNgay.Value.Year}");
+                
+                if(table.Rows.Count > 0)
+                {
+                    MessageBox.Show("Có tìm thấy dữ liệu");
+                }
+                dgvKetQua.DataSource = table;
+
             }
         }
 
@@ -42,10 +49,6 @@ namespace BTL
             }
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
         private bool Check()
         {
             if (txtChon.SelectedIndex < 0)
@@ -54,54 +57,47 @@ namespace BTL
                 return false;
             }
             
-           
-            
-            if(txtChon.SelectedIndex == 0 && txtChon.Text == "" )
-            { 
-                MessageBox.Show("Vui lòng chọn tìm kiếm theo!");
+            //if(txtChon.SelectedIndex == 0 && txtChon.Text == "" )
+            //{ 
+            //    MessageBox.Show("Vui lòng chọn tìm kiếm theo!");
 
-            }
-            else
-            {
-                if(txtChon.SelectedIndex == 1)
-                {
-                    
-                }
-                if(txtChon.SelectedIndex == 2)
-                {
-                    MessageBox.Show("Vui lòng chọn tìm kiếm theo!");
-                    return false;
-                }
-            }
+            //}
+            //else
+            //{
+            //    if(txtChon.SelectedIndex == 2)
+            //    {
+            //        MessageBox.Show("Vui lòng chọn tìm kiếm theo!");
+            //        return false;
+            //    }
+            //}
             return true;
-
-
-
         }
-       
-
 
         private void txtNhap_TextChanged(object sender, EventArgs e)
         {
-
-            //string theDate = dtNgay.Value.ToShortDateString();
-            //theDate = txtNhap.Text;
-            if (txtChon.Text == "Mã hàng")
+            if (Check())
             {
-                DataTable dtHH = XuLy.DocBang("select * from tblChiTietHoaDonNhap where MaHang like N'%" + txtNhap.Text.Trim() + "%' ");
-                dgvKetQua.DataSource = dtHH;
+                if (txtChon.Text == "Mã hàng")
+                {
+                    DataTable dtHH = XuLy.DocBang("select * from tblChiTietHoaDonNhap where MaHang like N'%" + txtNhap.Text.Trim() + "%' ");
+                    dgvKetQua.DataSource = dtHH;
+                }
+
+                if (txtChon.Text == "Mã nhà cung cấp" && !Check())
+                {
+                    DataTable dtHH = XuLy.DocBang("select * from tblHoaDonNhap where MaNCC like N'%" + txtNhap.Text.Trim() + "%' ");
+                    dgvKetQua.DataSource = dtHH;
+                }
             }
+            
             if (txtChon.Text == "Ngày nhập")
             {
                 DataTable dtHH = XuLy.DocBang("select * from tblHoaDonNhap where NgayNhap like N'%" + txtNhap.Text.Trim() + "%' ");
                 dgvKetQua.DataSource = dtHH;
             }
-            if (txtChon.Text == "Mã nhà cung cấp")
-            {
-                DataTable dtHH = XuLy.DocBang("select * from tblHoaDonNhap where MaNCC like N'%" + txtNhap.Text.Trim() + "%' ");
-                dgvKetQua.DataSource = dtHH;
-            }
+            
         }
+
         private void btnTim_Click(object sender, EventArgs e)
         {
             if (txtChon.Text == "Mã hàng")
@@ -142,8 +138,6 @@ namespace BTL
             theDate = txtNhap.Text;
 
         }
-
-       
 
         private void LàmLamMoi_Click(object sender, EventArgs e)
         {
