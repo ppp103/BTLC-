@@ -28,9 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
+<<<<<<< HEAD
             this.dgvKq = new System.Windows.Forms.DataGridView();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel5 = new Guna.UI2.WinForms.Guna2Panel();
+=======
+            this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2Panel5 = new Guna.UI2.WinForms.Guna2Panel();
+            this.dgvKq = new System.Windows.Forms.DataGridView();
+>>>>>>> 56f932117bf2b53c7c67beeed6ef4f59e0d1f62b
             this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
             this.btnThoat = new Guna.UI2.WinForms.Guna2Button();
             this.cmbTT = new Guna.UI2.WinForms.Guna2ComboBox();
@@ -41,13 +47,42 @@
             this.btnTim = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.label1 = new System.Windows.Forms.Label();
+<<<<<<< HEAD
             ((System.ComponentModel.ISupportInitialize)(this.dgvKq)).BeginInit();
             this.guna2Panel1.SuspendLayout();
             this.guna2Panel5.SuspendLayout();
+=======
+            this.guna2Panel1.SuspendLayout();
+            this.guna2Panel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvKq)).BeginInit();
+>>>>>>> 56f932117bf2b53c7c67beeed6ef4f59e0d1f62b
             this.guna2Panel3.SuspendLayout();
             this.guna2Panel2.SuspendLayout();
             this.SuspendLayout();
             // 
+<<<<<<< HEAD
+=======
+            // guna2Panel1
+            // 
+            this.guna2Panel1.Controls.Add(this.guna2Panel5);
+            this.guna2Panel1.Controls.Add(this.guna2Panel3);
+            this.guna2Panel1.Controls.Add(this.guna2Panel2);
+            this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
+            this.guna2Panel1.Name = "guna2Panel1";
+            this.guna2Panel1.Size = new System.Drawing.Size(1204, 709);
+            this.guna2Panel1.TabIndex = 0;
+            // 
+            // guna2Panel5
+            // 
+            this.guna2Panel5.Controls.Add(this.dgvKq);
+            this.guna2Panel5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.guna2Panel5.Location = new System.Drawing.Point(0, 236);
+            this.guna2Panel5.Name = "guna2Panel5";
+            this.guna2Panel5.Size = new System.Drawing.Size(1204, 473);
+            this.guna2Panel5.TabIndex = 3;
+            // 
+>>>>>>> 56f932117bf2b53c7c67beeed6ef4f59e0d1f62b
             // dgvKq
             // 
             this.dgvKq.AllowUserToAddRows = false;
@@ -63,6 +98,7 @@
             this.dgvKq.Size = new System.Drawing.Size(1204, 473);
             this.dgvKq.TabIndex = 0;
             // 
+<<<<<<< HEAD
             // guna2Panel1
             // 
             this.guna2Panel1.Controls.Add(this.guna2Panel5);
@@ -83,6 +119,8 @@
             this.guna2Panel5.Size = new System.Drawing.Size(1204, 473);
             this.guna2Panel5.TabIndex = 3;
             // 
+=======
+>>>>>>> 56f932117bf2b53c7c67beeed6ef4f59e0d1f62b
             // guna2Panel3
             // 
             this.guna2Panel3.Controls.Add(this.btnThoat);
@@ -248,9 +286,15 @@
             this.Name = "FormTkeHangHoa";
             this.Text = "FormTkeHangHoa";
             this.Load += new System.EventHandler(this.FormTkeHangHoa_Load);
+<<<<<<< HEAD
             ((System.ComponentModel.ISupportInitialize)(this.dgvKq)).EndInit();
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel5.ResumeLayout(false);
+=======
+            this.guna2Panel1.ResumeLayout(false);
+            this.guna2Panel5.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvKq)).EndInit();
+>>>>>>> 56f932117bf2b53c7c67beeed6ef4f59e0d1f62b
             this.guna2Panel3.ResumeLayout(false);
             this.guna2Panel3.PerformLayout();
             this.guna2Panel2.ResumeLayout(false);
@@ -261,6 +305,7 @@
 
         #endregion
 
+<<<<<<< HEAD
         private System.Windows.Forms.DataGridView dgvKq;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel5;
@@ -269,10 +314,23 @@
         private Guna.UI2.WinForms.Guna2ComboBox cmbTT;
         private Guna.UI2.WinForms.Guna2ComboBox cmbChon;
         private Guna.UI2.WinForms.Guna2Button btnXuat;
+=======
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel3;
+        private Guna.UI2.WinForms.Guna2ComboBox cmbChon;
+>>>>>>> 56f932117bf2b53c7c67beeed6ef4f59e0d1f62b
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private Guna.UI2.WinForms.Guna2Button btnTim;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
         private System.Windows.Forms.Label label1;
+<<<<<<< HEAD
+=======
+        private Guna.UI2.WinForms.Guna2Button btnThoat;
+        private Guna.UI2.WinForms.Guna2Button btnXuat;
+        private Guna.UI2.WinForms.Guna2ComboBox cmbTT;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel5;
+        private System.Windows.Forms.DataGridView dgvKq;
+>>>>>>> 56f932117bf2b53c7c67beeed6ef4f59e0d1f62b
     }
 }

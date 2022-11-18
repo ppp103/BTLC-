@@ -36,7 +36,6 @@ namespace BTL.Forms
         private void btnTim_Click(object sender, EventArgs e)
         {
             LoadDgvKq();
-
             if (cmbChon.Text == "Khối lượng")
             {
                 DataTable dtHH = tkhh.DocBang("select * from tblHangHoa where MaKL like N'%" + cmbTT.Text.Trim() + "%' ");
@@ -192,7 +191,7 @@ namespace BTL.Forms
             if (cmbChon.Text == "Khối lượng")
             {
                 DataTable tenKL = tkhh.DocBang("select * from tblKhoiLuong");
-                //dgvKq.DataSource = tenKL;
+                dgvKq.DataSource = tenKL;
 
                 cmbTT.Items.Clear();
                 cmbTT.ResetText();
@@ -207,7 +206,7 @@ namespace BTL.Forms
             if (cmbChon.Text == "Loại")
             {
                 DataTable tenL = tkhh.DocBang("select * from tblLoai");
-                //dgvKq.DataSource = tenL;
+                dgvKq.DataSource = tenL;
 
                 cmbTT.Items.Clear();
                 cmbTT.ResetText();
@@ -222,8 +221,7 @@ namespace BTL.Forms
             if (cmbChon.Text == "Nước sản xuất")
             {
                 DataTable tenNSX = tkhh.DocBang("select * from tblNuocSX");
-                //dgvKq.DataSource = tenNSX;
-
+                dgvKq.DataSource = tenNSX;
                 cmbTT.Items.Clear();
                 cmbTT.ResetText();
 
