@@ -199,7 +199,6 @@ namespace BTL.Forms
                 for (int i = 0; i < tenKL.Rows.Count; i++)
                 {
                     cmbTT.Items.Add(tenKL.Rows[i][1].ToString());
-                    cmbTT.Items.Remove(tenKL.Rows[i][1].ToString());
                 }
             }
 
@@ -214,7 +213,6 @@ namespace BTL.Forms
                 for (int j = 0; j < tenL.Rows.Count; j++)
                 {
                     cmbTT.Items.Add(tenL.Rows[j][1].ToString());
-                    cmbTT.Items.Remove(tenL.Rows[j][1].ToString());
                 }
             }
 
@@ -228,7 +226,6 @@ namespace BTL.Forms
                 for (int k = 0; k < tenNSX.Rows.Count; k++)
                 {
                     cmbTT.Items.Add(tenNSX.Rows[k][1].ToString());
-                    cmbTT.Items.Remove(tenNSX.Rows[k][1].ToString());
                 }
             }
         }
