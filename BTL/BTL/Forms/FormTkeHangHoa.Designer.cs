@@ -54,12 +54,16 @@
             this.dgvKq.AllowUserToDeleteRows = false;
             this.dgvKq.AllowUserToResizeColumns = false;
             this.dgvKq.AllowUserToResizeRows = false;
+            this.dgvKq.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvKq.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvKq.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvKq.Location = new System.Drawing.Point(0, 0);
+            this.dgvKq.MultiSelect = false;
             this.dgvKq.Name = "dgvKq";
+            this.dgvKq.ReadOnly = true;
             this.dgvKq.RowHeadersWidth = 51;
             this.dgvKq.RowTemplate.Height = 24;
+            this.dgvKq.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvKq.Size = new System.Drawing.Size(1204, 473);
             this.dgvKq.TabIndex = 0;
             // 

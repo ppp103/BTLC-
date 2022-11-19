@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using Excel = Microsoft.Office.Interop.Excel;
+//using Microsoft.Office.Interop.Excel;
 
 namespace BTL.Forms
 {
@@ -33,23 +34,56 @@ namespace BTL.Forms
             dtHH.Dispose();
         }
 
+        private void checkDataTable(DataTable table)
+        {
+            if (table.Rows.Count > 0)
+            {
+                MessageBox.Show("Tìm thấy dữ liệu");
+            }
+            else
+            {
+                MessageBox.Show("Không tìm thấy dữ liệu");
+            }
+        }
+
+        private bool check()
+        {
+            if (cmbChon.SelectedIndex < 0)
+            {
+                MessageBox.Show("Vui lòng chọn mục tìm kiếm thông tin theo");
+                return false;
+            }
+
+            if (cmbTT.SelectedIndex < 0)
+            {
+                MessageBox.Show("Vui lòng chọn mục thông tin tìm kiếm");
+                return false;
+            }
+            return true;
+        }
+
         private void btnTim_Click(object sender, EventArgs e)
         {
-            LoadDgvKq();
-            if (cmbChon.Text == "Khối lượng")
+            if (check())
             {
-                DataTable dtHH = tkhh.DocBang("select * from tblHangHoa where MaKL like N'%" + cmbTT.Text.Trim() + "%' ");
-                dgvKq.DataSource = dtHH;
-            }
-            if (cmbChon.Text == "Loại")
-            {
-                DataTable dtHH = tkhh.DocBang("select * from tblHangHoa where MaLoai like N'%" + cmbTT.Text.Trim() + "%' ");
-                dgvKq.DataSource = dtHH;
-            }
-            if (cmbChon.Text == "Nước sản xuất")
-            {
-                DataTable dtHH = tkhh.DocBang("select * from tblHangHoa where MaNuocSX like N'%" + cmbTT.Text.Trim() + "%' ");
-                dgvKq.DataSource = dtHH;
+                if (cmbChon.Text == "Khối lượng")
+                {
+                    DataTable dtHH = tkhh.DocBang("SELECT MaHang as N'Mã hàng', TenHang as N'Tên Hàng', SoLuong as N'Số lượng', DonGiaNhap as N'Đơn giá nhập',  DonGiaBan as N'Đơn giá bán', ThoiGianBaoHanh as N'Thời gian bảo hành', tblHangHoa.MaKL as N'Khối lượng', MaLoai as N'Loại', MaHangSX as N'Hãng sản xuất', MaNuocSX as N'Nước sản xuất' from tblHangHoa join tblKhoiLuong on tblHangHoa.MaKL = tblKhoiLuong.MaKL where TenKL like N'%" + cmbTT.Text.Trim() + "%' ");
+                    checkDataTable(dtHH);
+                    dgvKq.DataSource = dtHH;
+                }
+                if (cmbChon.Text == "Loại")
+                {
+                    DataTable dtHH = tkhh.DocBang("SELECT MaHang as N'Mã hàng', TenHang as N'Tên Hàng', SoLuong as N'Số lượng', DonGiaNhap as N'Đơn giá nhập',  DonGiaBan as N'Đơn giá bán', ThoiGianBaoHanh as N'Thời gian bảo hành', MaKL as N'Khối lượng', tblHangHoa.MaLoai as N'Loại', MaHangSX as N'Hãng sản xuất', MaNuocSX as N'Nước sản xuất' from tblHangHoa join tblLoai on tblHangHoa.MaLoai = tblLoai.MaLoai where TenLoai like N'%" + cmbTT.Text.Trim() + "%' ");
+                    checkDataTable(dtHH);
+                    dgvKq.DataSource = dtHH;
+                }
+                if (cmbChon.Text == "Nước sản xuất")
+                {
+                    DataTable dtHH = tkhh.DocBang("SELECT MaHang as N'Mã hàng', TenHang as N'Tên Hàng', SoLuong as N'Số lượng', DonGiaNhap as N'Đơn giá nhập',  DonGiaBan as N'Đơn giá bán', ThoiGianBaoHanh as N'Thời gian bảo hành', MaKL as N'Khối lượng', MaLoai as N'Loại', MaHangSX as N'Hãng sản xuất', tblHangHoa.MaNuocSX as N'Nước sản xuất' from tblHangHoa join tblNuocSX on tblHangHoa.MaNuocSX = tblNuocSX.MaNuocSX where TenNuocSX like N'%" + cmbTT.Text.Trim() + "%' ");
+                    checkDataTable(dtHH);
+                    dgvKq.DataSource = dtHH;
+                }
             }
         }
         private void btnXuat_Click(object sender, EventArgs e)
@@ -62,7 +96,6 @@ namespace BTL.Forms
                 Excel.Worksheet exSheet = (Excel.Worksheet)exBook.Worksheets[1];
 
                 // Định dạng chung
-
                 Excel.Range tenCuaHang = (Excel.Range)exSheet.Cells[2, 2];
                 tenCuaHang.Font.Name = "Times new roman";
                 tenCuaHang.MergeCells = true;
@@ -137,41 +170,41 @@ namespace BTL.Forms
                 //In dữ liệu
                 int n = dgvKq.Rows.Count;
                 for (int i = 0; i < n; i++)
-
                 {
                     exSheet.get_Range("A" + (i + 10).ToString() + ":K" + (i + 10).ToString()).Font.Bold = false;
-                    exSheet.get_Range("A" + (i + 10).ToString()).Value = (i + 1).ToString();
-                    exSheet.get_Range("B" + (i + 10).ToString()).Value = dgvKq.Rows[i].Cells[0].Value;
-                    exSheet.get_Range("C" + (i + 10).ToString()).Value = dgvKq.Rows[i].Cells[1].Value;
-                    exSheet.get_Range("D" + (i + 10).ToString()).Value = dgvKq.Rows[i].Cells[2].Value;
-                    exSheet.get_Range("E" + (i + 10).ToString()).Value = dgvKq.Rows[i].Cells[3].Value;
-                    exSheet.get_Range("F" + (i + 10).ToString()).Value = dgvKq.Rows[i].Cells[4].Value;
-                    exSheet.get_Range("G" + (i + 10).ToString()).Value = dgvKq.Rows[i].Cells[5].Value;
-                    exSheet.get_Range("H" + (i + 10).ToString()).Value = dgvKq.Rows[i].Cells[6].Value;
-                    exSheet.get_Range("I" + (i + 10).ToString()).Value = dgvKq.Rows[i].Cells[7].Value;
-                    exSheet.get_Range("J" + (i + 10).ToString()).Value = dgvKq.Rows[i].Cells[8].Value;
-                    exSheet.get_Range("K" + (i + 10).ToString()).Value = dgvKq.Rows[i].Cells[9].Value;
+                    exSheet.get_Range("A" + (i + 9).ToString()).Value = (i + 1).ToString();
 
-                    exSheet.Name = "ThongKeHangHoa";
-                    exSheet.Activate();//Kích hoạt file Excel
+                    exSheet.get_Range("B" + (i + 9).ToString()).Value = dgvKq.Rows[i].Cells[0].Value;
+                    exSheet.get_Range("C" + (i + 9).ToString()).Value = dgvKq.Rows[i].Cells[1].Value;
+                    exSheet.get_Range("D" + (i + 9).ToString()).Value = dgvKq.Rows[i].Cells[2].Value;
+                    exSheet.get_Range("E" + (i + 9).ToString()).Value = dgvKq.Rows[i].Cells[3].Value;
+                    exSheet.get_Range("F" + (i + 9).ToString()).Value = dgvKq.Rows[i].Cells[4].Value;
+                    exSheet.get_Range("G" + (i + 9).ToString()).Value = dgvKq.Rows[i].Cells[5].Value;
+                    exSheet.get_Range("H" + (i + 9).ToString()).Value = dgvKq.Rows[i].Cells[6].Value;
+                    exSheet.get_Range("I" + (i + 9).ToString()).Value = dgvKq.Rows[i].Cells[7].Value;
+                    exSheet.get_Range("J" + (i + 9).ToString()).Value = dgvKq.Rows[i].Cells[8].Value;
+                    exSheet.get_Range("K" + (i + 9).ToString()).Value = dgvKq.Rows[i].Cells[9].Value;
 
-                    SaveFileDialog saveFileDialog = new SaveFileDialog();
-                    saveFileDialog.Filter = "fileExcel(*.xlsx)|*.xlsx |Word Document(*.doc) |*.doc|All files(*.*)|*.*";
-                    saveFileDialog.FilterIndex = 1;
-                    saveFileDialog.AddExtension = true;
-                    saveFileDialog.DefaultExt = ".xls";
-                    if (saveFileDialog.ShowDialog() == DialogResult.OK)
-                    {
-                        exBook.SaveAs(saveFileDialog.FileName.ToString());//Lưu file Excel
-                        MessageBox.Show("Lưu file thành công");
-                        exApp.Quit();//Thoát khỏi ứng dụng
-                    }
-                    else
-                    {
-                        MessageBox.Show("Không có danh sách hàng để in");
-                    }
+                }
+                exSheet.Name = "ThongKeHangHoa";
+                exSheet.Activate();//Kích hoạt file Excel
+
+                SaveFileDialog saveFileDialog = new SaveFileDialog();
+                saveFileDialog.Filter = "fileExcel(*.xlsx)|*.xlsx |Word Document(*.doc) |*.doc|All files(*.*)|*.*";
+                saveFileDialog.FilterIndex = 1;
+                saveFileDialog.AddExtension = true;
+                saveFileDialog.DefaultExt = ".xlsx";
+                if (saveFileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    exBook.SaveAs(saveFileDialog.FileName.ToString());//Lưu file Excel
+                    MessageBox.Show("Lưu file thành công");
+                    exApp.Quit();//Thoát khỏi ứng dụng
                 }
 
+            }
+            else
+            {
+                MessageBox.Show("Không có danh sách hàng để in");
             }
         }
 
@@ -191,7 +224,7 @@ namespace BTL.Forms
             if (cmbChon.Text == "Khối lượng")
             {
                 DataTable tenKL = tkhh.DocBang("select * from tblKhoiLuong");
-                dgvKq.DataSource = tenKL;
+                //dgvKq.DataSource = tenKL;
 
                 cmbTT.Items.Clear();
                 cmbTT.ResetText();
@@ -205,7 +238,7 @@ namespace BTL.Forms
             if (cmbChon.Text == "Loại")
             {
                 DataTable tenL = tkhh.DocBang("select * from tblLoai");
-                dgvKq.DataSource = tenL;
+                //dgvKq.DataSource = tenL;
 
                 cmbTT.Items.Clear();
                 cmbTT.ResetText();
@@ -219,7 +252,7 @@ namespace BTL.Forms
             if (cmbChon.Text == "Nước sản xuất")
             {
                 DataTable tenNSX = tkhh.DocBang("select * from tblNuocSX");
-                dgvKq.DataSource = tenNSX;
+                //dgvKq.DataSource = tenNSX;
                 cmbTT.Items.Clear();
                 cmbTT.ResetText();
 

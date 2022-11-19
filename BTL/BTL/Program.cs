@@ -20,6 +20,7 @@ namespace BTL
             //Application.Run(new DangNhapDangKi.DangNhap());
             Application.Run(new HomePage.TrangChinh());
             //Application.Run(new Forms.BaoCao());
+            //Application.Run(new Forms.BaoCao());
             //Application.Run(new FormTkeHangHoa());
         }
     }
