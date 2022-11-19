@@ -35,6 +35,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
+            
             this.txtgiamgia = new Guna.UI2.WinForms.Guna2NumericUpDown();
             this.cbmahang = new Guna.UI2.WinForms.Guna2ComboBox();
             this.txttienhang = new Guna.UI2.WinForms.Guna2TextBox();
@@ -450,9 +451,9 @@
             this.dataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
-            // 
-            // btnReset
-            // 
+
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+
             this.btnReset.BackColor = System.Drawing.Color.Crimson;
             this.btnReset.BackgroundColor = System.Drawing.Color.Crimson;
             this.btnReset.BorderColor = System.Drawing.Color.PaleVioletRed;

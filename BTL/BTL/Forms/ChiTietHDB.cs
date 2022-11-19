@@ -308,6 +308,10 @@ namespace BTL.Forms
             btnThem.Enabled = false;
         }
 
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
         private void cbmahang_SelectedIndexChanged(object sender, EventArgs e)
         {
             cmd = new SqlCommand("SELECT * FROM tblHangHoa WHERE MaHang=@mahang", con);
@@ -406,7 +410,5 @@ namespace BTL.Forms
                 
             }
         }
-
-        
     }
 }
