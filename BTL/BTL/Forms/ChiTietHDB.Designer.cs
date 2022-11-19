@@ -35,11 +35,9 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
-<<<<<<< HEAD
-=======
+            
             this.txtgiamgia = new Guna.UI2.WinForms.Guna2NumericUpDown();
             this.cbmahang = new Guna.UI2.WinForms.Guna2ComboBox();
->>>>>>> ff8660a4f1961a83366022d8e5ca67fcd0f1733f
             this.txttienhang = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2HtmlLabel8 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.txtthanhtien = new Guna.UI2.WinForms.Guna2TextBox();
@@ -96,8 +94,6 @@
             this.panel1.Size = new System.Drawing.Size(941, 641);
             this.panel1.TabIndex = 75;
             // 
-<<<<<<< HEAD
-=======
             // txtgiamgia
             // 
             this.txtgiamgia.BackColor = System.Drawing.Color.Transparent;
@@ -128,7 +124,6 @@
             this.cbmahang.TabIndex = 109;
             this.cbmahang.SelectedIndexChanged += new System.EventHandler(this.cbmahang_SelectedIndexChanged);
             // 
->>>>>>> ff8660a4f1961a83366022d8e5ca67fcd0f1733f
             // txttienhang
             // 
             this.txttienhang.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -147,11 +142,8 @@
             this.txttienhang.SelectedText = "";
             this.txttienhang.Size = new System.Drawing.Size(221, 36);
             this.txttienhang.TabIndex = 108;
-<<<<<<< HEAD
-=======
             this.txttienhang.TextChanged += new System.EventHandler(this.txttienhang_TextChanged);
             this.txttienhang.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txttienhang_KeyPress);
->>>>>>> ff8660a4f1961a83366022d8e5ca67fcd0f1733f
             // 
             // guna2HtmlLabel8
             // 
@@ -459,11 +451,7 @@
             this.dataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
-<<<<<<< HEAD
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-=======
-            this.dataGridView1.Click += new System.EventHandler(this.dataGridView1_Click);
->>>>>>> ff8660a4f1961a83366022d8e5ca67fcd0f1733f
             // 
             // radio5
             // 

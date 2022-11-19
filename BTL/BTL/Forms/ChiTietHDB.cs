@@ -293,9 +293,10 @@ namespace BTL.Forms
             txtthanhtien.Text = dataGridView1.CurrentRow.Cells[4].Value.ToString();
         }
 
-<<<<<<< HEAD
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-=======
+        {
+
+        }
         private void cbmahang_SelectedIndexChanged(object sender, EventArgs e)
         {
             cmd = new SqlCommand("SELECT * FROM tblHangHoa WHERE MaHang=@mahang", con);
@@ -351,12 +352,6 @@ namespace BTL.Forms
                 txtthanhtien.Text = kq.ToString();
             }
             
-        }
-
-        private void dataGridView1_Click(object sender, EventArgs e)
->>>>>>> ff8660a4f1961a83366022d8e5ca67fcd0f1733f
-        {
-
         }
     }
 
