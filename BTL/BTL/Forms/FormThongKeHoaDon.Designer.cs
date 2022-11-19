@@ -301,7 +301,6 @@ namespace BTL
             this.dgvKetQua.RowHeadersVisible = false;
             this.dgvKetQua.RowHeadersWidth = 51;
             this.dgvKetQua.RowTemplate.Height = 24;
-            this.dgvKetQua.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullColumnSelect;
             this.dgvKetQua.Size = new System.Drawing.Size(1491, 370);
             this.dgvKetQua.TabIndex = 0;
             this.dgvKetQua.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
