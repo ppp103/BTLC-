@@ -28,19 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.MenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.danhSáchHĐToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.MenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
             this.dsKHToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.dgvKetQua = new Guna.UI2.WinForms.Guna2DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.dgvKetQua = new Guna.UI2.WinForms.Guna2DataGridView();
             this.btnXuatExcel = new Guna.UI2.WinForms.Guna2Button();
-            this.btnThem = new Guna.UI2.WinForms.Guna2Button();
+            this.btnTke = new Guna.UI2.WinForms.Guna2Button();
             this.btnLamMoi = new Guna.UI2.WinForms.Guna2Button();
             this.txtInput = new Guna.UI2.WinForms.Guna2TextBox();
             this.lbInput = new System.Windows.Forms.Label();
@@ -50,10 +49,11 @@
             this.lbQuy = new System.Windows.Forms.Label();
             this.lbTgian = new System.Windows.Forms.Label();
             this.lbOutPut = new System.Windows.Forms.Label();
+            this.btnBaoCao = new Guna.UI2.WinForms.Guna2Button();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.menuStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvKetQua)).BeginInit();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvKetQua)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -103,52 +103,50 @@
             this.dsKHToolStripMenuItem.Name = "dsKHToolStripMenuItem";
             this.dsKHToolStripMenuItem.Size = new System.Drawing.Size(343, 26);
             this.dsKHToolStripMenuItem.Text = "Danh sách khách hàng không mua theo tháng";
+            this.dsKHToolStripMenuItem.Click += new System.EventHandler(this.dsKHToolStripMenuItem_Click);
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.dgvKetQua);
+            this.groupBox1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.groupBox1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Location = new System.Drawing.Point(0, 354);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(1251, 319);
+            this.groupBox1.TabIndex = 0;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Báo cáo";
             // 
             // dgvKetQua
             // 
+            this.dgvKetQua.AllowUserToAddRows = false;
+            this.dgvKetQua.AllowUserToDeleteRows = false;
             this.dgvKetQua.AllowUserToResizeColumns = false;
             this.dgvKetQua.AllowUserToResizeRows = false;
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.dgvKetQua.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle9;
-            this.dgvKetQua.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(128)))));
-            dataGridViewCellStyle10.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(128)))));
-            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvKetQua.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
-            this.dgvKetQua.ColumnHeadersHeight = 27;
-            this.dgvKetQua.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle11.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle11.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvKetQua.DefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.dgvKetQua.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvKetQua.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dgvKetQua.ColumnHeadersHeight = 29;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvKetQua.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgvKetQua.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvKetQua.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgvKetQua.Location = new System.Drawing.Point(3, 30);
-            this.dgvKetQua.MultiSelect = false;
             this.dgvKetQua.Name = "dgvKetQua";
             this.dgvKetQua.ReadOnly = true;
-            this.dgvKetQua.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.dgvKetQua.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle12.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvKetQua.RowHeadersDefaultCellStyle = dataGridViewCellStyle12;
             this.dgvKetQua.RowHeadersVisible = false;
             this.dgvKetQua.RowHeadersWidth = 51;
             this.dgvKetQua.RowTemplate.Height = 24;
@@ -163,30 +161,18 @@
             this.dgvKetQua.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgvKetQua.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.dgvKetQua.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.dgvKetQua.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dgvKetQua.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dgvKetQua.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.dgvKetQua.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.dgvKetQua.ThemeStyle.HeaderStyle.Height = 27;
+            this.dgvKetQua.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.dgvKetQua.ThemeStyle.HeaderStyle.Height = 29;
             this.dgvKetQua.ThemeStyle.ReadOnly = true;
             this.dgvKetQua.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
             this.dgvKetQua.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.dgvKetQua.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dgvKetQua.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dgvKetQua.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.dgvKetQua.ThemeStyle.RowsStyle.Height = 24;
             this.dgvKetQua.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgvKetQua.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.dgvKetQua);
-            this.groupBox1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.groupBox1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(0, 354);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(1251, 319);
-            this.groupBox1.TabIndex = 0;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Báo cáo";
             // 
             // btnXuatExcel
             // 
@@ -209,29 +195,30 @@
             this.btnXuatExcel.Size = new System.Drawing.Size(160, 38);
             this.btnXuatExcel.TabIndex = 2;
             this.btnXuatExcel.Text = "Xuất Excel";
+            this.btnXuatExcel.Click += new System.EventHandler(this.btnXuatExcel_Click);
             // 
-            // btnThem
+            // btnTke
             // 
-            this.btnThem.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnThem.BorderColor = System.Drawing.SystemColors.ControlText;
-            this.btnThem.BorderRadius = 10;
-            this.btnThem.BorderThickness = 2;
-            this.btnThem.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnThem.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnThem.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnThem.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnThem.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnThem.FillColor = System.Drawing.SystemColors.ControlText;
-            this.btnThem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThem.ForeColor = System.Drawing.Color.White;
-            this.btnThem.HoverState.FillColor = System.Drawing.SystemColors.Control;
-            this.btnThem.HoverState.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnThem.Location = new System.Drawing.Point(627, 310);
-            this.btnThem.Name = "btnThem";
-            this.btnThem.Size = new System.Drawing.Size(160, 38);
-            this.btnThem.TabIndex = 2;
-            this.btnThem.Text = "Thống Kê";
-            this.btnThem.Click += new System.EventHandler(this.btnThongKe_Click);
+            this.btnTke.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnTke.BorderColor = System.Drawing.SystemColors.ControlText;
+            this.btnTke.BorderRadius = 10;
+            this.btnTke.BorderThickness = 2;
+            this.btnTke.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnTke.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnTke.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnTke.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnTke.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnTke.FillColor = System.Drawing.SystemColors.ControlText;
+            this.btnTke.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTke.ForeColor = System.Drawing.Color.White;
+            this.btnTke.HoverState.FillColor = System.Drawing.SystemColors.Control;
+            this.btnTke.HoverState.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnTke.Location = new System.Drawing.Point(627, 310);
+            this.btnTke.Name = "btnTke";
+            this.btnTke.Size = new System.Drawing.Size(160, 38);
+            this.btnTke.TabIndex = 2;
+            this.btnTke.Text = "Thống Kê";
+            this.btnTke.Click += new System.EventHandler(this.btnThongKe_Click);
             // 
             // btnLamMoi
             // 
@@ -276,6 +263,8 @@
             this.txtInput.SelectedText = "";
             this.txtInput.Size = new System.Drawing.Size(275, 54);
             this.txtInput.TabIndex = 4;
+            this.txtInput.TextChanged += new System.EventHandler(this.txtInput_TextChanged);
+            this.txtInput.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtInput_KeyPress);
             // 
             // lbInput
             // 
@@ -283,9 +272,9 @@
             this.lbInput.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.lbInput.Location = new System.Drawing.Point(23, 39);
             this.lbInput.Name = "lbInput";
-            this.lbInput.Size = new System.Drawing.Size(73, 25);
+            this.lbInput.Size = new System.Drawing.Size(76, 25);
             this.lbInput.TabIndex = 6;
-            this.lbInput.Text = "Mã NV";
+            this.lbInput.Text = "Tên NV";
             // 
             // dateTimePicker
             // 
@@ -335,7 +324,8 @@
             this.panel1.Controls.Add(this.lbInput);
             this.panel1.Controls.Add(this.txtInput);
             this.panel1.Controls.Add(this.btnLamMoi);
-            this.panel1.Controls.Add(this.btnThem);
+            this.panel1.Controls.Add(this.btnBaoCao);
+            this.panel1.Controls.Add(this.btnTke);
             this.panel1.Controls.Add(this.btnXuatExcel);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -347,7 +337,7 @@
             // 
             this.lbQuy.AutoSize = true;
             this.lbQuy.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
-            this.lbQuy.Location = new System.Drawing.Point(23, 39);
+            this.lbQuy.Location = new System.Drawing.Point(48, 39);
             this.lbQuy.Name = "lbQuy";
             this.lbQuy.Size = new System.Drawing.Size(48, 25);
             this.lbQuy.TabIndex = 6;
@@ -375,6 +365,29 @@
             this.lbOutPut.TabIndex = 6;
             this.lbOutPut.Text = "Tổng Tiền Nhập Hàng";
             // 
+            // btnBaoCao
+            // 
+            this.btnBaoCao.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnBaoCao.BorderColor = System.Drawing.SystemColors.ControlText;
+            this.btnBaoCao.BorderRadius = 10;
+            this.btnBaoCao.BorderThickness = 2;
+            this.btnBaoCao.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnBaoCao.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnBaoCao.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnBaoCao.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnBaoCao.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnBaoCao.FillColor = System.Drawing.SystemColors.ControlText;
+            this.btnBaoCao.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBaoCao.ForeColor = System.Drawing.Color.White;
+            this.btnBaoCao.HoverState.FillColor = System.Drawing.SystemColors.Control;
+            this.btnBaoCao.HoverState.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnBaoCao.Location = new System.Drawing.Point(396, 310);
+            this.btnBaoCao.Name = "btnBaoCao";
+            this.btnBaoCao.Size = new System.Drawing.Size(160, 38);
+            this.btnBaoCao.TabIndex = 2;
+            this.btnBaoCao.Text = "Báo Cáo";
+            this.btnBaoCao.Click += new System.EventHandler(this.btnBaoCao_Click);
+            // 
             // guna2HtmlLabel1
             // 
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
@@ -398,8 +411,8 @@
             this.Load += new System.EventHandler(this.BaoCao_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvKetQua)).EndInit();
             this.groupBox1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvKetQua)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
@@ -413,10 +426,9 @@
         private System.Windows.Forms.ToolStripMenuItem danhSáchHĐToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem MenuItem3;
         private System.Windows.Forms.ToolStripMenuItem dsKHToolStripMenuItem;
-        private Guna.UI2.WinForms.Guna2DataGridView dgvKetQua;
         private System.Windows.Forms.GroupBox groupBox1;
         private Guna.UI2.WinForms.Guna2Button btnXuatExcel;
-        private Guna.UI2.WinForms.Guna2Button btnThem;
+        private Guna.UI2.WinForms.Guna2Button btnTke;
         private Guna.UI2.WinForms.Guna2Button btnLamMoi;
         private Guna.UI2.WinForms.Guna2TextBox txtInput;
         private System.Windows.Forms.Label lbInput;
@@ -427,5 +439,7 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
         private System.Windows.Forms.Label lbTgian;
         private System.Windows.Forms.Label lbOutPut;
+        private Guna.UI2.WinForms.Guna2Button btnBaoCao;
+        private Guna.UI2.WinForms.Guna2DataGridView dgvKetQua;
     }
 }
