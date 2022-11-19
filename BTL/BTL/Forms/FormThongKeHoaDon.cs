@@ -7,8 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Data.SqlClient;
-
 namespace BTL
 {
     public partial class FormThongKeHoaDon : Form
@@ -127,9 +125,6 @@ namespace BTL
             {
                 txtNhap.Enabled = true;
             } 
-                
-           
-            
         }
 
         private void dtNgay_ValueChanged(object sender, EventArgs e)
@@ -139,7 +134,7 @@ namespace BTL
 
         }
 
-        private void LàmLamMoi_Click(object sender, EventArgs e)
+        private void btnLamMoi_Click(object sender, EventArgs e)
         {
             txtChon.Text = "";
             txtNhap.Text = "";

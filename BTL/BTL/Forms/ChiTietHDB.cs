@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -14,11 +15,11 @@ namespace BTL.Forms
     public partial class ChiTietHDB : Form
     {
         XuLyCSDL cthdb = new XuLyCSDL();
-        SqlConnection con = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=\"D:\\BTL-CSharp\\New folder\\BTL\\BTL\\DataBase\\DuLieu.mdf\";Integrated Security=True");
+        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\HocHanh(ki5)\C#\Projects\BTLv7\BTL\BTL\DataBase\DuLieu.mdf;Integrated Security=True");
         SqlCommand cmd;
         SqlDataReader dr;
         string sql;
-        float kq = 0;
+        double kq ;
         public ChiTietHDB()
         {
             InitializeComponent();
@@ -99,7 +100,7 @@ namespace BTL.Forms
             DataTable dt = cthdb.DocBang("select * from tblHoaDonBan");
             for (int i = 0; i < dt.Rows.Count; i++)
             {
-                cbHdb.Items.Add(dt.Rows[i][0].ToString());
+                cbHdb.Items.Add(dt.Rows[i][0].ToString());                                                   
             }
         }
         void loadCMB1()
@@ -119,10 +120,13 @@ namespace BTL.Forms
             txtthanhtien.Enabled = false;
             txttienhang.Enabled = false;
             txtgiamgia.Controls[0].Visible = false;
-            
+
             Showresult();
             loadCMB();
             loadCMB1();
+            btnSua.Enabled = false;
+            btnXoaHoaDon.Enabled = false;
+            btnXoaSanPham.Enabled = false;
         }
 
 
@@ -130,17 +134,21 @@ namespace BTL.Forms
         {
             cbHdb.Text = null;
             cbmahang.Text = null;
-            txtsoluong.Text = " ";
+            txtsoluong.Text = null;
             txtgiamgia.Text = "";
             txtthanhtien.Text = "";
             txttienhang.Text = "";
-
+            
 
         }
 
         private void radio5_Click(object sender, EventArgs e)
         {
             ResetGiaTri();
+            btnThem.Enabled = true;
+            btnSua.Enabled = false;
+            btnXoaHoaDon.Enabled=false;
+            btnXoaSanPham.Enabled = false;
         }
 
 
@@ -193,11 +201,11 @@ namespace BTL.Forms
                 if (cbHdb.Text.Trim() != "")
                 {
                     errorProvider1.Clear();
-                    string sql = "";
+                    //string sql = "";
 
-                    //Kiếm tra nếu kết nối chưa mở thì thực hiện mở kết nối
-                    sql = "Delete From tblChiTietHoaDonBan Where MaHang =N'" + cbmahang.Text + "'";
-                    cthdb.CapNhatDuLieu(sql);
+                    ////Kiếm tra nếu kết nối chưa mở thì thực hiện mở kết nối
+                    //sql = ;
+                    cthdb.CapNhatDuLieu("Delete From tblChiTietHoaDonBan Where SoHDB = N'" + cbHdb.Text + "'AND MaHang =N'" + cbmahang.Text + "'");
 
                     //Cap nhat lai DataGrid
 
@@ -217,7 +225,7 @@ namespace BTL.Forms
         private void guna2Button4_Click(object sender, EventArgs e)
         {
             DialogResult choose;
-            choose = MessageBox.Show("Bạn có chắc chắn muốn xóa trắng hóa đơn " + cbHdb.Text + "  không?", "Cảnh Báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            choose = MessageBox.Show("Bạn có chắc chắn muốn xóa  hóa đơn " + cbHdb.Text + "  không?", "Cảnh Báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (choose == DialogResult.Yes)
             {
                 if (cbHdb.Text.Trim() != "")
@@ -258,24 +266,27 @@ namespace BTL.Forms
             {
                 if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
                 {
-                    e.Handled = true; 
+                    e.Handled = true;
                     kq = float.Parse(txtsoluong.Text) * float.Parse(txttienhang.Text);//lỗi
                     kq = kq - kq * (float.Parse(txtgiamgia.Text) / 100);
                     txtthanhtien.Text = kq.ToString();
                 }
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
-                MessageBox.Show("k được nhập ký tự ");
+                MessageBox.Show(ex.Message);
             }
-            
+
         }
 
         private void txtgiamgia_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar)) { e.Handled = true; 
-                    kq = float.Parse(txtsoluong.Text) * float.Parse(txttienhang.Text);//lỗi
-                    kq = kq - kq * (float.Parse(txtgiamgia.Text) / 100);
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                 
+                    e.Handled = true;
+                    kq = double.Parse(txtsoluong.Text) * double.Parse(txttienhang.Text);//lỗi
+                    kq -= kq * (double.Parse(txtgiamgia.Text) / 100);
                     txtthanhtien.Text = kq.ToString();
                 
             }
@@ -291,6 +302,10 @@ namespace BTL.Forms
             txtsoluong.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
             txtgiamgia.Text = dataGridView1.CurrentRow.Cells[3].Value.ToString();
             txtthanhtien.Text = dataGridView1.CurrentRow.Cells[4].Value.ToString();
+            btnSua.Enabled = true;
+            btnXoaHoaDon.Enabled = true;
+            btnXoaSanPham.Enabled = true;
+            btnThem.Enabled = false;
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -313,29 +328,70 @@ namespace BTL.Forms
 
         private void txtsoluong_TextChanged(object sender, EventArgs e)
         {
-            //float kq = 0;
-            //kq = float.Parse(txtsoluong.Text) * float.Parse(txttienhang.Text);//lỗi
-            //kq = kq - kq * (float.Parse(txtgiamgia.Text) / 100);
-            //txtthanhtien.Text = kq.ToString();
+            if (txtsoluong.Text.Length == 0)
+            {
+                return;
+            }
+            if (txttienhang.Text.Length == 0)
+            {
+                return;
+            }
+            if (txtgiamgia.Text.Length == 0)
+            {
+                return;
+            }
+            kq = double.Parse(txtsoluong.Text) * double.Parse(txttienhang.Text);//lỗi
+            kq = kq - kq * (double.Parse(txtgiamgia.Text.ToString()) / 100);
+            txtthanhtien.Text = kq.ToString();
+
+
         }
 
         private void txtgiamgia_ValueChanged(object sender, EventArgs e)
         {
-            //float kq = 0;
-            //kq = float.Parse(txtsoluong.Text) * float.Parse(txttienhang.Text);
-            //kq = kq - kq * (float.Parse(txtgiamgia.Text) / 100);
-            //txtthanhtien.Text = kq.ToString();
+            if (txtsoluong.Text.Length == 0)
+            {
+                return;
+            }
+            if (txttienhang.Text.Length == 0)
+            {
+                return;
+            }
+            if (txtgiamgia.Text.Length == 0)
+            {
+                return;
+            }
+            kq = double.Parse(txtsoluong.Text) * double.Parse(txttienhang.Text);//lỗi
+            kq = kq - kq * (double.Parse(txtgiamgia.Text.ToString()) / 100);
+            txtthanhtien.Text = kq.ToString();
+
+
         }
 
-        
 
-      
+
+
 
         private void txttienhang_TextChanged(object sender, EventArgs e)
         {
-            kq = float.Parse(txtsoluong.Text) * float.Parse(txttienhang.Text);//lỗi
-            kq = kq - kq * (float.Parse(txtgiamgia.Text) / 100);
+            if (txtsoluong.Text.Length == 0)
+            {
+                return;
+            }
+            if (txttienhang.Text.Length == 0)
+            {
+                return;
+            }
+            if (txtgiamgia.Text.Length == 0)
+            {
+                return;
+            }
+            kq = double.Parse(txtsoluong.Text) * double.Parse(txttienhang.Text);//lỗi
+            kq = kq - kq * (double.Parse(txtgiamgia.Text.ToString()) / 100);
             txtthanhtien.Text = kq.ToString();
+
+
+
 
 
         }
@@ -346,13 +402,18 @@ namespace BTL.Forms
             if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
             {
 
-                e.Handled = true;
-                kq = float.Parse(txtsoluong.Text) * float.Parse(txttienhang.Text);//lỗi
-                kq = kq - kq * (float.Parse(txtgiamgia.Text) / 100);
-                txtthanhtien.Text = kq.ToString();
+                
+                    e.Handled = true;
+                    kq = float.Parse(txtsoluong.Text) * float.Parse(txttienhang.Text);//lỗi
+                    kq = kq - kq * (float.Parse(txtgiamgia.Text) / 100);
+                    txtthanhtien.Text = kq.ToString();
+                
             }
-            
         }
-    }
+<<<<<<< HEAD
+=======
 
+        
+>>>>>>> 9f8a2ef8226040f1fa7a79fe7cf308c1b2a99327
+    }
 }
