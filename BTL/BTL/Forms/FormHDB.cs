@@ -52,7 +52,9 @@ namespace BTL
             txttennhanvien.Enabled = false;
             loadCMB();
             txttongtien.Enabled = false;
-
+            btnThem.Enabled = true;
+            btnSua.Enabled = false;
+            btnXoa.Enabled = false;
 
         }
         void loadCMB()
@@ -105,6 +107,9 @@ namespace BTL
         private void radio5_Click(object sender, EventArgs e)
         {
             resetvalue();
+            btnThem.Enabled = true;
+            btnSua.Enabled = false;
+            btnXoa.Enabled = false;
         }
         public bool isCheck()
         {
@@ -152,12 +157,7 @@ namespace BTL
 
         }
 
-        private void guna2Button3_Click(object sender, EventArgs e)
-        {
-            ChiTietHDB f = new ChiTietHDB();
-            f.Show();
-
-        }
+       
 
     
 
@@ -168,8 +168,9 @@ namespace BTL
             {
                 if (isCheck())
                 {
-                    DataTable table = DSHDB.DocBang($"Select * From tblHoaDonBan Where SoHDB= '{txthdb.Text.Trim()}' ");
-                    DataTable table1 = DSHDB.DocBang($"Select * From tblKhachHang Where MaKH= '{txtmakhachhang.Text.Trim()}' ");
+                    DataTable table = DSHDB.DocBang($"Select * From tblHoaDonBan Where SoHDB= '{txthdb.Text.Trim()}'");
+                    DataTable table1 = DSHDB.DocBang($"Select * From tblKhachHang Where MaKH= '{txtmakhachhang.Text.Trim()}'");
+
                     if (table.Rows.Count != 0)
                     {
                         MessageBox.Show($"Đã tồn tại hóa đơn {txthdb.Text} trong danh sách");
@@ -182,9 +183,13 @@ namespace BTL
                     {
                         sql = $"Insert into tblHoaDonBan Values (N'{txthdb.Text}', N'{cbmanhanvien.Text}', N'{datetime.Value.ToString()}', N'{txtmakhachhang.Text}', N'{txttongtien.Text}')";
                         DSHDB.CapNhatDuLieu(sql);
+                       
                         Showresult();
                         resetvalue();
-                        MessageBox.Show("Thêm thành công");
+                        //ChiTietHDB f = new ChiTietHDB();
+                        //f.Show();
+                        MessageBox.Show("Thêm hóa đơn thành công!");
+                        
                     }
                 }
             }
@@ -244,6 +249,28 @@ namespace BTL
             }
         }
 
+        private void guna2Button5_Click(object sender, EventArgs e)
+        {
+            
+            DSHDB.CapNhatDuLieu("UPDATE tblHoaDonBan set tblHoaDonBan.TongTien = (select SUM(tblChiTietHoaDonBan.ThanhTien) FROM tblChiTietHoaDonBan where tblChiTietHoaDonBan.SoHDB = tblHoaDonBan.SoHDB) \r\n");
+            this.Refresh();
+            Refresh();
+            this.Hide();
+            FormHDB formHDB = new FormHDB();
+            formHDB.Show();
+        }
+
+        private void guna2Button3_Click(object sender, EventArgs e)
+        {
+            ChiTietHDB f = new ChiTietHDB();
+            f.Show();
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
         private void dataGridView1_Click(object sender, EventArgs e)
         {
             txthdb.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
@@ -252,6 +279,9 @@ namespace BTL
             txtmakhachhang.Text = dataGridView1.CurrentRow.Cells[3].Value.ToString();
             txttongtien.Text = dataGridView1.CurrentRow.Cells[4].Value.ToString();
             txthdb.Enabled = false;
+            btnThem.Enabled = false;
+            btnSua.Enabled = true;
+            btnXoa.Enabled = true;
         }
     }
 }
