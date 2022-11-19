@@ -451,13 +451,9 @@
             this.dataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
-<<<<<<< HEAD
+
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-=======
->>>>>>> 9f8a2ef8226040f1fa7a79fe7cf308c1b2a99327
-            // 
-            // btnReset
-            // 
+
             this.btnReset.BackColor = System.Drawing.Color.Crimson;
             this.btnReset.BackgroundColor = System.Drawing.Color.Crimson;
             this.btnReset.BorderColor = System.Drawing.Color.PaleVioletRed;
