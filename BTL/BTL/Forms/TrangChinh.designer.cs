@@ -79,7 +79,7 @@ namespace HomePage
             this.panelSideMenu.Font = new System.Drawing.Font("Century Gothic", 10F);
             this.panelSideMenu.Location = new System.Drawing.Point(0, 0);
             this.panelSideMenu.Name = "panelSideMenu";
-            this.panelSideMenu.Size = new System.Drawing.Size(264, 828);
+            this.panelSideMenu.Size = new System.Drawing.Size(277, 973);
             this.panelSideMenu.TabIndex = 0;
             // 
             // btnBaoCao
@@ -91,7 +91,7 @@ namespace HomePage
             this.btnBaoCao.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightCoral;
             this.btnBaoCao.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightCoral;
             this.btnBaoCao.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBaoCao.Font = new System.Drawing.Font("Constantia", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBaoCao.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBaoCao.ForeColor = System.Drawing.Color.Black;
             this.btnBaoCao.IconChar = FontAwesome.Sharp.IconChar.LineChart;
             this.btnBaoCao.IconColor = System.Drawing.Color.DimGray;
@@ -101,7 +101,7 @@ namespace HomePage
             this.btnBaoCao.Location = new System.Drawing.Point(0, 626);
             this.btnBaoCao.Name = "btnBaoCao";
             this.btnBaoCao.Padding = new System.Windows.Forms.Padding(10, 0, 21, 0);
-            this.btnBaoCao.Size = new System.Drawing.Size(264, 65);
+            this.btnBaoCao.Size = new System.Drawing.Size(277, 65);
             this.btnBaoCao.TabIndex = 10;
             this.btnBaoCao.Text = "Báo Cáo";
             this.btnBaoCao.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -118,7 +118,7 @@ namespace HomePage
             this.btnNhapHoaDonBan.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightCoral;
             this.btnNhapHoaDonBan.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightCoral;
             this.btnNhapHoaDonBan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnNhapHoaDonBan.Font = new System.Drawing.Font("Constantia", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNhapHoaDonBan.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNhapHoaDonBan.ForeColor = System.Drawing.Color.Black;
             this.btnNhapHoaDonBan.IconChar = FontAwesome.Sharp.IconChar.PiggyBank;
             this.btnNhapHoaDonBan.IconColor = System.Drawing.Color.DimGray;
@@ -128,7 +128,7 @@ namespace HomePage
             this.btnNhapHoaDonBan.Location = new System.Drawing.Point(0, 561);
             this.btnNhapHoaDonBan.Name = "btnNhapHoaDonBan";
             this.btnNhapHoaDonBan.Padding = new System.Windows.Forms.Padding(10, 0, 21, 0);
-            this.btnNhapHoaDonBan.Size = new System.Drawing.Size(264, 65);
+            this.btnNhapHoaDonBan.Size = new System.Drawing.Size(277, 65);
             this.btnNhapHoaDonBan.TabIndex = 9;
             this.btnNhapHoaDonBan.Text = "Lập Hóa Đơn Bán";
             this.btnNhapHoaDonBan.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -146,7 +146,7 @@ namespace HomePage
             this.panelTkeHoaDon.MaximumSize = new System.Drawing.Size(0, 204);
             this.panelTkeHoaDon.MinimumSize = new System.Drawing.Size(0, 68);
             this.panelTkeHoaDon.Name = "panelTkeHoaDon";
-            this.panelTkeHoaDon.Size = new System.Drawing.Size(264, 68);
+            this.panelTkeHoaDon.Size = new System.Drawing.Size(277, 68);
             this.panelTkeHoaDon.TabIndex = 4;
             // 
             // btnHoaDonNhap
@@ -166,7 +166,7 @@ namespace HomePage
             this.btnHoaDonNhap.Location = new System.Drawing.Point(0, 136);
             this.btnHoaDonNhap.Name = "btnHoaDonNhap";
             this.btnHoaDonNhap.Padding = new System.Windows.Forms.Padding(30, 0, 21, 0);
-            this.btnHoaDonNhap.Size = new System.Drawing.Size(264, 68);
+            this.btnHoaDonNhap.Size = new System.Drawing.Size(277, 68);
             this.btnHoaDonNhap.TabIndex = 1;
             this.btnHoaDonNhap.Text = "Hóa đơn nhập";
             this.btnHoaDonNhap.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -191,7 +191,7 @@ namespace HomePage
             this.btnHoaDonBan.Location = new System.Drawing.Point(0, 68);
             this.btnHoaDonBan.Name = "btnHoaDonBan";
             this.btnHoaDonBan.Padding = new System.Windows.Forms.Padding(30, 0, 21, 0);
-            this.btnHoaDonBan.Size = new System.Drawing.Size(264, 68);
+            this.btnHoaDonBan.Size = new System.Drawing.Size(277, 68);
             this.btnHoaDonBan.TabIndex = 0;
             this.btnHoaDonBan.Text = "Hóa đơn bán";
             this.btnHoaDonBan.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -208,7 +208,7 @@ namespace HomePage
             this.btnTkeHoaDon.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightCoral;
             this.btnTkeHoaDon.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightCoral;
             this.btnTkeHoaDon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTkeHoaDon.Font = new System.Drawing.Font("Constantia", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTkeHoaDon.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTkeHoaDon.ForeColor = System.Drawing.Color.Black;
             this.btnTkeHoaDon.IconChar = FontAwesome.Sharp.IconChar.MoneyCheck;
             this.btnTkeHoaDon.IconColor = System.Drawing.Color.DimGray;
@@ -218,7 +218,7 @@ namespace HomePage
             this.btnTkeHoaDon.Location = new System.Drawing.Point(0, 0);
             this.btnTkeHoaDon.Name = "btnTkeHoaDon";
             this.btnTkeHoaDon.Padding = new System.Windows.Forms.Padding(10, 0, 21, 0);
-            this.btnTkeHoaDon.Size = new System.Drawing.Size(264, 68);
+            this.btnTkeHoaDon.Size = new System.Drawing.Size(277, 68);
             this.btnTkeHoaDon.TabIndex = 0;
             this.btnTkeHoaDon.Text = "Thống Kê Hóa Đơn";
             this.btnTkeHoaDon.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -235,7 +235,7 @@ namespace HomePage
             this.btnNhapHang.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightCoral;
             this.btnNhapHang.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightCoral;
             this.btnNhapHang.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnNhapHang.Font = new System.Drawing.Font("Constantia", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNhapHang.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNhapHang.ForeColor = System.Drawing.Color.Black;
             this.btnNhapHang.IconChar = FontAwesome.Sharp.IconChar.PersonArrowDownToLine;
             this.btnNhapHang.IconColor = System.Drawing.Color.DimGray;
@@ -245,7 +245,7 @@ namespace HomePage
             this.btnNhapHang.Location = new System.Drawing.Point(0, 428);
             this.btnNhapHang.Name = "btnNhapHang";
             this.btnNhapHang.Padding = new System.Windows.Forms.Padding(10, 0, 21, 0);
-            this.btnNhapHang.Size = new System.Drawing.Size(264, 65);
+            this.btnNhapHang.Size = new System.Drawing.Size(277, 65);
             this.btnNhapHang.TabIndex = 3;
             this.btnNhapHang.Text = "Nhập Hàng";
             this.btnNhapHang.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -262,7 +262,7 @@ namespace HomePage
             this.btnTkeHangHoa.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightCoral;
             this.btnTkeHangHoa.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightCoral;
             this.btnTkeHangHoa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTkeHangHoa.Font = new System.Drawing.Font("Constantia", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTkeHangHoa.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTkeHangHoa.ForeColor = System.Drawing.Color.Black;
             this.btnTkeHangHoa.IconChar = FontAwesome.Sharp.IconChar.ClipboardList;
             this.btnTkeHangHoa.IconColor = System.Drawing.Color.DimGray;
@@ -272,7 +272,7 @@ namespace HomePage
             this.btnTkeHangHoa.Location = new System.Drawing.Point(0, 363);
             this.btnTkeHangHoa.Name = "btnTkeHangHoa";
             this.btnTkeHangHoa.Padding = new System.Windows.Forms.Padding(10, 0, 21, 0);
-            this.btnTkeHangHoa.Size = new System.Drawing.Size(264, 65);
+            this.btnTkeHangHoa.Size = new System.Drawing.Size(277, 65);
             this.btnTkeHangHoa.TabIndex = 2;
             this.btnTkeHangHoa.Text = "Thống Kê Hàng Hóa";
             this.btnTkeHangHoa.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -289,7 +289,7 @@ namespace HomePage
             this.iconHome.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightCoral;
             this.iconHome.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightCoral;
             this.iconHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconHome.Font = new System.Drawing.Font("Constantia", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconHome.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.iconHome.ForeColor = System.Drawing.Color.Black;
             this.iconHome.IconChar = FontAwesome.Sharp.IconChar.Home;
             this.iconHome.IconColor = System.Drawing.Color.DimGray;
@@ -299,7 +299,7 @@ namespace HomePage
             this.iconHome.Location = new System.Drawing.Point(0, 298);
             this.iconHome.Name = "iconHome";
             this.iconHome.Padding = new System.Windows.Forms.Padding(10, 0, 21, 0);
-            this.iconHome.Size = new System.Drawing.Size(264, 65);
+            this.iconHome.Size = new System.Drawing.Size(277, 65);
             this.iconHome.TabIndex = 4;
             this.iconHome.Text = "Trang Chủ";
             this.iconHome.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -315,7 +315,7 @@ namespace HomePage
             this.panelBlank.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelBlank.Location = new System.Drawing.Point(0, 0);
             this.panelBlank.Name = "panelBlank";
-            this.panelBlank.Size = new System.Drawing.Size(264, 298);
+            this.panelBlank.Size = new System.Drawing.Size(277, 298);
             this.panelBlank.TabIndex = 8;
             // 
             // label1
@@ -324,7 +324,7 @@ namespace HomePage
             this.label1.BackColor = System.Drawing.Color.PeachPuff;
             this.label1.Font = new System.Drawing.Font("Monotype Corsiva", 28.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(-2, 222);
+            this.label1.Location = new System.Drawing.Point(-2, 232);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(266, 56);
             this.label1.TabIndex = 1;
@@ -336,7 +336,7 @@ namespace HomePage
             this.label3.BackColor = System.Drawing.Color.PeachPuff;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 19.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(36, 183);
+            this.label3.Location = new System.Drawing.Point(38, 193);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(192, 39);
             this.label3.TabIndex = 1;
@@ -350,7 +350,7 @@ namespace HomePage
             this.pictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.InitialImage")));
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(264, 203);
+            this.pictureBox1.Size = new System.Drawing.Size(264, 229);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -365,19 +365,19 @@ namespace HomePage
             // 
             this.panelTieuDe.BackColor = System.Drawing.Color.PeachPuff;
             this.panelTieuDe.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelTieuDe.Location = new System.Drawing.Point(264, 0);
+            this.panelTieuDe.Location = new System.Drawing.Point(277, 0);
             this.panelTieuDe.Name = "panelTieuDe";
-            this.panelTieuDe.Size = new System.Drawing.Size(1221, 21);
+            this.panelTieuDe.Size = new System.Drawing.Size(1208, 21);
             this.panelTieuDe.TabIndex = 1;
             // 
             // labelTieuDe
             // 
             this.labelTieuDe.AutoSize = true;
-            this.labelTieuDe.Font = new System.Drawing.Font("Constantia", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTieuDe.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelTieuDe.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.labelTieuDe.Location = new System.Drawing.Point(66, 15);
+            this.labelTieuDe.Location = new System.Drawing.Point(66, 10);
             this.labelTieuDe.Name = "labelTieuDe";
-            this.labelTieuDe.Size = new System.Drawing.Size(109, 24);
+            this.labelTieuDe.Size = new System.Drawing.Size(104, 28);
             this.labelTieuDe.TabIndex = 1;
             this.labelTieuDe.Text = "Trang Chủ";
             // 
@@ -507,25 +507,25 @@ namespace HomePage
             this.panelHeader.Controls.Add(this.iconFacebook);
             this.panelHeader.Controls.Add(this.iconIns);
             this.panelHeader.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelHeader.Location = new System.Drawing.Point(264, 21);
+            this.panelHeader.Location = new System.Drawing.Point(277, 21);
             this.panelHeader.Name = "panelHeader";
-            this.panelHeader.Size = new System.Drawing.Size(1221, 51);
+            this.panelHeader.Size = new System.Drawing.Size(1208, 51);
             this.panelHeader.TabIndex = 9;
             // 
             // panelForm
             // 
             this.panelForm.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.panelForm.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelForm.Location = new System.Drawing.Point(264, 72);
+            this.panelForm.Location = new System.Drawing.Point(277, 72);
             this.panelForm.Name = "panelForm";
-            this.panelForm.Size = new System.Drawing.Size(1221, 756);
+            this.panelForm.Size = new System.Drawing.Size(1208, 901);
             this.panelForm.TabIndex = 10;
             // 
             // TrangChinh
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1485, 828);
+            this.ClientSize = new System.Drawing.Size(1485, 973);
             this.Controls.Add(this.panelForm);
             this.Controls.Add(this.panelHeader);
             this.Controls.Add(this.panelTieuDe);

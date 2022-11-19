@@ -17,7 +17,7 @@ namespace BTL
     {
         SqlDataReader dr;
         XuLyCSDL nam = new XuLyCSDL();
-        SqlConnection strConnect = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\STEP\Source\Repos\BTLC-\BTL\BTL\DataBase\DuLieu.mdf;Integrated Security=True");
+        SqlConnection strConnect = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\HocHanh(ki5)\C#\Projects\BTLv7\BTL\BTL\DataBase\DuLieu.mdf;Integrated Security=True");
         string duongdan = "";
         SqlCommand cmd;
 
@@ -221,7 +221,7 @@ namespace BTL
                         BinaryReader bs = new BinaryReader(Streem);
                         anh = bs.ReadBytes((int)Streem.Length);
                         strConnect.Open();
-                        string sql = $"Insert into tblHangHoa(MaHang,TenHang,SoLuong,DonGiaNhap,DonGiaBan,ThoiGianBaoHanh,Anh,GhiChu,MaLoai,MaHangSX,MaKL,MaCL,MaNuocSX,MaMau,MaCD,MaMua) Values ('" + txtMaHang.Text + "','" + txtTenHang.Text + "','" + txtSoLuong.Text + "','" + txtDonGiaNhap.Text + "','" + txtDonGiaBan.Text + "','" + txtTGBH.Text + "',@anh, '" + txtGhiChu.Text + "','" + txtLoai.Text + "', '" + txtHSX.Text + "', '" + txtKL.Text + "', '" + txtCL.Text + "', '" + txtNSX.Text + "', '" + txtMau.Text + "', '" + txtCD.Text + "', '" + txtMua.Text + "')";
+                        string sql = $"Insert into tblHangHoa(MaHang,TenHang,SoLuong,DonGiaNhap,DonGiaBan,ThoiGianBaoHanh,Anh,GhiChu,MaLoai,MaHangSX,MaKL,MaCL,MaNuocSX,MaMau,MaCD,MaMua) Values ('" + txtMaHang.Text + "N','" + txtTenHang.Text + "','" + txtSoLuong.Text + "','" + txtDonGiaNhap.Text + "','" + txtDonGiaBan.Text + "','" + txtTGBH.Text + "',@anh, '" + txtGhiChu.Text + "',N'" + txtLoai.Text + "', N'" + txtHSX.Text + "', '" + txtKL.Text + "', N'" + txtCL.Text + "', '" + txtNSX.Text + "', N'" + txtMau.Text + "N', '" + txtCD.Text + "N', '" + txtMua.Text + "')";
                         cmd = new SqlCommand(sql, strConnect);
                         cmd.Parameters.Add(new SqlParameter("@anh", anh));
                         int N = cmd.ExecuteNonQuery();
@@ -235,7 +235,7 @@ namespace BTL
                 }
             }
         }
-        
+
 
         private void guna2GradientButton1_Click(object sender, EventArgs e)
         {
@@ -253,6 +253,9 @@ namespace BTL
         private void FormNhapHang_Load(object sender, EventArgs e)
         {
             hiengiatri();
+            DataGridViewImageColumn pic = new DataGridViewImageColumn();
+            pic = (DataGridViewImageColumn)dataGridView1.Columns[6];
+            pic.ImageLayout = DataGridViewImageCellLayout.Zoom;
         }
 
         private void btnXoa_Click(object sender, EventArgs e)
@@ -281,27 +284,25 @@ namespace BTL
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-
-         
             txtMaHang.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
             txtTenHang.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
             txtSoLuong.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
             txtDonGiaNhap.Text = dataGridView1.CurrentRow.Cells[3].Value.ToString();
             txtDonGiaBan.Text = dataGridView1.CurrentRow.Cells[4].Value.ToString();
             txtTGBH.Text = dataGridView1.CurrentRow.Cells[5].Value.ToString();
-                if (dataGridView1.SelectedRows[0].Cells[6].Value.ToString() != null)
-                {
-                    MemoryStream memoryStream = new MemoryStream((byte[])dataGridView1.SelectedRows[0].Cells[6].Value);
-                    picture.Image = System.Drawing.Image.FromStream(memoryStream);
+            if (dataGridView1.SelectedRows[0].Cells[6].Value.ToString() != null)
+            {
+                MemoryStream memoryStream = new MemoryStream((byte[])dataGridView1.SelectedRows[0].Cells[6].Value);
+                picture.Image = System.Drawing.Image.FromStream(memoryStream);
 
-                }
-                else
-                {
-                    picture.Image = null;
-                }
+            }
+            else
+            {
+                picture.Image = null;
+            }
             txtGhiChu.Text = dataGridView1.CurrentRow.Cells[7].Value.ToString();
 
-            
+
             DataTable KL = nam.DocBang($"select TenKL from tblKhoiLuong where MaKL = N'{dataGridView1.CurrentRow.Cells[8].Value.ToString()}'");
             String kl = KL.Rows[0][0].ToString();
             cbKL.Text = kl;
@@ -360,7 +361,7 @@ namespace BTL
                     FileStream fs = new FileStream(duongdan, FileMode.Open, FileAccess.Read);
                     BinaryReader br = new BinaryReader(fs);
                     img = br.ReadBytes((int)fs.Length);
-                    SqlConnection CN = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\STEP\Source\Repos\BTLC-\BTL\BTL\DataBase\DuLieu.mdf;Integrated Security=True");
+                    SqlConnection CN = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\HocHanh(ki5)\C#\Projects\BTLv7\BTL\BTL\DataBase\DuLieu.mdf;Integrated Security=True");
 
                     // this is a smaple query for update statement and update where id=@id
                     string Query = "update tblHangHoa set TenHang =@Ten,SoLuong = @SoLuong, DonGiaNhap = @GiaNhap, DonGiaBan = @GiaBan, ThoiGianBaoHanh = @ThoiGianBaoHanh, Anh = @img, GhiChu = @GhiChu, MaKL = @MaKL,MaLoai = @MaLoai,MaHangSX = @MaHSX,MaCL = @MaCL,MaNuocSX = @MaNSX,MaMau = @MaMau,MaCD = @MaCD,MaMua = @MaMua where MaHang=@Ma ";
@@ -408,18 +409,18 @@ namespace BTL
             }
             else
             {
-                txtDonGiaBan.Text = (float.Parse(txtDonGiaNhap.Text) *1.1).ToString();
+                txtDonGiaBan.Text = (float.Parse(txtDonGiaNhap.Text) * 1.1).ToString();
             }
         }
         public string kl;
-       
-        
+
+
         private void txtDonGiaBan_TextChanged(object sender, EventArgs e)
         {
 
         }
-        
-         public void loadCBKL()
+
+        public void loadCBKL()
         {
             dataGridView1.DataSource = nam.DocBang("select * from tblHangHoa ");
             DataTable dt = nam.DocBang("select * from tblKhoiLuong");
@@ -555,7 +556,7 @@ namespace BTL
             DataTable Loai = nam.DocBang($"select MaLoai from tblLoai where TenLoai = N'{cbLoai.SelectedItem}'");
             String loai = Loai.Rows[0][0].ToString();
             txtLoai.Text = loai;
-                
+
 
             DataTable HSX = nam.DocBang($"select MaHangSX from tblHangSX where TenHangSX = N'{cbHSX.SelectedItem}'");
             String hsx = HSX.Rows[0][0].ToString();
