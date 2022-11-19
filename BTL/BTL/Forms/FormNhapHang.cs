@@ -555,7 +555,6 @@ namespace BTL
             DataTable Loai = nam.DocBang($"select MaLoai from tblLoai where TenLoai = N'{cbLoai.SelectedItem}'");
             String loai = Loai.Rows[0][0].ToString();
             txtLoai.Text = loai;
-            MessageBox.Show(txtLoai.Text);
                 
 
             DataTable HSX = nam.DocBang($"select MaHangSX from tblHangSX where TenHangSX = N'{cbHSX.SelectedItem}'");

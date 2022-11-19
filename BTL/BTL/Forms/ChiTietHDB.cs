@@ -410,10 +410,5 @@ namespace BTL.Forms
                 
             }
         }
-<<<<<<< HEAD
-=======
-
-        
->>>>>>> 9f8a2ef8226040f1fa7a79fe7cf308c1b2a99327
     }
 }
