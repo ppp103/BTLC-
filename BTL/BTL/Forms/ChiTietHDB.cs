@@ -313,26 +313,28 @@ namespace BTL.Forms
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);
+                MessageBox.Show("Vui lòng nhập đúng định dạng");
             }
 
         }
 
         private void txtgiamgia_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            try
             {
-                 
-                    e.Handled = true;
-                    kq = double.Parse(txtsoluong.Text) * double.Parse(txttienhang.Text);//lỗi
-                    kq -= kq * (double.Parse(txtgiamgia.Text) / 100);
-                    txtthanhtien.Text = kq.ToString();
-                
+                if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+                {
+                        e.Handled = true;
+                        kq = double.Parse(txtsoluong.Text) * double.Parse(txttienhang.Text);
+                        kq -= kq * (double.Parse(txtgiamgia.Text) / 100);
+                        txtthanhtien.Text = kq.ToString();
+                }
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show("Vui lòng nhập đúng định dạng");
             }
         }
-
-
-
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {

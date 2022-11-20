@@ -42,7 +42,7 @@ namespace HomePage
             }
         }
 
-        private void MoForm(Form form)
+        public void MoForm(Form form)
         {
             if(formHtai != null)
             {
@@ -65,7 +65,6 @@ namespace HomePage
         private void btnTkeHoaDon_Click(object sender, EventArgs e)
         {
             timerTkeHoaDon.Start();
-            KichHoatNut(sender);
         }
 
         private void Form1_Load(object sender, EventArgs e)

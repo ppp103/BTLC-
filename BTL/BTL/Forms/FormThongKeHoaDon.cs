@@ -54,20 +54,6 @@ namespace BTL
                 MessageBox.Show("Vui lòng chọn tìm kiếm theo!");
                 return false;
             }
-            
-            //if(txtChon.SelectedIndex == 0 && txtChon.Text == "" )
-            //{ 
-            //    MessageBox.Show("Vui lòng chọn tìm kiếm theo!");
-
-            //}
-            //else
-            //{
-            //    if(txtChon.SelectedIndex == 2)
-            //    {
-            //        MessageBox.Show("Vui lòng chọn tìm kiếm theo!");
-            //        return false;
-            //    }
-            //}
             return true;
         }
 
@@ -125,6 +111,15 @@ namespace BTL
             {
                 txtNhap.Enabled = true;
             } 
+
+            if(txtChon.SelectedIndex == 2 || txtChon.SelectedIndex == 0)
+            {
+                dtNgay.Enabled = false;
+            }
+            else
+            {
+                dtNgay.Enabled = true;
+            }
         }
 
         private void dtNgay_ValueChanged(object sender, EventArgs e)
@@ -136,7 +131,7 @@ namespace BTL
 
         private void btnLamMoi_Click(object sender, EventArgs e)
         {
-            txtChon.Text = "";
+            txtChon.SelectedIndex = -1;
             txtNhap.Text = "";
             dtNgay.Value = DateTime.Today;
         }

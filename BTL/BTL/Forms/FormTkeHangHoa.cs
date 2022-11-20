@@ -224,6 +224,7 @@ namespace BTL.Forms
             if (cmbChon.Text == "Khối lượng")
             {
                 DataTable tenKL = tkhh.DocBang("select * from tblKhoiLuong");
+                
                 //dgvKq.DataSource = tenKL;
 
                 cmbTT.Items.Clear();

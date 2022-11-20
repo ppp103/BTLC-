@@ -1,4 +1,5 @@
 ﻿using BTL.Forms;
+using HomePage;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -17,10 +18,11 @@ namespace BTL
     {
         public static string t;
         XuLyCSDL DSHDB = new XuLyCSDL();
-        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\STEP\source\repos\BTLC-\BTL\BTL\DataBase\DuLieu.mdf;Integrated Security=True");
+        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\HocHanh(ki5)\C#\Projects\BTLv7\BTL\BTL\DataBase\DuLieu.mdf;Integrated Security=True");
         SqlCommand cmd;
         SqlDataReader dr;
         string sql,sql1;
+
 
         public FormHDB()
         {
@@ -48,6 +50,7 @@ namespace BTL
             dtHdb.Dispose();
             t = txthdb.Text;
         }
+
         private void FormHDB_Load(object sender, EventArgs e)
         {
             Showresult();
@@ -59,6 +62,7 @@ namespace BTL
             btnXoa.Enabled = false;
 
         }
+
         void loadCMB()
         {
             string sql = "SELECT * FROM tblNhanVien";
@@ -256,6 +260,7 @@ namespace BTL
 
         private void guna2Button5_Click(object sender, EventArgs e)
         {
+<<<<<<< HEAD
 
             DSHDB.CapNhatDuLieu("UPDATE tblHoaDonBan set tblHoaDonBan.TongTien = (select ISNULL(SUM(tblChiTietHoaDonBan.ThanhTien),0.0000) FROM tblChiTietHoaDonBan where tblChiTietHoaDonBan.SoHDB = tblHoaDonBan.SoHDB) \r\n");
             this.Refresh();
@@ -263,6 +268,10 @@ namespace BTL
             this.Hide();
             FormHDB formHDN = new FormHDB();
             formHDN.Show();
+=======
+            DSHDB.CapNhatDuLieu("UPDATE tblHoaDonBan set tblHoaDonBan.TongTien = (select SUM(tblChiTietHoaDonBan.ThanhTien) FROM tblChiTietHoaDonBan where tblChiTietHoaDonBan.SoHDB = tblHoaDonBan.SoHDB)");
+            FormHDB_Load(this, e);
+>>>>>>> 0c2030087ca07b1a4789951d0cef801d48688bbc
         }
 
         private void guna2Button3_Click(object sender, EventArgs e)
