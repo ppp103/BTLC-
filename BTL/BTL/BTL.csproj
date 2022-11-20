@@ -151,11 +151,23 @@
     <Compile Include="Forms\ChiTietHDB.Designer.cs">
       <DependentUpon>ChiTietHDB.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\ChiTietHDN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ChiTietHDN.Designer.cs">
+      <DependentUpon>ChiTietHDN.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\FormHDB.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\FormHDB.Designer.cs">
       <DependentUpon>FormHDB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormHDN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormHDN.Designer.cs">
+      <DependentUpon>FormHDN.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\FormLapHoaDon.cs">
       <SubType>Form</SubType>
@@ -233,8 +245,14 @@
     <EmbeddedResource Include="Forms\ChiTietHDB.resx">
       <DependentUpon>ChiTietHDB.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ChiTietHDN.resx">
+      <DependentUpon>ChiTietHDN.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormHDB.resx">
       <DependentUpon>FormHDB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormHDN.resx">
+      <DependentUpon>FormHDN.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormLapHoaDon.resx">
       <DependentUpon>FormLapHoaDon.cs</DependentUpon>

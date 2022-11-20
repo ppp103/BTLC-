@@ -1,8 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\BTL"
+    "\\BTL",
+    "\\BTL\\Forms"
   ],
-  "SelectedNode": "\\BTL\\FormThongKeHangHoa.cs",
+  "SelectedNode": "\\BTL\\Forms\\FormThanhToanLuong.Designer.cs",
   "PreviewInSolutionExplorer": false
 }

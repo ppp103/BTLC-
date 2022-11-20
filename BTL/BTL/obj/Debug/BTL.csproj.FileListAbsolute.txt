@@ -272,3 +272,5 @@ D:\BTL-CSharp\New folder\BTL\BTL\obj\Debug\BTL.exe
 D:\BTL-CSharp\New folder\BTL\BTL\obj\Debug\BTL.pdb
 D:\BTL-CSharp\New folder\BTL\BTL\bin\Debug\BTL.pdb
 >>>>>>> 9f8a2ef8226040f1fa7a79fe7cf308c1b2a99327
+C:\Users\STEP\source\repos\BTLC-\BTL\BTL\obj\Debug\BTL.Forms.FormHDN.resources
+C:\Users\STEP\source\repos\BTLC-\BTL\BTL\obj\Debug\BTL.Forms.ChiTietHDN.resources

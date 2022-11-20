@@ -35,7 +35,6 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
-            
             this.txtgiamgia = new Guna.UI2.WinForms.Guna2NumericUpDown();
             this.cbmahang = new Guna.UI2.WinForms.Guna2ComboBox();
             this.txttienhang = new Guna.UI2.WinForms.Guna2TextBox();
@@ -48,7 +47,6 @@
             this.guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.cbHdb = new Guna.UI2.WinForms.Guna2ComboBox();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.btnXoaHoaDon = new Guna.UI2.WinForms.Guna2Button();
             this.btnXoaSanPham = new Guna.UI2.WinForms.Guna2Button();
@@ -58,6 +56,7 @@
             this.dataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
             this.btnReset = new BTL.Radio();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.cbHdb = new Guna.UI2.WinForms.Guna2TextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtgiamgia)).BeginInit();
             this.panel2.SuspendLayout();
@@ -70,6 +69,7 @@
             this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.Controls.Add(this.txtgiamgia);
             this.panel1.Controls.Add(this.cbmahang);
+            this.panel1.Controls.Add(this.cbHdb);
             this.panel1.Controls.Add(this.txttienhang);
             this.panel1.Controls.Add(this.guna2HtmlLabel8);
             this.panel1.Controls.Add(this.txtthanhtien);
@@ -80,7 +80,6 @@
             this.panel1.Controls.Add(this.guna2HtmlLabel4);
             this.panel1.Controls.Add(this.guna2HtmlLabel3);
             this.panel1.Controls.Add(this.guna2HtmlLabel2);
-            this.panel1.Controls.Add(this.cbHdb);
             this.panel1.Controls.Add(this.guna2HtmlLabel1);
             this.panel1.Controls.Add(this.btnXoaHoaDon);
             this.panel1.Controls.Add(this.btnXoaSanPham);
@@ -93,6 +92,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(941, 641);
             this.panel1.TabIndex = 75;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // txtgiamgia
             // 
@@ -255,24 +255,6 @@
             this.guna2HtmlLabel2.Size = new System.Drawing.Size(78, 27);
             this.guna2HtmlLabel2.TabIndex = 98;
             this.guna2HtmlLabel2.Text = "Số HDB :";
-            // 
-            // cbHdb
-            // 
-            this.cbHdb.BackColor = System.Drawing.Color.Gainsboro;
-            this.cbHdb.BorderColor = System.Drawing.Color.Gainsboro;
-            this.cbHdb.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cbHdb.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbHdb.FillColor = System.Drawing.Color.Gainsboro;
-            this.cbHdb.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cbHdb.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cbHdb.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbHdb.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.cbHdb.ItemHeight = 30;
-            this.cbHdb.Location = new System.Drawing.Point(123, 78);
-            this.cbHdb.Name = "cbHdb";
-            this.cbHdb.Size = new System.Drawing.Size(221, 36);
-            this.cbHdb.TabIndex = 97;
-            this.cbHdb.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtsohdb_KeyPress);
             // 
             // guna2HtmlLabel1
             // 
@@ -451,9 +433,10 @@
             this.dataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
-
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-
+            // 
+            // btnReset
+            // 
             this.btnReset.BackColor = System.Drawing.Color.Crimson;
             this.btnReset.BackgroundColor = System.Drawing.Color.Crimson;
             this.btnReset.BorderColor = System.Drawing.Color.PaleVioletRed;
@@ -474,6 +457,28 @@
             // errorProvider1
             // 
             this.errorProvider1.ContainerControl = this;
+            // 
+            // cbHdb
+            // 
+            this.cbHdb.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.cbHdb.DefaultText = "";
+            this.cbHdb.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.cbHdb.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.cbHdb.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.cbHdb.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.cbHdb.FillColor = System.Drawing.Color.LightGray;
+            this.cbHdb.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cbHdb.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.cbHdb.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cbHdb.Location = new System.Drawing.Point(123, 69);
+            this.cbHdb.Name = "cbHdb";
+            this.cbHdb.PasswordChar = '\0';
+            this.cbHdb.PlaceholderText = "";
+            this.cbHdb.SelectedText = "";
+            this.cbHdb.Size = new System.Drawing.Size(221, 36);
+            this.cbHdb.TabIndex = 108;
+            this.cbHdb.TextChanged += new System.EventHandler(this.txttienhang_TextChanged);
+            this.cbHdb.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txttienhang_KeyPress);
             // 
             // ChiTietHDB
             // 
@@ -508,7 +513,6 @@
         private Guna.UI2.WinForms.Guna2Button btnXoaSanPham;
         private Guna.UI2.WinForms.Guna2Button btnSua;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
-        private Guna.UI2.WinForms.Guna2ComboBox cbHdb;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel6;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel5;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel4;
@@ -522,5 +526,6 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel8;
         private Guna.UI2.WinForms.Guna2ComboBox cbmahang;
         private Guna.UI2.WinForms.Guna2NumericUpDown txtgiamgia;
+        private Guna.UI2.WinForms.Guna2TextBox cbHdb;
     }
 }

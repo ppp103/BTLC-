@@ -37,7 +37,6 @@ namespace BTL
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormHDB));
             this.panel1 = new System.Windows.Forms.Panel();
             this.dataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.radio5 = new BTL.Radio();
             this.panel2 = new System.Windows.Forms.Panel();
             this.guna2Button5 = new Guna.UI2.WinForms.Guna2Button();
             this.btnXoa = new Guna.UI2.WinForms.Guna2Button();
@@ -58,6 +57,7 @@ namespace BTL
             this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.radio5 = new BTL.Radio();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -72,6 +72,7 @@ namespace BTL
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(551, 641);
             this.panel1.TabIndex = 62;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // dataGridView1
             // 
@@ -145,25 +146,6 @@ namespace BTL
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             this.dataGridView1.Click += new System.EventHandler(this.dataGridView1_Click);
             // 
-            // radio5
-            // 
-            this.radio5.BackColor = System.Drawing.Color.Crimson;
-            this.radio5.BackgroundColor = System.Drawing.Color.Crimson;
-            this.radio5.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.radio5.BorderRadius = 20;
-            this.radio5.BorderSize = 0;
-            this.radio5.FlatAppearance.BorderSize = 0;
-            this.radio5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.radio5.ForeColor = System.Drawing.Color.White;
-            this.radio5.Image = ((System.Drawing.Image)(resources.GetObject("radio5.Image")));
-            this.radio5.Location = new System.Drawing.Point(342, 503);
-            this.radio5.Name = "radio5";
-            this.radio5.Size = new System.Drawing.Size(40, 40);
-            this.radio5.TabIndex = 63;
-            this.radio5.TextColor = System.Drawing.Color.White;
-            this.radio5.UseVisualStyleBackColor = false;
-            this.radio5.Click += new System.EventHandler(this.radio5_Click);
-            // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
@@ -192,6 +174,7 @@ namespace BTL
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(941, 641);
             this.panel2.TabIndex = 2;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // guna2Button5
             // 
@@ -321,6 +304,7 @@ namespace BTL
             this.txttongtien.SelectedText = "";
             this.txttongtien.Size = new System.Drawing.Size(200, 36);
             this.txttongtien.TabIndex = 111;
+            this.txttongtien.TextChanged += new System.EventHandler(this.txttongtien_TextChanged);
             // 
             // guna2HtmlLabel8
             // 
@@ -332,6 +316,7 @@ namespace BTL
             this.guna2HtmlLabel8.Size = new System.Drawing.Size(111, 27);
             this.guna2HtmlLabel8.TabIndex = 110;
             this.guna2HtmlLabel8.Text = "TỔNG TIỀN  :";
+            this.guna2HtmlLabel8.Click += new System.EventHandler(this.guna2HtmlLabel8_Click);
             // 
             // txtmakhachhang
             // 
@@ -351,6 +336,7 @@ namespace BTL
             this.txtmakhachhang.SelectedText = "";
             this.txtmakhachhang.Size = new System.Drawing.Size(200, 36);
             this.txtmakhachhang.TabIndex = 108;
+            this.txtmakhachhang.TextChanged += new System.EventHandler(this.txtmakhachhang_TextChanged);
             // 
             // txttennhanvien
             // 
@@ -370,6 +356,7 @@ namespace BTL
             this.txttennhanvien.SelectedText = "";
             this.txttennhanvien.Size = new System.Drawing.Size(200, 36);
             this.txttennhanvien.TabIndex = 107;
+            this.txttennhanvien.TextChanged += new System.EventHandler(this.txttennhanvien_TextChanged);
             // 
             // cbmanhanvien
             // 
@@ -406,6 +393,7 @@ namespace BTL
             this.txthdb.SelectedText = "";
             this.txthdb.Size = new System.Drawing.Size(200, 36);
             this.txthdb.TabIndex = 105;
+            this.txthdb.TextChanged += new System.EventHandler(this.txthdb_TextChanged);
             // 
             // datetime
             // 
@@ -420,6 +408,7 @@ namespace BTL
             this.datetime.Size = new System.Drawing.Size(200, 36);
             this.datetime.TabIndex = 104;
             this.datetime.Value = new System.DateTime(2022, 11, 14, 19, 8, 56, 121);
+            this.datetime.ValueChanged += new System.EventHandler(this.datetime_ValueChanged);
             // 
             // guna2HtmlLabel7
             // 
@@ -430,6 +419,7 @@ namespace BTL
             this.guna2HtmlLabel7.Size = new System.Drawing.Size(150, 27);
             this.guna2HtmlLabel7.TabIndex = 103;
             this.guna2HtmlLabel7.Text = "Mã Khách Hàng :";
+            this.guna2HtmlLabel7.Click += new System.EventHandler(this.guna2HtmlLabel7_Click);
             // 
             // guna2HtmlLabel1
             // 
@@ -441,6 +431,7 @@ namespace BTL
             this.guna2HtmlLabel1.Size = new System.Drawing.Size(283, 39);
             this.guna2HtmlLabel1.TabIndex = 97;
             this.guna2HtmlLabel1.Text = "HÓA ĐƠN BÁN HÀNG";
+            this.guna2HtmlLabel1.Click += new System.EventHandler(this.guna2HtmlLabel1_Click);
             // 
             // guna2HtmlLabel6
             // 
@@ -451,6 +442,7 @@ namespace BTL
             this.guna2HtmlLabel6.Size = new System.Drawing.Size(139, 27);
             this.guna2HtmlLabel6.TabIndex = 102;
             this.guna2HtmlLabel6.Text = "Tên Nhân Viên :";
+            this.guna2HtmlLabel6.Click += new System.EventHandler(this.guna2HtmlLabel6_Click);
             // 
             // guna2HtmlLabel4
             // 
@@ -461,6 +453,7 @@ namespace BTL
             this.guna2HtmlLabel4.Size = new System.Drawing.Size(136, 27);
             this.guna2HtmlLabel4.TabIndex = 100;
             this.guna2HtmlLabel4.Text = "Mã Nhân Viên :";
+            this.guna2HtmlLabel4.Click += new System.EventHandler(this.guna2HtmlLabel4_Click);
             // 
             // guna2HtmlLabel3
             // 
@@ -471,6 +464,7 @@ namespace BTL
             this.guna2HtmlLabel3.Size = new System.Drawing.Size(96, 27);
             this.guna2HtmlLabel3.TabIndex = 99;
             this.guna2HtmlLabel3.Text = "Ngày Bán :";
+            this.guna2HtmlLabel3.Click += new System.EventHandler(this.guna2HtmlLabel3_Click);
             // 
             // guna2HtmlLabel2
             // 
@@ -481,10 +475,30 @@ namespace BTL
             this.guna2HtmlLabel2.Size = new System.Drawing.Size(78, 27);
             this.guna2HtmlLabel2.TabIndex = 99;
             this.guna2HtmlLabel2.Text = "Số HDB :";
+            this.guna2HtmlLabel2.Click += new System.EventHandler(this.guna2HtmlLabel2_Click);
             // 
             // errorProvider1
             // 
             this.errorProvider1.ContainerControl = this;
+            // 
+            // radio5
+            // 
+            this.radio5.BackColor = System.Drawing.Color.Crimson;
+            this.radio5.BackgroundColor = System.Drawing.Color.Crimson;
+            this.radio5.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.radio5.BorderRadius = 20;
+            this.radio5.BorderSize = 0;
+            this.radio5.FlatAppearance.BorderSize = 0;
+            this.radio5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.radio5.ForeColor = System.Drawing.Color.White;
+            this.radio5.Image = ((System.Drawing.Image)(resources.GetObject("radio5.Image")));
+            this.radio5.Location = new System.Drawing.Point(342, 503);
+            this.radio5.Name = "radio5";
+            this.radio5.Size = new System.Drawing.Size(40, 40);
+            this.radio5.TabIndex = 63;
+            this.radio5.TextColor = System.Drawing.Color.White;
+            this.radio5.UseVisualStyleBackColor = false;
+            this.radio5.Click += new System.EventHandler(this.radio5_Click);
             // 
             // FormHDB
             // 
