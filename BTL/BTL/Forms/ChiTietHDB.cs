@@ -16,11 +16,11 @@ namespace BTL.Forms
     {
         XuLyCSDL cthdb = new XuLyCSDL();
         FormHDB FormHDB = new FormHDB();
-        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\STEP\source\repos\BTLC-\BTL\BTL\DataBase\DuLieu.mdf;Integrated Security=True");
+        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\HocHanh(ki5)\C#\Projects\BTLv7\BTL\BTL\DataBase\DuLieu.mdf;Integrated Security=True");
         SqlCommand cmd;
         SqlDataReader dr;
         string sql;
-        double kq ;
+        double kq;
         public ChiTietHDB()
         {
             InitializeComponent();
@@ -106,12 +106,15 @@ namespace BTL.Forms
         //}
         void loadCMB1()
         {
-            dataGridView1.DataSource = cthdb.DocBang($"select * from tblChiTietHoaDonBan where SoHDB = N'{FormHDB.tra()}'");
-            DataTable d1 = cthdb.DocBang("select * from tblHangHoa");
-            for (int i = 0; i < d1.Rows.Count; i++)
-            {
-                cbmahang.Items.Add(d1.Rows[i][0].ToString());
-            }
+            //if (isCheck())
+            //{
+                dataGridView1.DataSource = cthdb.DocBang($"select * from tblChiTietHoaDonBan where SoHDB = N'{FormHDB.tra()}'");
+                DataTable d1 = cthdb.DocBang("select * from tblHangHoa");
+                for (int i = 0; i < d1.Rows.Count; i++)
+                {
+                    cbmahang.Items.Add(d1.Rows[i][0].ToString());
+                }
+            //}
         }
 
 
@@ -121,9 +124,9 @@ namespace BTL.Forms
             txtthanhtien.Enabled = false;
             txttienhang.Enabled = false;
             txtgiamgia.Controls[0].Visible = false;
-                DataTable CD = cthdb.DocBang($"select SoHDB from tblHoaDonBan where SoHDB = N'{FormHDB.tra()}'");
-                String cd = CD.Rows[0][0].ToString();
-                cbHdb.Text = cd;
+            DataTable CD = cthdb.DocBang($"select SoHDB from tblHoaDonBan where SoHDB = N'{FormHDB.tra()}'");
+            String cd = CD.Rows[0][0].ToString();
+            cbHdb.Text = cd;
             cbHdb.Enabled = false;
 
             Showresult();
@@ -142,7 +145,7 @@ namespace BTL.Forms
             txtgiamgia.Text = "";
             txtthanhtien.Text = "";
             txttienhang.Text = "";
-            
+
 
         }
 
@@ -151,7 +154,7 @@ namespace BTL.Forms
             ResetGiaTri();
             btnThem.Enabled = true;
             btnSua.Enabled = false;
-            btnXoaHoaDon.Enabled=false;
+            btnXoaHoaDon.Enabled = false;
             btnXoaSanPham.Enabled = false;
         }
 
@@ -191,10 +194,11 @@ namespace BTL.Forms
             DataTable d1 = cthdb.DocBang($"select MaHang from tblChiTietHoaDonBan where SoHDB = N'{FormHDB.tra()}'");
             for (int i = 0; i < d1.Rows.Count; i++)
             {
-                if(cbmahang.Text == d1.Rows[i][0].ToString())
+                if (cbmahang.Text == d1.Rows[i][0].ToString())
                 {
                     cout = 0;
-                    if(cout == 0) {
+                    if (cout == 0)
+                    {
                         if (MessageBox.Show("Bạn có muốn sửa không?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                         {
                             if (isCheck())
@@ -215,20 +219,20 @@ namespace BTL.Forms
                         {
                             MessageBox.Show("Vui lòng điền đủ thông tin");
                         }
-                    }    
+                    }
                 }
                 else
                 {
                     cout++;
                 }
-                 if(cout == d1.Rows.Count)
+                if (cout == d1.Rows.Count)
                 {
                     MessageBox.Show("Mã Hàng chưa tồn tại ! Hãy thêm mới ! ");
                     return;
                 }
             }
 
-            
+
         }
 
         private void guna2Button3_Click(object sender, EventArgs e)
@@ -324,13 +328,13 @@ namespace BTL.Forms
             {
                 if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
                 {
-                        e.Handled = true;
-                        kq = double.Parse(txtsoluong.Text) * double.Parse(txttienhang.Text);
-                        kq -= kq * (double.Parse(txtgiamgia.Text) / 100);
-                        txtthanhtien.Text = kq.ToString();
+                    e.Handled = true;
+                    kq = double.Parse(txtsoluong.Text) * double.Parse(txttienhang.Text);
+                    kq -= kq * (double.Parse(txtgiamgia.Text) / 100);
+                    txtthanhtien.Text = kq.ToString();
                 }
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 MessageBox.Show("Vui lòng nhập đúng định dạng");
             }
@@ -458,12 +462,12 @@ namespace BTL.Forms
             if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
             {
 
-                
-                    e.Handled = true;
-                    kq = float.Parse(txtsoluong.Text) * float.Parse(txttienhang.Text);//lỗi
-                    kq = kq - kq * (float.Parse(txtgiamgia.Text) / 100);
-                    txtthanhtien.Text = kq.ToString();
-                
+
+                e.Handled = true;
+                kq = float.Parse(txtsoluong.Text) * float.Parse(txttienhang.Text);//lỗi
+                kq = kq - kq * (float.Parse(txtgiamgia.Text) / 100);
+                txtthanhtien.Text = kq.ToString();
+
             }
         }
 

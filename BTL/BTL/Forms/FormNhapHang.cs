@@ -551,8 +551,8 @@ namespace BTL
         }
         public void laydulieu()
         {
-            isCheck();
-
+            if (isCheck())
+            {
             DataTable Loai = nam.DocBang($"select MaLoai from tblLoai where TenLoai = N'{cbLoai.SelectedItem}'");
             String loai = Loai.Rows[0][0].ToString();
             txtLoai.Text = loai;
@@ -585,6 +585,7 @@ namespace BTL
             DataTable KL = nam.DocBang($"select MaKL from tblKhoiLuong where TenKL = N'{cbKL.SelectedItem}'");
             String kl = KL.Rows[0][0].ToString();
             txtKL.Text = kl;
+            }
         }
     }
 }
