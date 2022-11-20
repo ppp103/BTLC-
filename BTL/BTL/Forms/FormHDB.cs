@@ -1,4 +1,5 @@
 ﻿using BTL.Forms;
+using HomePage;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -20,6 +21,7 @@ namespace BTL
         SqlCommand cmd;
         SqlDataReader dr;
         string sql,sql1;
+
 
         public FormHDB()
         {
@@ -46,6 +48,7 @@ namespace BTL
             dataGridView1.BackgroundColor = Color.White;
             dtHdb.Dispose();
         }
+
         private void FormHDB_Load(object sender, EventArgs e)
         {
             Showresult();
@@ -57,6 +60,7 @@ namespace BTL
             btnXoa.Enabled = false;
 
         }
+
         void loadCMB()
         {
             string sql = "SELECT * FROM tblNhanVien";
@@ -251,13 +255,8 @@ namespace BTL
 
         private void guna2Button5_Click(object sender, EventArgs e)
         {
-            
-            DSHDB.CapNhatDuLieu("UPDATE tblHoaDonBan set tblHoaDonBan.TongTien = (select SUM(tblChiTietHoaDonBan.ThanhTien) FROM tblChiTietHoaDonBan where tblChiTietHoaDonBan.SoHDB = tblHoaDonBan.SoHDB) \r\n");
-            this.Refresh();
-            Refresh();
-            this.Hide();
-            FormHDB formHDB = new FormHDB();
-            formHDB.Show();
+            DSHDB.CapNhatDuLieu("UPDATE tblHoaDonBan set tblHoaDonBan.TongTien = (select SUM(tblChiTietHoaDonBan.ThanhTien) FROM tblChiTietHoaDonBan where tblChiTietHoaDonBan.SoHDB = tblHoaDonBan.SoHDB)");
+            FormHDB_Load(this, e);
         }
 
         private void guna2Button3_Click(object sender, EventArgs e)

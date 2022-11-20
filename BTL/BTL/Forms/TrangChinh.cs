@@ -42,7 +42,7 @@ namespace HomePage
             }
         }
 
-        private void MoForm(Form form)
+        public void MoForm(Form form)
         {
             if(formHtai != null)
             {
