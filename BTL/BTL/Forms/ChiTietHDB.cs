@@ -15,7 +15,8 @@ namespace BTL.Forms
     public partial class ChiTietHDB : Form
     {
         XuLyCSDL cthdb = new XuLyCSDL();
-        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\HocHanh(ki5)\C#\Projects\BTLv7\BTL\BTL\DataBase\DuLieu.mdf;Integrated Security=True");
+        FormHDB FormHDB = new FormHDB();
+        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\STEP\source\repos\BTLC-\BTL\BTL\DataBase\DuLieu.mdf;Integrated Security=True");
         SqlCommand cmd;
         SqlDataReader dr;
         string sql;
@@ -89,23 +90,23 @@ namespace BTL.Forms
         }
         public void reloaddata()
         {
-            dataGridView1.DataSource = cthdb.DocBang("select * from tblChiTietHoaDonBan");
+            dataGridView1.DataSource = cthdb.DocBang($"select * from tblChiTietHoaDonBan where SoHDB = N'{FormHDB.tra()}'");
         }
 
 
 
-        void loadCMB()
-        {
-            dataGridView1.DataSource = cthdb.DocBang("select * from tblChiTietHoaDonBan");
-            DataTable dt = cthdb.DocBang("select * from tblHoaDonBan");
-            for (int i = 0; i < dt.Rows.Count; i++)
-            {
-                cbHdb.Items.Add(dt.Rows[i][0].ToString());                                                   
-            }
-        }
+        //void loadCMB()
+        //{
+        //    dataGridView1.DataSource = cthdb.DocBang($"select * from tblChiTietHoaDonBan where SoHDB = N'{FormHDB.tra()}'");
+        //    DataTable dt = cthdb.DocBang("select * from tblHoaDonBan");
+        //    for (int i = 0; i < dt.Rows.Count; i++)
+        //    {
+        //        cbHdb.Items.Add(dt.Rows[i][0].ToString());                                                   
+        //    }
+        //}
         void loadCMB1()
         {
-            dataGridView1.DataSource = cthdb.DocBang("select * from tblChiTietHoaDonBan");
+            dataGridView1.DataSource = cthdb.DocBang($"select * from tblChiTietHoaDonBan where SoHDB = N'{FormHDB.tra()}'");
             DataTable d1 = cthdb.DocBang("select * from tblHangHoa");
             for (int i = 0; i < d1.Rows.Count; i++)
             {
@@ -120,9 +121,13 @@ namespace BTL.Forms
             txtthanhtien.Enabled = false;
             txttienhang.Enabled = false;
             txtgiamgia.Controls[0].Visible = false;
+                DataTable CD = cthdb.DocBang($"select SoHDB from tblHoaDonBan where SoHDB = N'{FormHDB.tra()}'");
+                String cd = CD.Rows[0][0].ToString();
+                cbHdb.Text = cd;
+            cbHdb.Enabled = false;
 
             Showresult();
-            loadCMB();
+            //loadCMB();
             loadCMB1();
             btnSua.Enabled = false;
             btnXoaHoaDon.Enabled = false;
@@ -132,7 +137,6 @@ namespace BTL.Forms
 
         public void ResetGiaTri()
         {
-            cbHdb.Text = null;
             cbmahang.Text = null;
             txtsoluong.Text = null;
             txtgiamgia.Text = "";
@@ -155,41 +159,76 @@ namespace BTL.Forms
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-            DialogResult chon = MessageBox.Show("Bạn có chắc chắn thêm số hóa đơn " + cbHdb.Text + " với mã hàng " + cbmahang.Text + " không?", "Thêm", MessageBoxButtons.YesNo);
-            if (chon == DialogResult.Yes)
+            System.Data.DataTable dataTable = cthdb.DocBang($"select * from tblChiTietHoaDonBan where MaHang = N'{cbmahang.Text.Trim()}' and SoHDB =  N'{cbHdb.Text.Trim()}'");
+            if (dataTable.Rows.Count > 0)
             {
-                if (isCheck())
+                MessageBox.Show("Mã này đã tồn tại chỉ có thể cập nhật !");
+                cbmahang.Focus();
+                return;
+            }
+            else
+            {
+                DialogResult chon = MessageBox.Show("Bạn có chắc chắn thêm số hóa đơn " + cbHdb.Text + " với mã hàng " + cbmahang.Text + " không?", "Thêm", MessageBoxButtons.YesNo);
+                if (chon == DialogResult.Yes)
                 {
-                    DataTable table = cthdb.DocBang($"Select * From tblHangHoa Where MaHang= '{cbmahang.Text.Trim()}' ");
+                    if (isCheck())
+                    {
+                        DataTable table = cthdb.DocBang($"Select * From tblHangHoa Where MaHang= '{cbmahang.Text.Trim()}' ");
 
-                    sql = $"Insert into tblChiTietHoaDonBan Values (N'{cbHdb.Text}', N'{cbmahang.Text}', N'{txtsoluong.Text}', N'{txtgiamgia.Text}', N'{txtthanhtien.Text}')";
-                    cthdb.CapNhatDuLieu(sql);
-                    reloaddata();
-                    MessageBox.Show("Thêm thành công");
+                        sql = $"Insert into tblChiTietHoaDonBan Values (N'{cbHdb.Text}', N'{cbmahang.Text}', N'{txtsoluong.Text}', N'{txtgiamgia.Text}', N'{txtthanhtien.Text}')";
+                        cthdb.CapNhatDuLieu(sql);
+                        reloaddata();
+                        MessageBox.Show("Thêm thành công");
 
+                    }
                 }
             }
         }
 
         private void guna2Button2_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("Bạn có muốn sửa không?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            int cout = 0;
+            DataTable d1 = cthdb.DocBang($"select MaHang from tblChiTietHoaDonBan where SoHDB = N'{FormHDB.tra()}'");
+            for (int i = 0; i < d1.Rows.Count; i++)
             {
-                if (isCheck())
+                if(cbmahang.Text == d1.Rows[i][0].ToString())
                 {
-                    cthdb.CapNhatDuLieu($"update tblChiTietHoaDonBan set  SoHDB = N'{cbHdb.Text.Trim()}', SoLuong = N'{txtsoluong.Text.Trim()}', GiamGia = N'{txtgiamgia.Text}', ThanhTien = '{txtthanhtien.Text}' where MaHang = N'{cbmahang.Text.Trim()}' ");
-                    Showresult();
+                    cout = 0;
+                    if(cout == 0) {
+                        if (MessageBox.Show("Bạn có muốn sửa không?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                        {
+                            if (isCheck())
+                            {
 
-                    cbHdb.Enabled = true;
-                    cbHdb.Focus();
 
-                    MessageBox.Show("Sửa thành công");
+                                cthdb.CapNhatDuLieu($"update tblChiTietHoaDonBan set SoLuong = N'{txtsoluong.Text.Trim()}', GiamGia = N'{txtgiamgia.Text}', ThanhTien = '{txtthanhtien.Text}' where MaHang = N'{cbmahang.Text}' ");
+                                reloaddata();
+
+                                cbHdb.Enabled = true;
+                                cbHdb.Focus();
+
+                                MessageBox.Show("Sửa thành công");
+
+                            }
+                        }
+                        else
+                        {
+                            MessageBox.Show("Vui lòng điền đủ thông tin");
+                        }
+                    }    
                 }
                 else
                 {
-                    MessageBox.Show("Vui lòng điền đủ thông tin");
+                    cout++;
+                }
+                 if(cout == d1.Rows.Count)
+                {
+                    MessageBox.Show("Mã Hàng chưa tồn tại ! Hãy thêm mới ! ");
+                    return;
                 }
             }
+
+            
         }
 
         private void guna2Button3_Click(object sender, EventArgs e)
@@ -302,6 +341,9 @@ namespace BTL.Forms
             cbHdb.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
             cbmahang.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
             txtsoluong.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
+            DataTable CD = cthdb.DocBang($"select DonGiaBan from tblHangHoa where MaHang = N'{cbmahang.Text}'");
+            String cd = CD.Rows[0][0].ToString();
+            txtthanhtien.Text = cd;
             txtgiamgia.Text = dataGridView1.CurrentRow.Cells[3].Value.ToString();
             txtthanhtien.Text = dataGridView1.CurrentRow.Cells[4].Value.ToString();
             btnSua.Enabled = true;
@@ -316,16 +358,28 @@ namespace BTL.Forms
         }
         private void cbmahang_SelectedIndexChanged(object sender, EventArgs e)
         {
-            cmd = new SqlCommand("SELECT * FROM tblHangHoa WHERE MaHang=@mahang", con);
-            cmd.Parameters.AddWithValue("@mahang", cbmahang.Text);
-            con.Open();
-            dr = cmd.ExecuteReader();
-            while (dr.Read())
+            int count = 0;
+            System.Data.DataTable dataTable = cthdb.DocBang($"select * from tblChiTietHoaDonBan where MaHang = N'{cbmahang.Text.Trim()}'");
+            if (dataTable.Rows.Count > 0 && count >= 1)
             {
-                string giaban = dr["DonGiaBan"].ToString();
-                txttienhang.Text = giaban;
+                MessageBox.Show(" mã hàng này đã có !");
+                cbmahang.Focus();
+                return;
             }
-            con.Close();
+            else
+            {
+                cmd = new SqlCommand("SELECT * FROM tblHangHoa WHERE MaHang=@mahang", con);
+                cmd.Parameters.AddWithValue("@mahang", cbmahang.Text);
+                con.Open();
+                dr = cmd.ExecuteReader();
+                while (dr.Read())
+                {
+                    string giaban = dr["DonGiaBan"].ToString();
+                    txttienhang.Text = giaban;
+                }
+                con.Close();
+                count++;
+            }
         }
 
         private void txtsoluong_TextChanged(object sender, EventArgs e)
@@ -411,6 +465,11 @@ namespace BTL.Forms
                     txtthanhtien.Text = kq.ToString();
                 
             }
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

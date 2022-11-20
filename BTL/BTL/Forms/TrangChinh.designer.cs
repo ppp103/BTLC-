@@ -79,7 +79,7 @@ namespace HomePage
             this.panelSideMenu.Font = new System.Drawing.Font("Century Gothic", 10F);
             this.panelSideMenu.Location = new System.Drawing.Point(0, 0);
             this.panelSideMenu.Name = "panelSideMenu";
-            this.panelSideMenu.Size = new System.Drawing.Size(277, 973);
+            this.panelSideMenu.Size = new System.Drawing.Size(277, 681);
             this.panelSideMenu.TabIndex = 0;
             // 
             // btnBaoCao
@@ -101,7 +101,7 @@ namespace HomePage
             this.btnBaoCao.Location = new System.Drawing.Point(0, 626);
             this.btnBaoCao.Name = "btnBaoCao";
             this.btnBaoCao.Padding = new System.Windows.Forms.Padding(10, 0, 21, 0);
-            this.btnBaoCao.Size = new System.Drawing.Size(277, 65);
+            this.btnBaoCao.Size = new System.Drawing.Size(260, 65);
             this.btnBaoCao.TabIndex = 10;
             this.btnBaoCao.Text = "Báo Cáo";
             this.btnBaoCao.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -128,7 +128,7 @@ namespace HomePage
             this.btnNhapHoaDonBan.Location = new System.Drawing.Point(0, 561);
             this.btnNhapHoaDonBan.Name = "btnNhapHoaDonBan";
             this.btnNhapHoaDonBan.Padding = new System.Windows.Forms.Padding(10, 0, 21, 0);
-            this.btnNhapHoaDonBan.Size = new System.Drawing.Size(277, 65);
+            this.btnNhapHoaDonBan.Size = new System.Drawing.Size(260, 65);
             this.btnNhapHoaDonBan.TabIndex = 9;
             this.btnNhapHoaDonBan.Text = "Lập Hóa Đơn Bán";
             this.btnNhapHoaDonBan.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -146,7 +146,7 @@ namespace HomePage
             this.panelTkeHoaDon.MaximumSize = new System.Drawing.Size(0, 204);
             this.panelTkeHoaDon.MinimumSize = new System.Drawing.Size(0, 68);
             this.panelTkeHoaDon.Name = "panelTkeHoaDon";
-            this.panelTkeHoaDon.Size = new System.Drawing.Size(277, 68);
+            this.panelTkeHoaDon.Size = new System.Drawing.Size(260, 68);
             this.panelTkeHoaDon.TabIndex = 4;
             // 
             // btnHoaDonNhap
@@ -166,7 +166,7 @@ namespace HomePage
             this.btnHoaDonNhap.Location = new System.Drawing.Point(0, 136);
             this.btnHoaDonNhap.Name = "btnHoaDonNhap";
             this.btnHoaDonNhap.Padding = new System.Windows.Forms.Padding(30, 0, 21, 0);
-            this.btnHoaDonNhap.Size = new System.Drawing.Size(277, 68);
+            this.btnHoaDonNhap.Size = new System.Drawing.Size(260, 68);
             this.btnHoaDonNhap.TabIndex = 1;
             this.btnHoaDonNhap.Text = "Hóa đơn nhập";
             this.btnHoaDonNhap.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -191,7 +191,7 @@ namespace HomePage
             this.btnHoaDonBan.Location = new System.Drawing.Point(0, 68);
             this.btnHoaDonBan.Name = "btnHoaDonBan";
             this.btnHoaDonBan.Padding = new System.Windows.Forms.Padding(30, 0, 21, 0);
-            this.btnHoaDonBan.Size = new System.Drawing.Size(277, 68);
+            this.btnHoaDonBan.Size = new System.Drawing.Size(260, 68);
             this.btnHoaDonBan.TabIndex = 0;
             this.btnHoaDonBan.Text = "Hóa đơn bán";
             this.btnHoaDonBan.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -218,7 +218,7 @@ namespace HomePage
             this.btnTkeHoaDon.Location = new System.Drawing.Point(0, 0);
             this.btnTkeHoaDon.Name = "btnTkeHoaDon";
             this.btnTkeHoaDon.Padding = new System.Windows.Forms.Padding(10, 0, 21, 0);
-            this.btnTkeHoaDon.Size = new System.Drawing.Size(277, 68);
+            this.btnTkeHoaDon.Size = new System.Drawing.Size(260, 68);
             this.btnTkeHoaDon.TabIndex = 0;
             this.btnTkeHoaDon.Text = "Thống Kê Hóa Đơn";
             this.btnTkeHoaDon.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -245,7 +245,7 @@ namespace HomePage
             this.btnNhapHang.Location = new System.Drawing.Point(0, 428);
             this.btnNhapHang.Name = "btnNhapHang";
             this.btnNhapHang.Padding = new System.Windows.Forms.Padding(10, 0, 21, 0);
-            this.btnNhapHang.Size = new System.Drawing.Size(277, 65);
+            this.btnNhapHang.Size = new System.Drawing.Size(260, 65);
             this.btnNhapHang.TabIndex = 3;
             this.btnNhapHang.Text = "Nhập Hàng";
             this.btnNhapHang.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -272,7 +272,7 @@ namespace HomePage
             this.btnTkeHangHoa.Location = new System.Drawing.Point(0, 363);
             this.btnTkeHangHoa.Name = "btnTkeHangHoa";
             this.btnTkeHangHoa.Padding = new System.Windows.Forms.Padding(10, 0, 21, 0);
-            this.btnTkeHangHoa.Size = new System.Drawing.Size(277, 65);
+            this.btnTkeHangHoa.Size = new System.Drawing.Size(260, 65);
             this.btnTkeHangHoa.TabIndex = 2;
             this.btnTkeHangHoa.Text = "Thống Kê Hàng Hóa";
             this.btnTkeHangHoa.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -299,7 +299,7 @@ namespace HomePage
             this.iconHome.Location = new System.Drawing.Point(0, 298);
             this.iconHome.Name = "iconHome";
             this.iconHome.Padding = new System.Windows.Forms.Padding(10, 0, 21, 0);
-            this.iconHome.Size = new System.Drawing.Size(277, 65);
+            this.iconHome.Size = new System.Drawing.Size(260, 65);
             this.iconHome.TabIndex = 4;
             this.iconHome.Text = "Trang Chủ";
             this.iconHome.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -315,7 +315,7 @@ namespace HomePage
             this.panelBlank.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelBlank.Location = new System.Drawing.Point(0, 0);
             this.panelBlank.Name = "panelBlank";
-            this.panelBlank.Size = new System.Drawing.Size(277, 298);
+            this.panelBlank.Size = new System.Drawing.Size(260, 298);
             this.panelBlank.TabIndex = 8;
             // 
             // label1
@@ -326,7 +326,7 @@ namespace HomePage
             this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(-2, 232);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(266, 56);
+            this.label1.Size = new System.Drawing.Size(217, 46);
             this.label1.TabIndex = 1;
             this.label1.Text = "Perfume Shop";
             // 
@@ -338,7 +338,7 @@ namespace HomePage
             this.label3.ForeColor = System.Drawing.Color.Black;
             this.label3.Location = new System.Drawing.Point(38, 193);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(192, 39);
+            this.label3.Size = new System.Drawing.Size(160, 33);
             this.label3.TabIndex = 1;
             this.label3.Text = "LINAPPUTY ";
             // 
@@ -377,7 +377,7 @@ namespace HomePage
             this.labelTieuDe.ForeColor = System.Drawing.SystemColors.ControlText;
             this.labelTieuDe.Location = new System.Drawing.Point(66, 10);
             this.labelTieuDe.Name = "labelTieuDe";
-            this.labelTieuDe.Size = new System.Drawing.Size(104, 28);
+            this.labelTieuDe.Size = new System.Drawing.Size(83, 21);
             this.labelTieuDe.TabIndex = 1;
             this.labelTieuDe.Text = "Trang Chủ";
             // 
@@ -518,14 +518,14 @@ namespace HomePage
             this.panelForm.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelForm.Location = new System.Drawing.Point(277, 72);
             this.panelForm.Name = "panelForm";
-            this.panelForm.Size = new System.Drawing.Size(1208, 901);
+            this.panelForm.Size = new System.Drawing.Size(1208, 609);
             this.panelForm.TabIndex = 10;
             // 
             // TrangChinh
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1485, 973);
+            this.ClientSize = new System.Drawing.Size(1485, 681);
             this.Controls.Add(this.panelForm);
             this.Controls.Add(this.panelHeader);
             this.Controls.Add(this.panelTieuDe);

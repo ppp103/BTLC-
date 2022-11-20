@@ -8,7 +8,7 @@ namespace BTL.DangNhapDangKi
 {
     internal class Connection
     {
-        private static string stringconnection = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=\"C:\\Users\\Dell Mediamart\\Source\\Repos\\ppp103\\BTLC-\\BTL\\BTL\\DangNhapDangKi\\DangNhap.mdf\";Integrated Security=True";
+        private static string stringconnection = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\STEP\source\repos\BTLC-\BTL\BTL\DangNhapDangKi\DangNhap.mdf;Integrated Security=True";
         public static SqlConnection GetSqlConnection()
         {
             return new SqlConnection(stringconnection);

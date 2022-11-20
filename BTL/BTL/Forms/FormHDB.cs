@@ -16,6 +16,7 @@ namespace BTL
 {
     public partial class FormHDB : Form
     {
+        public static string t;
         XuLyCSDL DSHDB = new XuLyCSDL();
         SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\HocHanh(ki5)\C#\Projects\BTLv7\BTL\BTL\DataBase\DuLieu.mdf;Integrated Security=True");
         SqlCommand cmd;
@@ -47,6 +48,7 @@ namespace BTL
             dataGridView1.Columns[4].Width = 100;
             dataGridView1.BackgroundColor = Color.White;
             dtHdb.Dispose();
+            t = txthdb.Text;
         }
 
         private void FormHDB_Load(object sender, EventArgs e)
@@ -75,9 +77,12 @@ namespace BTL
             
         }
 
-        
 
-       
+        public string tra()
+        {
+            return t;
+        }
+
 
         private void cbmanhanvien_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -255,17 +260,91 @@ namespace BTL
 
         private void guna2Button5_Click(object sender, EventArgs e)
         {
-            DSHDB.CapNhatDuLieu("UPDATE tblHoaDonBan set tblHoaDonBan.TongTien = (select SUM(tblChiTietHoaDonBan.ThanhTien) FROM tblChiTietHoaDonBan where tblChiTietHoaDonBan.SoHDB = tblHoaDonBan.SoHDB)");
+
+
+            DSHDB.CapNhatDuLieu("UPDATE tblHoaDonBan set tblHoaDonBan.TongTien = (select ISNULL(SUM(tblChiTietHoaDonBan.ThanhTien),0.0000) FROM tblChiTietHoaDonBan where tblChiTietHoaDonBan.SoHDB = tblHoaDonBan.SoHDB) \r\n");
             FormHDB_Load(this, e);
+
         }
 
         private void guna2Button3_Click(object sender, EventArgs e)
         {
             ChiTietHDB f = new ChiTietHDB();
             f.Show();
+            t = txthdb.Text;
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void txttongtien_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2HtmlLabel8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtmakhachhang_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txttennhanvien_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txthdb_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void datetime_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2HtmlLabel7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2HtmlLabel1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2HtmlLabel6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2HtmlLabel4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2HtmlLabel3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2HtmlLabel2_Click(object sender, EventArgs e)
         {
 
         }
@@ -281,6 +360,7 @@ namespace BTL
             btnThem.Enabled = false;
             btnSua.Enabled = true;
             btnXoa.Enabled = true;
+            t = txthdb.Text;
         }
     }
 }
