@@ -260,18 +260,11 @@ namespace BTL
 
         private void guna2Button5_Click(object sender, EventArgs e)
         {
-<<<<<<< HEAD
+
 
             DSHDB.CapNhatDuLieu("UPDATE tblHoaDonBan set tblHoaDonBan.TongTien = (select ISNULL(SUM(tblChiTietHoaDonBan.ThanhTien),0.0000) FROM tblChiTietHoaDonBan where tblChiTietHoaDonBan.SoHDB = tblHoaDonBan.SoHDB) \r\n");
-            this.Refresh();
-            Refresh();
-            this.Hide();
-            FormHDB formHDN = new FormHDB();
-            formHDN.Show();
-=======
-            DSHDB.CapNhatDuLieu("UPDATE tblHoaDonBan set tblHoaDonBan.TongTien = (select SUM(tblChiTietHoaDonBan.ThanhTien) FROM tblChiTietHoaDonBan where tblChiTietHoaDonBan.SoHDB = tblHoaDonBan.SoHDB)");
             FormHDB_Load(this, e);
->>>>>>> 0c2030087ca07b1a4789951d0cef801d48688bbc
+
         }
 
         private void guna2Button3_Click(object sender, EventArgs e)

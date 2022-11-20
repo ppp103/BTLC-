@@ -215,11 +215,7 @@ namespace BTL.Forms
         private void guna2Button5_Click_1(object sender, EventArgs e)
         {
             DSHDB.CapNhatDuLieu("UPDATE tblHoaDonNhap set tblHoaDonNhap.TongTien = (select ISNULL(SUM(tblChiTietHoaDonNhap.ThanhTien),0.0000) FROM tblChiTietHoaDonNhap where tblChiTietHoaDonNhap.SoHDN = tblHoaDonNhap.SoHDN) \r\n");
-            this.Refresh();
-            Refresh();
-            this.Hide();
-            FormHDN formHDN = new FormHDN();
-            formHDN.Show();
+            FormHDN_Load(this, e);
         }
 
         private void btnSua_Click(object sender, EventArgs e)
