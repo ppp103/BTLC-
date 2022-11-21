@@ -1,15 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 using System.IO;
-using static System.Net.Mime.MediaTypeNames;
+using System.Windows.Forms;
 
 namespace BTL
 {
@@ -20,7 +13,6 @@ namespace BTL
         SqlConnection strConnect = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\HocHanh(ki5)\C#\Projects\BTLv7\BTL\BTL\DataBase\DuLieu.mdf;Integrated Security=True");
         string duongdan = "";
         SqlCommand cmd;
-
 
         public FormNhapHang()
         {
@@ -266,19 +258,20 @@ namespace BTL
             }
             else
             {
-                if (MessageBox.Show("Bạn có muốn xóa sản phẩm có mã là:" +
+               if (MessageBox.Show("Bạn có muốn xóa sản phẩm có mã là:" +
                txtMaHang.Text + " không?", "Thông báo",
                MessageBoxButtons.YesNo, MessageBoxIcon.Question) ==
                System.Windows.Forms.DialogResult.Yes)
                 {
-                    nam.CapNhatDuLieu("delete tblHangHoa where MaHang ='" + txtMaHang.Text + "'");
-                    dataGridView1.DataSource = nam.DocBang("Select * from tblHangHoa ");
+                    nam.CapNhatDuLieu("delete tblHangHoa where MaHang ='" + txtMaHang.Text.Trim() + "'");
+                    nam.CapNhatDuLieu($"Delete tblChiTietHoaDonBan where MaHang = '{txtMaHang.Text.Trim()}'");
+                    dataGridView1.DataSource = nam.DocBang("Select * from tblHangHoa");
                     reset();
                     btnXoa.Enabled = true;
                     btnSua.Enabled = true;
                     guna2Button1.Enabled = true;
                     btnLamMoi.Enabled = true;
-                }
+               }
             }
         }
 
@@ -294,7 +287,7 @@ namespace BTL
             {
                 MemoryStream memoryStream = new MemoryStream((byte[])dataGridView1.SelectedRows[0].Cells[6].Value);
                 picture.Image = System.Drawing.Image.FromStream(memoryStream);
-
+                //duongdan = ;
             }
             else
             {
@@ -553,38 +546,38 @@ namespace BTL
         {
             if (isCheck())
             {
-            DataTable Loai = nam.DocBang($"select MaLoai from tblLoai where TenLoai = N'{cbLoai.SelectedItem}'");
-            String loai = Loai.Rows[0][0].ToString();
-            txtLoai.Text = loai;
+                DataTable Loai = nam.DocBang($"select MaLoai from tblLoai where TenLoai = N'{cbLoai.SelectedItem}'");
+                String loai = Loai.Rows[0][0].ToString();
+                txtLoai.Text = loai;
 
 
-            DataTable HSX = nam.DocBang($"select MaHangSX from tblHangSX where TenHangSX = N'{cbHSX.SelectedItem}'");
-            String hsx = HSX.Rows[0][0].ToString();
-            txtHSX.Text = hsx;
+                DataTable HSX = nam.DocBang($"select MaHangSX from tblHangSX where TenHangSX = N'{cbHSX.SelectedItem}'");
+                String hsx = HSX.Rows[0][0].ToString();
+                txtHSX.Text = hsx;
 
-            DataTable CL = nam.DocBang($"select MaCL from tblChatLieu where TenCL = N'{cbCL.SelectedItem}'");
-            String cl = CL.Rows[0][0].ToString();
-            txtCL.Text = cl;
+                DataTable CL = nam.DocBang($"select MaCL from tblChatLieu where TenCL = N'{cbCL.SelectedItem}'");
+                String cl = CL.Rows[0][0].ToString();
+                txtCL.Text = cl;
 
-            DataTable NSX = nam.DocBang($"select MaNuocSX from tblNuocSX where TenNuocSX = N'{cbNSX.SelectedItem}'");
-            String nsx = NSX.Rows[0][0].ToString();
-            txtNSX.Text = nsx;
+                DataTable NSX = nam.DocBang($"select MaNuocSX from tblNuocSX where TenNuocSX = N'{cbNSX.SelectedItem}'");
+                String nsx = NSX.Rows[0][0].ToString();
+                txtNSX.Text = nsx;
 
-            DataTable Mau = nam.DocBang($"select MaMau from tblMauSac where TenMau = N'{cbMau.SelectedItem}'");
-            String mau = Mau.Rows[0][0].ToString();
-            txtMau.Text = mau;
+                DataTable Mau = nam.DocBang($"select MaMau from tblMauSac where TenMau = N'{cbMau.SelectedItem}'");
+                String mau = Mau.Rows[0][0].ToString();
+                txtMau.Text = mau;
 
-            DataTable CD = nam.DocBang($"select MaCD from tblCongDung where TenCD = N'{cbCD.SelectedItem}'");
-            String cd = CD.Rows[0][0].ToString();
-            txtCD.Text = cd;
+                DataTable CD = nam.DocBang($"select MaCD from tblCongDung where TenCD = N'{cbCD.SelectedItem}'");
+                String cd = CD.Rows[0][0].ToString();
+                txtCD.Text = cd;
 
-            DataTable Mua = nam.DocBang($"select MaMua from tblMua where TenMua = N'{cbMua.SelectedItem}'");
-            String mua = Mua.Rows[0][0].ToString();
-            txtMua.Text = mua;
+                DataTable Mua = nam.DocBang($"select MaMua from tblMua where TenMua = N'{cbMua.SelectedItem}'");
+                String mua = Mua.Rows[0][0].ToString();
+                txtMua.Text = mua;
 
-            DataTable KL = nam.DocBang($"select MaKL from tblKhoiLuong where TenKL = N'{cbKL.SelectedItem}'");
-            String kl = KL.Rows[0][0].ToString();
-            txtKL.Text = kl;
+                DataTable KL = nam.DocBang($"select MaKL from tblKhoiLuong where TenKL = N'{cbKL.SelectedItem}'");
+                String kl = KL.Rows[0][0].ToString();
+                txtKL.Text = kl;
             }
         }
     }

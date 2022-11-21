@@ -20,7 +20,7 @@ namespace BTL.Forms
         FormHDN FormHDN = new FormHDN();
         public static String u;
         XuLyCSDL cthdb = new XuLyCSDL();
-        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\STEP\source\repos\BTLC-\BTL\BTL\DataBase\DuLieu.mdf;Integrated Security=True");
+        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\HocHanh(ki5)\C#\Projects\BTLv7\BTL\BTL\DataBase\DuLieu.mdf;Integrated Security=True");
         SqlCommand cmd;
         SqlDataReader dr;
         string sql;
@@ -117,24 +117,31 @@ namespace BTL.Forms
        
         private void ChiTietHDN_Load(object sender, EventArgs e)
         {
-            txtthanhtien.Enabled = false;
-            txttienhang.Enabled = false;
-            txtgiamgia.Controls[1].Visible = true;
-            if (FormHDN.check() == false)
+            try
             {
-                DataTable CD = cthdb.DocBang($"select SoHDN from tblHoaDonNhap where SoHDN = N'{FormHDN.tra()}'");
-                String cd = CD.Rows[0][0].ToString();
-                cbHdb.Text = cd;
+                txtthanhtien.Enabled = false;
+                txttienhang.Enabled = false;
+                txtgiamgia.Controls[1].Visible = true;
+                if (FormHDN.check() == false)
+                {
+                    DataTable CD = cthdb.DocBang($"select SoHDN from tblHoaDonNhap where SoHDN = N'{FormHDN.tra()}'");
+                    String cd = CD.Rows[0][0].ToString();
+                    cbHdb.Text = cd;
+                }
+                cbHdb.Enabled = false;
+
+                Showresult();
+                //loadCMB();
+                loadCMB1();
+
+                btnSua.Enabled = false;
+                btnXoaHoaDon.Enabled = false;
+                btnXoaSanPham.Enabled = false;
+            }catch(Exception ex)
+            {
+                MessageBox.Show("Vui lòng nhập hoặc chọn Số HĐN");
+                this.Close();
             }
-            cbHdb.Enabled = false;
-
-            Showresult();
-            //loadCMB();
-            loadCMB1();
-
-            btnSua.Enabled = false;
-            btnXoaHoaDon.Enabled = false;
-            btnXoaSanPham.Enabled = false;
         }
 
         private void btnThem_Click(object sender, EventArgs e)

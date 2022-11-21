@@ -98,7 +98,7 @@ namespace HomePage
             this.btnBaoCao.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnBaoCao.IconSize = 35;
             this.btnBaoCao.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBaoCao.Location = new System.Drawing.Point(0, 626);
+            this.btnBaoCao.Location = new System.Drawing.Point(0, 762);
             this.btnBaoCao.Name = "btnBaoCao";
             this.btnBaoCao.Padding = new System.Windows.Forms.Padding(10, 0, 21, 0);
             this.btnBaoCao.Size = new System.Drawing.Size(277, 65);
@@ -125,12 +125,12 @@ namespace HomePage
             this.btnNhapHoaDonBan.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnNhapHoaDonBan.IconSize = 35;
             this.btnNhapHoaDonBan.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnNhapHoaDonBan.Location = new System.Drawing.Point(0, 561);
+            this.btnNhapHoaDonBan.Location = new System.Drawing.Point(0, 697);
             this.btnNhapHoaDonBan.Name = "btnNhapHoaDonBan";
             this.btnNhapHoaDonBan.Padding = new System.Windows.Forms.Padding(10, 0, 21, 0);
             this.btnNhapHoaDonBan.Size = new System.Drawing.Size(277, 65);
             this.btnNhapHoaDonBan.TabIndex = 9;
-            this.btnNhapHoaDonBan.Text = "Lập Hóa Đơn Bán";
+            this.btnNhapHoaDonBan.Text = "Thống Kê HĐN";
             this.btnNhapHoaDonBan.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnNhapHoaDonBan.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnNhapHoaDonBan.UseVisualStyleBackColor = true;
@@ -146,7 +146,7 @@ namespace HomePage
             this.panelTkeHoaDon.MaximumSize = new System.Drawing.Size(0, 204);
             this.panelTkeHoaDon.MinimumSize = new System.Drawing.Size(0, 68);
             this.panelTkeHoaDon.Name = "panelTkeHoaDon";
-            this.panelTkeHoaDon.Size = new System.Drawing.Size(277, 68);
+            this.panelTkeHoaDon.Size = new System.Drawing.Size(277, 204);
             this.panelTkeHoaDon.TabIndex = 4;
             // 
             // btnHoaDonNhap
@@ -220,7 +220,7 @@ namespace HomePage
             this.btnTkeHoaDon.Padding = new System.Windows.Forms.Padding(10, 0, 21, 0);
             this.btnTkeHoaDon.Size = new System.Drawing.Size(277, 68);
             this.btnTkeHoaDon.TabIndex = 0;
-            this.btnTkeHoaDon.Text = "Thống Kê Hóa Đơn";
+            this.btnTkeHoaDon.Text = "Lập Hóa Đơn";
             this.btnTkeHoaDon.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnTkeHoaDon.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnTkeHoaDon.UseVisualStyleBackColor = true;
@@ -247,7 +247,7 @@ namespace HomePage
             this.btnNhapHang.Padding = new System.Windows.Forms.Padding(10, 0, 21, 0);
             this.btnNhapHang.Size = new System.Drawing.Size(277, 65);
             this.btnNhapHang.TabIndex = 3;
-            this.btnNhapHang.Text = "Nhập Hàng";
+            this.btnNhapHang.Text = "Thêm Sản Phẩm";
             this.btnNhapHang.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnNhapHang.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnNhapHang.UseVisualStyleBackColor = true;
@@ -509,16 +509,16 @@ namespace HomePage
             this.panelHeader.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelHeader.Location = new System.Drawing.Point(277, 21);
             this.panelHeader.Name = "panelHeader";
-            this.panelHeader.Size = new System.Drawing.Size(1311, 51);
+            this.panelHeader.Size = new System.Drawing.Size(1311, 62);
             this.panelHeader.TabIndex = 9;
             // 
             // panelForm
             // 
             this.panelForm.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.panelForm.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelForm.Location = new System.Drawing.Point(277, 72);
+            this.panelForm.Location = new System.Drawing.Point(277, 83);
             this.panelForm.Name = "panelForm";
-            this.panelForm.Size = new System.Drawing.Size(1311, 886);
+            this.panelForm.Size = new System.Drawing.Size(1311, 875);
             this.panelForm.TabIndex = 10;
             // 
             // TrangChinh

@@ -6,13 +6,13 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Windows.Forms;
 using Microsoft.Reporting.WinForms;
+using System.Windows.Forms;
+
 namespace BTL.Forms
 {
     public partial class FormReport : Form
     {
-        XuLyCSDL xuLy = new XuLyCSDL();
         DataTable table;
         int index;
         public FormReport(int index, DataTable dataTable)
@@ -33,16 +33,17 @@ namespace BTL.Forms
                     reportDataSource.Name = "DataSet1";
                     reportDataSource.Value = table;
                     reportViewer1.LocalReport.DataSources.Add(reportDataSource);
+                    this.reportViewer1.RefreshReport();
                 }
-                if(index == 2)
+                if (index == 2)
                 {
                     reportViewer1.LocalReport.ReportEmbeddedResource = "BTL.Reports.Report2.rdlc";
                     ReportDataSource reportDataSource = new ReportDataSource();
                     reportDataSource.Name = "DataSet1";
                     reportDataSource.Value = table;
                     reportViewer1.LocalReport.DataSources.Add(reportDataSource);
+                    this.reportViewer1.RefreshReport();
                 }
-                this.reportViewer1.RefreshReport();
             }
             catch (Exception ex)
             {

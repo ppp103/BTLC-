@@ -15,7 +15,7 @@ namespace BTL.Forms
     { 
         public static string t;
         XuLyCSDL DSHDB = new XuLyCSDL();
-        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\STEP\source\repos\BTLC-\BTL\BTL\DataBase\DuLieu.mdf;Integrated Security=True");
+        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\HocHanh(ki5)\C#\Projects\BTLv7\BTL\BTL\DataBase\DuLieu.mdf;Integrated Security=True");
         SqlCommand cmd;
         SqlDataReader dr;
         string sql, sql1;
@@ -31,16 +31,11 @@ namespace BTL.Forms
             DataTable dtHdb = DSHDB.DocBang("SELECT * FROM tblHoaDonNhap");
             dataGridView1.DataSource = dtHdb;
             dataGridView1.ColumnHeadersDefaultCellStyle.Font = new Font("Arial", 9, FontStyle.Bold);
-            dataGridView1.Columns[0].HeaderText = "Số Hóa Đơn Nhập";
+            dataGridView1.Columns[0].HeaderText = "Số HĐN";
             dataGridView1.Columns[4].HeaderText = "Mã Nhân Viên";
             dataGridView1.Columns[1].HeaderText = "Ngày Nhập";
             dataGridView1.Columns[3].HeaderText = "Mã NCC";
             dataGridView1.Columns[2].HeaderText = "Tổng Tiền";
-            dataGridView1.Columns[0].Width = 130;
-            dataGridView1.Columns[1].Width = 90;
-            dataGridView1.Columns[2].Width = 120;
-            dataGridView1.Columns[3].Width = 120;
-            dataGridView1.Columns[4].Width = 100;
             dataGridView1.BackgroundColor = Color.White;
             dtHdb.Dispose();
             t = txthdb.Text;

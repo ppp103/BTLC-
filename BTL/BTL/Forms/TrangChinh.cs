@@ -109,18 +109,19 @@ namespace HomePage
         private void btnNhapHoaDonBan_Click(object sender, EventArgs e)
         {
             KichHoatNut(sender);
-            MoForm(new FormHDB());
+            MoForm(new FormThongKeHoaDon());
         }
 
         private void btnHoaDonBan_Click(object sender, EventArgs e)
         {
             KichHoatNut(sender);
-        }                                                                                      
+            MoForm(new FormHDB());
+        }
 
         private void btnHoaDonNhap_Click(object sender, EventArgs e)
         {
             KichHoatNut(sender);
-            MoForm(new FormThongKeHoaDon());
+            MoForm(new FormHDN());
 
         }
 

@@ -34,12 +34,12 @@ namespace BTL
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.txtNSX = new System.Windows.Forms.TextBox();
             this.txtMau = new System.Windows.Forms.TextBox();
             this.txtCD = new System.Windows.Forms.TextBox();
             this.txtMua = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.ađa = new System.Windows.Forms.Label();
@@ -135,6 +135,14 @@ namespace BTL
             this.dataGridView1.TabIndex = 3;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(-207, 235);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(292, 22);
+            this.textBox1.TabIndex = 20;
+            // 
             // errorProvider1
             // 
             this.errorProvider1.ContainerControl = this;
@@ -174,14 +182,6 @@ namespace BTL
             this.txtMua.Size = new System.Drawing.Size(71, 22);
             this.txtMua.TabIndex = 19;
             this.txtMua.Visible = false;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(-207, 235);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(292, 22);
-            this.textBox1.TabIndex = 20;
             // 
             // label1
             // 
@@ -286,7 +286,7 @@ namespace BTL
             // 
             this.txtMaHang.Font = new System.Drawing.Font("Segoe UI Semibold", 11F);
             this.txtMaHang.Location = new System.Drawing.Point(292, 13);
-            this.txtMaHang.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtMaHang.Margin = new System.Windows.Forms.Padding(4);
             this.txtMaHang.Name = "txtMaHang";
             this.txtMaHang.Size = new System.Drawing.Size(401, 32);
             this.txtMaHang.TabIndex = 14;
@@ -317,7 +317,7 @@ namespace BTL
             // 
             this.txtSoLuong.Font = new System.Drawing.Font("Segoe UI Semibold", 11F);
             this.txtSoLuong.Location = new System.Drawing.Point(291, 118);
-            this.txtSoLuong.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtSoLuong.Margin = new System.Windows.Forms.Padding(4);
             this.txtSoLuong.Name = "txtSoLuong";
             this.txtSoLuong.Size = new System.Drawing.Size(402, 32);
             this.txtSoLuong.TabIndex = 21;
@@ -445,7 +445,7 @@ namespace BTL
             // 
             this.txtGhiChu.Font = new System.Drawing.Font("Segoe UI Semibold", 11F);
             this.txtGhiChu.Location = new System.Drawing.Point(289, 363);
-            this.txtGhiChu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtGhiChu.Margin = new System.Windows.Forms.Padding(4);
             this.txtGhiChu.Name = "txtGhiChu";
             this.txtGhiChu.Size = new System.Drawing.Size(401, 32);
             this.txtGhiChu.TabIndex = 20;
@@ -545,7 +545,7 @@ namespace BTL
             // 
             this.picture.ImageRotate = 0F;
             this.picture.Location = new System.Drawing.Point(448, 165);
-            this.picture.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.picture.Margin = new System.Windows.Forms.Padding(4);
             this.picture.Name = "picture";
             this.picture.Size = new System.Drawing.Size(245, 181);
             this.picture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -714,7 +714,7 @@ namespace BTL
             this.DoubleBuffered = true;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FormNhapHang";
-            this.Text = "Nhập hàng";
+            this.Text = "Thêm Sản Phẩm";
             this.Load += new System.EventHandler(this.FormNhapHang_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

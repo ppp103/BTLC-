@@ -104,7 +104,7 @@
             this.dgvKq.RowHeadersWidth = 51;
             this.dgvKq.RowTemplate.Height = 24;
             this.dgvKq.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvKq.Size = new System.Drawing.Size(1204, 473);
+            this.dgvKq.Size = new System.Drawing.Size(1204, 346);
             this.dgvKq.TabIndex = 0;
             // 
             // guna2Panel1
@@ -122,9 +122,9 @@
             // 
             this.guna2Panel5.Controls.Add(this.dgvKq);
             this.guna2Panel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.guna2Panel5.Location = new System.Drawing.Point(0, 236);
+            this.guna2Panel5.Location = new System.Drawing.Point(0, 363);
             this.guna2Panel5.Name = "guna2Panel5";
-            this.guna2Panel5.Size = new System.Drawing.Size(1204, 473);
+            this.guna2Panel5.Size = new System.Drawing.Size(1204, 346);
             this.guna2Panel5.TabIndex = 3;
             // 
             // guna2Panel3
@@ -137,9 +137,9 @@
             this.guna2Panel3.Controls.Add(this.label2);
             this.guna2Panel3.Controls.Add(this.btnTim);
             this.guna2Panel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2Panel3.Location = new System.Drawing.Point(0, 58);
+            this.guna2Panel3.Location = new System.Drawing.Point(0, 106);
             this.guna2Panel3.Name = "guna2Panel3";
-            this.guna2Panel3.Size = new System.Drawing.Size(1204, 178);
+            this.guna2Panel3.Size = new System.Drawing.Size(1204, 257);
             this.guna2Panel3.TabIndex = 1;
             // 
             // btnThoat
@@ -147,6 +147,7 @@
             this.btnThoat.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnThoat.BackColor = System.Drawing.Color.LightCyan;
             this.btnThoat.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.btnThoat.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnThoat.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnThoat.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnThoat.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -207,6 +208,7 @@
             this.btnXuat.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnXuat.BackColor = System.Drawing.Color.LightCyan;
             this.btnXuat.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.btnXuat.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnXuat.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnXuat.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnXuat.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -247,6 +249,7 @@
             // 
             this.btnTim.BackColor = System.Drawing.Color.LightCyan;
             this.btnTim.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.btnTim.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnTim.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnTim.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnTim.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -267,7 +270,7 @@
             this.guna2Panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2Panel2.Location = new System.Drawing.Point(0, 0);
             this.guna2Panel2.Name = "guna2Panel2";
-            this.guna2Panel2.Size = new System.Drawing.Size(1204, 58);
+            this.guna2Panel2.Size = new System.Drawing.Size(1204, 106);
             this.guna2Panel2.TabIndex = 0;
             // 
             // label1
@@ -275,7 +278,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 22.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.DarkMagenta;
-            this.label1.Location = new System.Drawing.Point(388, 0);
+            this.label1.Location = new System.Drawing.Point(401, 23);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(422, 50);
             this.label1.TabIndex = 1;

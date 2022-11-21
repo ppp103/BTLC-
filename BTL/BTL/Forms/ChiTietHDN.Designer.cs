@@ -75,9 +75,10 @@ namespace BTL.Forms
             this.cbmahang.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbmahang.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cbmahang.ItemHeight = 30;
-            this.cbmahang.Location = new System.Drawing.Point(146, 247);
+            this.cbmahang.Location = new System.Drawing.Point(195, 304);
+            this.cbmahang.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbmahang.Name = "cbmahang";
-            this.cbmahang.Size = new System.Drawing.Size(221, 36);
+            this.cbmahang.Size = new System.Drawing.Size(293, 36);
             this.cbmahang.TabIndex = 130;
             this.cbmahang.SelectedIndexChanged += new System.EventHandler(this.cbmahang_SelectedIndexChanged);
             // 
@@ -85,9 +86,10 @@ namespace BTL.Forms
             // 
             this.guna2HtmlLabel8.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel8.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel8.Location = new System.Drawing.Point(2, 308);
+            this.guna2HtmlLabel8.Location = new System.Drawing.Point(3, 379);
+            this.guna2HtmlLabel8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2HtmlLabel8.Name = "guna2HtmlLabel8";
-            this.guna2HtmlLabel8.Size = new System.Drawing.Size(135, 27);
+            this.guna2HtmlLabel8.Size = new System.Drawing.Size(171, 34);
             this.guna2HtmlLabel8.TabIndex = 128;
             this.guna2HtmlLabel8.Text = "Đơn Giá Nhập :";
             // 
@@ -102,21 +104,23 @@ namespace BTL.Forms
             this.txtthanhtien.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtthanhtien.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtthanhtien.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtthanhtien.Location = new System.Drawing.Point(146, 362);
+            this.txtthanhtien.Location = new System.Drawing.Point(195, 446);
+            this.txtthanhtien.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtthanhtien.Name = "txtthanhtien";
             this.txtthanhtien.PasswordChar = '\0';
             this.txtthanhtien.PlaceholderText = "";
             this.txtthanhtien.SelectedText = "";
-            this.txtthanhtien.Size = new System.Drawing.Size(221, 36);
+            this.txtthanhtien.Size = new System.Drawing.Size(295, 44);
             this.txtthanhtien.TabIndex = 127;
             // 
             // guna2HtmlLabel7
             // 
             this.guna2HtmlLabel7.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel7.Font = new System.Drawing.Font("Segoe UI Semibold", 19F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel7.Location = new System.Drawing.Point(252, 185);
+            this.guna2HtmlLabel7.Location = new System.Drawing.Point(336, 228);
+            this.guna2HtmlLabel7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2HtmlLabel7.Name = "guna2HtmlLabel7";
-            this.guna2HtmlLabel7.Size = new System.Drawing.Size(24, 37);
+            this.guna2HtmlLabel7.Size = new System.Drawing.Size(30, 47);
             this.guna2HtmlLabel7.TabIndex = 126;
             this.guna2HtmlLabel7.Text = "%";
             // 
@@ -131,12 +135,13 @@ namespace BTL.Forms
             this.txtsoluong.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtsoluong.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtsoluong.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtsoluong.Location = new System.Drawing.Point(148, 132);
+            this.txtsoluong.Location = new System.Drawing.Point(197, 162);
+            this.txtsoluong.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtsoluong.Name = "txtsoluong";
             this.txtsoluong.PasswordChar = '\0';
             this.txtsoluong.PlaceholderText = "";
             this.txtsoluong.SelectedText = "";
-            this.txtsoluong.Size = new System.Drawing.Size(102, 36);
+            this.txtsoluong.Size = new System.Drawing.Size(136, 44);
             this.txtsoluong.TabIndex = 125;
             this.txtsoluong.TextChanged += new System.EventHandler(this.txtsoluong_TextChanged);
             this.txtsoluong.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtsoluong_KeyPress);
@@ -145,9 +150,10 @@ namespace BTL.Forms
             // 
             this.guna2HtmlLabel6.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel6.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel6.Location = new System.Drawing.Point(3, 362);
+            this.guna2HtmlLabel6.Location = new System.Drawing.Point(4, 446);
+            this.guna2HtmlLabel6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2HtmlLabel6.Name = "guna2HtmlLabel6";
-            this.guna2HtmlLabel6.Size = new System.Drawing.Size(107, 27);
+            this.guna2HtmlLabel6.Size = new System.Drawing.Size(137, 34);
             this.guna2HtmlLabel6.TabIndex = 124;
             this.guna2HtmlLabel6.Text = "Thành Tiền :";
             // 
@@ -155,9 +161,10 @@ namespace BTL.Forms
             // 
             this.guna2HtmlLabel5.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel5.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel5.Location = new System.Drawing.Point(2, 247);
+            this.guna2HtmlLabel5.Location = new System.Drawing.Point(3, 304);
+            this.guna2HtmlLabel5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2HtmlLabel5.Name = "guna2HtmlLabel5";
-            this.guna2HtmlLabel5.Size = new System.Drawing.Size(92, 27);
+            this.guna2HtmlLabel5.Size = new System.Drawing.Size(117, 34);
             this.guna2HtmlLabel5.TabIndex = 123;
             this.guna2HtmlLabel5.Text = "Mã Hàng :";
             // 
@@ -165,9 +172,10 @@ namespace BTL.Forms
             // 
             this.guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel4.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel4.Location = new System.Drawing.Point(2, 194);
+            this.guna2HtmlLabel4.Location = new System.Drawing.Point(3, 239);
+            this.guna2HtmlLabel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2HtmlLabel4.Name = "guna2HtmlLabel4";
-            this.guna2HtmlLabel4.Size = new System.Drawing.Size(91, 27);
+            this.guna2HtmlLabel4.Size = new System.Drawing.Size(116, 34);
             this.guna2HtmlLabel4.TabIndex = 122;
             this.guna2HtmlLabel4.Text = "Giảm Giá :";
             // 
@@ -175,9 +183,10 @@ namespace BTL.Forms
             // 
             this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel3.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel3.Location = new System.Drawing.Point(3, 132);
+            this.guna2HtmlLabel3.Location = new System.Drawing.Point(4, 162);
+            this.guna2HtmlLabel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
-            this.guna2HtmlLabel3.Size = new System.Drawing.Size(94, 27);
+            this.guna2HtmlLabel3.Size = new System.Drawing.Size(120, 34);
             this.guna2HtmlLabel3.TabIndex = 121;
             this.guna2HtmlLabel3.Text = "Số Lượng :";
             // 
@@ -185,9 +194,10 @@ namespace BTL.Forms
             // 
             this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel2.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(3, 78);
+            this.guna2HtmlLabel2.Location = new System.Drawing.Point(4, 96);
+            this.guna2HtmlLabel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            this.guna2HtmlLabel2.Size = new System.Drawing.Size(82, 27);
+            this.guna2HtmlLabel2.Size = new System.Drawing.Size(103, 34);
             this.guna2HtmlLabel2.TabIndex = 120;
             this.guna2HtmlLabel2.Text = "Số HDN :";
             // 
@@ -196,16 +206,17 @@ namespace BTL.Forms
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.White;
             this.guna2HtmlLabel1.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.Red;
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(7, 3);
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(9, 4);
+            this.guna2HtmlLabel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(420, 39);
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(528, 48);
             this.guna2HtmlLabel1.TabIndex = 118;
             this.guna2HtmlLabel1.Text = "CHI TIẾT HÓA ĐƠN NHẬP HÀNG";
             // 
             // btnXoaHoaDon
             // 
             this.btnXoaHoaDon.AutoRoundedCorners = true;
-            this.btnXoaHoaDon.BorderRadius = 21;
+            this.btnXoaHoaDon.BorderRadius = 26;
             this.btnXoaHoaDon.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnXoaHoaDon.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnXoaHoaDon.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -216,9 +227,10 @@ namespace BTL.Forms
             this.btnXoaHoaDon.HoverState.FillColor = System.Drawing.Color.OrangeRed;
             this.btnXoaHoaDon.Image = ((System.Drawing.Image)(resources.GetObject("btnXoaHoaDon.Image")));
             this.btnXoaHoaDon.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnXoaHoaDon.Location = new System.Drawing.Point(11, 589);
+            this.btnXoaHoaDon.Location = new System.Drawing.Point(15, 725);
+            this.btnXoaHoaDon.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnXoaHoaDon.Name = "btnXoaHoaDon";
-            this.btnXoaHoaDon.Size = new System.Drawing.Size(180, 45);
+            this.btnXoaHoaDon.Size = new System.Drawing.Size(240, 55);
             this.btnXoaHoaDon.TabIndex = 117;
             this.btnXoaHoaDon.Text = "XÓA HÓA ĐƠN";
             this.btnXoaHoaDon.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -227,7 +239,7 @@ namespace BTL.Forms
             // btnXoaSanPham
             // 
             this.btnXoaSanPham.AutoRoundedCorners = true;
-            this.btnXoaSanPham.BorderRadius = 21;
+            this.btnXoaSanPham.BorderRadius = 26;
             this.btnXoaSanPham.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnXoaSanPham.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnXoaSanPham.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -238,9 +250,10 @@ namespace BTL.Forms
             this.btnXoaSanPham.HoverState.FillColor = System.Drawing.Color.OrangeRed;
             this.btnXoaSanPham.Image = ((System.Drawing.Image)(resources.GetObject("btnXoaSanPham.Image")));
             this.btnXoaSanPham.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnXoaSanPham.Location = new System.Drawing.Point(213, 509);
+            this.btnXoaSanPham.Location = new System.Drawing.Point(284, 626);
+            this.btnXoaSanPham.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnXoaSanPham.Name = "btnXoaSanPham";
-            this.btnXoaSanPham.Size = new System.Drawing.Size(180, 45);
+            this.btnXoaSanPham.Size = new System.Drawing.Size(240, 55);
             this.btnXoaSanPham.TabIndex = 116;
             this.btnXoaSanPham.Text = "XÓA SẢN PHẨM";
             this.btnXoaSanPham.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -249,7 +262,7 @@ namespace BTL.Forms
             // btnSua
             // 
             this.btnSua.AutoRoundedCorners = true;
-            this.btnSua.BorderRadius = 21;
+            this.btnSua.BorderRadius = 26;
             this.btnSua.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnSua.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnSua.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -260,9 +273,10 @@ namespace BTL.Forms
             this.btnSua.HoverState.FillColor = System.Drawing.Color.OrangeRed;
             this.btnSua.Image = ((System.Drawing.Image)(resources.GetObject("btnSua.Image")));
             this.btnSua.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnSua.Location = new System.Drawing.Point(11, 509);
+            this.btnSua.Location = new System.Drawing.Point(15, 626);
+            this.btnSua.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnSua.Name = "btnSua";
-            this.btnSua.Size = new System.Drawing.Size(180, 45);
+            this.btnSua.Size = new System.Drawing.Size(240, 55);
             this.btnSua.TabIndex = 115;
             this.btnSua.Text = "SỬA SẢN PHẨM";
             this.btnSua.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -271,7 +285,7 @@ namespace BTL.Forms
             // btnThem
             // 
             this.btnThem.AutoRoundedCorners = true;
-            this.btnThem.BorderRadius = 21;
+            this.btnThem.BorderRadius = 26;
             this.btnThem.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnThem.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnThem.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -282,9 +296,10 @@ namespace BTL.Forms
             this.btnThem.HoverState.FillColor = System.Drawing.Color.OrangeRed;
             this.btnThem.Image = ((System.Drawing.Image)(resources.GetObject("btnThem.Image")));
             this.btnThem.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnThem.Location = new System.Drawing.Point(11, 428);
+            this.btnThem.Location = new System.Drawing.Point(15, 527);
+            this.btnThem.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnThem.Name = "btnThem";
-            this.btnThem.Size = new System.Drawing.Size(180, 45);
+            this.btnThem.Size = new System.Drawing.Size(240, 55);
             this.btnThem.TabIndex = 114;
             this.btnThem.Text = "THÊM SẢN PHẨM";
             this.btnThem.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -294,9 +309,10 @@ namespace BTL.Forms
             // 
             this.panel2.Controls.Add(this.dataGridView1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel2.Location = new System.Drawing.Point(431, 0);
+            this.panel2.Location = new System.Drawing.Point(575, 0);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(510, 641);
+            this.panel2.Size = new System.Drawing.Size(680, 789);
             this.panel2.TabIndex = 113;
             // 
             // dataGridView1
@@ -331,6 +347,7 @@ namespace BTL.Forms
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dataGridView1.Location = new System.Drawing.Point(0, 0);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
@@ -343,8 +360,9 @@ namespace BTL.Forms
             dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.dataGridView1.RowHeadersVisible = false;
+            this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(510, 641);
+            this.dataGridView1.Size = new System.Drawing.Size(680, 789);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.dataGridView1.ThemeStyle.AlternatingRowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -379,9 +397,10 @@ namespace BTL.Forms
             this.txtgiamgia.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtgiamgia.FillColor = System.Drawing.Color.LightGray;
             this.txtgiamgia.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtgiamgia.Location = new System.Drawing.Point(148, 186);
+            this.txtgiamgia.Location = new System.Drawing.Point(197, 229);
+            this.txtgiamgia.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtgiamgia.Name = "txtgiamgia";
-            this.txtgiamgia.Size = new System.Drawing.Size(100, 36);
+            this.txtgiamgia.Size = new System.Drawing.Size(133, 44);
             this.txtgiamgia.TabIndex = 131;
             this.txtgiamgia.ValueChanged += new System.EventHandler(this.txtgiamgia_ValueChanged);
             this.txtgiamgia.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtgiamgia_KeyPress);
@@ -397,12 +416,13 @@ namespace BTL.Forms
             this.txttienhang.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txttienhang.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txttienhang.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txttienhang.Location = new System.Drawing.Point(148, 308);
+            this.txttienhang.Location = new System.Drawing.Point(197, 379);
+            this.txttienhang.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txttienhang.Name = "txttienhang";
             this.txttienhang.PasswordChar = '\0';
             this.txttienhang.PlaceholderText = "";
             this.txttienhang.SelectedText = "";
-            this.txttienhang.Size = new System.Drawing.Size(219, 36);
+            this.txttienhang.Size = new System.Drawing.Size(292, 44);
             this.txttienhang.TabIndex = 125;
             this.txttienhang.TextChanged += new System.EventHandler(this.txtsoluong_TextChanged);
             this.txttienhang.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtsoluong_KeyPress);
@@ -418,9 +438,10 @@ namespace BTL.Forms
             this.btnReset.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnReset.ForeColor = System.Drawing.Color.White;
             this.btnReset.Image = ((System.Drawing.Image)(resources.GetObject("btnReset.Image")));
-            this.btnReset.Location = new System.Drawing.Point(260, 428);
+            this.btnReset.Location = new System.Drawing.Point(347, 527);
+            this.btnReset.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnReset.Name = "btnReset";
-            this.btnReset.Size = new System.Drawing.Size(40, 40);
+            this.btnReset.Size = new System.Drawing.Size(53, 49);
             this.btnReset.TabIndex = 112;
             this.btnReset.TextColor = System.Drawing.Color.White;
             this.btnReset.UseVisualStyleBackColor = false;
@@ -437,21 +458,22 @@ namespace BTL.Forms
             this.cbHdb.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.cbHdb.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.cbHdb.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cbHdb.Location = new System.Drawing.Point(146, 69);
+            this.cbHdb.Location = new System.Drawing.Point(195, 85);
+            this.cbHdb.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbHdb.Name = "cbHdb";
             this.cbHdb.PasswordChar = '\0';
             this.cbHdb.PlaceholderText = "";
             this.cbHdb.SelectedText = "";
-            this.cbHdb.Size = new System.Drawing.Size(219, 36);
+            this.cbHdb.Size = new System.Drawing.Size(292, 44);
             this.cbHdb.TabIndex = 125;
             this.cbHdb.TextChanged += new System.EventHandler(this.txtsoluong_TextChanged);
             this.cbHdb.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtsoluong_KeyPress);
             // 
             // ChiTietHDN
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(941, 641);
+            this.ClientSize = new System.Drawing.Size(1255, 789);
             this.Controls.Add(this.txtgiamgia);
             this.Controls.Add(this.cbmahang);
             this.Controls.Add(this.guna2HtmlLabel8);
@@ -472,7 +494,9 @@ namespace BTL.Forms
             this.Controls.Add(this.btnThem);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.btnReset);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "ChiTietHDN";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ChiTietHDN";
             this.Load += new System.EventHandler(this.ChiTietHDN_Load);
             this.panel2.ResumeLayout(false);

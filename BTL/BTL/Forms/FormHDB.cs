@@ -21,31 +21,26 @@ namespace BTL
         SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\HocHanh(ki5)\C#\Projects\BTLv7\BTL\BTL\DataBase\DuLieu.mdf;Integrated Security=True");
         SqlCommand cmd;
         SqlDataReader dr;
-        string sql,sql1;
+        string sql, sql1;
 
 
         public FormHDB()
         {
             InitializeComponent();
-            
+
         }
 
-      
+
         public void Showresult()
         {
             DataTable dtHdb = DSHDB.DocBang("SELECT * FROM tblHoaDonBan");
             dataGridView1.DataSource = dtHdb;
             dataGridView1.ColumnHeadersDefaultCellStyle.Font = new Font("Arial", 9, FontStyle.Bold);
-            dataGridView1.Columns[0].HeaderText = "Số Hóa Đơn Bán";
+            dataGridView1.Columns[0].HeaderText = "Số HĐB";
             dataGridView1.Columns[1].HeaderText = "Mã Nhân Viên";
             dataGridView1.Columns[2].HeaderText = "Ngày Bán";
             dataGridView1.Columns[3].HeaderText = "Mã Khách Hàng";
             dataGridView1.Columns[4].HeaderText = "Tổng Tiền";
-            dataGridView1.Columns[0].Width = 130;
-            dataGridView1.Columns[1].Width = 120;
-            dataGridView1.Columns[2].Width = 90;
-            dataGridView1.Columns[3].Width = 120;
-            dataGridView1.Columns[4].Width = 100;
             dataGridView1.BackgroundColor = Color.White;
             dtHdb.Dispose();
             t = txthdb.Text;
@@ -66,7 +61,7 @@ namespace BTL
         void loadCMB()
         {
             string sql = "SELECT * FROM tblNhanVien";
-            cmd = new SqlCommand(sql,con);
+            cmd = new SqlCommand(sql, con);
             con.Open();
             dr = cmd.ExecuteReader();
             while (dr.Read())
@@ -74,7 +69,7 @@ namespace BTL
                 cbmanhanvien.Items.Add(dr["MaNV"]);
             }
             con.Close();
-            
+
         }
 
 
@@ -161,21 +156,21 @@ namespace BTL
             {
                 errorProvider1.Clear();
             }
-            
+
             return true;
 
         }
 
-       
 
-    
+
+
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-            DialogResult chon = MessageBox.Show("Bạn có chắc chắn thêm mới hóa đơn " + txthdb.Text + "  không?", "Thêm", MessageBoxButtons.YesNo);
-            if (chon == DialogResult.Yes)
+            if (isCheck())
             {
-                if (isCheck())
+                DialogResult chon = MessageBox.Show("Bạn có chắc chắn thêm mới hóa đơn " + txthdb.Text + "  không?", "Thêm", MessageBoxButtons.YesNo);
+                if (chon == DialogResult.Yes)
                 {
                     DataTable table = DSHDB.DocBang($"Select * From tblHoaDonBan Where SoHDB= '{txthdb.Text.Trim()}'");
                     DataTable table1 = DSHDB.DocBang($"Select * From tblKhachHang Where MaKH= '{txtmakhachhang.Text.Trim()}'");
@@ -192,13 +187,13 @@ namespace BTL
                     {
                         sql = $"Insert into tblHoaDonBan Values (N'{txthdb.Text}', N'{cbmanhanvien.Text}', N'{datetime.Value.ToString()}', N'{txtmakhachhang.Text}', N'{txttongtien.Text}')";
                         DSHDB.CapNhatDuLieu(sql);
-                       
+
                         Showresult();
                         resetvalue();
                         //ChiTietHDB f = new ChiTietHDB();
                         //f.Show();
                         MessageBox.Show("Thêm hóa đơn thành công!");
-                        
+
                     }
                 }
             }
@@ -214,7 +209,7 @@ namespace BTL
                     Showresult();
 
                     txthdb.Enabled = true;
-                    
+
 
                     MessageBox.Show("Sửa thành công");
                 }
@@ -241,7 +236,7 @@ namespace BTL
                     sql = "Delete From tblHoaDonBan Where SoHDB =N'" + txthdb.Text + "'";
                     DSHDB.CapNhatDuLieu(sql1);
                     DSHDB.CapNhatDuLieu(sql);
-                   
+
 
                     //Cap nhat lai DataGrid
 

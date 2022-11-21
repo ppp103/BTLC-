@@ -247,7 +247,6 @@ namespace BTL.Forms
             if (index == 2)
             {
                 int thang = dateTimePicker.Value.Month;
-               
                 int nam = dateTimePicker.Value.Year;
                 FormReport formReport = new FormReport(index, xuLy.DocBang($"Select * From BaoCao2('{txtInput.Text}', {thang}, {nam})"));
                 formReport.ShowDialog();
