@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BTL.Forms;
+using System;
 using System.Data;
 using System.Data.SqlClient;
 using System.IO;
@@ -213,7 +214,7 @@ namespace BTL
                         BinaryReader bs = new BinaryReader(Streem);
                         anh = bs.ReadBytes((int)Streem.Length);
                         strConnect.Open();
-                        string sql = $"Insert into tblHangHoa(MaHang,TenHang,SoLuong,DonGiaNhap,DonGiaBan,ThoiGianBaoHanh,Anh,GhiChu,MaLoai,MaHangSX,MaKL,MaCL,MaNuocSX,MaMau,MaCD,MaMua) Values ('" + txtMaHang.Text + "N','" + txtTenHang.Text + "','" + txtSoLuong.Text + "','" + txtDonGiaNhap.Text + "','" + txtDonGiaBan.Text + "','" + txtTGBH.Text + "',@anh, '" + txtGhiChu.Text + "',N'" + txtLoai.Text + "', N'" + txtHSX.Text + "', '" + txtKL.Text + "', N'" + txtCL.Text + "', '" + txtNSX.Text + "', N'" + txtMau.Text + "N', '" + txtCD.Text + "N', '" + txtMua.Text + "')";
+                        string sql = $"Insert into tblHangHoa(MaHang,TenHang,SoLuong,DonGiaNhap,DonGiaBan,ThoiGianBaoHanh,Anh,GhiChu,MaLoai,MaHangSX,MaKL,MaCL,MaNuocSX,MaMau,MaCD,MaMua) Values ('" + txtMaHang.Text + "','" + txtTenHang.Text + "','" + txtSoLuong.Text + "','" + txtDonGiaNhap.Text + "','" + txtDonGiaBan.Text + "','" + txtTGBH.Text + "',@anh, '" + txtGhiChu.Text + "','" + txtLoai.Text + "', '" + txtHSX.Text + "', '" + txtKL.Text + "', '" + txtCL.Text + "', '" + txtNSX.Text + "', '" + txtMau.Text + "', '" + txtCD.Text + "', '" + txtMua.Text + "')";
                         cmd = new SqlCommand(sql, strConnect);
                         cmd.Parameters.Add(new SqlParameter("@anh", anh));
                         int N = cmd.ExecuteNonQuery();
@@ -222,12 +223,10 @@ namespace BTL
                         strConnect.Close();
                         reset();
                         MessageBox.Show("Thêm thành công");
-
                     }
                 }
             }
         }
-
 
         private void guna2GradientButton1_Click(object sender, EventArgs e)
         {
@@ -258,20 +257,20 @@ namespace BTL
             }
             else
             {
-               if (MessageBox.Show("Bạn có muốn xóa sản phẩm có mã là:" +
-               txtMaHang.Text + " không?", "Thông báo",
-               MessageBoxButtons.YesNo, MessageBoxIcon.Question) ==
-               System.Windows.Forms.DialogResult.Yes)
+                if (MessageBox.Show("Bạn có muốn xóa sản phẩm có mã là:" +
+                txtMaHang.Text + " không?", "Thông báo",
+                MessageBoxButtons.YesNo, MessageBoxIcon.Question) ==
+                System.Windows.Forms.DialogResult.Yes)
                 {
-                    nam.CapNhatDuLieu("delete tblHangHoa where MaHang ='" + txtMaHang.Text.Trim() + "'");
-                    nam.CapNhatDuLieu($"Delete tblChiTietHoaDonBan where MaHang = '{txtMaHang.Text.Trim()}'");
+                    nam.CapNhatDuLieu("delete from tblHangHoa where MaHang ='" + txtMaHang.Text.Trim() + "'");
+                    nam.CapNhatDuLieu($"Delete from tblChiTietHoaDonBan where MaHang = '{txtMaHang.Text.Trim()}'");
                     dataGridView1.DataSource = nam.DocBang("Select * from tblHangHoa");
                     reset();
                     btnXoa.Enabled = true;
                     btnSua.Enabled = true;
                     guna2Button1.Enabled = true;
                     btnLamMoi.Enabled = true;
-               }
+                }
             }
         }
 
@@ -381,9 +380,14 @@ namespace BTL
                     CN.Close();
 
                     //nam.CapNhatDuLieu($"update tblHangHoa set  TenHang = N'{txtTenHang.Text.Trim()}', SoLuong = N'{txtSoLuong.Text}', DonGiaNhap = N'{txtDonGiaNhap.Text}', DonGiaBan = N'{txtDonGiaBan.Text}', ThoiGianBaoHanh = N'{txtTGBH.Text}', Anh = '{picture.InitialImage}', GhiChu = N'{txtGhiChu.Text}', MaKL = '{cbKL.Text}' where MaHang = N'{txtMaHang.Text.Trim()}' ");
+                    nam.CapNhatDuLieu($"Update tblChiTietHoaDonNhap set DonGiaNhap = {txtDonGiaNhap.Text} Where tblChiTietHoaDonNhap.MaHang = '{txtMaHang.Text}'");
+                    nam.CapNhatDuLieu($"Update tblChiTietHoaDonNhap set ThanhTien = {Convert.ToDouble(txtDonGiaNhap.Text)} * SoLuong - {Convert.ToDouble(txtDonGiaNhap.Text)} * SoLuong * GiamGia / 100 Where tblChiTietHoaDonNhap.MaHang = '{txtMaHang.Text}'");
+
                     hiengiatri();
 
                     MessageBox.Show("Sửa thành công");
+                    ChiTietHDN chiTietHDN = new ChiTietHDN();
+                    chiTietHDN.ChiTietHDN_Load(this, e);
                 }
                 else
                 {
@@ -396,17 +400,37 @@ namespace BTL
 
         private void txtDonGiaNhap_TextChanged(object sender, EventArgs e)
         {
-            if (txtDonGiaNhap.Text == "")
+            try
             {
-                txtDonGiaBan.Text = "0";
+                if (txtDonGiaNhap.Text == "")
+                {
+                    txtDonGiaBan.Text = "0";
+                }
+                else
+                {
+                    txtDonGiaBan.Text = (float.Parse(txtDonGiaNhap.Text) * 1.1).ToString();
+                }
+
             }
-            else
+            catch (Exception ex)
             {
-                txtDonGiaBan.Text = (float.Parse(txtDonGiaNhap.Text) * 1.1).ToString();
+                MessageBox.Show("Vui lòng nhập đúng định dạng");
+            }
+        }
+
+        private void txtDonGiaNhap_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
             }
         }
         public string kl;
 
+        private void txtSoLuong_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            txtDonGiaNhap_KeyPress(this, e);
+        }
 
         private void txtDonGiaBan_TextChanged(object sender, EventArgs e)
         {

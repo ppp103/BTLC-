@@ -35,7 +35,6 @@ namespace BTL
                     MessageBox.Show("Có tìm thấy dữ liệu");
                 }
                 dgvKetQua.DataSource = table;
-
             }
         }
 
@@ -67,38 +66,31 @@ namespace BTL
                     dgvKetQua.DataSource = dtHH;
                 }
 
-                if (txtChon.Text == "Mã nhà cung cấp" && !Check())
+                if (txtChon.Text == "Nhà cung cấp")
                 {
-                    DataTable dtHH = XuLy.DocBang("select * from tblHoaDonNhap where MaNCC like N'%" + txtNhap.Text.Trim() + "%' ");
+                    DataTable dtHH = XuLy.DocBang("select * from tblHoaDonNhap Join tblNhaCungCap on tblHoaDonNhap.MaNCC = tblNhaCungCap.MaNCC where TenNCC like N'%" + txtNhap.Text.Trim() + "%' ");
                     dgvKetQua.DataSource = dtHH;
                 }
             }
-            
-            if (txtChon.Text == "Ngày nhập")
-            {
-                DataTable dtHH = XuLy.DocBang("select * from tblHoaDonNhap where NgayNhap like N'%" + txtNhap.Text.Trim() + "%' ");
-                dgvKetQua.DataSource = dtHH;
-            }
-            
         }
 
         private void btnTim_Click(object sender, EventArgs e)
         {
-            if (txtChon.Text == "Mã hàng")
-            {
-                DataTable dtHH = XuLy.DocBang("select * from tblChiTietHoaDonNhap where MaHang like N'%" + txtNhap.Text.Trim() + "%' ");
-                dgvKetQua.DataSource = dtHH;
-            }
+            //if (txtChon.Text == "Mã hàng")
+            //{
+            //    DataTable dtHH = XuLy.DocBang("select * from tblChiTietHoaDonNhap where MaHang like N'%" + txtNhap.Text.Trim() + "%' ");
+            //    dgvKetQua.DataSource = dtHH;
+            //}
             if (txtChon.Text == "Ngày nhập")
             {
                 DataTable dtHH = XuLy.DocBang("select * from tblHoaDonNhap where NgayNhap like N'%" + txtNhap.Text.Trim() + "%' ");
                 dgvKetQua.DataSource = dtHH;
             }
-            if (txtChon.Text == "Mã nhà cung cấp")
-            {
-                DataTable dtHH = XuLy.DocBang("select * from tblHoaDonNhap where MaNCC like N'%" + txtNhap.Text.Trim() + "%' ");
-                dgvKetQua.DataSource = dtHH;
-            }
+            //if (txtChon.SelectedIndex == 2)
+            //{
+            //    DataTable dtHH = XuLy.DocBang("select * from tblHoaDonNhap where MaNCC like N'%" + txtNhap.Text.Trim() + "%' ");
+            //    dgvKetQua.DataSource = dtHH;
+            //}
         }
 
         private void txtChon_SelectedIndexChanged(object sender, EventArgs e)

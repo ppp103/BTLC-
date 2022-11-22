@@ -12,7 +12,7 @@ using System.Windows.Forms;
 namespace BTL.Forms
 {
     public partial class FormHDN : Form
-    { 
+    {
         public static string t;
         XuLyCSDL DSHDB = new XuLyCSDL();
         SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\HocHanh(ki5)\C#\Projects\BTLv7\BTL\BTL\DataBase\DuLieu.mdf;Integrated Security=True");
@@ -42,7 +42,7 @@ namespace BTL.Forms
         }
         private void FormHDB_Load(object sender, EventArgs e)
         {
-            
+
 
         }
         void loadCMB()
@@ -71,7 +71,7 @@ namespace BTL.Forms
         }
         private void radio5_Click(object sender, EventArgs e)
         {
-            
+
         }
         public bool isCheck()
         {
@@ -135,7 +135,7 @@ namespace BTL.Forms
         }
         private void guna2Button3_Click(object sender, EventArgs e)
         {
-            if (txthdb.Text != null)
+            if (txthdb.Text != "")
             {
                 Forms.ChiTietHDN f1 = new Forms.ChiTietHDN();
                 f1.Show();
@@ -175,35 +175,38 @@ namespace BTL.Forms
 
         private void btnThem_Click(object sender, EventArgs e)
         {
-            DialogResult chon = MessageBox.Show("Bạn có chắc chắn thêm mới hóa đơn " + txthdb.Text + "  không?", "Thêm", MessageBoxButtons.YesNo);
-            if (chon == DialogResult.Yes)
+            if (isCheck())
             {
-                if (isCheck())
+                DialogResult chon = MessageBox.Show("Bạn có chắc chắn thêm mới hóa đơn " + txthdb.Text + "  không?", "Thêm", MessageBoxButtons.YesNo);
+                if (chon == DialogResult.Yes)
                 {
-                    DataTable table = DSHDB.DocBang($"Select * From tblHoaDonNhap Where SoHDN= '{txthdb.Text.Trim()}'");
-                    DataTable table1 = DSHDB.DocBang($"Select * From tblNhaCungCap Where MaNCC= '{txtmakhachhang.Text.Trim()}'");
-
-                    if (table.Rows.Count != 0)
+                    if (isCheck())
                     {
-                        MessageBox.Show($"Đã tồn tại hóa đơn {txthdb.Text} trong danh sách");
-                    }
-                    else if (table1.Rows.Count == 0)
-                    {
-                        MessageBox.Show($"Không tồn tại mã NCC {txtmakhachhang.Text} trong danh sách");
-                    }
-                    else
-                    {
-                        sql = $"Insert into tblHoaDonNhap Values (N'{txthdb.Text}', N'{datetime.Value.ToString()}',N'{txttongtien.Text}', N'{txtmakhachhang.Text}', N'{cbmanhanvien.Text}' )";
-                        DSHDB.CapNhatDuLieu(sql);
+                        DataTable table = DSHDB.DocBang($"Select * From tblHoaDonNhap Where SoHDN= '{txthdb.Text.Trim()}'");
+                        DataTable table1 = DSHDB.DocBang($"Select * From tblNhaCungCap Where MaNCC= '{txtmakhachhang.Text.Trim()}'");
 
-                        Showresult();
-                        resetvalue();
-                        //ChiTietHDB f = new ChiTietHDB();
-                        //f.Show();
-                        MessageBox.Show("Thêm hóa đơn thành công!");
+                        if (table.Rows.Count != 0)
+                        {
+                            MessageBox.Show($"Đã tồn tại hóa đơn {txthdb.Text} trong danh sách");
+                        }
+                        else if (table1.Rows.Count == 0)
+                        {
+                            MessageBox.Show($"Không tồn tại mã NCC {txtmakhachhang.Text} trong danh sách");
+                        }
+                        else
+                        {
+                            sql = $"Insert into tblHoaDonNhap Values (N'{txthdb.Text}', N'{datetime.Value.ToString()}',N'{txttongtien.Text}', N'{txtmakhachhang.Text}', N'{cbmanhanvien.Text}' )";
+                            DSHDB.CapNhatDuLieu(sql);
 
+                            Showresult();
+                            resetvalue();
+                            //ChiTietHDB f = new ChiTietHDB();
+                            //f.Show();
+                            MessageBox.Show("Thêm hóa đơn thành công!");
+                        }
                     }
                 }
+
             }
         }
 

@@ -318,10 +318,10 @@
             this.btnXoaHoaDon.HoverState.FillColor = System.Drawing.Color.OrangeRed;
             this.btnXoaHoaDon.Image = ((System.Drawing.Image)(resources.GetObject("btnXoaHoaDon.Image")));
             this.btnXoaHoaDon.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnXoaHoaDon.Location = new System.Drawing.Point(19, 725);
+            this.btnXoaHoaDon.Location = new System.Drawing.Point(19, 698);
             this.btnXoaHoaDon.Margin = new System.Windows.Forms.Padding(4);
             this.btnXoaHoaDon.Name = "btnXoaHoaDon";
-            this.btnXoaHoaDon.Size = new System.Drawing.Size(240, 55);
+            this.btnXoaHoaDon.Size = new System.Drawing.Size(201, 55);
             this.btnXoaHoaDon.TabIndex = 95;
             this.btnXoaHoaDon.Text = "XÓA HÓA ĐƠN";
             this.btnXoaHoaDon.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -341,10 +341,10 @@
             this.btnXoaSanPham.HoverState.FillColor = System.Drawing.Color.OrangeRed;
             this.btnXoaSanPham.Image = ((System.Drawing.Image)(resources.GetObject("btnXoaSanPham.Image")));
             this.btnXoaSanPham.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnXoaSanPham.Location = new System.Drawing.Point(288, 626);
+            this.btnXoaSanPham.Location = new System.Drawing.Point(264, 626);
             this.btnXoaSanPham.Margin = new System.Windows.Forms.Padding(4);
             this.btnXoaSanPham.Name = "btnXoaSanPham";
-            this.btnXoaSanPham.Size = new System.Drawing.Size(240, 55);
+            this.btnXoaSanPham.Size = new System.Drawing.Size(195, 55);
             this.btnXoaSanPham.TabIndex = 94;
             this.btnXoaSanPham.Text = "XÓA SẢN PHẨM";
             this.btnXoaSanPham.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -367,7 +367,7 @@
             this.btnSua.Location = new System.Drawing.Point(19, 626);
             this.btnSua.Margin = new System.Windows.Forms.Padding(4);
             this.btnSua.Name = "btnSua";
-            this.btnSua.Size = new System.Drawing.Size(240, 55);
+            this.btnSua.Size = new System.Drawing.Size(201, 55);
             this.btnSua.TabIndex = 93;
             this.btnSua.Text = "SỬA SẢN PHẨM";
             this.btnSua.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -387,10 +387,10 @@
             this.btnThem.HoverState.FillColor = System.Drawing.Color.OrangeRed;
             this.btnThem.Image = ((System.Drawing.Image)(resources.GetObject("btnThem.Image")));
             this.btnThem.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnThem.Location = new System.Drawing.Point(19, 527);
+            this.btnThem.Location = new System.Drawing.Point(19, 552);
             this.btnThem.Margin = new System.Windows.Forms.Padding(4);
             this.btnThem.Name = "btnThem";
-            this.btnThem.Size = new System.Drawing.Size(240, 55);
+            this.btnThem.Size = new System.Drawing.Size(209, 55);
             this.btnThem.TabIndex = 92;
             this.btnThem.Text = "THÊM SẢN PHẨM";
             this.btnThem.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -491,7 +491,7 @@
             this.btnReset.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnReset.ForeColor = System.Drawing.Color.White;
             this.btnReset.Image = ((System.Drawing.Image)(resources.GetObject("btnReset.Image")));
-            this.btnReset.Location = new System.Drawing.Point(282, 527);
+            this.btnReset.Location = new System.Drawing.Point(264, 552);
             this.btnReset.Margin = new System.Windows.Forms.Padding(4);
             this.btnReset.Name = "btnReset";
             this.btnReset.Size = new System.Drawing.Size(53, 49);

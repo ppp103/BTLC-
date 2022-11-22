@@ -30,16 +30,16 @@ namespace BTL
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.txtNSX = new System.Windows.Forms.TextBox();
             this.txtMau = new System.Windows.Forms.TextBox();
             this.txtCD = new System.Windows.Forms.TextBox();
             this.txtMua = new System.Windows.Forms.TextBox();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.ađa = new System.Windows.Forms.Label();
@@ -91,11 +91,15 @@ namespace BTL
             // 
             this.panel1.Controls.Add(this.dataGridView1);
             this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.txtNSX);
+            this.panel1.Controls.Add(this.txtMau);
+            this.panel1.Controls.Add(this.txtCD);
+            this.panel1.Controls.Add(this.txtMua);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel1.Location = new System.Drawing.Point(727, 0);
+            this.panel1.Location = new System.Drawing.Point(1046, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(799, 1032);
+            this.panel1.Size = new System.Drawing.Size(643, 1032);
             this.panel1.TabIndex = 26;
             // 
             // dataGridView1
@@ -104,24 +108,24 @@ namespace BTL
             this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.AllowUserToResizeColumns = false;
             this.dataGridView1.AllowUserToResizeRows = false;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridView1.ColumnHeadersHeight = 30;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle4;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.EnableHeadersVisualStyles = false;
             this.dataGridView1.Location = new System.Drawing.Point(0, 0);
@@ -131,7 +135,7 @@ namespace BTL
             this.dataGridView1.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
             this.dataGridView1.RowTemplate.Height = 100;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(799, 1032);
+            this.dataGridView1.Size = new System.Drawing.Size(643, 1032);
             this.dataGridView1.TabIndex = 3;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -143,13 +147,9 @@ namespace BTL
             this.textBox1.Size = new System.Drawing.Size(292, 22);
             this.textBox1.TabIndex = 20;
             // 
-            // errorProvider1
-            // 
-            this.errorProvider1.ContainerControl = this;
-            // 
             // txtNSX
             // 
-            this.txtNSX.Location = new System.Drawing.Point(727, 290);
+            this.txtNSX.Location = new System.Drawing.Point(49, 278);
             this.txtNSX.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtNSX.Name = "txtNSX";
             this.txtNSX.Size = new System.Drawing.Size(71, 22);
@@ -158,7 +158,7 @@ namespace BTL
             // 
             // txtMau
             // 
-            this.txtMau.Location = new System.Drawing.Point(727, 317);
+            this.txtMau.Location = new System.Drawing.Point(49, 305);
             this.txtMau.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtMau.Name = "txtMau";
             this.txtMau.Size = new System.Drawing.Size(71, 22);
@@ -167,7 +167,7 @@ namespace BTL
             // 
             // txtCD
             // 
-            this.txtCD.Location = new System.Drawing.Point(727, 346);
+            this.txtCD.Location = new System.Drawing.Point(49, 334);
             this.txtCD.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtCD.Name = "txtCD";
             this.txtCD.Size = new System.Drawing.Size(71, 22);
@@ -176,12 +176,16 @@ namespace BTL
             // 
             // txtMua
             // 
-            this.txtMua.Location = new System.Drawing.Point(727, 370);
+            this.txtMua.Location = new System.Drawing.Point(49, 358);
             this.txtMua.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtMua.Name = "txtMua";
             this.txtMua.Size = new System.Drawing.Size(71, 22);
             this.txtMua.TabIndex = 19;
             this.txtMua.Visible = false;
+            // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
             // 
             // label1
             // 
@@ -198,7 +202,7 @@ namespace BTL
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F);
-            this.label2.Location = new System.Drawing.Point(26, 67);
+            this.label2.Location = new System.Drawing.Point(27, 58);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(99, 28);
@@ -209,7 +213,7 @@ namespace BTL
             // 
             this.ađa.AutoSize = true;
             this.ađa.Font = new System.Drawing.Font("Segoe UI Semibold", 12F);
-            this.ađa.Location = new System.Drawing.Point(26, 317);
+            this.ađa.Location = new System.Drawing.Point(28, 296);
             this.ađa.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.ađa.Name = "ađa";
             this.ađa.Size = new System.Drawing.Size(49, 28);
@@ -220,7 +224,7 @@ namespace BTL
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 12F);
-            this.label3.Location = new System.Drawing.Point(26, 122);
+            this.label3.Location = new System.Drawing.Point(28, 101);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(99, 28);
@@ -231,7 +235,7 @@ namespace BTL
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 12F);
-            this.label4.Location = new System.Drawing.Point(26, 169);
+            this.label4.Location = new System.Drawing.Point(28, 148);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(140, 28);
@@ -242,7 +246,7 @@ namespace BTL
             // 
             this.ád.AutoSize = true;
             this.ád.Font = new System.Drawing.Font("Segoe UI Semibold", 12F);
-            this.ád.Location = new System.Drawing.Point(26, 209);
+            this.ád.Location = new System.Drawing.Point(28, 188);
             this.ád.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.ád.Name = "ád";
             this.ád.Size = new System.Drawing.Size(123, 28);
@@ -253,7 +257,7 @@ namespace BTL
             // 
             this.áđâ.AutoSize = true;
             this.áđâ.Font = new System.Drawing.Font("Segoe UI Semibold", 12F);
-            this.áđâ.Location = new System.Drawing.Point(23, 257);
+            this.áđâ.Location = new System.Drawing.Point(25, 236);
             this.áđâ.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.áđâ.Name = "áđâ";
             this.áđâ.Size = new System.Drawing.Size(194, 28);
@@ -264,7 +268,7 @@ namespace BTL
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI Semibold", 12F);
-            this.label6.Location = new System.Drawing.Point(26, 363);
+            this.label6.Location = new System.Drawing.Point(28, 342);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(85, 28);
@@ -275,7 +279,7 @@ namespace BTL
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 12F);
-            this.label5.Location = new System.Drawing.Point(26, 406);
+            this.label5.Location = new System.Drawing.Point(28, 385);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(117, 28);
@@ -285,17 +289,17 @@ namespace BTL
             // txtMaHang
             // 
             this.txtMaHang.Font = new System.Drawing.Font("Segoe UI Semibold", 11F);
-            this.txtMaHang.Location = new System.Drawing.Point(292, 13);
+            this.txtMaHang.Location = new System.Drawing.Point(291, 13);
             this.txtMaHang.Margin = new System.Windows.Forms.Padding(4);
             this.txtMaHang.Name = "txtMaHang";
-            this.txtMaHang.Size = new System.Drawing.Size(401, 32);
+            this.txtMaHang.Size = new System.Drawing.Size(288, 32);
             this.txtMaHang.TabIndex = 14;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI Semibold", 12F);
-            this.label7.Location = new System.Drawing.Point(28, 455);
+            this.label7.Location = new System.Drawing.Point(28, 430);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(49, 28);
@@ -306,7 +310,7 @@ namespace BTL
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Segoe UI Semibold", 12F);
-            this.label8.Location = new System.Drawing.Point(28, 511);
+            this.label8.Location = new System.Drawing.Point(28, 478);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(147, 28);
@@ -316,26 +320,27 @@ namespace BTL
             // txtSoLuong
             // 
             this.txtSoLuong.Font = new System.Drawing.Font("Segoe UI Semibold", 11F);
-            this.txtSoLuong.Location = new System.Drawing.Point(291, 118);
+            this.txtSoLuong.Location = new System.Drawing.Point(293, 97);
             this.txtSoLuong.Margin = new System.Windows.Forms.Padding(4);
             this.txtSoLuong.Name = "txtSoLuong";
-            this.txtSoLuong.Size = new System.Drawing.Size(402, 32);
+            this.txtSoLuong.Size = new System.Drawing.Size(287, 32);
             this.txtSoLuong.TabIndex = 21;
+            this.txtSoLuong.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSoLuong_KeyPress);
             // 
             // txtTenHang
             // 
             this.txtTenHang.Font = new System.Drawing.Font("Segoe UI Semibold", 11F);
-            this.txtTenHang.Location = new System.Drawing.Point(291, 63);
+            this.txtTenHang.Location = new System.Drawing.Point(292, 54);
             this.txtTenHang.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtTenHang.Name = "txtTenHang";
-            this.txtTenHang.Size = new System.Drawing.Size(403, 32);
+            this.txtTenHang.Size = new System.Drawing.Size(288, 32);
             this.txtTenHang.TabIndex = 21;
             // 
             // label9
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Segoe UI Semibold", 12F);
-            this.label9.Location = new System.Drawing.Point(28, 557);
+            this.label9.Location = new System.Drawing.Point(28, 512);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(97, 28);
@@ -345,18 +350,19 @@ namespace BTL
             // txtDonGiaNhap
             // 
             this.txtDonGiaNhap.Font = new System.Drawing.Font("Segoe UI Semibold", 11F);
-            this.txtDonGiaNhap.Location = new System.Drawing.Point(291, 165);
+            this.txtDonGiaNhap.Location = new System.Drawing.Point(293, 144);
             this.txtDonGiaNhap.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtDonGiaNhap.Name = "txtDonGiaNhap";
             this.txtDonGiaNhap.Size = new System.Drawing.Size(92, 32);
             this.txtDonGiaNhap.TabIndex = 17;
             this.txtDonGiaNhap.TextChanged += new System.EventHandler(this.txtDonGiaNhap_TextChanged);
+            this.txtDonGiaNhap.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDonGiaNhap_KeyPress);
             // 
             // label10
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Segoe UI Semibold", 12F);
-            this.label10.Location = new System.Drawing.Point(29, 613);
+            this.label10.Location = new System.Drawing.Point(28, 559);
             this.label10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(146, 28);
@@ -367,7 +373,7 @@ namespace BTL
             // 
             this.txtDonGiaBan.Enabled = false;
             this.txtDonGiaBan.Font = new System.Drawing.Font("Segoe UI Semibold", 11F);
-            this.txtDonGiaBan.Location = new System.Drawing.Point(291, 209);
+            this.txtDonGiaBan.Location = new System.Drawing.Point(293, 188);
             this.txtDonGiaBan.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtDonGiaBan.Name = "txtDonGiaBan";
             this.txtDonGiaBan.Size = new System.Drawing.Size(92, 32);
@@ -378,7 +384,7 @@ namespace BTL
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Segoe UI Semibold", 12F);
-            this.label11.Location = new System.Drawing.Point(29, 663);
+            this.label11.Location = new System.Drawing.Point(27, 603);
             this.label11.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(52, 28);
@@ -388,7 +394,7 @@ namespace BTL
             // txtTGBH
             // 
             this.txtTGBH.Font = new System.Drawing.Font("Segoe UI Semibold", 11F);
-            this.txtTGBH.Location = new System.Drawing.Point(291, 257);
+            this.txtTGBH.Location = new System.Drawing.Point(293, 236);
             this.txtTGBH.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtTGBH.Name = "txtTGBH";
             this.txtTGBH.Size = new System.Drawing.Size(92, 32);
@@ -396,7 +402,7 @@ namespace BTL
             // 
             // txtKL
             // 
-            this.txtKL.Location = new System.Drawing.Point(542, 195);
+            this.txtKL.Location = new System.Drawing.Point(455, 188);
             this.txtKL.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtKL.Name = "txtKL";
             this.txtKL.Size = new System.Drawing.Size(71, 22);
@@ -405,7 +411,7 @@ namespace BTL
             // 
             // txtLoai
             // 
-            this.txtLoai.Location = new System.Drawing.Point(542, 227);
+            this.txtLoai.Location = new System.Drawing.Point(455, 220);
             this.txtLoai.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtLoai.Name = "txtLoai";
             this.txtLoai.Size = new System.Drawing.Size(71, 22);
@@ -414,7 +420,7 @@ namespace BTL
             // 
             // txtHSX
             // 
-            this.txtHSX.Location = new System.Drawing.Point(542, 253);
+            this.txtHSX.Location = new System.Drawing.Point(455, 246);
             this.txtHSX.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtHSX.Name = "txtHSX";
             this.txtHSX.Size = new System.Drawing.Size(71, 22);
@@ -423,7 +429,7 @@ namespace BTL
             // 
             // txtCL
             // 
-            this.txtCL.Location = new System.Drawing.Point(542, 278);
+            this.txtCL.Location = new System.Drawing.Point(455, 278);
             this.txtCL.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtCL.Name = "txtCL";
             this.txtCL.Size = new System.Drawing.Size(71, 22);
@@ -434,7 +440,7 @@ namespace BTL
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Segoe UI Semibold", 12F);
-            this.label12.Location = new System.Drawing.Point(29, 714);
+            this.label12.Location = new System.Drawing.Point(31, 648);
             this.label12.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(116, 28);
@@ -444,17 +450,17 @@ namespace BTL
             // txtGhiChu
             // 
             this.txtGhiChu.Font = new System.Drawing.Font("Segoe UI Semibold", 11F);
-            this.txtGhiChu.Location = new System.Drawing.Point(289, 363);
+            this.txtGhiChu.Location = new System.Drawing.Point(291, 342);
             this.txtGhiChu.Margin = new System.Windows.Forms.Padding(4);
             this.txtGhiChu.Name = "txtGhiChu";
-            this.txtGhiChu.Size = new System.Drawing.Size(401, 32);
+            this.txtGhiChu.Size = new System.Drawing.Size(289, 32);
             this.txtGhiChu.TabIndex = 20;
             // 
             // label13
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Segoe UI Semibold", 12F);
-            this.label13.Location = new System.Drawing.Point(29, 776);
+            this.label13.Location = new System.Drawing.Point(30, 692);
             this.label13.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(52, 28);
@@ -475,7 +481,7 @@ namespace BTL
             this.guna2Button1.Location = new System.Drawing.Point(31, 952);
             this.guna2Button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.Size = new System.Drawing.Size(124, 51);
+            this.guna2Button1.Size = new System.Drawing.Size(96, 51);
             this.guna2Button1.TabIndex = 27;
             this.guna2Button1.Text = "NHẬP";
             this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
@@ -493,10 +499,10 @@ namespace BTL
             this.btnSua.FillColor = System.Drawing.Color.Lime;
             this.btnSua.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSua.ForeColor = System.Drawing.Color.White;
-            this.btnSua.Location = new System.Drawing.Point(173, 952);
+            this.btnSua.Location = new System.Drawing.Point(144, 952);
             this.btnSua.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSua.Name = "btnSua";
-            this.btnSua.Size = new System.Drawing.Size(125, 51);
+            this.btnSua.Size = new System.Drawing.Size(103, 51);
             this.btnSua.TabIndex = 27;
             this.btnSua.Text = "SỬA";
             this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
@@ -513,10 +519,10 @@ namespace BTL
             this.btnXoa.FillColor = System.Drawing.Color.Fuchsia;
             this.btnXoa.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnXoa.ForeColor = System.Drawing.Color.White;
-            this.btnXoa.Location = new System.Drawing.Point(325, 952);
+            this.btnXoa.Location = new System.Drawing.Point(265, 952);
             this.btnXoa.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnXoa.Name = "btnXoa";
-            this.btnXoa.Size = new System.Drawing.Size(124, 51);
+            this.btnXoa.Size = new System.Drawing.Size(104, 51);
             this.btnXoa.TabIndex = 27;
             this.btnXoa.Text = "XÓA";
             this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
@@ -533,10 +539,10 @@ namespace BTL
             this.btnLamMoi.FillColor = System.Drawing.Color.Red;
             this.btnLamMoi.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLamMoi.ForeColor = System.Drawing.Color.White;
-            this.btnLamMoi.Location = new System.Drawing.Point(474, 952);
+            this.btnLamMoi.Location = new System.Drawing.Point(391, 952);
             this.btnLamMoi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnLamMoi.Name = "btnLamMoi";
-            this.btnLamMoi.Size = new System.Drawing.Size(159, 51);
+            this.btnLamMoi.Size = new System.Drawing.Size(121, 51);
             this.btnLamMoi.TabIndex = 27;
             this.btnLamMoi.Text = "Làm Mới";
             this.btnLamMoi.Click += new System.EventHandler(this.btnLamMoi_Click);
@@ -544,10 +550,10 @@ namespace BTL
             // picture
             // 
             this.picture.ImageRotate = 0F;
-            this.picture.Location = new System.Drawing.Point(448, 165);
+            this.picture.Location = new System.Drawing.Point(417, 144);
             this.picture.Margin = new System.Windows.Forms.Padding(4);
             this.picture.Name = "picture";
-            this.picture.Size = new System.Drawing.Size(245, 181);
+            this.picture.Size = new System.Drawing.Size(165, 174);
             this.picture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picture.TabIndex = 28;
             this.picture.TabStop = false;
@@ -563,7 +569,7 @@ namespace BTL
             this.guna2GradientButton1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.guna2GradientButton1.Font = new System.Drawing.Font("Segoe UI Semibold", 10F);
             this.guna2GradientButton1.ForeColor = System.Drawing.Color.White;
-            this.guna2GradientButton1.Location = new System.Drawing.Point(290, 307);
+            this.guna2GradientButton1.Location = new System.Drawing.Point(292, 286);
             this.guna2GradientButton1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.guna2GradientButton1.Name = "guna2GradientButton1";
             this.guna2GradientButton1.Size = new System.Drawing.Size(115, 32);
@@ -575,10 +581,10 @@ namespace BTL
             // 
             this.cbKL.Font = new System.Drawing.Font("Segoe UI Semibold", 11F);
             this.cbKL.FormattingEnabled = true;
-            this.cbKL.Location = new System.Drawing.Point(289, 406);
+            this.cbKL.Location = new System.Drawing.Point(291, 385);
             this.cbKL.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbKL.Name = "cbKL";
-            this.cbKL.Size = new System.Drawing.Size(292, 33);
+            this.cbKL.Size = new System.Drawing.Size(289, 33);
             this.cbKL.TabIndex = 31;
             this.cbKL.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
@@ -586,7 +592,7 @@ namespace BTL
             // 
             this.cbLoai.Font = new System.Drawing.Font("Segoe UI Semibold", 11F);
             this.cbLoai.FormattingEnabled = true;
-            this.cbLoai.Location = new System.Drawing.Point(289, 455);
+            this.cbLoai.Location = new System.Drawing.Point(289, 430);
             this.cbLoai.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbLoai.Name = "cbLoai";
             this.cbLoai.Size = new System.Drawing.Size(292, 33);
@@ -597,7 +603,7 @@ namespace BTL
             // 
             this.cbHSX.Font = new System.Drawing.Font("Segoe UI Semibold", 11F);
             this.cbHSX.FormattingEnabled = true;
-            this.cbHSX.Location = new System.Drawing.Point(289, 506);
+            this.cbHSX.Location = new System.Drawing.Point(289, 473);
             this.cbHSX.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbHSX.Name = "cbHSX";
             this.cbHSX.Size = new System.Drawing.Size(292, 33);
@@ -608,7 +614,7 @@ namespace BTL
             // 
             this.cbCL.Font = new System.Drawing.Font("Segoe UI Semibold", 11F);
             this.cbCL.FormattingEnabled = true;
-            this.cbCL.Location = new System.Drawing.Point(290, 560);
+            this.cbCL.Location = new System.Drawing.Point(290, 515);
             this.cbCL.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbCL.Name = "cbCL";
             this.cbCL.Size = new System.Drawing.Size(292, 33);
@@ -619,7 +625,7 @@ namespace BTL
             // 
             this.cbNSX.Font = new System.Drawing.Font("Segoe UI Semibold", 11F);
             this.cbNSX.FormattingEnabled = true;
-            this.cbNSX.Location = new System.Drawing.Point(290, 613);
+            this.cbNSX.Location = new System.Drawing.Point(289, 559);
             this.cbNSX.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbNSX.Name = "cbNSX";
             this.cbNSX.Size = new System.Drawing.Size(292, 33);
@@ -630,7 +636,7 @@ namespace BTL
             // 
             this.cbMau.Font = new System.Drawing.Font("Segoe UI Semibold", 11F);
             this.cbMau.FormattingEnabled = true;
-            this.cbMau.Location = new System.Drawing.Point(290, 663);
+            this.cbMau.Location = new System.Drawing.Point(288, 603);
             this.cbMau.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbMau.Name = "cbMau";
             this.cbMau.Size = new System.Drawing.Size(292, 33);
@@ -641,7 +647,7 @@ namespace BTL
             // 
             this.cbCD.Font = new System.Drawing.Font("Segoe UI Semibold", 11F);
             this.cbCD.FormattingEnabled = true;
-            this.cbCD.Location = new System.Drawing.Point(288, 714);
+            this.cbCD.Location = new System.Drawing.Point(290, 648);
             this.cbCD.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbCD.Name = "cbCD";
             this.cbCD.Size = new System.Drawing.Size(292, 33);
@@ -652,7 +658,7 @@ namespace BTL
             // 
             this.cbMua.Font = new System.Drawing.Font("Segoe UI Semibold", 11F);
             this.cbMua.FormattingEnabled = true;
-            this.cbMua.Location = new System.Drawing.Point(288, 776);
+            this.cbMua.Location = new System.Drawing.Point(289, 692);
             this.cbMua.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbMua.Name = "cbMua";
             this.cbMua.Size = new System.Drawing.Size(292, 33);
@@ -664,7 +670,7 @@ namespace BTL
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Linen;
-            this.ClientSize = new System.Drawing.Size(1526, 1032);
+            this.ClientSize = new System.Drawing.Size(1689, 1032);
             this.Controls.Add(this.cbMua);
             this.Controls.Add(this.cbCD);
             this.Controls.Add(this.cbMau);
@@ -683,10 +689,6 @@ namespace BTL
             this.Controls.Add(this.label13);
             this.Controls.Add(this.txtGhiChu);
             this.Controls.Add(this.label12);
-            this.Controls.Add(this.txtMua);
-            this.Controls.Add(this.txtCD);
-            this.Controls.Add(this.txtMau);
-            this.Controls.Add(this.txtNSX);
             this.Controls.Add(this.txtCL);
             this.Controls.Add(this.txtHSX);
             this.Controls.Add(this.txtLoai);
@@ -714,7 +716,7 @@ namespace BTL
             this.DoubleBuffered = true;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FormNhapHang";
-            this.Text = "Thêm Sản Phẩm";
+            this.Text = "Quản Lý Sản Phẩm";
             this.Load += new System.EventHandler(this.FormNhapHang_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

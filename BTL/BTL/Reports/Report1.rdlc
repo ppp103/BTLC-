@@ -6,22 +6,22 @@
         <TablixBody>
           <TablixColumns>
             <TablixColumn>
-              <Width>0.57917in</Width>
+              <Width>0.50385in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.3625in</Width>
+              <Width>1.28718in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.3625in</Width>
+              <Width>1.28718in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.3625in</Width>
+              <Width>1.28718in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>2.77917in</Width>
+              <Width>2.70385in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.34583in</Width>
+              <Width>1.27051in</Width>
             </TablixColumn>
           </TablixColumns>
           <TablixRows>
@@ -473,9 +473,9 @@
         </TablixRowHierarchy>
         <DataSetName>DataSet1</DataSetName>
         <Top>3.683cm</Top>
-        <Left>2.91981cm</Left>
+        <Left>2.18873cm</Left>
         <Height>0.51667in</Height>
-        <Width>8.79167in</Width>
+        <Width>8.33972in</Width>
         <Style>
           <Border>
             <Style>None</Style>
@@ -486,7 +486,7 @@
     <Height>13.63134cm</Height>
     <Style />
   </Body>
-  <Width>25.87837cm</Width>
+  <Width>25.39154cm</Width>
   <Page>
     <PageHeader>
       <Height>3.46428cm</Height>
@@ -530,7 +530,7 @@
           <Top>0.85937cm</Top>
           <Left>5.70089cm</Left>
           <Height>1.53133cm</Height>
-          <Width>12.61767cm</Width>
+          <Width>15.55984cm</Width>
           <ZIndex>1</ZIndex>
           <Style>
             <Border>
@@ -553,6 +553,54 @@
       <Height>4.2545cm</Height>
       <PrintOnFirstPage>true</PrintOnFirstPage>
       <PrintOnLastPage>true</PrintOnLastPage>
+      <ReportItems>
+        <Textbox Name="Textbox4">
+          <CanGrow>true</CanGrow>
+          <KeepTogether>true</KeepTogether>
+          <Paragraphs>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>Hà Nội, .../.../...</Value>
+                  <Style>
+                    <FontSize>14pt</FontSize>
+                  </Style>
+                </TextRun>
+              </TextRuns>
+              <Style>
+                <TextAlign>Center</TextAlign>
+              </Style>
+            </Paragraph>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>Ký tên</Value>
+                  <Style>
+                    <FontSize>14pt</FontSize>
+                  </Style>
+                </TextRun>
+              </TextRuns>
+              <Style>
+                <TextAlign>Center</TextAlign>
+              </Style>
+            </Paragraph>
+          </Paragraphs>
+          <rd:DefaultName>Textbox4</rd:DefaultName>
+          <Top>0.82408cm</Top>
+          <Left>18.53353cm</Left>
+          <Height>1.72183cm</Height>
+          <Width>5.56917cm</Width>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+            <PaddingLeft>2pt</PaddingLeft>
+            <PaddingRight>2pt</PaddingRight>
+            <PaddingTop>2pt</PaddingTop>
+            <PaddingBottom>2pt</PaddingBottom>
+          </Style>
+        </Textbox>
+      </ReportItems>
       <Style>
         <Border>
           <Style>None</Style>

@@ -247,7 +247,7 @@ namespace HomePage
             this.btnNhapHang.Padding = new System.Windows.Forms.Padding(10, 0, 21, 0);
             this.btnNhapHang.Size = new System.Drawing.Size(277, 65);
             this.btnNhapHang.TabIndex = 3;
-            this.btnNhapHang.Text = "Thêm Sản Phẩm";
+            this.btnNhapHang.Text = "Quản Lý Sản Phẩm";
             this.btnNhapHang.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnNhapHang.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnNhapHang.UseVisualStyleBackColor = true;

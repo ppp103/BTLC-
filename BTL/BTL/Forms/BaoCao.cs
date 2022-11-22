@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using Excel = Microsoft.Office.Interop.Excel;
 using static System.Windows.Forms.AxHost;
 using System.Windows.Media.Media3D;
+using System.Runtime.CompilerServices;
 
 namespace BTL.Forms
 {
@@ -64,6 +65,7 @@ namespace BTL.Forms
             dateTimePicker.Value = DateTime.Today;
             cboQuy.SelectedIndex = -1;
             dgvKetQua.DataSource = null;
+            btnBaoCao.Enabled = false;
             lbOutPut.Text = "Tổng Tiền Nhập Hàng";
         }
 
@@ -88,6 +90,7 @@ namespace BTL.Forms
             txtInput.Visible = state;
 
             btnTke.Enabled = state;
+            btnBaoCao.Enabled = !state;
             btnXuatExcel.Enabled = !state;
         }
 
@@ -175,10 +178,12 @@ namespace BTL.Forms
                     MessageBox.Show("Tìm thấy dữ liệu");
                     tien = Convert.ToDouble(table.Rows[0][4]);
                     lbOutPut.Text = $"Tổng tiền nhập hàng từ {txtInput.Text}: {tien}";
+                    btnBaoCao.Enabled = true;
                 }
                 else
                 {
                     MessageBox.Show("Không tìm thấy dữ liệu");
+                    btnBaoCao.Enabled = false;
                 }
                 dgvKetQua.DataSource = table;
             }
@@ -229,6 +234,10 @@ namespace BTL.Forms
                     if (table.Rows.Count > 0)
                     {
                         btnBaoCao.Enabled = true;
+                    }
+                    else
+                    {
+                        btnBaoCao.Enabled = false;
                     }
 
                     dgvKetQua.DataSource = table;
@@ -324,7 +333,7 @@ namespace BTL.Forms
                     exSheet.get_Range("G7").Value = "Tổng số hàng đã bán";
                     exSheet.get_Range("G7").ColumnWidth = 25;
 
-                    exSheet.get_Range("H7").Value = "Tổng tiền";
+                    exSheet.get_Range("H7").Value = "Tổng tiền bán";
                     exSheet.get_Range("H7").ColumnWidth = 15;
                 }
 
@@ -376,10 +385,10 @@ namespace BTL.Forms
         {
             if(index == 1)
             {
-                if (!char.IsControl(e.KeyChar) && char.IsDigit(e.KeyChar))
+                if (!char.IsControl(e.KeyChar) && !char.IsLetter(e.KeyChar))
                 {
                     e.Handled = true;
-                    MessageBox.Show("Vui lòng không nhập số");
+                    MessageBox.Show("Vui lòng chỉ nhập chữ");
                 }
             }
         }

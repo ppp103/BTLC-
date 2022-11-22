@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Guna.UI2.WinForms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -19,7 +20,7 @@ namespace BTL.Forms
         SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\HocHanh(ki5)\C#\Projects\BTLv7\BTL\BTL\DataBase\DuLieu.mdf;Integrated Security=True");
         SqlCommand cmd;
         SqlDataReader dr;
-        string sql;
+        string sql, maHang;
         double kq;
         public ChiTietHDB()
         {
@@ -58,7 +59,7 @@ namespace BTL.Forms
                 errorProvider1.Clear();
             }
 
-            if (cbmahang.Text.Trim() == null)
+            if (cbmahang.Text.Trim() == "")
             {
                 errorProvider1.SetError(cbmahang, "Bạn chưa chọn  mã hàng !");
                 return false;
@@ -200,49 +201,24 @@ namespace BTL.Forms
 
         private void guna2Button2_Click(object sender, EventArgs e)
         {
-            int cout = 0;
-            DataTable d1 = cthdb.DocBang($"select MaHang from tblChiTietHoaDonBan where SoHDB = N'{FormHDB.tra()}'");
-            for (int i = 0; i < d1.Rows.Count; i++)
+            if (isCheck())
             {
-                if (cbmahang.Text == d1.Rows[i][0].ToString())
+                DataTable table = cthdb.DocBang($"Select * From tblChiTietHoaDonBan where SoHDB = '{cbHdb.Text}' and MaHang = '{cbmahang.SelectedItem}'");
+                if(table.Rows.Count > 0 && !cbmahang.SelectedItem.ToString().Equals(maHang))
                 {
-                    cout = 0;
-                    if (cout == 0)
-                    {
-                        if (MessageBox.Show("Bạn có muốn sửa không?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
-                        {
-                            if (isCheck())
-                            {
-
-
-                                cthdb.CapNhatDuLieu($"update tblChiTietHoaDonBan set SoLuong = N'{txtsoluong.Text.Trim()}', GiamGia = N'{txtgiamgia.Text}', ThanhTien = '{txtthanhtien.Text}' where MaHang = N'{cbmahang.Text}' ");
-                                reloaddata();
-
-                                cbHdb.Enabled = true;
-                                cbHdb.Focus();
-
-                                MessageBox.Show("Sửa thành công");
-
-                            }
-                        }
-                        else
-                        {
-                            MessageBox.Show("Vui lòng điền đủ thông tin");
-                        }
-                    }
+                    MessageBox.Show("Đã có mã hàng trong hóa đơn");
                 }
                 else
                 {
-                    cout++;
-                }
-                if (cout == d1.Rows.Count)
-                {
-                    MessageBox.Show("Mã Hàng chưa tồn tại ! Hãy thêm mới ! ");
-                    return;
+                    cthdb.CapNhatDuLieu($"update tblChiTietHoaDonBan set SoLuong = N'{txtsoluong.Text.Trim()}', GiamGia = N'{txtgiamgia.Text}', ThanhTien = '{txtthanhtien.Text}', MaHang = '{cbmahang.Text}' where SoHDB = '{cbHdb.Text.Trim()}' and MaHang = '{maHang.Trim()}'");
+                    reloaddata();
+
+                    cbHdb.Enabled = true;
+                    txtsoluong.Focus();
+
+                    MessageBox.Show("Sửa thành công");
                 }
             }
-
-
         }
 
         private void guna2Button3_Click(object sender, EventArgs e)
@@ -364,6 +340,8 @@ namespace BTL.Forms
             btnXoaHoaDon.Enabled = true;
             btnXoaSanPham.Enabled = true;
             btnThem.Enabled = false;
+
+            maHang = cbmahang.Text;
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
