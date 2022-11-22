@@ -195,34 +195,37 @@ namespace BTL
         }
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-            laydulieu();
-            System.Data.DataTable dataTable = nam.DocBang($"select * from tblHangHoa where MaHang = N'{txtMaHang.Text.Trim()}'");
-            if (dataTable.Rows.Count > 0)
+            if (isCheck())
             {
-                MessageBox.Show("Mã này đã tồn tại chỉ có thể cập nhật !");
-                txtMaHang.Focus();
-            }
-            else
-            {
-                DialogResult chon = MessageBox.Show("Bạn có chắc chắn thêm mới mã hàng " + txtMaHang.Text + "  không?", "Thêm", MessageBoxButtons.YesNo);
-                if (chon == DialogResult.Yes)
+                laydulieu();
+                System.Data.DataTable dataTable = nam.DocBang($"select * from tblHangHoa where MaHang = N'{txtMaHang.Text.Trim()}'");
+                if (dataTable.Rows.Count > 0)
                 {
-                    if (isCheck())
+                    MessageBox.Show("Mã này đã tồn tại chỉ có thể cập nhật !");
+                    txtMaHang.Focus();
+                }
+                else
+                {
+                    DialogResult chon = MessageBox.Show("Bạn có chắc chắn thêm mới mã hàng " + txtMaHang.Text + "  không?", "Thêm", MessageBoxButtons.YesNo);
+                    if (chon == DialogResult.Yes)
                     {
-                        byte[] anh = null;
-                        FileStream Streem = new FileStream(duongdan, FileMode.Open, FileAccess.Read);
-                        BinaryReader bs = new BinaryReader(Streem);
-                        anh = bs.ReadBytes((int)Streem.Length);
-                        strConnect.Open();
-                        string sql = $"Insert into tblHangHoa(MaHang,TenHang,SoLuong,DonGiaNhap,DonGiaBan,ThoiGianBaoHanh,Anh,GhiChu,MaLoai,MaHangSX,MaKL,MaCL,MaNuocSX,MaMau,MaCD,MaMua) Values ('" + txtMaHang.Text + "','" + txtTenHang.Text + "','" + txtSoLuong.Text + "','" + txtDonGiaNhap.Text + "','" + txtDonGiaBan.Text + "','" + txtTGBH.Text + "',@anh, '" + txtGhiChu.Text + "','" + txtLoai.Text + "', '" + txtHSX.Text + "', '" + txtKL.Text + "', '" + txtCL.Text + "', '" + txtNSX.Text + "', '" + txtMau.Text + "', '" + txtCD.Text + "', '" + txtMua.Text + "')";
-                        cmd = new SqlCommand(sql, strConnect);
-                        cmd.Parameters.Add(new SqlParameter("@anh", anh));
-                        int N = cmd.ExecuteNonQuery();
-                        //nam.CapNhatDuLieu(sql);
-                        hiengiatri();
-                        strConnect.Close();
-                        reset();
-                        MessageBox.Show("Thêm thành công");
+                        if (isCheck())
+                        {
+                            byte[] anh = null;
+                            FileStream Streem = new FileStream(duongdan, FileMode.Open, FileAccess.Read);
+                            BinaryReader bs = new BinaryReader(Streem);
+                            anh = bs.ReadBytes((int)Streem.Length);
+                            strConnect.Open();
+                            string sql = $"Insert into tblHangHoa(MaHang,TenHang,SoLuong,DonGiaNhap,DonGiaBan,ThoiGianBaoHanh,Anh,GhiChu,MaLoai,MaHangSX,MaKL,MaCL,MaNuocSX,MaMau,MaCD,MaMua) Values ('" + txtMaHang.Text + "','" + txtTenHang.Text + "','" + txtSoLuong.Text + "','" + txtDonGiaNhap.Text + "','" + txtDonGiaBan.Text + "','" + txtTGBH.Text + "',@anh, '" + txtGhiChu.Text + "','" + txtLoai.Text + "', '" + txtHSX.Text + "', '" + txtKL.Text + "', '" + txtCL.Text + "', '" + txtNSX.Text + "', '" + txtMau.Text + "', '" + txtCD.Text + "', '" + txtMua.Text + "')";
+                            cmd = new SqlCommand(sql, strConnect);
+                            cmd.Parameters.Add(new SqlParameter("@anh", anh));
+                            int N = cmd.ExecuteNonQuery();
+                            //nam.CapNhatDuLieu(sql);
+                            hiengiatri();
+                            strConnect.Close();
+                            reset();
+                            MessageBox.Show("Thêm thành công");
+                        }
                     }
                 }
             }
@@ -249,6 +252,7 @@ namespace BTL
             DataGridViewImageColumn pic = new DataGridViewImageColumn();
             pic = (DataGridViewImageColumn)dataGridView1.Columns[6];
             pic.ImageLayout = DataGridViewImageCellLayout.Zoom;
+            txtMaHang.Focus();
         }
 
         private void btnXoa_Click(object sender, EventArgs e)
@@ -346,57 +350,60 @@ namespace BTL
 
         private void btnSua_Click(object sender, EventArgs e)
         {
-            laydulieu();
-            if (MessageBox.Show("Bạn có muốn sửa không?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            if (isCheck())
             {
-                if (isCheck())
+                laydulieu();
+                if (MessageBox.Show("Bạn có muốn sửa không?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
-                    byte[] img = null;
-                    FileStream fs = new FileStream(duongdan, FileMode.Open, FileAccess.Read);
-                    BinaryReader br = new BinaryReader(fs);
-                    img = br.ReadBytes((int)fs.Length);
-                    SqlConnection CN = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\HocHanh(ki5)\C#\Projects\BTLv7\BTL\BTL\DataBase\DuLieu.mdf;Integrated Security=True");
+                    if (isCheck())
+                    {
+                        byte[] img = null;
+                        FileStream fs = new FileStream(duongdan, FileMode.Open, FileAccess.Read);
+                        BinaryReader br = new BinaryReader(fs);
+                        img = br.ReadBytes((int)fs.Length);
+                        SqlConnection CN = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\HocHanh(ki5)\C#\Projects\BTLv7\BTL\BTL\DataBase\DuLieu.mdf;Integrated Security=True");
 
-                    // this is a smaple query for update statement and update where id=@id
-                    string Query = "update tblHangHoa set TenHang =@Ten,SoLuong = @SoLuong, DonGiaNhap = @GiaNhap, DonGiaBan = @GiaBan, ThoiGianBaoHanh = @ThoiGianBaoHanh, Anh = @img, GhiChu = @GhiChu, MaKL = @MaKL,MaLoai = @MaLoai,MaHangSX = @MaHSX,MaCL = @MaCL,MaNuocSX = @MaNSX,MaMau = @MaMau,MaCD = @MaCD,MaMua = @MaMua where MaHang=@Ma ";
+                        // this is a smaple query for update statement and update where id=@id
+                        string Query = "update tblHangHoa set TenHang =@Ten,SoLuong = @SoLuong, DonGiaNhap = @GiaNhap, DonGiaBan = @GiaBan, ThoiGianBaoHanh = @ThoiGianBaoHanh, Anh = @img, GhiChu = @GhiChu, MaKL = @MaKL,MaLoai = @MaLoai,MaHangSX = @MaHSX,MaCL = @MaCL,MaNuocSX = @MaNSX,MaMau = @MaMau,MaCD = @MaCD,MaMua = @MaMua where MaHang=@Ma ";
 
-                    CN.Open();
-                    cmd = new SqlCommand(Query, CN);
-                    cmd.Parameters.Add(new SqlParameter("@img", img));
-                    cmd.Parameters.Add(new SqlParameter("@Ma", txtMaHang.Text));
-                    cmd.Parameters.Add(new SqlParameter("@Ten", txtTenHang.Text));
-                    cmd.Parameters.Add(new SqlParameter("@GiaNhap", txtDonGiaNhap.Text));
-                    cmd.Parameters.Add(new SqlParameter("@GiaBan", txtDonGiaBan.Text));
-                    cmd.Parameters.Add(new SqlParameter("@SoLuong", txtSoLuong.Text));
-                    cmd.Parameters.Add(new SqlParameter("@ThoiGianBaoHanh", txtTGBH.Text));
-                    cmd.Parameters.Add(new SqlParameter("@GhiChu", txtGhiChu.Text));
-                    cmd.Parameters.Add(new SqlParameter("@MaKL", txtKL.Text));
-                    cmd.Parameters.Add(new SqlParameter("@MaLoai", txtLoai.Text));
-                    cmd.Parameters.Add(new SqlParameter("@MaHSX", txtHSX.Text));
-                    cmd.Parameters.Add(new SqlParameter("@MaCL", txtCL.Text));
-                    cmd.Parameters.Add(new SqlParameter("@MaNSX", txtNSX.Text));
-                    cmd.Parameters.Add(new SqlParameter("@MaMau", txtMau.Text));
-                    cmd.Parameters.Add(new SqlParameter("@MaCD", txtCD.Text));
-                    cmd.Parameters.Add(new SqlParameter("@MaMua", txtMua.Text));
-                    cmd.ExecuteNonQuery();
-                    CN.Close();
+                        CN.Open();
+                        cmd = new SqlCommand(Query, CN);
+                        cmd.Parameters.Add(new SqlParameter("@img", img));
+                        cmd.Parameters.Add(new SqlParameter("@Ma", txtMaHang.Text));
+                        cmd.Parameters.Add(new SqlParameter("@Ten", txtTenHang.Text));
+                        cmd.Parameters.Add(new SqlParameter("@GiaNhap", txtDonGiaNhap.Text));
+                        cmd.Parameters.Add(new SqlParameter("@GiaBan", txtDonGiaBan.Text));
+                        cmd.Parameters.Add(new SqlParameter("@SoLuong", txtSoLuong.Text));
+                        cmd.Parameters.Add(new SqlParameter("@ThoiGianBaoHanh", txtTGBH.Text));
+                        cmd.Parameters.Add(new SqlParameter("@GhiChu", txtGhiChu.Text));
+                        cmd.Parameters.Add(new SqlParameter("@MaKL", txtKL.Text));
+                        cmd.Parameters.Add(new SqlParameter("@MaLoai", txtLoai.Text));
+                        cmd.Parameters.Add(new SqlParameter("@MaHSX", txtHSX.Text));
+                        cmd.Parameters.Add(new SqlParameter("@MaCL", txtCL.Text));
+                        cmd.Parameters.Add(new SqlParameter("@MaNSX", txtNSX.Text));
+                        cmd.Parameters.Add(new SqlParameter("@MaMau", txtMau.Text));
+                        cmd.Parameters.Add(new SqlParameter("@MaCD", txtCD.Text));
+                        cmd.Parameters.Add(new SqlParameter("@MaMua", txtMua.Text));
+                        cmd.ExecuteNonQuery();
+                        CN.Close();
 
-                    //nam.CapNhatDuLieu($"update tblHangHoa set  TenHang = N'{txtTenHang.Text.Trim()}', SoLuong = N'{txtSoLuong.Text}', DonGiaNhap = N'{txtDonGiaNhap.Text}', DonGiaBan = N'{txtDonGiaBan.Text}', ThoiGianBaoHanh = N'{txtTGBH.Text}', Anh = '{picture.InitialImage}', GhiChu = N'{txtGhiChu.Text}', MaKL = '{cbKL.Text}' where MaHang = N'{txtMaHang.Text.Trim()}' ");
-                    nam.CapNhatDuLieu($"Update tblChiTietHoaDonNhap set DonGiaNhap = {txtDonGiaNhap.Text} Where tblChiTietHoaDonNhap.MaHang = '{txtMaHang.Text}'");
-                    nam.CapNhatDuLieu($"Update tblChiTietHoaDonNhap set ThanhTien = {Convert.ToDouble(txtDonGiaNhap.Text)} * SoLuong - {Convert.ToDouble(txtDonGiaNhap.Text)} * SoLuong * GiamGia / 100 Where tblChiTietHoaDonNhap.MaHang = '{txtMaHang.Text}'");
+                        //nam.CapNhatDuLieu($"update tblHangHoa set  TenHang = N'{txtTenHang.Text.Trim()}', SoLuong = N'{txtSoLuong.Text}', DonGiaNhap = N'{txtDonGiaNhap.Text}', DonGiaBan = N'{txtDonGiaBan.Text}', ThoiGianBaoHanh = N'{txtTGBH.Text}', Anh = '{picture.InitialImage}', GhiChu = N'{txtGhiChu.Text}', MaKL = '{cbKL.Text}' where MaHang = N'{txtMaHang.Text.Trim()}' ");
+                        nam.CapNhatDuLieu($"Update tblChiTietHoaDonNhap set DonGiaNhap = {txtDonGiaNhap.Text} Where tblChiTietHoaDonNhap.MaHang = '{txtMaHang.Text}'");
+                        nam.CapNhatDuLieu($"Update tblChiTietHoaDonNhap set ThanhTien = {Convert.ToDouble(txtDonGiaNhap.Text)} * SoLuong - {Convert.ToDouble(txtDonGiaNhap.Text)} * SoLuong * GiamGia / 100 Where tblChiTietHoaDonNhap.MaHang = '{txtMaHang.Text}'");
 
-                    hiengiatri();
+                        hiengiatri();
 
-                    MessageBox.Show("Sửa thành công");
-                    ChiTietHDN chiTietHDN = new ChiTietHDN();
-                    chiTietHDN.ChiTietHDN_Load(this, e);
+                        MessageBox.Show("Sửa thành công");
+                        ChiTietHDN chiTietHDN = new ChiTietHDN();
+                        chiTietHDN.ChiTietHDN_Load(this, e);
+                    }
+                    else
+                    {
+                        MessageBox.Show("Vui lòng điền đủ thông tin");
+                    }
+                    reset();
+                    strConnect.Close();
                 }
-                else
-                {
-                    MessageBox.Show("Vui lòng điền đủ thông tin");
-                }
-                reset();
-                strConnect.Close();
             }
         }
 
@@ -605,6 +612,11 @@ namespace BTL
                 String kl = KL.Rows[0][0].ToString();
                 txtKL.Text = kl;
             }
+        }
+
+        private void txtTGBH_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            txtSoLuong_KeyPress(this, e);
         }
     }
 }

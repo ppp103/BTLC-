@@ -43,20 +43,20 @@ namespace HomePage
             this.iconHome = new FontAwesome.Sharp.IconButton();
             this.panelBlank = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.timerTkeHoaDon = new System.Windows.Forms.Timer(this.components);
             this.panelTieuDe = new System.Windows.Forms.Panel();
             this.labelTieuDe = new System.Windows.Forms.Label();
-            this.iconTieuDe = new FontAwesome.Sharp.IconButton();
+            this.panelHeader = new System.Windows.Forms.Panel();
             this.iconLogOut = new FontAwesome.Sharp.IconButton();
+            this.iconTieuDe = new FontAwesome.Sharp.IconButton();
+            this.iconTwitter = new FontAwesome.Sharp.IconButton();
             this.iconGear = new FontAwesome.Sharp.IconButton();
             this.iconBell = new FontAwesome.Sharp.IconButton();
-            this.iconTwitter = new FontAwesome.Sharp.IconButton();
-            this.iconIns = new FontAwesome.Sharp.IconButton();
             this.iconFacebook = new FontAwesome.Sharp.IconButton();
-            this.panelHeader = new System.Windows.Forms.Panel();
+            this.iconIns = new FontAwesome.Sharp.IconButton();
             this.panelForm = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
             this.panelSideMenu.SuspendLayout();
             this.panelTkeHoaDon.SuspendLayout();
             this.panelBlank.SuspendLayout();
@@ -330,18 +330,6 @@ namespace HomePage
             this.label1.TabIndex = 1;
             this.label1.Text = "Perfume Shop";
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.PeachPuff;
-            this.label3.Font = new System.Drawing.Font("Century Gothic", 19.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(38, 193);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(192, 39);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "LINAPPUTY ";
-            // 
             // pictureBox1
             // 
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
@@ -375,125 +363,11 @@ namespace HomePage
             this.labelTieuDe.AutoSize = true;
             this.labelTieuDe.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelTieuDe.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.labelTieuDe.Location = new System.Drawing.Point(66, 10);
+            this.labelTieuDe.Location = new System.Drawing.Point(101, 11);
             this.labelTieuDe.Name = "labelTieuDe";
             this.labelTieuDe.Size = new System.Drawing.Size(104, 28);
             this.labelTieuDe.TabIndex = 1;
             this.labelTieuDe.Text = "Trang Chủ";
-            // 
-            // iconTieuDe
-            // 
-            this.iconTieuDe.FlatAppearance.BorderSize = 0;
-            this.iconTieuDe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconTieuDe.Font = new System.Drawing.Font("Constantia", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconTieuDe.ForeColor = System.Drawing.Color.DarkSalmon;
-            this.iconTieuDe.IconChar = FontAwesome.Sharp.IconChar.Home;
-            this.iconTieuDe.IconColor = System.Drawing.Color.DimGray;
-            this.iconTieuDe.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconTieuDe.IconSize = 40;
-            this.iconTieuDe.Location = new System.Drawing.Point(6, 9);
-            this.iconTieuDe.Name = "iconTieuDe";
-            this.iconTieuDe.Size = new System.Drawing.Size(54, 36);
-            this.iconTieuDe.TabIndex = 0;
-            this.iconTieuDe.UseVisualStyleBackColor = true;
-            // 
-            // iconLogOut
-            // 
-            this.iconLogOut.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.iconLogOut.FlatAppearance.BorderSize = 0;
-            this.iconLogOut.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.iconLogOut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconLogOut.Font = new System.Drawing.Font("Constantia", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconLogOut.IconChar = FontAwesome.Sharp.IconChar.RightFromBracket;
-            this.iconLogOut.IconColor = System.Drawing.Color.DimGray;
-            this.iconLogOut.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconLogOut.IconSize = 40;
-            this.iconLogOut.Location = new System.Drawing.Point(1035, 5);
-            this.iconLogOut.Name = "iconLogOut";
-            this.iconLogOut.Size = new System.Drawing.Size(40, 41);
-            this.iconLogOut.TabIndex = 8;
-            this.iconLogOut.UseVisualStyleBackColor = true;
-            this.iconLogOut.Click += new System.EventHandler(this.iconLogOut_Click_1);
-            // 
-            // iconGear
-            // 
-            this.iconGear.FlatAppearance.BorderSize = 0;
-            this.iconGear.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.iconGear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconGear.Font = new System.Drawing.Font("Constantia", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconGear.IconChar = FontAwesome.Sharp.IconChar.Cog;
-            this.iconGear.IconColor = System.Drawing.Color.DimGray;
-            this.iconGear.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconGear.IconSize = 40;
-            this.iconGear.Location = new System.Drawing.Point(971, 5);
-            this.iconGear.Name = "iconGear";
-            this.iconGear.Size = new System.Drawing.Size(40, 41);
-            this.iconGear.TabIndex = 8;
-            this.iconGear.UseVisualStyleBackColor = true;
-            // 
-            // iconBell
-            // 
-            this.iconBell.FlatAppearance.BorderSize = 0;
-            this.iconBell.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.iconBell.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconBell.Font = new System.Drawing.Font("Constantia", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconBell.IconChar = FontAwesome.Sharp.IconChar.Bell;
-            this.iconBell.IconColor = System.Drawing.Color.DimGray;
-            this.iconBell.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconBell.IconSize = 40;
-            this.iconBell.Location = new System.Drawing.Point(905, 6);
-            this.iconBell.Name = "iconBell";
-            this.iconBell.Size = new System.Drawing.Size(40, 41);
-            this.iconBell.TabIndex = 8;
-            this.iconBell.UseVisualStyleBackColor = true;
-            // 
-            // iconTwitter
-            // 
-            this.iconTwitter.FlatAppearance.BorderSize = 0;
-            this.iconTwitter.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.iconTwitter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconTwitter.Font = new System.Drawing.Font("Constantia", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconTwitter.IconChar = FontAwesome.Sharp.IconChar.Twitter;
-            this.iconTwitter.IconColor = System.Drawing.Color.DimGray;
-            this.iconTwitter.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconTwitter.IconSize = 35;
-            this.iconTwitter.Location = new System.Drawing.Point(637, 6);
-            this.iconTwitter.Name = "iconTwitter";
-            this.iconTwitter.Size = new System.Drawing.Size(40, 41);
-            this.iconTwitter.TabIndex = 8;
-            this.iconTwitter.UseVisualStyleBackColor = true;
-            // 
-            // iconIns
-            // 
-            this.iconIns.FlatAppearance.BorderSize = 0;
-            this.iconIns.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.iconIns.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconIns.Font = new System.Drawing.Font("Constantia", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconIns.IconChar = FontAwesome.Sharp.IconChar.Instagram;
-            this.iconIns.IconColor = System.Drawing.Color.DimGray;
-            this.iconIns.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconIns.IconSize = 40;
-            this.iconIns.Location = new System.Drawing.Point(577, 6);
-            this.iconIns.Name = "iconIns";
-            this.iconIns.Size = new System.Drawing.Size(40, 41);
-            this.iconIns.TabIndex = 8;
-            this.iconIns.UseVisualStyleBackColor = true;
-            // 
-            // iconFacebook
-            // 
-            this.iconFacebook.FlatAppearance.BorderSize = 0;
-            this.iconFacebook.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.iconFacebook.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconFacebook.Font = new System.Drawing.Font("Constantia", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconFacebook.IconChar = FontAwesome.Sharp.IconChar.Facebook;
-            this.iconFacebook.IconColor = System.Drawing.Color.DimGray;
-            this.iconFacebook.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconFacebook.IconSize = 40;
-            this.iconFacebook.Location = new System.Drawing.Point(516, 6);
-            this.iconFacebook.Name = "iconFacebook";
-            this.iconFacebook.Size = new System.Drawing.Size(40, 41);
-            this.iconFacebook.TabIndex = 8;
-            this.iconFacebook.UseVisualStyleBackColor = true;
             // 
             // panelHeader
             // 
@@ -512,8 +386,123 @@ namespace HomePage
             this.panelHeader.Size = new System.Drawing.Size(1311, 62);
             this.panelHeader.TabIndex = 9;
             // 
+            // iconLogOut
+            // 
+            this.iconLogOut.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.iconLogOut.FlatAppearance.BorderSize = 0;
+            this.iconLogOut.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.iconLogOut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconLogOut.Font = new System.Drawing.Font("Constantia", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconLogOut.IconChar = FontAwesome.Sharp.IconChar.RightFromBracket;
+            this.iconLogOut.IconColor = System.Drawing.Color.DimGray;
+            this.iconLogOut.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconLogOut.IconSize = 40;
+            this.iconLogOut.Location = new System.Drawing.Point(1205, 5);
+            this.iconLogOut.Name = "iconLogOut";
+            this.iconLogOut.Size = new System.Drawing.Size(40, 41);
+            this.iconLogOut.TabIndex = 8;
+            this.iconLogOut.UseVisualStyleBackColor = true;
+            this.iconLogOut.Click += new System.EventHandler(this.iconLogOut_Click_1);
+            // 
+            // iconTieuDe
+            // 
+            this.iconTieuDe.FlatAppearance.BorderSize = 0;
+            this.iconTieuDe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconTieuDe.Font = new System.Drawing.Font("Constantia", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconTieuDe.ForeColor = System.Drawing.Color.DarkSalmon;
+            this.iconTieuDe.IconChar = FontAwesome.Sharp.IconChar.Home;
+            this.iconTieuDe.IconColor = System.Drawing.Color.DimGray;
+            this.iconTieuDe.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconTieuDe.IconSize = 40;
+            this.iconTieuDe.Location = new System.Drawing.Point(41, 10);
+            this.iconTieuDe.Name = "iconTieuDe";
+            this.iconTieuDe.Size = new System.Drawing.Size(54, 36);
+            this.iconTieuDe.TabIndex = 0;
+            this.iconTieuDe.UseVisualStyleBackColor = true;
+            // 
+            // iconTwitter
+            // 
+            this.iconTwitter.FlatAppearance.BorderSize = 0;
+            this.iconTwitter.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.iconTwitter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconTwitter.Font = new System.Drawing.Font("Constantia", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconTwitter.IconChar = FontAwesome.Sharp.IconChar.Twitter;
+            this.iconTwitter.IconColor = System.Drawing.Color.DimGray;
+            this.iconTwitter.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconTwitter.IconSize = 35;
+            this.iconTwitter.Location = new System.Drawing.Point(730, 5);
+            this.iconTwitter.Name = "iconTwitter";
+            this.iconTwitter.Size = new System.Drawing.Size(40, 41);
+            this.iconTwitter.TabIndex = 8;
+            this.iconTwitter.UseVisualStyleBackColor = true;
+            // 
+            // iconGear
+            // 
+            this.iconGear.FlatAppearance.BorderSize = 0;
+            this.iconGear.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.iconGear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconGear.Font = new System.Drawing.Font("Constantia", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconGear.IconChar = FontAwesome.Sharp.IconChar.Cog;
+            this.iconGear.IconColor = System.Drawing.Color.DimGray;
+            this.iconGear.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconGear.IconSize = 40;
+            this.iconGear.Location = new System.Drawing.Point(1141, 5);
+            this.iconGear.Name = "iconGear";
+            this.iconGear.Size = new System.Drawing.Size(40, 41);
+            this.iconGear.TabIndex = 8;
+            this.iconGear.UseVisualStyleBackColor = true;
+            // 
+            // iconBell
+            // 
+            this.iconBell.FlatAppearance.BorderSize = 0;
+            this.iconBell.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.iconBell.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconBell.Font = new System.Drawing.Font("Constantia", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconBell.IconChar = FontAwesome.Sharp.IconChar.Bell;
+            this.iconBell.IconColor = System.Drawing.Color.DimGray;
+            this.iconBell.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconBell.IconSize = 40;
+            this.iconBell.Location = new System.Drawing.Point(1075, 6);
+            this.iconBell.Name = "iconBell";
+            this.iconBell.Size = new System.Drawing.Size(40, 41);
+            this.iconBell.TabIndex = 8;
+            this.iconBell.UseVisualStyleBackColor = true;
+            // 
+            // iconFacebook
+            // 
+            this.iconFacebook.FlatAppearance.BorderSize = 0;
+            this.iconFacebook.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.iconFacebook.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconFacebook.Font = new System.Drawing.Font("Constantia", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconFacebook.IconChar = FontAwesome.Sharp.IconChar.Facebook;
+            this.iconFacebook.IconColor = System.Drawing.Color.DimGray;
+            this.iconFacebook.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconFacebook.IconSize = 40;
+            this.iconFacebook.Location = new System.Drawing.Point(609, 5);
+            this.iconFacebook.Name = "iconFacebook";
+            this.iconFacebook.Size = new System.Drawing.Size(40, 41);
+            this.iconFacebook.TabIndex = 8;
+            this.iconFacebook.UseVisualStyleBackColor = true;
+            // 
+            // iconIns
+            // 
+            this.iconIns.FlatAppearance.BorderSize = 0;
+            this.iconIns.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.iconIns.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconIns.Font = new System.Drawing.Font("Constantia", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconIns.IconChar = FontAwesome.Sharp.IconChar.Instagram;
+            this.iconIns.IconColor = System.Drawing.Color.DimGray;
+            this.iconIns.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconIns.IconSize = 40;
+            this.iconIns.Location = new System.Drawing.Point(670, 5);
+            this.iconIns.Name = "iconIns";
+            this.iconIns.Size = new System.Drawing.Size(40, 41);
+            this.iconIns.TabIndex = 8;
+            this.iconIns.UseVisualStyleBackColor = true;
+            // 
             // panelForm
             // 
+            this.panelForm.BackColor = System.Drawing.Color.White;
             this.panelForm.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.panelForm.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelForm.Location = new System.Drawing.Point(277, 83);
@@ -521,10 +510,23 @@ namespace HomePage
             this.panelForm.Size = new System.Drawing.Size(1311, 875);
             this.panelForm.TabIndex = 10;
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.PeachPuff;
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 19.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Black;
+            this.label3.Location = new System.Drawing.Point(38, 193);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(192, 39);
+            this.label3.TabIndex = 1;
+            this.label3.Text = "LINAPPUTY ";
+            // 
             // TrangChinh
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1588, 958);
             this.Controls.Add(this.panelForm);
             this.Controls.Add(this.panelHeader);
@@ -571,10 +573,10 @@ namespace HomePage
         private FontAwesome.Sharp.IconButton iconIns;
         private System.Windows.Forms.Panel panelHeader;
         private FontAwesome.Sharp.IconButton btnNhapHoaDonBan;
-        private System.Windows.Forms.Panel panelForm;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label3;
         private FontAwesome.Sharp.IconButton btnBaoCao;
+        private System.Windows.Forms.Panel panelForm;
+        private System.Windows.Forms.Label label3;
     }
 }
 

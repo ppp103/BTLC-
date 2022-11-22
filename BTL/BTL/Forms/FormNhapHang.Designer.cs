@@ -30,8 +30,8 @@ namespace BTL
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -71,7 +71,6 @@ namespace BTL
             this.btnSua = new Guna.UI2.WinForms.Guna2Button();
             this.btnXoa = new Guna.UI2.WinForms.Guna2Button();
             this.btnLamMoi = new Guna.UI2.WinForms.Guna2Button();
-            this.picture = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2GradientButton1 = new Guna.UI2.WinForms.Guna2GradientButton();
             this.cbKL = new System.Windows.Forms.ComboBox();
             this.cbLoai = new System.Windows.Forms.ComboBox();
@@ -81,6 +80,7 @@ namespace BTL
             this.cbMau = new System.Windows.Forms.ComboBox();
             this.cbCD = new System.Windows.Forms.ComboBox();
             this.cbMua = new System.Windows.Forms.ComboBox();
+            this.picture = new Guna.UI2.WinForms.Guna2PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
@@ -108,24 +108,24 @@ namespace BTL
             this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.AllowUserToResizeColumns = false;
             this.dataGridView1.AllowUserToResizeRows = false;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridView1.ColumnHeadersHeight = 30;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle4;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.EnableHeadersVisualStyles = false;
             this.dataGridView1.Location = new System.Drawing.Point(0, 0);
@@ -293,7 +293,7 @@ namespace BTL
             this.txtMaHang.Margin = new System.Windows.Forms.Padding(4);
             this.txtMaHang.Name = "txtMaHang";
             this.txtMaHang.Size = new System.Drawing.Size(288, 32);
-            this.txtMaHang.TabIndex = 14;
+            this.txtMaHang.TabIndex = 0;
             // 
             // label7
             // 
@@ -324,7 +324,7 @@ namespace BTL
             this.txtSoLuong.Margin = new System.Windows.Forms.Padding(4);
             this.txtSoLuong.Name = "txtSoLuong";
             this.txtSoLuong.Size = new System.Drawing.Size(287, 32);
-            this.txtSoLuong.TabIndex = 21;
+            this.txtSoLuong.TabIndex = 2;
             this.txtSoLuong.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSoLuong_KeyPress);
             // 
             // txtTenHang
@@ -334,7 +334,7 @@ namespace BTL
             this.txtTenHang.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtTenHang.Name = "txtTenHang";
             this.txtTenHang.Size = new System.Drawing.Size(288, 32);
-            this.txtTenHang.TabIndex = 21;
+            this.txtTenHang.TabIndex = 1;
             // 
             // label9
             // 
@@ -354,7 +354,7 @@ namespace BTL
             this.txtDonGiaNhap.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtDonGiaNhap.Name = "txtDonGiaNhap";
             this.txtDonGiaNhap.Size = new System.Drawing.Size(92, 32);
-            this.txtDonGiaNhap.TabIndex = 17;
+            this.txtDonGiaNhap.TabIndex = 3;
             this.txtDonGiaNhap.TextChanged += new System.EventHandler(this.txtDonGiaNhap_TextChanged);
             this.txtDonGiaNhap.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDonGiaNhap_KeyPress);
             // 
@@ -377,7 +377,7 @@ namespace BTL
             this.txtDonGiaBan.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtDonGiaBan.Name = "txtDonGiaBan";
             this.txtDonGiaBan.Size = new System.Drawing.Size(92, 32);
-            this.txtDonGiaBan.TabIndex = 18;
+            this.txtDonGiaBan.TabIndex = 4;
             this.txtDonGiaBan.TextChanged += new System.EventHandler(this.txtDonGiaBan_TextChanged);
             // 
             // label11
@@ -398,7 +398,8 @@ namespace BTL
             this.txtTGBH.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtTGBH.Name = "txtTGBH";
             this.txtTGBH.Size = new System.Drawing.Size(92, 32);
-            this.txtTGBH.TabIndex = 19;
+            this.txtTGBH.TabIndex = 5;
+            this.txtTGBH.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTGBH_KeyPress);
             // 
             // txtKL
             // 
@@ -454,7 +455,7 @@ namespace BTL
             this.txtGhiChu.Margin = new System.Windows.Forms.Padding(4);
             this.txtGhiChu.Name = "txtGhiChu";
             this.txtGhiChu.Size = new System.Drawing.Size(289, 32);
-            this.txtGhiChu.TabIndex = 20;
+            this.txtGhiChu.TabIndex = 6;
             // 
             // label13
             // 
@@ -483,7 +484,7 @@ namespace BTL
             this.guna2Button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.Size = new System.Drawing.Size(96, 51);
-            this.guna2Button1.TabIndex = 27;
+            this.guna2Button1.TabIndex = 15;
             this.guna2Button1.Text = "NHẬP";
             this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
@@ -505,7 +506,7 @@ namespace BTL
             this.btnSua.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(103, 51);
-            this.btnSua.TabIndex = 27;
+            this.btnSua.TabIndex = 16;
             this.btnSua.Text = "SỬA";
             this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
@@ -526,7 +527,7 @@ namespace BTL
             this.btnXoa.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(104, 51);
-            this.btnXoa.TabIndex = 27;
+            this.btnXoa.TabIndex = 17;
             this.btnXoa.Text = "XÓA";
             this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
@@ -547,20 +548,9 @@ namespace BTL
             this.btnLamMoi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnLamMoi.Name = "btnLamMoi";
             this.btnLamMoi.Size = new System.Drawing.Size(121, 51);
-            this.btnLamMoi.TabIndex = 27;
+            this.btnLamMoi.TabIndex = 18;
             this.btnLamMoi.Text = "Làm Mới";
             this.btnLamMoi.Click += new System.EventHandler(this.btnLamMoi_Click);
-            // 
-            // picture
-            // 
-            this.picture.ImageRotate = 0F;
-            this.picture.Location = new System.Drawing.Point(417, 144);
-            this.picture.Margin = new System.Windows.Forms.Padding(4);
-            this.picture.Name = "picture";
-            this.picture.Size = new System.Drawing.Size(165, 174);
-            this.picture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picture.TabIndex = 28;
-            this.picture.TabStop = false;
             // 
             // guna2GradientButton1
             // 
@@ -590,7 +580,7 @@ namespace BTL
             this.cbKL.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbKL.Name = "cbKL";
             this.cbKL.Size = new System.Drawing.Size(289, 33);
-            this.cbKL.TabIndex = 31;
+            this.cbKL.TabIndex = 7;
             this.cbKL.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // cbLoai
@@ -601,7 +591,7 @@ namespace BTL
             this.cbLoai.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbLoai.Name = "cbLoai";
             this.cbLoai.Size = new System.Drawing.Size(292, 33);
-            this.cbLoai.TabIndex = 31;
+            this.cbLoai.TabIndex = 8;
             this.cbLoai.SelectedIndexChanged += new System.EventHandler(this.cbLoai_SelectedIndexChanged);
             // 
             // cbHSX
@@ -612,7 +602,7 @@ namespace BTL
             this.cbHSX.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbHSX.Name = "cbHSX";
             this.cbHSX.Size = new System.Drawing.Size(292, 33);
-            this.cbHSX.TabIndex = 31;
+            this.cbHSX.TabIndex = 9;
             this.cbHSX.SelectedIndexChanged += new System.EventHandler(this.cbHSX_SelectedIndexChanged);
             // 
             // cbCL
@@ -623,7 +613,7 @@ namespace BTL
             this.cbCL.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbCL.Name = "cbCL";
             this.cbCL.Size = new System.Drawing.Size(292, 33);
-            this.cbCL.TabIndex = 31;
+            this.cbCL.TabIndex = 10;
             this.cbCL.SelectedIndexChanged += new System.EventHandler(this.cbCL_SelectedIndexChanged);
             // 
             // cbNSX
@@ -634,7 +624,7 @@ namespace BTL
             this.cbNSX.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbNSX.Name = "cbNSX";
             this.cbNSX.Size = new System.Drawing.Size(292, 33);
-            this.cbNSX.TabIndex = 31;
+            this.cbNSX.TabIndex = 11;
             this.cbNSX.SelectedIndexChanged += new System.EventHandler(this.cbNSX_SelectedIndexChanged);
             // 
             // cbMau
@@ -645,7 +635,7 @@ namespace BTL
             this.cbMau.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbMau.Name = "cbMau";
             this.cbMau.Size = new System.Drawing.Size(292, 33);
-            this.cbMau.TabIndex = 31;
+            this.cbMau.TabIndex = 12;
             this.cbMau.SelectedIndexChanged += new System.EventHandler(this.cbMau_SelectedIndexChanged);
             // 
             // cbCD
@@ -656,7 +646,7 @@ namespace BTL
             this.cbCD.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbCD.Name = "cbCD";
             this.cbCD.Size = new System.Drawing.Size(292, 33);
-            this.cbCD.TabIndex = 31;
+            this.cbCD.TabIndex = 13;
             this.cbCD.SelectedIndexChanged += new System.EventHandler(this.cbCD_SelectedIndexChanged);
             // 
             // cbMua
@@ -667,8 +657,19 @@ namespace BTL
             this.cbMua.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbMua.Name = "cbMua";
             this.cbMua.Size = new System.Drawing.Size(292, 33);
-            this.cbMua.TabIndex = 31;
+            this.cbMua.TabIndex = 14;
             this.cbMua.SelectedIndexChanged += new System.EventHandler(this.cbMua_SelectedIndexChanged);
+            // 
+            // picture
+            // 
+            this.picture.ImageRotate = 0F;
+            this.picture.Location = new System.Drawing.Point(417, 144);
+            this.picture.Margin = new System.Windows.Forms.Padding(4);
+            this.picture.Name = "picture";
+            this.picture.Size = new System.Drawing.Size(165, 174);
+            this.picture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picture.TabIndex = 28;
+            this.picture.TabStop = false;
             // 
             // FormNhapHang
             // 

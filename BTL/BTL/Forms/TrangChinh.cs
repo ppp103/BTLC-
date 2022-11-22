@@ -150,6 +150,10 @@ namespace HomePage
 
         private void btnHome_Click(object sender, EventArgs e)
         {
+            if(formHtai != null)
+            {
+                formHtai.Close();
+            }
             KichHoatNut(sender);
             iconTieuDe.IconChar = IconChar.Home;
             labelTieuDe.Text = "Trang chủ";
