@@ -55,8 +55,8 @@
             this.btnThem = new Guna.UI2.WinForms.Guna2Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.dataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.btnReset = new BTL.Radio();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtgiamgia)).BeginInit();
             this.panel2.SuspendLayout();
@@ -104,7 +104,7 @@
             this.txtgiamgia.Margin = new System.Windows.Forms.Padding(4);
             this.txtgiamgia.Name = "txtgiamgia";
             this.txtgiamgia.Size = new System.Drawing.Size(133, 44);
-            this.txtgiamgia.TabIndex = 111;
+            this.txtgiamgia.TabIndex = 1;
             this.txtgiamgia.ValueChanged += new System.EventHandler(this.txtgiamgia_ValueChanged);
             this.txtgiamgia.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtgiamgia_KeyPress);
             // 
@@ -124,7 +124,7 @@
             this.cbmahang.Margin = new System.Windows.Forms.Padding(4);
             this.cbmahang.Name = "cbmahang";
             this.cbmahang.Size = new System.Drawing.Size(293, 36);
-            this.cbmahang.TabIndex = 109;
+            this.cbmahang.TabIndex = 2;
             this.cbmahang.SelectedIndexChanged += new System.EventHandler(this.cbmahang_SelectedIndexChanged);
             // 
             // cbHdb
@@ -168,7 +168,7 @@
             this.txttienhang.PlaceholderText = "";
             this.txttienhang.SelectedText = "";
             this.txttienhang.Size = new System.Drawing.Size(295, 44);
-            this.txttienhang.TabIndex = 108;
+            this.txttienhang.TabIndex = 3;
             this.txttienhang.TextChanged += new System.EventHandler(this.txttienhang_TextChanged);
             this.txttienhang.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txttienhang_KeyPress);
             // 
@@ -201,7 +201,7 @@
             this.txtthanhtien.PlaceholderText = "";
             this.txtthanhtien.SelectedText = "";
             this.txtthanhtien.Size = new System.Drawing.Size(295, 44);
-            this.txtthanhtien.TabIndex = 106;
+            this.txtthanhtien.TabIndex = 4;
             // 
             // guna2HtmlLabel7
             // 
@@ -232,7 +232,7 @@
             this.txtsoluong.PlaceholderText = "";
             this.txtsoluong.SelectedText = "";
             this.txtsoluong.Size = new System.Drawing.Size(136, 44);
-            this.txtsoluong.TabIndex = 102;
+            this.txtsoluong.TabIndex = 0;
             this.txtsoluong.TextChanged += new System.EventHandler(this.txtsoluong_TextChanged);
             this.txtsoluong.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtsoluong_KeyPress);
             // 
@@ -323,7 +323,7 @@
             this.btnXoaHoaDon.Margin = new System.Windows.Forms.Padding(4);
             this.btnXoaHoaDon.Name = "btnXoaHoaDon";
             this.btnXoaHoaDon.Size = new System.Drawing.Size(201, 55);
-            this.btnXoaHoaDon.TabIndex = 95;
+            this.btnXoaHoaDon.TabIndex = 9;
             this.btnXoaHoaDon.Text = "XÓA HÓA ĐƠN";
             this.btnXoaHoaDon.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnXoaHoaDon.Click += new System.EventHandler(this.guna2Button4_Click);
@@ -347,7 +347,7 @@
             this.btnXoaSanPham.Margin = new System.Windows.Forms.Padding(4);
             this.btnXoaSanPham.Name = "btnXoaSanPham";
             this.btnXoaSanPham.Size = new System.Drawing.Size(195, 55);
-            this.btnXoaSanPham.TabIndex = 94;
+            this.btnXoaSanPham.TabIndex = 8;
             this.btnXoaSanPham.Text = "XÓA SẢN PHẨM";
             this.btnXoaSanPham.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnXoaSanPham.Click += new System.EventHandler(this.guna2Button3_Click);
@@ -371,7 +371,7 @@
             this.btnSua.Margin = new System.Windows.Forms.Padding(4);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(201, 55);
-            this.btnSua.TabIndex = 93;
+            this.btnSua.TabIndex = 7;
             this.btnSua.Text = "SỬA SẢN PHẨM";
             this.btnSua.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnSua.Click += new System.EventHandler(this.guna2Button2_Click);
@@ -395,7 +395,7 @@
             this.btnThem.Margin = new System.Windows.Forms.Padding(4);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(209, 55);
-            this.btnThem.TabIndex = 92;
+            this.btnThem.TabIndex = 5;
             this.btnThem.Text = "THÊM SẢN PHẨM";
             this.btnThem.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnThem.Click += new System.EventHandler(this.guna2Button1_Click);
@@ -483,10 +483,6 @@
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
-            // errorProvider1
-            // 
-            this.errorProvider1.ContainerControl = this;
-            // 
             // btnReset
             // 
             this.btnReset.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
@@ -504,10 +500,14 @@
             this.btnReset.Margin = new System.Windows.Forms.Padding(4);
             this.btnReset.Name = "btnReset";
             this.btnReset.Size = new System.Drawing.Size(53, 49);
-            this.btnReset.TabIndex = 90;
+            this.btnReset.TabIndex = 6;
             this.btnReset.TextColor = System.Drawing.Color.White;
             this.btnReset.UseVisualStyleBackColor = false;
             this.btnReset.Click += new System.EventHandler(this.radio5_Click);
+            // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
             // 
             // ChiTietHDB
             // 
@@ -515,6 +515,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1252, 779);
             this.Controls.Add(this.panel1);
+            this.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "ChiTietHDB";

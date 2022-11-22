@@ -9,7 +9,7 @@ namespace BTL
 {
     public partial class FormNhapHang : Form
     {
-        SqlDataReader dr;
+        //SqlDataReader dr;
         XuLyCSDL nam = new XuLyCSDL();
         SqlConnection strConnect = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\HocHanh(ki5)\C#\Projects\BTLv7\BTL\BTL\DataBase\DuLieu.mdf;Integrated Security=True");
         string duongdan = "D:\\HocHanh(ki5)\\C#\\Projects\\BTLv7\\BTL\\BTL\\Images\\perfume1.jpg";
@@ -263,13 +263,16 @@ namespace BTL
             }
             else
             {
-                if (MessageBox.Show("Bạn có muốn xóa sản phẩm có mã là:" +
-                txtMaHang.Text + " không?", "Thông báo",
+                try
+                {
+                    if (MessageBox.Show("Bạn có muốn xóa sản phẩm có mã " +
+                    txtMaHang.Text + " không?", "Thông báo",
                 MessageBoxButtons.YesNo, MessageBoxIcon.Question) ==
                 System.Windows.Forms.DialogResult.Yes)
                 {
-                    nam.CapNhatDuLieu("delete from tblHangHoa where MaHang ='" + txtMaHang.Text.Trim() + "'");
+                    nam.CapNhatDuLieu($"Delete from tblChiTietHoaDonNhap where MaHang = '{txtMaHang.Text.Trim()}'");
                     nam.CapNhatDuLieu($"Delete from tblChiTietHoaDonBan where MaHang = '{txtMaHang.Text.Trim()}'");
+                    nam.CapNhatDuLieu("delete from tblHangHoa where MaHang ='" + txtMaHang.Text.Trim() + "'");
                     dataGridView1.DataSource = nam.DocBang("Select * from tblHangHoa");
                     reset();
                     btnXoa.Enabled = true;
@@ -277,8 +280,12 @@ namespace BTL
                     guna2Button1.Enabled = true;
                     btnLamMoi.Enabled = true;
                 }
+            }catch (Exception ex)
+            {
+                MessageBox.Show("Không thể xóa mã hàng do hàng tồn tại ở hóa đơn nhập và bán");
             }
         }
+    }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {

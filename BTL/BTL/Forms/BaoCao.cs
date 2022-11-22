@@ -385,7 +385,7 @@ namespace BTL.Forms
         {
             if(index == 1)
             {
-                if (!char.IsControl(e.KeyChar) && !char.IsLetter(e.KeyChar))
+                if (!char.IsControl(e.KeyChar) && !char.IsLetter(e.KeyChar) && e.KeyChar.ToString() != " ")
                 {
                     e.Handled = true;
                     MessageBox.Show("Vui lòng chỉ nhập chữ");

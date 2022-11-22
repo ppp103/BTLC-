@@ -45,13 +45,15 @@
             this.radio1.BorderColor = System.Drawing.Color.PaleVioletRed;
             this.radio1.BorderRadius = 20;
             this.radio1.BorderSize = 0;
+            this.radio1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.radio1.FlatAppearance.BorderSize = 0;
             this.radio1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.radio1.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radio1.ForeColor = System.Drawing.Color.White;
-            this.radio1.Location = new System.Drawing.Point(138, 382);
+            this.radio1.Location = new System.Drawing.Point(184, 470);
+            this.radio1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.radio1.Name = "radio1";
-            this.radio1.Size = new System.Drawing.Size(179, 33);
+            this.radio1.Size = new System.Drawing.Size(239, 41);
             this.radio1.TabIndex = 32;
             this.radio1.Text = "LẤY LẠI MẬT KHẨU";
             this.radio1.TextColor = System.Drawing.Color.White;
@@ -62,18 +64,20 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Trebuchet MS", 17.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(1, 330);
+            this.label1.Location = new System.Drawing.Point(1, 406);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(110, 28);
+            this.label1.Size = new System.Drawing.Size(151, 37);
             this.label1.TabIndex = 31;
             this.label1.Text = "Kết Quả :";
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(108, 32);
+            this.pictureBox1.Location = new System.Drawing.Point(144, 39);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(244, 172);
+            this.pictureBox1.Size = new System.Drawing.Size(325, 212);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 23;
             this.pictureBox1.TabStop = false;
@@ -83,9 +87,10 @@
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.Location = new System.Drawing.Point(427, -1);
+            this.button1.Location = new System.Drawing.Point(569, -1);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(40, 40);
+            this.button1.Size = new System.Drawing.Size(53, 49);
             this.button1.TabIndex = 33;
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -97,13 +102,13 @@
             this.textboxhide1.BorderSize = 2;
             this.textboxhide1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textboxhide1.ForeColor = System.Drawing.Color.DimGray;
-            this.textboxhide1.Location = new System.Drawing.Point(108, 252);
-            this.textboxhide1.Margin = new System.Windows.Forms.Padding(4);
+            this.textboxhide1.Location = new System.Drawing.Point(144, 310);
+            this.textboxhide1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.textboxhide1.Multiline = false;
             this.textboxhide1.Name = "textboxhide1";
-            this.textboxhide1.Padding = new System.Windows.Forms.Padding(7);
+            this.textboxhide1.Padding = new System.Windows.Forms.Padding(9, 9, 9, 9);
             this.textboxhide1.PasswordChar = false;
-            this.textboxhide1.Size = new System.Drawing.Size(316, 31);
+            this.textboxhide1.Size = new System.Drawing.Size(421, 39);
             this.textboxhide1.TabIndex = 34;
             this.textboxhide1.Texts = "";
             this.textboxhide1.UnderlinedStyle = true;
@@ -112,18 +117,19 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Trebuchet MS", 17.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(1, 255);
+            this.label2.Location = new System.Drawing.Point(1, 314);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(79, 28);
+            this.label2.Size = new System.Drawing.Size(103, 37);
             this.label2.TabIndex = 31;
             this.label2.Text = "Email:";
             // 
             // Quenmatkhau
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(239)))), ((int)(((byte)(162)))));
-            this.ClientSize = new System.Drawing.Size(466, 436);
+            this.ClientSize = new System.Drawing.Size(621, 537);
             this.Controls.Add(this.textboxhide1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.radio1);
@@ -132,6 +138,7 @@
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Quenmatkhau";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Quenmatkhau";

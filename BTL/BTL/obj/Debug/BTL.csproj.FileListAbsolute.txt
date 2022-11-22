@@ -2,12 +2,8 @@ D:\HocHanh(ki5)\C#\Projects\BTLv7\BTL\BTL\bin\Debug\SqlServerTypes\x64\msvcr120.
 D:\HocHanh(ki5)\C#\Projects\BTLv7\BTL\BTL\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
 D:\HocHanh(ki5)\C#\Projects\BTLv7\BTL\BTL\bin\Debug\SqlServerTypes\x86\msvcr120.dll
 D:\HocHanh(ki5)\C#\Projects\BTLv7\BTL\BTL\bin\Debug\SqlServerTypes\x86\SqlServerSpatial140.dll
-D:\HocHanh(ki5)\C#\Projects\BTLv7\BTL\BTL\bin\Debug\DangNhapDangKi\DangNhap.mdf
-D:\HocHanh(ki5)\C#\Projects\BTLv7\BTL\BTL\bin\Debug\DangNhapDangKi\DangNhap_log.ldf
 D:\HocHanh(ki5)\C#\Projects\BTLv7\BTL\BTL\bin\Debug\DataBase\DuLieu.mdf
 D:\HocHanh(ki5)\C#\Projects\BTLv7\BTL\BTL\bin\Debug\DataBase\DuLieu_log.ldf
-D:\HocHanh(ki5)\C#\Projects\BTLv7\BTL\BTL\bin\Debug\DangNhapDangKi\NhanVien.mdf
-D:\HocHanh(ki5)\C#\Projects\BTLv7\BTL\BTL\bin\Debug\DangNhapDangKi\NhanVien_log.ldf
 D:\HocHanh(ki5)\C#\Projects\BTLv7\BTL\BTL\bin\Debug\BTL.exe.config
 D:\HocHanh(ki5)\C#\Projects\BTLv7\BTL\BTL\bin\Debug\BTL.exe
 D:\HocHanh(ki5)\C#\Projects\BTLv7\BTL\BTL\bin\Debug\BTL.pdb
@@ -64,11 +60,8 @@ D:\HocHanh(ki5)\C#\Projects\BTLv7\BTL\BTL\obj\Debug\BTL.Forms.ChiTietHDB.resourc
 D:\HocHanh(ki5)\C#\Projects\BTLv7\BTL\BTL\obj\Debug\BTL.Forms.ChiTietHDN.resources
 D:\HocHanh(ki5)\C#\Projects\BTLv7\BTL\BTL\obj\Debug\BTL.FormHDB.resources
 D:\HocHanh(ki5)\C#\Projects\BTLv7\BTL\BTL\obj\Debug\BTL.Forms.FormHDN.resources
-D:\HocHanh(ki5)\C#\Projects\BTLv7\BTL\BTL\obj\Debug\BTL.FormLapHoaDon.resources
 D:\HocHanh(ki5)\C#\Projects\BTLv7\BTL\BTL\obj\Debug\BTL.FormNhapHang.resources
 D:\HocHanh(ki5)\C#\Projects\BTLv7\BTL\BTL\obj\Debug\BTL.Forms.FormReport.resources
-D:\HocHanh(ki5)\C#\Projects\BTLv7\BTL\BTL\obj\Debug\BTL.FormThanhToanLuong.resources
-D:\HocHanh(ki5)\C#\Projects\BTLv7\BTL\BTL\obj\Debug\BTL.FormNhapHangHoa.resources
 D:\HocHanh(ki5)\C#\Projects\BTLv7\BTL\BTL\obj\Debug\BTL.FormThongKeHoaDon.resources
 D:\HocHanh(ki5)\C#\Projects\BTLv7\BTL\BTL\obj\Debug\BTL.Forms.FormTkeHangHoa.resources
 D:\HocHanh(ki5)\C#\Projects\BTLv7\BTL\BTL\obj\Debug\BTL.Properties.Resources.resources
@@ -88,4 +81,7 @@ D:\HocHanh(ki5)\C#\Projects\BTLv7\BTL\BTL\bin\Debug\pt\Microsoft.ReportViewer.Co
 D:\HocHanh(ki5)\C#\Projects\BTLv7\BTL\BTL\bin\Debug\ru\Microsoft.ReportViewer.Common.resources.dll
 D:\HocHanh(ki5)\C#\Projects\BTLv7\BTL\BTL\bin\Debug\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
 D:\HocHanh(ki5)\C#\Projects\BTLv7\BTL\BTL\bin\Debug\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
-D:\HocHanh(ki5)\C#\Projects\BTLv7\BTL\BTL\bin\Debug\Guna.Charts.WinForms.dll
+D:\HocHanh(ki5)\C#\Projects\BTLv7\BTL\BTL\bin\Debug\DataBase\DangNhap.mdf
+D:\HocHanh(ki5)\C#\Projects\BTLv7\BTL\BTL\bin\Debug\DataBase\DangNhap_log.ldf
+D:\HocHanh(ki5)\C#\Projects\BTLv7\BTL\BTL\bin\Debug\DataBase\NhanVien.mdf
+D:\HocHanh(ki5)\C#\Projects\BTLv7\BTL\BTL\bin\Debug\DataBase\NhanVien_log.ldf

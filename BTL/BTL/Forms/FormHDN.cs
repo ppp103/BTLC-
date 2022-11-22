@@ -213,6 +213,8 @@ namespace BTL.Forms
         private void guna2Button5_Click_1(object sender, EventArgs e)
         {
             DSHDB.CapNhatDuLieu("UPDATE tblHoaDonNhap set tblHoaDonNhap.TongTien = (select ISNULL(SUM(tblChiTietHoaDonNhap.ThanhTien),0.0000) FROM tblChiTietHoaDonNhap where tblChiTietHoaDonNhap.SoHDN = tblHoaDonNhap.SoHDN) \r\n");
+            cbmanhanvien.Items.Clear();
+            cbmanhanvien.ResetText();
             FormHDN_Load(this, e);
         }
 
@@ -220,15 +222,23 @@ namespace BTL.Forms
         {
             if (MessageBox.Show("Bạn có muốn sửa không?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
+                DataTable table1 = DSHDB.DocBang($"Select * From tblNhaCungCap Where MaNCC= '{txtmakhachhang.Text.Trim()}'");
                 if (isCheck())
                 {
-                    DSHDB.CapNhatDuLieu($"update tblHoaDonNhap set  MaNV = N'{cbmanhanvien.Text.Trim()}', NgayNhap = N'{datetime.Value.ToString().Trim()}', MaNCC = N'{txtmakhachhang.Text}', TongTien = '{txttongtien.Text}' where SoHDN = N'{txthdb.Text.Trim()}' ");
-                    Showresult();
+                    if (table1.Rows.Count > 0)
+                    {
+                        DSHDB.CapNhatDuLieu($"update tblHoaDonNhap set  MaNV = N'{cbmanhanvien.Text.Trim()}', NgayNhap = N'{datetime.Value.ToString().Trim()}', MaNCC = N'{txtmakhachhang.Text}', TongTien = '{txttongtien.Text}' where SoHDN = N'{txthdb.Text.Trim()}' ");
+                        Showresult();
+                        txthdb.Enabled = true;
+                        MessageBox.Show("Sửa thành công");
+                    }
+                    else
+                    {
+                        MessageBox.Show($"Không tồn tại mã NCC {txtmakhachhang.Text} trong danh sách");
+                    }
 
-                    txthdb.Enabled = true;
 
 
-                    MessageBox.Show("Sửa thành công");
                 }
                 else
                 {

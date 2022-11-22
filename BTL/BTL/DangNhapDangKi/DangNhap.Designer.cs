@@ -48,7 +48,7 @@
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.Location = new System.Drawing.Point(69, 401);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(40, 37);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -59,7 +59,7 @@
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
             this.pictureBox3.Location = new System.Drawing.Point(69, 297);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(40, 37);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -71,7 +71,7 @@
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.InitialImage = null;
             this.pictureBox1.Location = new System.Drawing.Point(144, 15);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(325, 212);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -89,7 +89,7 @@
             this.linkLabel1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(154, 22);
-            this.linkLabel1.TabIndex = 7;
+            this.linkLabel1.TabIndex = 3;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "Quên Mật Khẩu ?";
             this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
@@ -105,7 +105,7 @@
             this.linkLabel2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.linkLabel2.Name = "linkLabel2";
             this.linkLabel2.Size = new System.Drawing.Size(78, 22);
-            this.linkLabel2.TabIndex = 7;
+            this.linkLabel2.TabIndex = 2;
             this.linkLabel2.TabStop = true;
             this.linkLabel2.Text = "Đăng Kí";
             this.linkLabel2.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel2_LinkClicked);
@@ -116,7 +116,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
             this.button1.Location = new System.Drawing.Point(576, 0);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(53, 49);
             this.button1.TabIndex = 12;
@@ -131,14 +131,13 @@
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.ForeColor = System.Drawing.Color.DimGray;
             this.textBox1.Location = new System.Drawing.Point(144, 295);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(5);
             this.textBox1.Multiline = false;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Padding = new System.Windows.Forms.Padding(9, 9, 9, 9);
+            this.textBox1.Padding = new System.Windows.Forms.Padding(9);
             this.textBox1.PasswordChar = false;
             this.textBox1.Size = new System.Drawing.Size(340, 39);
-
-            this.textBox1.TabIndex = 13;
+            this.textBox1.TabIndex = 0;
             this.textBox1.Texts = "";
             this.textBox1.UnderlinedStyle = true;
             // 
@@ -149,16 +148,14 @@
             this.txtmk.BorderSize = 2;
             this.txtmk.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtmk.ForeColor = System.Drawing.Color.DimGray;
-            
             this.txtmk.Location = new System.Drawing.Point(144, 400);
-            this.txtmk.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.txtmk.Margin = new System.Windows.Forms.Padding(5);
             this.txtmk.Multiline = false;
             this.txtmk.Name = "txtmk";
-            this.txtmk.Padding = new System.Windows.Forms.Padding(9, 9, 9, 9);
+            this.txtmk.Padding = new System.Windows.Forms.Padding(9);
             this.txtmk.PasswordChar = false;
             this.txtmk.Size = new System.Drawing.Size(340, 39);
-
-            this.txtmk.TabIndex = 11;
+            this.txtmk.TabIndex = 1;
             this.txtmk.Texts = "";
             this.txtmk.UnderlinedStyle = true;
             // 
@@ -169,15 +166,16 @@
             this.radio2.BorderColor = System.Drawing.Color.PaleVioletRed;
             this.radio2.BorderRadius = 20;
             this.radio2.BorderSize = 0;
+            this.radio2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.radio2.FlatAppearance.BorderSize = 0;
             this.radio2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.radio2.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radio2.ForeColor = System.Drawing.Color.White;
             this.radio2.Location = new System.Drawing.Point(360, 591);
-            this.radio2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.radio2.Margin = new System.Windows.Forms.Padding(4);
             this.radio2.Name = "radio2";
             this.radio2.Size = new System.Drawing.Size(179, 41);
-            this.radio2.TabIndex = 10;
+            this.radio2.TabIndex = 5;
             this.radio2.Text = "THOÁT";
             this.radio2.TextColor = System.Drawing.Color.White;
             this.radio2.UseVisualStyleBackColor = false;
@@ -190,15 +188,16 @@
             this.radio1.BorderColor = System.Drawing.Color.PaleVioletRed;
             this.radio1.BorderRadius = 20;
             this.radio1.BorderSize = 0;
+            this.radio1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.radio1.FlatAppearance.BorderSize = 0;
             this.radio1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.radio1.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radio1.ForeColor = System.Drawing.Color.White;
             this.radio1.Location = new System.Drawing.Point(95, 591);
-            this.radio1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.radio1.Margin = new System.Windows.Forms.Padding(4);
             this.radio1.Name = "radio1";
             this.radio1.Size = new System.Drawing.Size(179, 41);
-            this.radio1.TabIndex = 10;
+            this.radio1.TabIndex = 4;
             this.radio1.Text = "ĐĂNG NHẬP";
             this.radio1.TextColor = System.Drawing.Color.White;
             this.radio1.UseVisualStyleBackColor = false;
@@ -222,7 +221,7 @@
             this.Controls.Add(this.pictureBox2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "DangNhap";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DangNhap";

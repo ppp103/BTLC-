@@ -86,7 +86,7 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DangNhapDangKi\Connection.cs" />
+    <Compile Include="Classes\Connection.cs" />
     <Compile Include="DangNhapDangKi\DangKi.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -99,8 +99,8 @@
     <Compile Include="DangNhapDangKi\DangNhap.Designer.cs">
       <DependentUpon>DangNhap.cs</DependentUpon>
     </Compile>
-    <Compile Include="DangNhapDangKi\Id.cs" />
-    <Compile Include="DangNhapDangKi\Modify.cs" />
+    <Compile Include="Classes\Id.cs" />
+    <Compile Include="Classes\Modify.cs" />
     <Compile Include="DangNhapDangKi\Quenmatkhau.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -159,12 +159,6 @@
     <Compile Include="Forms\FormHDN.Designer.cs">
       <DependentUpon>FormHDN.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\FormLapHoaDon.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\FormLapHoaDon.Designer.cs">
-      <DependentUpon>FormLapHoaDon.cs</DependentUpon>
-    </Compile>
     <Compile Include="Forms\FormNhapHang.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -176,18 +170,6 @@
     </Compile>
     <Compile Include="Forms\FormReport.Designer.cs">
       <DependentUpon>FormReport.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\FormThanhToanLuong.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\FormThanhToanLuong.Designer.cs">
-      <DependentUpon>FormThanhToanLuong.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\FormNhapHangHoa.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\FormNhapHangHoa.Designer.cs">
-      <DependentUpon>FormNhapHangHoa.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\FormThongKeHoaDon.cs">
       <SubType>Form</SubType>
@@ -201,7 +183,6 @@
     <Compile Include="Forms\FormTkeHangHoa.Designer.cs">
       <DependentUpon>FormTkeHangHoa.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\QlyAnh.cs" />
     <Compile Include="Forms\TrangChinh.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -212,8 +193,8 @@
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="SqlServerTypes\Loader.cs" />
-    <Compile Include="XuLyCSDL.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="Classes\XuLyCSDL.cs" />
+    <Compile Include="Classes\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="DangNhapDangKi\DangKi.resx">
       <DependentUpon>DangKi.cs</DependentUpon>
@@ -245,20 +226,11 @@
     <EmbeddedResource Include="Forms\FormHDN.resx">
       <DependentUpon>FormHDN.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FormLapHoaDon.resx">
-      <DependentUpon>FormLapHoaDon.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormNhapHang.resx">
       <DependentUpon>FormNhapHang.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormReport.resx">
       <DependentUpon>FormReport.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FormThanhToanLuong.resx">
-      <DependentUpon>FormThanhToanLuong.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FormNhapHangHoa.resx">
-      <DependentUpon>FormNhapHangHoa.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormThongKeHoaDon.resx">
       <DependentUpon>FormThongKeHoaDon.cs</DependentUpon>
@@ -321,10 +293,10 @@
     <Folder Include="Images\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="DangNhapDangKi\DangNhap.mdf">
+    <Content Include="DataBase\DangNhap.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="DangNhapDangKi\DangNhap_log.ldf">
+    <Content Include="DataBase\DangNhap_log.ldf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>DangNhap.mdf</DependentUpon>
     </Content>
@@ -335,10 +307,10 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>DuLieu.mdf</DependentUpon>
     </Content>
-    <Content Include="DangNhapDangKi\NhanVien.mdf">
+    <Content Include="DataBase\NhanVien.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="DangNhapDangKi\NhanVien_log.ldf">
+    <Content Include="DataBase\NhanVien_log.ldf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>NhanVien.mdf</DependentUpon>
     </Content>

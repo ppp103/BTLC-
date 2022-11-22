@@ -39,7 +39,7 @@ namespace BTL
             dataGridView1.Columns[0].HeaderText = "Số HĐB";
             dataGridView1.Columns[1].HeaderText = "Mã Nhân Viên";
             dataGridView1.Columns[2].HeaderText = "Ngày Bán";
-            dataGridView1.Columns[3].HeaderText = "Mã Khách Hàng";
+            dataGridView1.Columns[3].HeaderText = "Mã KH";
             dataGridView1.Columns[4].HeaderText = "Tổng Tiền";
             dataGridView1.BackgroundColor = Color.White;
             dtHdb.Dispose();
@@ -205,13 +205,18 @@ namespace BTL
             {
                 if (isCheck())
                 {
-                    DSHDB.CapNhatDuLieu($"update tblHoaDonBan set  MaNV = N'{cbmanhanvien.Text.Trim()}', NgayBan = N'{datetime.Value.ToString().Trim()}', MaKH = N'{txtmakhachhang.Text}', TongTien = '{txttongtien.Text}' where SoHDB = N'{txthdb.Text.Trim()}' ");
-                    Showresult();
-
-                    txthdb.Enabled = true;
-
-
-                    MessageBox.Show("Sửa thành công");
+                    DataTable table1 = DSHDB.DocBang($"Select * From tblKhachHang Where MaKH= '{txtmakhachhang.Text.Trim()}'");
+                    if (table1.Rows.Count == 0)
+                    {
+                        MessageBox.Show($"Không tồn tại mã khách {txtmakhachhang.Text} trong danh sách");
+                    }
+                    else
+                    {
+                        DSHDB.CapNhatDuLieu($"update tblHoaDonBan set  MaNV = N'{cbmanhanvien.Text.Trim()}', NgayBan = N'{datetime.Value.ToString().Trim()}', MaKH = N'{txtmakhachhang.Text}', TongTien = '{txttongtien.Text}' where SoHDB = N'{txthdb.Text.Trim()}' ");
+                        Showresult();
+                        txthdb.Enabled = true;
+                        MessageBox.Show("Sửa thành công");
+                    }
                 }
                 else
                 {
@@ -256,6 +261,8 @@ namespace BTL
         public void guna2Button5_Click(object sender, EventArgs e)
         {
             DSHDB.CapNhatDuLieu("UPDATE tblHoaDonBan set tblHoaDonBan.TongTien = (select ISNULL(SUM(tblChiTietHoaDonBan.ThanhTien),0.0000) FROM tblChiTietHoaDonBan where tblChiTietHoaDonBan.SoHDB = tblHoaDonBan.SoHDB) \r\n");
+            cbmanhanvien.Items.Clear();
+            cbmanhanvien.ResetText();
             FormHDB_Load(this, e);
         }
 

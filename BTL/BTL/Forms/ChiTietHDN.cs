@@ -83,7 +83,7 @@ namespace BTL.Forms
             DataTable hdb = cthdb.DocBang($"select * from tblChiTietHoaDonNhap");
             dataGridView1.DataSource = hdb;
             dataGridView1.ColumnHeadersDefaultCellStyle.Font = new Font("Arial", 9, FontStyle.Bold);
-            dataGridView1.Columns[4].HeaderText = "Số Hóa Đơn Nhập";
+            dataGridView1.Columns[4].HeaderText = "Số HĐN";
             dataGridView1.Columns[5].HeaderText = "Mã Hàng";
             dataGridView1.Columns[0].HeaderText = "Số Lượng";
             dataGridView1.Columns[2].HeaderText = "Giảm Giá";

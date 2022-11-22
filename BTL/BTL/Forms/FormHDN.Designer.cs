@@ -85,10 +85,10 @@ namespace BTL.Forms
             this.guna2Button5.HoverState.FillColor = System.Drawing.Color.OrangeRed;
             this.guna2Button5.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button5.Image")));
             this.guna2Button5.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2Button5.Location = new System.Drawing.Point(280, 816);
+            this.guna2Button5.Location = new System.Drawing.Point(230, 816);
             this.guna2Button5.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Button5.Name = "guna2Button5";
-            this.guna2Button5.Size = new System.Drawing.Size(148, 55);
+            this.guna2Button5.Size = new System.Drawing.Size(188, 55);
             this.guna2Button5.TabIndex = 116;
             this.guna2Button5.Text = "CẬP NHẬT";
             this.guna2Button5.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -110,10 +110,10 @@ namespace BTL.Forms
             this.btnXoa.HoverState.FillColor = System.Drawing.Color.OrangeRed;
             this.btnXoa.Image = ((System.Drawing.Image)(resources.GetObject("btnXoa.Image")));
             this.btnXoa.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnXoa.Location = new System.Drawing.Point(280, 890);
+            this.btnXoa.Location = new System.Drawing.Point(230, 890);
             this.btnXoa.Margin = new System.Windows.Forms.Padding(4);
             this.btnXoa.Name = "btnXoa";
-            this.btnXoa.Size = new System.Drawing.Size(191, 55);
+            this.btnXoa.Size = new System.Drawing.Size(188, 55);
             this.btnXoa.TabIndex = 115;
             this.btnXoa.Text = "XÓA HÓA ĐƠN";
             this.btnXoa.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -138,7 +138,7 @@ namespace BTL.Forms
             this.guna2Button3.Location = new System.Drawing.Point(18, 738);
             this.guna2Button3.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Button3.Name = "guna2Button3";
-            this.guna2Button3.Size = new System.Drawing.Size(387, 55);
+            this.guna2Button3.Size = new System.Drawing.Size(400, 55);
             this.guna2Button3.TabIndex = 114;
             this.guna2Button3.Text = "THÊM SẢN PHẨM VÀO CHI TIẾT HĐN";
             this.guna2Button3.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -393,7 +393,7 @@ namespace BTL.Forms
             this.radio5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.radio5.ForeColor = System.Drawing.Color.White;
             this.radio5.Image = ((System.Drawing.Image)(resources.GetObject("radio5.Image")));
-            this.radio5.Location = new System.Drawing.Point(468, 816);
+            this.radio5.Location = new System.Drawing.Point(479, 816);
             this.radio5.Margin = new System.Windows.Forms.Padding(4);
             this.radio5.Name = "radio5";
             this.radio5.Size = new System.Drawing.Size(53, 49);

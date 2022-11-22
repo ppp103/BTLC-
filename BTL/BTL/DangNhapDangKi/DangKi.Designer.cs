@@ -154,6 +154,7 @@
             this.radio1.BorderColor = System.Drawing.Color.PaleVioletRed;
             this.radio1.BorderRadius = 20;
             this.radio1.BorderSize = 0;
+            this.radio1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.radio1.FlatAppearance.BorderSize = 0;
             this.radio1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.radio1.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
