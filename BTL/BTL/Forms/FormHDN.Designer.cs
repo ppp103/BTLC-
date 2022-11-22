@@ -74,6 +74,7 @@ namespace BTL.Forms
             this.guna2Button5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.guna2Button5.AutoRoundedCorners = true;
             this.guna2Button5.BorderRadius = 26;
+            this.guna2Button5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.guna2Button5.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.guna2Button5.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.guna2Button5.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -98,6 +99,7 @@ namespace BTL.Forms
             this.btnXoa.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.btnXoa.AutoRoundedCorners = true;
             this.btnXoa.BorderRadius = 26;
+            this.btnXoa.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnXoa.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnXoa.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnXoa.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -122,6 +124,7 @@ namespace BTL.Forms
             this.guna2Button3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.guna2Button3.AutoRoundedCorners = true;
             this.guna2Button3.BorderRadius = 26;
+            this.guna2Button3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.guna2Button3.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.guna2Button3.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.guna2Button3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -146,6 +149,7 @@ namespace BTL.Forms
             this.btnSua.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.btnSua.AutoRoundedCorners = true;
             this.btnSua.BorderRadius = 26;
+            this.btnSua.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSua.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnSua.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnSua.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -170,6 +174,7 @@ namespace BTL.Forms
             this.btnThem.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.btnThem.AutoRoundedCorners = true;
             this.btnThem.BorderRadius = 26;
+            this.btnThem.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnThem.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnThem.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnThem.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -383,6 +388,7 @@ namespace BTL.Forms
             this.radio5.BorderColor = System.Drawing.Color.PaleVioletRed;
             this.radio5.BorderRadius = 20;
             this.radio5.BorderSize = 0;
+            this.radio5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.radio5.FlatAppearance.BorderSize = 0;
             this.radio5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.radio5.ForeColor = System.Drawing.Color.White;

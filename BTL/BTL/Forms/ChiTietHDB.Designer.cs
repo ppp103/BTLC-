@@ -55,8 +55,8 @@
             this.btnThem = new Guna.UI2.WinForms.Guna2Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.dataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.btnReset = new BTL.Radio();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.btnReset = new BTL.Radio();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtgiamgia)).BeginInit();
             this.panel2.SuspendLayout();
@@ -308,6 +308,7 @@
             // 
             this.btnXoaHoaDon.AutoRoundedCorners = true;
             this.btnXoaHoaDon.BorderRadius = 26;
+            this.btnXoaHoaDon.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnXoaHoaDon.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnXoaHoaDon.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnXoaHoaDon.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -331,6 +332,7 @@
             // 
             this.btnXoaSanPham.AutoRoundedCorners = true;
             this.btnXoaSanPham.BorderRadius = 26;
+            this.btnXoaSanPham.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnXoaSanPham.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnXoaSanPham.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnXoaSanPham.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -354,6 +356,7 @@
             // 
             this.btnSua.AutoRoundedCorners = true;
             this.btnSua.BorderRadius = 26;
+            this.btnSua.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSua.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnSua.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnSua.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -377,6 +380,7 @@
             // 
             this.btnThem.AutoRoundedCorners = true;
             this.btnThem.BorderRadius = 26;
+            this.btnThem.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnThem.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnThem.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnThem.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -479,6 +483,10 @@
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
             // btnReset
             // 
             this.btnReset.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
@@ -487,6 +495,7 @@
             this.btnReset.BorderColor = System.Drawing.Color.PaleVioletRed;
             this.btnReset.BorderRadius = 20;
             this.btnReset.BorderSize = 0;
+            this.btnReset.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnReset.FlatAppearance.BorderSize = 0;
             this.btnReset.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnReset.ForeColor = System.Drawing.Color.White;
@@ -499,10 +508,6 @@
             this.btnReset.TextColor = System.Drawing.Color.White;
             this.btnReset.UseVisualStyleBackColor = false;
             this.btnReset.Click += new System.EventHandler(this.radio5_Click);
-            // 
-            // errorProvider1
-            // 
-            this.errorProvider1.ContainerControl = this;
             // 
             // ChiTietHDB
             // 

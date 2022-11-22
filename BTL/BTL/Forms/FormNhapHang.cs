@@ -12,7 +12,7 @@ namespace BTL
         SqlDataReader dr;
         XuLyCSDL nam = new XuLyCSDL();
         SqlConnection strConnect = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\HocHanh(ki5)\C#\Projects\BTLv7\BTL\BTL\DataBase\DuLieu.mdf;Integrated Security=True");
-        string duongdan = "";
+        string duongdan = "D:\\HocHanh(ki5)\\C#\\Projects\\BTLv7\\BTL\\BTL\\Images\\perfume1.jpg";
         SqlCommand cmd;
 
         public FormNhapHang()
@@ -238,6 +238,8 @@ namespace BTL
             {
                 duongdan = openFileDialog.FileName.ToString();
                 picture.ImageLocation = duongdan; // set đường dẫn cho ảnh
+                //MessageBox.Show(duongdan);
+                //txtMaHang.Text = duongdan;
             }
         }
 

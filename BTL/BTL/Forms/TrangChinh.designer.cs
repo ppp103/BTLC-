@@ -98,7 +98,7 @@ namespace HomePage
             this.btnBaoCao.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnBaoCao.IconSize = 35;
             this.btnBaoCao.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBaoCao.Location = new System.Drawing.Point(0, 762);
+            this.btnBaoCao.Location = new System.Drawing.Point(0, 668);
             this.btnBaoCao.Name = "btnBaoCao";
             this.btnBaoCao.Padding = new System.Windows.Forms.Padding(10, 0, 21, 0);
             this.btnBaoCao.Size = new System.Drawing.Size(277, 65);
@@ -125,7 +125,7 @@ namespace HomePage
             this.btnNhapHoaDonBan.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnNhapHoaDonBan.IconSize = 35;
             this.btnNhapHoaDonBan.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnNhapHoaDonBan.Location = new System.Drawing.Point(0, 697);
+            this.btnNhapHoaDonBan.Location = new System.Drawing.Point(0, 603);
             this.btnNhapHoaDonBan.Name = "btnNhapHoaDonBan";
             this.btnNhapHoaDonBan.Padding = new System.Windows.Forms.Padding(10, 0, 21, 0);
             this.btnNhapHoaDonBan.Size = new System.Drawing.Size(277, 65);
@@ -142,11 +142,11 @@ namespace HomePage
             this.panelTkeHoaDon.Controls.Add(this.btnHoaDonBan);
             this.panelTkeHoaDon.Controls.Add(this.btnTkeHoaDon);
             this.panelTkeHoaDon.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelTkeHoaDon.Location = new System.Drawing.Point(0, 493);
+            this.panelTkeHoaDon.Location = new System.Drawing.Point(0, 535);
             this.panelTkeHoaDon.MaximumSize = new System.Drawing.Size(0, 204);
             this.panelTkeHoaDon.MinimumSize = new System.Drawing.Size(0, 68);
             this.panelTkeHoaDon.Name = "panelTkeHoaDon";
-            this.panelTkeHoaDon.Size = new System.Drawing.Size(277, 204);
+            this.panelTkeHoaDon.Size = new System.Drawing.Size(277, 68);
             this.panelTkeHoaDon.TabIndex = 4;
             // 
             // btnHoaDonNhap
@@ -242,7 +242,7 @@ namespace HomePage
             this.btnNhapHang.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnNhapHang.IconSize = 35;
             this.btnNhapHang.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnNhapHang.Location = new System.Drawing.Point(0, 428);
+            this.btnNhapHang.Location = new System.Drawing.Point(0, 470);
             this.btnNhapHang.Name = "btnNhapHang";
             this.btnNhapHang.Padding = new System.Windows.Forms.Padding(10, 0, 21, 0);
             this.btnNhapHang.Size = new System.Drawing.Size(277, 65);
@@ -269,7 +269,7 @@ namespace HomePage
             this.btnTkeHangHoa.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnTkeHangHoa.IconSize = 35;
             this.btnTkeHangHoa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTkeHangHoa.Location = new System.Drawing.Point(0, 363);
+            this.btnTkeHangHoa.Location = new System.Drawing.Point(0, 405);
             this.btnTkeHangHoa.Name = "btnTkeHangHoa";
             this.btnTkeHangHoa.Padding = new System.Windows.Forms.Padding(10, 0, 21, 0);
             this.btnTkeHangHoa.Size = new System.Drawing.Size(277, 65);
@@ -296,7 +296,7 @@ namespace HomePage
             this.iconHome.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconHome.IconSize = 35;
             this.iconHome.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconHome.Location = new System.Drawing.Point(0, 298);
+            this.iconHome.Location = new System.Drawing.Point(0, 340);
             this.iconHome.Name = "iconHome";
             this.iconHome.Padding = new System.Windows.Forms.Padding(10, 0, 21, 0);
             this.iconHome.Size = new System.Drawing.Size(277, 65);
@@ -315,7 +315,7 @@ namespace HomePage
             this.panelBlank.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelBlank.Location = new System.Drawing.Point(0, 0);
             this.panelBlank.Name = "panelBlank";
-            this.panelBlank.Size = new System.Drawing.Size(277, 298);
+            this.panelBlank.Size = new System.Drawing.Size(277, 340);
             this.panelBlank.TabIndex = 8;
             // 
             // label1
@@ -324,7 +324,7 @@ namespace HomePage
             this.label1.BackColor = System.Drawing.Color.PeachPuff;
             this.label1.Font = new System.Drawing.Font("Monotype Corsiva", 28.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(-2, 232);
+            this.label1.Location = new System.Drawing.Point(5, 256);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(266, 56);
             this.label1.TabIndex = 1;

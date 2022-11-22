@@ -217,6 +217,7 @@ namespace BTL.Forms
             // 
             this.btnXoaHoaDon.AutoRoundedCorners = true;
             this.btnXoaHoaDon.BorderRadius = 26;
+            this.btnXoaHoaDon.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnXoaHoaDon.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnXoaHoaDon.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnXoaHoaDon.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -230,7 +231,7 @@ namespace BTL.Forms
             this.btnXoaHoaDon.Location = new System.Drawing.Point(9, 721);
             this.btnXoaHoaDon.Margin = new System.Windows.Forms.Padding(4);
             this.btnXoaHoaDon.Name = "btnXoaHoaDon";
-            this.btnXoaHoaDon.Size = new System.Drawing.Size(240, 55);
+            this.btnXoaHoaDon.Size = new System.Drawing.Size(227, 55);
             this.btnXoaHoaDon.TabIndex = 117;
             this.btnXoaHoaDon.Text = "XÓA HÓA ĐƠN";
             this.btnXoaHoaDon.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -240,6 +241,7 @@ namespace BTL.Forms
             // 
             this.btnXoaSanPham.AutoRoundedCorners = true;
             this.btnXoaSanPham.BorderRadius = 26;
+            this.btnXoaSanPham.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnXoaSanPham.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnXoaSanPham.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnXoaSanPham.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -263,6 +265,7 @@ namespace BTL.Forms
             // 
             this.btnSua.AutoRoundedCorners = true;
             this.btnSua.BorderRadius = 26;
+            this.btnSua.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSua.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnSua.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnSua.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -286,6 +289,7 @@ namespace BTL.Forms
             // 
             this.btnThem.AutoRoundedCorners = true;
             this.btnThem.BorderRadius = 26;
+            this.btnThem.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnThem.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnThem.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnThem.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -435,6 +439,7 @@ namespace BTL.Forms
             this.btnReset.BorderColor = System.Drawing.Color.PaleVioletRed;
             this.btnReset.BorderRadius = 20;
             this.btnReset.BorderSize = 0;
+            this.btnReset.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnReset.FlatAppearance.BorderSize = 0;
             this.btnReset.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnReset.ForeColor = System.Drawing.Color.White;
