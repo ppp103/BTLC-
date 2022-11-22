@@ -38,17 +38,44 @@ namespace BTL.DangNhapDangKi
             string mk = txtpass.Texts;
             string xacnhanmk = txtconfirmpass.Texts;
             string email = txtemail.Texts;
-            if (!checkAccount(tentk)) { MessageBox.Show("Tên tài khoản phải chứa từ 3-8 kí tự và các chữ cái thường và chữ hoa !", "Cảnh Báo !", MessageBoxButtons.OK, MessageBoxIcon.Information); return; }
-            if (!checkAccount(mk)) { MessageBox.Show("Tên mật khẩu phải chứa từ 3-8 kí tự và các chữ  thường và chữ  hoa !", "Cảnh Báo !", MessageBoxButtons.OK, MessageBoxIcon.Information); return; }
-            if(xacnhanmk!=mk){ MessageBox.Show("Mật khẩu chưa  trùng khớp!", "Cảnh Báo !", MessageBoxButtons.OK, MessageBoxIcon.Information); return; }
-            if (tentk == mk) { MessageBox.Show("Tên tài khoản và mật khẩu không được giống kí tự nhau!", "Cảnh Báo !", MessageBoxButtons.OK, MessageBoxIcon.Information); return; }
-            if (!checkEmail(email)) { MessageBox.Show("Email chưa đúng định dạng!", "Cảnh Báo !", MessageBoxButtons.OK, MessageBoxIcon.Information); return; }
-            if(mod.Id("SELECT * FROM tblLogin WHERE EMAIL = '" + email + "'").Count!=0) { MessageBox.Show("Email đã  tồn tại , vui lòng nhập email khác!", "Cảnh Báo !", MessageBoxButtons.OK, MessageBoxIcon.Information); return; }
+            //if (!checkEmail(email)) { MessageBox.Show("Email không đúng định dạng", "Cảnh Báo !", MessageBoxButtons.OK, MessageBoxIcon.Information); return; }
+            if (!checkEmail(email)) 
+            { 
+                MessageBox.Show("Email chưa đúng định dạng!", "Cảnh Báo !", MessageBoxButtons.OK, MessageBoxIcon.Information); 
+                return; 
+            }
+            
+            if (!checkAccount(tentk)) { 
+                MessageBox.Show("Tên tài khoản chưa hợp lệ <tên từ 3-20 kí tự và không có kí tự đặc biệt:,.*> !", "Cảnh Báo !", MessageBoxButtons.OK, MessageBoxIcon.Information); 
+                return; 
+            }
+
+            if(mk == "")
+            {
+                MessageBox.Show("Vui lòng nhập mật khẩu");
+                return;
+            }
+
+            if (tentk == mk) { 
+                MessageBox.Show("Tên tài khoản và mật khẩu không được giống nhau!", "Cảnh Báo !", MessageBoxButtons.OK, MessageBoxIcon.Information); 
+                return; 
+            }
+            
+            if(xacnhanmk!=mk){ 
+                MessageBox.Show("Mật khẩu chưa trùng khớp!", "Cảnh Báo !", MessageBoxButtons.OK, MessageBoxIcon.Information); 
+                return; 
+            }
+
+            if(mod.Id("SELECT * FROM tblLogin WHERE EMAIL = '" + email + "'").Count!=0) { 
+                MessageBox.Show("Email đã  tồn tại , vui lòng nhập email khác!", "Cảnh Báo !", MessageBoxButtons.OK, MessageBoxIcon.Information); 
+                return; 
+            }
+
             try 
             { 
                 string query = "INSERT INTO tblLogin VALUES('"+tentk+"','"+mk+"','"+email+"')";
                 mod.Command(query);
-                if(MessageBox.Show("Đăng Ký Tài Khoản Mới Thành Công!,Bạn Có Muốn Đăng Nhập Luôn Không", "SOS !!!", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
+                if(MessageBox.Show("Đăng ký tài khoản thành công!, Bạn có muốn đăng nhập luôn không", "SOS !!!", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
                 {
                     
                     this.Close();
@@ -56,8 +83,14 @@ namespace BTL.DangNhapDangKi
             }
             catch 
             {
-                MessageBox.Show("Tên tài khoản này  đã  tồn tại , vui sử dụng tên tài khoản  khác!", "Cảnh Báo !", MessageBoxButtons.OK, MessageBoxIcon.Information); return;
+                MessageBox.Show("Tên tài khoản này đã tồn tại, vui sử dụng tên tài khoản khác!", "Cảnh Báo !", MessageBoxButtons.OK, MessageBoxIcon.Information); 
+                return;
             }
+        }
+
+        private void DangKi_Load(object sender, EventArgs e)
+        {
+            txtemail.Focus();
         }
     }
 }

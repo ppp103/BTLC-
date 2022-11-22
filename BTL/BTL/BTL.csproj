@@ -51,9 +51,6 @@
     <Reference Include="FontAwesome.Sharp, Version=6.1.1.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f, processorArchitecture=MSIL">
       <HintPath>..\packages\FontAwesome.Sharp.6.1.1\lib\net472\FontAwesome.Sharp.dll</HintPath>
     </Reference>
-    <Reference Include="Guna.Charts.WinForms, Version=1.0.4.0, Culture=neutral, PublicKeyToken=70866663edbc6595, processorArchitecture=MSIL">
-      <HintPath>..\packages\Guna.Charts.WinForms.1.0.4\lib\net40\Guna.Charts.WinForms.dll</HintPath>
-    </Reference>
     <Reference Include="Guna.UI2, Version=2.0.3.5, Culture=neutral, PublicKeyToken=4015e4865bda28a4, processorArchitecture=MSIL">
       <HintPath>..\packages\Guna.UI2.WinForms.2.0.3.5\lib\net40\Guna.UI2.dll</HintPath>
     </Reference>
@@ -122,12 +119,12 @@
     <Compile Include="DangNhapDangKi\Textboxxx.Designer.cs">
       <DependentUpon>Textboxxx.cs</DependentUpon>
     </Compile>
-    <Compile Include="DuLieuDataSet.Designer.cs">
+    <Compile Include="Dataset\DuLieuDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DuLieuDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="DuLieuDataSet1.Designer.cs">
+    <Compile Include="Dataset\DuLieuDataSet1.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DuLieuDataSet1.xsd</DependentUpon>
@@ -284,26 +281,26 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Reports\Report1.rdlc" />
     <EmbeddedResource Include="Reports\Report2.rdlc" />
-    <None Include="DuLieuDataSet.xsc">
+    <None Include="Dataset\DuLieuDataSet.xsc">
       <DependentUpon>DuLieuDataSet.xsd</DependentUpon>
     </None>
-    <None Include="DuLieuDataSet.xsd">
+    <None Include="Dataset\DuLieuDataSet.xsd">
       <Generator>MSDataSetGenerator</Generator>
       <LastGenOutput>DuLieuDataSet.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="DuLieuDataSet.xss">
+    <None Include="Dataset\DuLieuDataSet.xss">
       <DependentUpon>DuLieuDataSet.xsd</DependentUpon>
     </None>
-    <None Include="DuLieuDataSet1.xsc">
+    <None Include="Dataset\DuLieuDataSet1.xsc">
       <DependentUpon>DuLieuDataSet1.xsd</DependentUpon>
     </None>
-    <None Include="DuLieuDataSet1.xsd">
+    <None Include="Dataset\DuLieuDataSet1.xsd">
       <Generator>MSDataSetGenerator</Generator>
       <LastGenOutput>DuLieuDataSet1.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="DuLieuDataSet1.xss">
+    <None Include="Dataset\DuLieuDataSet1.xss">
       <DependentUpon>DuLieuDataSet1.xsd</DependentUpon>
     </None>
     <None Include="packages.config" />
@@ -321,7 +318,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Dataset\" />
     <Folder Include="Images\" />
   </ItemGroup>
   <ItemGroup>

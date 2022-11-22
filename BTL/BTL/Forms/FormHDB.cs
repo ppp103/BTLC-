@@ -253,13 +253,10 @@ namespace BTL
             }
         }
 
-        private void guna2Button5_Click(object sender, EventArgs e)
+        public void guna2Button5_Click(object sender, EventArgs e)
         {
-
-
             DSHDB.CapNhatDuLieu("UPDATE tblHoaDonBan set tblHoaDonBan.TongTien = (select ISNULL(SUM(tblChiTietHoaDonBan.ThanhTien),0.0000) FROM tblChiTietHoaDonBan where tblChiTietHoaDonBan.SoHDB = tblHoaDonBan.SoHDB) \r\n");
             FormHDB_Load(this, e);
-
         }
 
         private void guna2Button3_Click(object sender, EventArgs e)

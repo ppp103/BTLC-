@@ -46,9 +46,10 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(164, 34);
+            this.pictureBox1.Location = new System.Drawing.Point(241, 37);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(244, 172);
+            this.pictureBox1.Size = new System.Drawing.Size(325, 212);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 14;
             this.pictureBox1.TabStop = false;
@@ -56,40 +57,44 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Trebuchet MS", 17.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(3, 247);
+            this.label1.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(26, 299);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(79, 28);
+            this.label1.Size = new System.Drawing.Size(70, 26);
             this.label1.TabIndex = 21;
             this.label1.Text = "Email:";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Trebuchet MS", 17.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(3, 419);
+            this.label3.Font = new System.Drawing.Font("Trebuchet MS", 12.25F, System.Drawing.FontStyle.Bold);
+            this.label3.Location = new System.Drawing.Point(26, 511);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(117, 28);
+            this.label3.Size = new System.Drawing.Size(113, 27);
             this.label3.TabIndex = 21;
             this.label3.Text = "Mật Khẩu:";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Trebuchet MS", 17.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(3, 506);
+            this.label5.Font = new System.Drawing.Font("Trebuchet MS", 12.25F, System.Drawing.FontStyle.Bold);
+            this.label5.Location = new System.Drawing.Point(26, 618);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(268, 28);
+            this.label5.Size = new System.Drawing.Size(254, 27);
             this.label5.TabIndex = 21;
             this.label5.Text = "Xác Nhận Lại Mật Khẩu :";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Trebuchet MS", 17.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(3, 331);
+            this.label2.Font = new System.Drawing.Font("Trebuchet MS", 12.25F, System.Drawing.FontStyle.Bold);
+            this.label2.Location = new System.Drawing.Point(26, 402);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(181, 28);
+            this.label2.Size = new System.Drawing.Size(168, 27);
             this.label2.TabIndex = 21;
             this.label2.Text = "Tên Đăng Nhập:";
             // 
@@ -98,9 +103,10 @@
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.Location = new System.Drawing.Point(540, -1);
+            this.button1.Location = new System.Drawing.Point(669, -2);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(40, 40);
+            this.button1.Size = new System.Drawing.Size(53, 49);
             this.button1.TabIndex = 23;
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -112,14 +118,14 @@
             this.txttk.BorderSize = 2;
             this.txttk.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txttk.ForeColor = System.Drawing.Color.DimGray;
-            this.txttk.Location = new System.Drawing.Point(278, 328);
-            this.txttk.Margin = new System.Windows.Forms.Padding(4);
+            this.txttk.Location = new System.Drawing.Point(289, 390);
+            this.txttk.Margin = new System.Windows.Forms.Padding(5);
             this.txttk.Multiline = false;
             this.txttk.Name = "txttk";
-            this.txttk.Padding = new System.Windows.Forms.Padding(7);
+            this.txttk.Padding = new System.Windows.Forms.Padding(9);
             this.txttk.PasswordChar = false;
-            this.txttk.Size = new System.Drawing.Size(282, 31);
-            this.txttk.TabIndex = 25;
+            this.txttk.Size = new System.Drawing.Size(376, 39);
+            this.txttk.TabIndex = 1;
             this.txttk.Texts = "";
             this.txttk.UnderlinedStyle = true;
             // 
@@ -130,14 +136,14 @@
             this.txtemail.BorderSize = 2;
             this.txtemail.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtemail.ForeColor = System.Drawing.Color.DimGray;
-            this.txtemail.Location = new System.Drawing.Point(278, 247);
-            this.txtemail.Margin = new System.Windows.Forms.Padding(4);
+            this.txtemail.Location = new System.Drawing.Point(289, 299);
+            this.txtemail.Margin = new System.Windows.Forms.Padding(5);
             this.txtemail.Multiline = false;
             this.txtemail.Name = "txtemail";
-            this.txtemail.Padding = new System.Windows.Forms.Padding(7);
+            this.txtemail.Padding = new System.Windows.Forms.Padding(9);
             this.txtemail.PasswordChar = false;
-            this.txtemail.Size = new System.Drawing.Size(282, 31);
-            this.txtemail.TabIndex = 24;
+            this.txtemail.Size = new System.Drawing.Size(376, 39);
+            this.txtemail.TabIndex = 0;
             this.txtemail.Texts = "";
             this.txtemail.UnderlinedStyle = true;
             // 
@@ -152,10 +158,11 @@
             this.radio1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.radio1.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radio1.ForeColor = System.Drawing.Color.White;
-            this.radio1.Location = new System.Drawing.Point(164, 594);
+            this.radio1.Location = new System.Drawing.Point(213, 713);
+            this.radio1.Margin = new System.Windows.Forms.Padding(4);
             this.radio1.Name = "radio1";
-            this.radio1.Size = new System.Drawing.Size(190, 33);
-            this.radio1.TabIndex = 22;
+            this.radio1.Size = new System.Drawing.Size(253, 41);
+            this.radio1.TabIndex = 4;
             this.radio1.Text = "ĐĂNG KÝ";
             this.radio1.TextColor = System.Drawing.Color.White;
             this.radio1.UseVisualStyleBackColor = false;
@@ -168,14 +175,14 @@
             this.txtconfirmpass.BorderSize = 2;
             this.txtconfirmpass.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtconfirmpass.ForeColor = System.Drawing.Color.DimGray;
-            this.txtconfirmpass.Location = new System.Drawing.Point(278, 503);
-            this.txtconfirmpass.Margin = new System.Windows.Forms.Padding(4);
+            this.txtconfirmpass.Location = new System.Drawing.Point(289, 606);
+            this.txtconfirmpass.Margin = new System.Windows.Forms.Padding(5);
             this.txtconfirmpass.Multiline = false;
             this.txtconfirmpass.Name = "txtconfirmpass";
-            this.txtconfirmpass.Padding = new System.Windows.Forms.Padding(7);
+            this.txtconfirmpass.Padding = new System.Windows.Forms.Padding(9);
             this.txtconfirmpass.PasswordChar = false;
-            this.txtconfirmpass.Size = new System.Drawing.Size(282, 31);
-            this.txtconfirmpass.TabIndex = 19;
+            this.txtconfirmpass.Size = new System.Drawing.Size(376, 39);
+            this.txtconfirmpass.TabIndex = 3;
             this.txtconfirmpass.Texts = "";
             this.txtconfirmpass.UnderlinedStyle = true;
             // 
@@ -186,22 +193,22 @@
             this.txtpass.BorderSize = 2;
             this.txtpass.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtpass.ForeColor = System.Drawing.Color.DimGray;
-            this.txtpass.Location = new System.Drawing.Point(278, 419);
-            this.txtpass.Margin = new System.Windows.Forms.Padding(4);
+            this.txtpass.Location = new System.Drawing.Point(289, 499);
+            this.txtpass.Margin = new System.Windows.Forms.Padding(5);
             this.txtpass.Multiline = false;
             this.txtpass.Name = "txtpass";
-            this.txtpass.Padding = new System.Windows.Forms.Padding(7);
+            this.txtpass.Padding = new System.Windows.Forms.Padding(9);
             this.txtpass.PasswordChar = false;
-            this.txtpass.Size = new System.Drawing.Size(282, 31);
-            this.txtpass.TabIndex = 20;
+            this.txtpass.Size = new System.Drawing.Size(376, 39);
+            this.txtpass.TabIndex = 2;
             this.txtpass.Texts = "";
             this.txtpass.UnderlinedStyle = true;
             // 
             // DangKi
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(579, 639);
+            this.ClientSize = new System.Drawing.Size(721, 786);
             this.Controls.Add(this.txttk);
             this.Controls.Add(this.txtemail);
             this.Controls.Add(this.button1);
@@ -215,9 +222,11 @@
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "DangKi";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DangKi";
+            this.Load += new System.EventHandler(this.DangKi_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

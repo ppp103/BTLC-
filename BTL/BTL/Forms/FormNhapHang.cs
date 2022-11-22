@@ -216,7 +216,7 @@ namespace BTL
                             BinaryReader bs = new BinaryReader(Streem);
                             anh = bs.ReadBytes((int)Streem.Length);
                             strConnect.Open();
-                            string sql = $"Insert into tblHangHoa(MaHang,TenHang,SoLuong,DonGiaNhap,DonGiaBan,ThoiGianBaoHanh,Anh,GhiChu,MaLoai,MaHangSX,MaKL,MaCL,MaNuocSX,MaMau,MaCD,MaMua) Values ('" + txtMaHang.Text + "','" + txtTenHang.Text + "','" + txtSoLuong.Text + "','" + txtDonGiaNhap.Text + "','" + txtDonGiaBan.Text + "','" + txtTGBH.Text + "',@anh, '" + txtGhiChu.Text + "','" + txtLoai.Text + "', '" + txtHSX.Text + "', '" + txtKL.Text + "', '" + txtCL.Text + "', '" + txtNSX.Text + "', '" + txtMau.Text + "', '" + txtCD.Text + "', '" + txtMua.Text + "')";
+                            string sql = $"Insert into tblHangHoa(MaHang,TenHang,SoLuong,DonGiaNhap,DonGiaBan,ThoiGianBaoHanh,Anh,GhiChu,MaLoai,MaHangSX,MaKL,MaCL,MaNuocSX,MaMau,MaCD,MaMua) Values ('" + txtMaHang.Text + "',N'" + txtTenHang.Text + "','" + txtSoLuong.Text + "','" + txtDonGiaNhap.Text + "','" + txtDonGiaBan.Text + "','" + txtTGBH.Text + "',@anh, '" + txtGhiChu.Text + "','" + txtLoai.Text + "', '" + txtHSX.Text + "', '" + txtKL.Text + "', '" + txtCL.Text + "', '" + txtNSX.Text + "', '" + txtMau.Text + "', '" + txtCD.Text + "', '" + txtMua.Text + "')";
                             cmd = new SqlCommand(sql, strConnect);
                             cmd.Parameters.Add(new SqlParameter("@anh", anh));
                             int N = cmd.ExecuteNonQuery();

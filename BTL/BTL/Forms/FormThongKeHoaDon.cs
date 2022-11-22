@@ -107,10 +107,12 @@ namespace BTL
             if(txtChon.SelectedIndex == 2 || txtChon.SelectedIndex == 0)
             {
                 dtNgay.Enabled = false;
+                btnHienThi.Enabled = false;
             }
             else
             {
                 dtNgay.Enabled = true;
+                btnHienThi.Enabled = true;
             }
         }
 

@@ -21,7 +21,7 @@ namespace BTL.DangNhapDangKi
 
         private void radio2_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("Do You Want To Exit?", "Notification", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == System.Windows.Forms.DialogResult.Yes)
+            if (MessageBox.Show("Bạn có chắc chắn muốn thoát không ?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == System.Windows.Forms.DialogResult.Yes)
             {
                 this.Close();
             }
@@ -43,7 +43,7 @@ namespace BTL.DangNhapDangKi
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("Do You Want To Exit?", "Notification", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == System.Windows.Forms.DialogResult.Yes)
+            if (MessageBox.Show("Bạn có chắc chắn muốn thoát không ?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == System.Windows.Forms.DialogResult.Yes)
             {
                 this.Close();
             }
@@ -60,12 +60,12 @@ namespace BTL.DangNhapDangKi
             string mk = txtmk.Texts;
             if(tentk.Trim() == "")
             {
-                MessageBox.Show("Chưa Nhập Tên Tài Khoản");
+                MessageBox.Show("Chưa nhập tên tài khoản");
                
             }
             else if (mk.Trim() == "")
             {
-                MessageBox.Show("Chưa Nhập Mật Khẩu");
+                MessageBox.Show("Chưa nhập mật khẩu");
                
             }
             else
@@ -73,7 +73,7 @@ namespace BTL.DangNhapDangKi
                 string query = "SELECT * FROM tblLogin WHERE ID = '"+tentk+"' AND PASS = '"+mk+"'";
                 if(mod.Id(query).Count != 0)
                 {
-                    MessageBox.Show("Đăng Nhập Thành Công !","Cảnh Báo !",MessageBoxButtons.OK,MessageBoxIcon.Information);
+                    MessageBox.Show("Đăng nhập thành công !","Cảnh Báo !",MessageBoxButtons.OK,MessageBoxIcon.Information);
                     this.Hide();
                     TrangChinh f2 = new TrangChinh();
                     f2.ShowDialog();
@@ -81,7 +81,7 @@ namespace BTL.DangNhapDangKi
                 }
                 else
                 {
-                    MessageBox.Show("Tên Tài Khoản Hoặc Mật Khẩu Chưa Chính Xác !", "Cảnh Báo !", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Tên tài khoản hoặc mật khẩu chưa chính xác !", "Cảnh Báo !", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
             }
 

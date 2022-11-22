@@ -191,8 +191,8 @@ namespace BTL.Forms
                             sql = $"Insert into tblChiTietHoaDonBan Values (N'{cbHdb.Text}', N'{cbmahang.Text}', N'{txtsoluong.Text}', N'{txtgiamgia.Text}', N'{txtthanhtien.Text}')";
                             cthdb.CapNhatDuLieu(sql);
                             reloaddata();
+                            FormHDB.guna2Button5_Click(this, e);
                             MessageBox.Show("Thêm thành công");
-
                         }
                     }
                 }
