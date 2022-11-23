@@ -353,7 +353,7 @@ namespace BTL.Forms
             System.Data.DataTable dataTable = cthdb.DocBang($"select * from tblChiTietHoaDonBan where MaHang = N'{cbmahang.Text.Trim()}'");
             if (dataTable.Rows.Count > 0 && count >= 1)
             {
-                MessageBox.Show(" mã hàng này đã có !");
+                MessageBox.Show("Mã hàng này đã có !");
                 cbmahang.Focus();
                 return;
             }

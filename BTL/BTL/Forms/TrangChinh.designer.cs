@@ -43,6 +43,7 @@ namespace HomePage
             this.iconHome = new FontAwesome.Sharp.IconButton();
             this.panelBlank = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.timerTkeHoaDon = new System.Windows.Forms.Timer(this.components);
             this.panelTieuDe = new System.Windows.Forms.Panel();
@@ -56,7 +57,6 @@ namespace HomePage
             this.iconFacebook = new FontAwesome.Sharp.IconButton();
             this.iconIns = new FontAwesome.Sharp.IconButton();
             this.panelForm = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
             this.panelSideMenu.SuspendLayout();
             this.panelTkeHoaDon.SuspendLayout();
             this.panelBlank.SuspendLayout();
@@ -330,6 +330,18 @@ namespace HomePage
             this.label1.TabIndex = 1;
             this.label1.Text = "Perfume Shop";
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.PeachPuff;
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 19.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Black;
+            this.label3.Location = new System.Drawing.Point(36, 206);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(192, 39);
+            this.label3.TabIndex = 1;
+            this.label3.Text = "LINAPPUTY ";
+            // 
             // pictureBox1
             // 
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
@@ -509,18 +521,6 @@ namespace HomePage
             this.panelForm.Name = "panelForm";
             this.panelForm.Size = new System.Drawing.Size(1311, 875);
             this.panelForm.TabIndex = 10;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.PeachPuff;
-            this.label3.Font = new System.Drawing.Font("Century Gothic", 19.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(38, 193);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(192, 39);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "LINAPPUTY ";
             // 
             // TrangChinh
             // 

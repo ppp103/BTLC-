@@ -171,12 +171,13 @@ namespace BTL.Forms
             if (index == 2 && check())
             {
                 table = xuLy.DocBang($"Select * From BaoCao2('{txtInput.Text}', {thang}, {nam})");
-
+                DataTable TongTien = xuLy.DocBang($"Select * From TongTien('{txtInput.Text}', {thang}, {nam})");
                 if (table.Rows.Count > 0)
                 {
                     double tien;
                     MessageBox.Show("Tìm thấy dữ liệu");
-                    tien = Convert.ToDouble(table.Rows[0][4]);
+
+                    tien = Convert.ToDouble(TongTien.Rows[0][0]);
                     lbOutPut.Text = $"Tổng tiền nhập hàng từ {txtInput.Text}: {tien}";
                     btnBaoCao.Enabled = true;
                 }
@@ -191,7 +192,7 @@ namespace BTL.Forms
             if (index == 3 && check())
             {
                 int selectedIndex = cboQuy.SelectedIndex;
-                table = xuLy.DocBang($"Select * From Quy({selectedIndex})");
+                table = xuLy.DocBang($"Select * From Quy({selectedIndex}, {nam})");
                 if(table.Rows.Count > 0)
                 {
                     MessageBox.Show("Tìm thấy dữ liệu");
