@@ -574,7 +574,6 @@ namespace BTL
             // 
             // cbKL
             // 
-            this.cbKL.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbKL.Font = new System.Drawing.Font("Segoe UI Semibold", 11F);
             this.cbKL.FormattingEnabled = true;
             this.cbKL.Location = new System.Drawing.Point(291, 385);
@@ -586,7 +585,6 @@ namespace BTL
             // 
             // cbLoai
             // 
-            this.cbLoai.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbLoai.Font = new System.Drawing.Font("Segoe UI Semibold", 11F);
             this.cbLoai.FormattingEnabled = true;
             this.cbLoai.Location = new System.Drawing.Point(289, 430);
@@ -598,7 +596,6 @@ namespace BTL
             // 
             // cbHSX
             // 
-            this.cbHSX.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbHSX.Font = new System.Drawing.Font("Segoe UI Semibold", 11F);
             this.cbHSX.FormattingEnabled = true;
             this.cbHSX.Location = new System.Drawing.Point(289, 473);
@@ -610,7 +607,6 @@ namespace BTL
             // 
             // cbCL
             // 
-            this.cbCL.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbCL.Font = new System.Drawing.Font("Segoe UI Semibold", 11F);
             this.cbCL.FormattingEnabled = true;
             this.cbCL.Location = new System.Drawing.Point(290, 515);
@@ -622,7 +618,6 @@ namespace BTL
             // 
             // cbNSX
             // 
-            this.cbNSX.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbNSX.Font = new System.Drawing.Font("Segoe UI Semibold", 11F);
             this.cbNSX.FormattingEnabled = true;
             this.cbNSX.Location = new System.Drawing.Point(289, 559);
@@ -634,7 +629,6 @@ namespace BTL
             // 
             // cbMau
             // 
-            this.cbMau.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbMau.Font = new System.Drawing.Font("Segoe UI Semibold", 11F);
             this.cbMau.FormattingEnabled = true;
             this.cbMau.Location = new System.Drawing.Point(288, 603);
@@ -646,7 +640,6 @@ namespace BTL
             // 
             // cbCD
             // 
-            this.cbCD.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbCD.Font = new System.Drawing.Font("Segoe UI Semibold", 11F);
             this.cbCD.FormattingEnabled = true;
             this.cbCD.Location = new System.Drawing.Point(290, 648);
@@ -658,7 +651,6 @@ namespace BTL
             // 
             // cbMua
             // 
-            this.cbMua.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbMua.Font = new System.Drawing.Font("Segoe UI Semibold", 11F);
             this.cbMua.FormattingEnabled = true;
             this.cbMua.Location = new System.Drawing.Point(289, 692);

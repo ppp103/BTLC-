@@ -192,7 +192,7 @@ namespace BTL.Forms
             if (index == 3 && check())
             {
                 int selectedIndex = cboQuy.SelectedIndex;
-                table = xuLy.DocBang($"Select * From Quy({selectedIndex}, {nam})");
+                table = xuLy.DocBang($"Select * From Quy({selectedIndex + 1}, {nam})");
                 if(table.Rows.Count > 0)
                 {
                     MessageBox.Show("Tìm thấy dữ liệu");
